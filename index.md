@@ -6,6 +6,7 @@
 Fantastic collection of 55 useful tools for data visualization. This collection is curated by the folks at Datavisualization.ch and is well-organized and easy to search. Highly Recommended.
 
 [reading.md](reading.md)
-[What is data Scientist](what%20is%20data%20scientict.md)
+[What is data Scientist](what%20is%20data%20scientist.md)
+
 
 -----
