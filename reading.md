@@ -129,13 +129,13 @@ td;lr excel; power view and power maps; basic python
 - Keeping Secrets Secret in Python
 - Automate the Boring Stuff with Python: Practical Programming for Total Beginners
 In Automate the Boring Stuff with Python, you'll learn how to use Python to write programs that do in minutes what would take you hours to do by hand--no prior programming experience required. Step-by-step instructions walk you through each program, and practice projects at the end of each chapter challenge you to improve those programs and use your newfound skills to automate similar tasks. Don't spend your time doing work a well-trained monkey could do. Even if you've never written a line of code, you can make your computer do the grunt work. Learn how in Automate the Boring Stuff with Python.
-1.	Search for text in a file or across multiple files
-2.	Create, update, move, and rename files and folders
-3.	Search the Web and download online content
-4.	Update and format data in Excel spreadsheets of any size
-5.	Split, merge, watermark, and encrypt PDFs
-6.	Send reminder emails and text notifications
-7.	Fill out online forms
+    1.	Search for text in a file or across multiple files
+    2.	Create, update, move, and rename files and folders
+    3.	Search the Web and download online content
+    4.	Update and format data in Excel spreadsheets of any size
+    5.	Split, merge, watermark, and encrypt PDFs
+    6.	Send reminder emails and text notifications
+    7.	Fill out online forms
 - **Awesome R**- A curated list of awesome R frameworks, packages and software. https://github.com/qinwf/awesome-R
 
 
