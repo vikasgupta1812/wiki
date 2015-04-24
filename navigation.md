@@ -5,5 +5,3 @@
 [Download](download.md)
 
 [gimmick:ThemeChooser](Change theme)
-
-> Written with [StackEdit](https://stackedit.io/).
