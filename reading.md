@@ -136,7 +136,7 @@ In Automate the Boring Stuff with Python, you'll learn how to use Python to writ
 5.	Split, merge, watermark, and encrypt PDFs
 6.	Send reminder emails and text notifications
 7.	Fill out online forms
-- **Awesome R**- A curated list of awesome R frameworks, packages and software. https://github.com/qinwf/awesome-R [github](https://raw.githubusercontent.com/qinwf/awesome-R/master/README.md)
+- **Awesome R**- A curated list of awesome R frameworks, packages and software. https://github.com/qinwf/awesome-R #[github](https://raw.githubusercontent.com/qinwf/awesome-R/master/README.md)
 
 
 
