@@ -138,6 +138,4 @@ In Automate the Boring Stuff with Python, you'll learn how to use Python to writ
     7.	Fill out online forms
 - **Awesome R**- A curated list of awesome R frameworks, packages and software. https://github.com/qinwf/awesome-R
 - [Selected Tools for data visualization](http://selection.datavisualization.ch/?utm_campaign=Data_Elixir_32&utm_medium=email&utm_source=Data%2bElixir) Fantastic collection of 55 useful tools for data visualization. This collection is curated by the folks at Datavisualization.ch and is well-organized and easy to search. Highly Recommended.
-
-
-
+- [Prezi-Using R for Data Mining Competitions](https://prezi.com/embed/8fbsaa7mushs)
