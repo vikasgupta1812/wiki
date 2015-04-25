@@ -1,1 +1,5 @@
 - [Readings](reading.md)
+- [Books](http://1drv.ms/1dc4VsB)
+- [Capstone Writeup for presentation](http://1drv.ms/1Dt7UTC)
+- [Trainings](http://1drv.ms/1Dt839K)
+- [R-Tips](http://1drv.ms/1Dt839K)
