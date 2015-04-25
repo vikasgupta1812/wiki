@@ -87,20 +87,20 @@ debug c++ code rcpp
 - How to Transform your Google Spreadsheet Into an Opinion Mining Tool http://www.analyticbridge.com/profiles/blogs/how-to-transform-your-google-spreadsheet-into-an-opinion-mining
 - Stimulation through Gamification - http://www.datavizualization.com/blog/stimulation-through-gamification
 - Using Gamification within digital training significantly improves the learning rate and screen engagement over a longer length of time.
-Foldit: Solve Puzzles for Science
+[Foldit: Solve Puzzles for Science](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0CB8QFjAA&url=https%3A%2F%2Ffold.it%2F&ei=N8UiVezEN9H2oATV0IDACQ&usg=AFQjCNGr1eFOCi2J6ZzsR-PPYI77-I0JBA&sig2=O0qv_9nJEBxSfPC530Pczw&bvm=bv.89947451,d.cGU)
 - How to Become a Data Scientist for Free - http://www.datasciencecentral.com/profiles/blogs/how-to-become-a-data-scientist-for-free tl;dr nice set of resources. 
 - Comprehensive notes for all 9 courses in the Specialization - https://sux13.github.io/DataScienceSpCourseNotes/  Click on the html notes
 - In-depth introduction to machine learning in 15 hours of expert videos - http://www.r-bloggers.com/in-depth-introduction-to-machine-learning-in-15-hours-of-expert-videos/
 
-- edx - Data analysis to the MAX() Starting April 7th
+- edx - Data analysis to the MAX() Starting April 7th 
 td;lr excel; power view and power maps; basic python
-- LFS101x Introduction to Linux edx
-- 10x Data, Analytics, and Learning edx 
+- LFS101x Introduction to Linux edx https://courses.edx.org/courses/LinuxFoundationX/LFS101x/2T2014/info
+- 10x Data, Analytics, and Learning edx  https://courses.edx.org/courses/UTArlingtonX/LINK5.10x/3T2014/info
 	td;lr tableau (expired license); social network analysis; prediction modelling; text mining; Lightscribe – weka addon by Carnegie Mellon
 	
 - Introduction to Computational Thinking and Data Science - https://www.edx.org/course/v2/introduction-computational-thinking-data-mitx-6-00-2x-0 Python; monte carlo stimulation; pylab
--  Machine Learning course at Coursera by the co-founder Andrew Ng
-- second-to-none courses on Mining Massive Datasets  and Process Mining
+- [Machine Learning](https://www.coursera.org/learn/machine-learning) course at Coursera by the co-founder Andrew Ng
+- Second-to-none courses on [Mining Massive Datasets](https://www.coursera.org/course/mmds)  and [Process Mining](https://www.coursera.org/course/procmin)
 - nlp; command line http://www.pitt.edu/~naraehan/commandline-magic.pdf 
 - A No BS Guide to the Basics of Parallelization in R http://librestats.com/2012/03/15/a-no-bs-guide-to-the-basics-of-parallelization-in-r/
 - Wiley - "Automated Data Collection with R" https://github.com/crubba/Wiley-ADCR
@@ -123,19 +123,19 @@ td;lr excel; power view and power maps; basic python
 	http://online-html-editor.org/
 - 50 Excellent Data Visualization Examples for Presentations - https://www.kifi.com/brandon-loudermilkphd/machine-learning-resources
 - What Are The Best Technology Sites? - http://savedelete.com/news/best-technology-sites/1650/
-- Experienced Python Users: what's the most recent new thing you learned about the language? A great discussion on reddit.
-- Nifty Python tricks A post sharing some really informative tips and tricks which you might not have known about.
+- Experienced Python Users: what's the most recent new thing you learned about the language? A great discussion on reddit. http://pythonweekly.us2.list-manage.com/track/click?u=e2e180baf855ac797ef407fc7&id=cd39d50cee&e=fe14df65e7
+- Nifty Python tricks A post sharing some really informative tips and tricks which you might not have known about. http://pythonweekly.us2.list-manage.com/track/click?u=e2e180baf855ac797ef407fc7&id=2704418191&e=fe14df65e7
 - Python Beowulf cluster - find a use for those computers that are 10+ years old https://docs.google.com/file/d/0B0J1O2jMMERWMlJkOEx1Z0lYR3c/edit?usp=drivesdk
-- Keeping Secrets Secret in Python
+- Keeping Secrets Secret in Python http://datamelon.io/blog/2015/secure-symmetric-encryption-in-python.html
 - Automate the Boring Stuff with Python: Practical Programming for Total Beginners
 In Automate the Boring Stuff with Python, you'll learn how to use Python to write programs that do in minutes what would take you hours to do by hand--no prior programming experience required. Step-by-step instructions walk you through each program, and practice projects at the end of each chapter challenge you to improve those programs and use your newfound skills to automate similar tasks. Don't spend your time doing work a well-trained monkey could do. Even if you've never written a line of code, you can make your computer do the grunt work. Learn how in Automate the Boring Stuff with Python.
-    1.	Search for text in a file or across multiple files
-    2.	Create, update, move, and rename files and folders
-    3.	Search the Web and download online content
-    4.	Update and format data in Excel spreadsheets of any size
-    5.	Split, merge, watermark, and encrypt PDFs
-    6.	Send reminder emails and text notifications
-    7.	Fill out online forms
+    1.	Search for text in a file or across multiple files **
+    2.	Create, update, move, and rename files and folders **
+    3.	Search the Web and download online content **
+    4.	Update and format data in Excel spreadsheets of any size ***
+    5.	Split, merge, watermark, and encrypt PDFs ****
+    6.	Send reminder emails and text notifications ****
+    7.	Fill out online forms ****
 - **Awesome R**- A curated list of awesome R frameworks, packages and software. https://github.com/qinwf/awesome-R
 - [Selected Tools for data visualization](http://selection.datavisualization.ch/?utm_campaign=Data_Elixir_32&utm_medium=email&utm_source=Data%2bElixir) Fantastic collection of 55 useful tools for data visualization. This collection is curated by the folks at Datavisualization.ch and is well-organized and easy to search. Highly Recommended.
 - [Prezi-Using R for Data Mining Competitions](https://prezi.com/embed/8fbsaa7mushs/)
@@ -144,3 +144,5 @@ In Automate the Boring Stuff with Python, you'll learn how to use Python to writ
 - [Shiny app word cloud](http://shiny.rstudio.com/gallery/word-cloud.html)
 - [Example to embedd Youtube Video](Example YT Video.md)
 - [What is data Scientist](what%20is%20data%20scientist.md)
+- How to install logstash on a windows server with kibana in IIS - https://community.ulyaoth.net/threads/how-to-install-logstash-on-a-windows-server-with-kibana-in-iis.17/
+- Logstash - http://logstash.net/docs/1.4.2/
