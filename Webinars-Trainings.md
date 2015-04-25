@@ -1,6 +1,10 @@
-<a href="/9781491921685" title="Problem Solving"><span>Problem Solving</span></a></h4><div class="bookDescription " style="max-height: 171px;"> 
+[Problem Solving](http://techbus.safaribooksonline.com/9781491921685)  35 mins
 
-The real challenge of programming isn't learning a language's syntax—it's learning to creatively solve problems so you can build something great. In this one-of-a-kind webcast, author V. Anton Spraul breaks down some of the ways that programmers solve problems and teaches you how to 'Think Like a Programmer'.In this webcast we answer the questions:What is "problem solving" for programmers, and why is it so important?Can it be learned, or do some people just "get it"?How can someone develop his or her problem-solving ability?What are some of the basic techniques of problem-solving for programmers?
+The real challenge of programming isn't learning a language's syntax—it's learning to creatively solve problems so you can build something great. In this one-of-a-kind webcast, author V. Anton Spraul breaks down some of the ways that programmers solve problems and teaches you how to 'Think Like a Programmer'.In this webcast we answer the questions:
+    - What is "problem solving" for programmers, and why is it so important?
+    - Can it be learned, or do some people just "get it"?
+    - How can someone develop his or her problem-solving ability?
+    - What are some of the basic techniques of problem-solving for programmers?
 
 _____
 
