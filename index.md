@@ -1,4 +1,1 @@
 - [Readings](reading.md)
-- [What is data Scientist](what%20is%20data%20scientist.md)
-- [Exmaple to embedd Youtube Video](Example YT Video.md)
-- [Shiny app word cloud](http://shiny.rstudio.com/gallery/word-cloud.html)

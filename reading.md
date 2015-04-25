@@ -141,3 +141,6 @@ In Automate the Boring Stuff with Python, you'll learn how to use Python to writ
 - [Prezi-Using R for Data Mining Competitions](https://prezi.com/embed/8fbsaa7mushs/)
 - Accelerate R Applications with CUDA - http://devblogs.nvidia.com/parallelforall/accelerate-r-applications-cuda/ nvidia devblog
 - Google Vis plots [plot-1](plot1.html) [plot-1](plot2.html) [plot-3](plot3.html)
+- [Shiny app word cloud](http://shiny.rstudio.com/gallery/word-cloud.html)
+- [Example to embedd Youtube Video](Example YT Video.md)
+- [What is data Scientist](what%20is%20data%20scientist.md)
