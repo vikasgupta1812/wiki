@@ -3,4 +3,4 @@
 - [Capstone Writeup for presentation](http://1drv.ms/1Dt7UTC)
 - [Trainings](http://1drv.ms/1Dt839K)
 - [R-Tips](http://1drv.ms/1JDvQaC)
-- [Webinars\Trainings](Webinars/Trainings.md)
+- [Webinars-Trainings](Webinars-Trainings.md)
