@@ -5,7 +5,6 @@ The real challenge of programming isn't learning a language's syntax—it's lear
     - Can it be learned, or do some people just "get it"?
     - How can someone develop his or her problem-solving ability?
     - What are some of the basic techniques of problem-solving for programmers?
-
 _____
 
 [Pumping Up Retail Profits with Predictive Analytics - Adam Jorgensen](http://techbus.safaribooksonline.com/9781491924143#) 20 mins
@@ -153,7 +152,7 @@ PyData
 [Machine Learning with scikit-learn - Andreas Mueller - Part 1](http://techbus.safaribooksonline.com/9781491924143#) 45 mins
 Description: 
 
-scikit-learn has emerged as one of the most popular open source machine learning toolkits, now widely used in academia and industry. scikit-learn provides easy-to-use interfaces to perform advanced analysis and build powerful predictive models. The tutorial will cover basic concepts of machine learning, such as supervised and unsupervised learning, cross validation and model selection. We will see how to prepare data for machine learning, and go from applying a single algorithm to building a machine learning pipeline. Material (probably notebooks and slides) will be made available here: https://github.com/amueller/pydata-strata-2015
+`scikit-learn` has emerged as one of the most popular open source machine learning toolkits, now widely used in academia and industry. scikit-learn provides easy-to-use interfaces to perform advanced analysis and build powerful predictive models. The tutorial will cover basic concepts of machine learning, such as supervised and unsupervised learning, cross validation and model selection. We will see how to prepare data for machine learning, and go from applying a single algorithm to building a machine learning pipeline. Material (probably notebooks and slides) will be made available here: https://github.com/amueller/pydata-strata-2015
 
 ----
 incomplete...
