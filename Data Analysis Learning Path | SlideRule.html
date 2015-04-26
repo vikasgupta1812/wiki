@@ -1,0 +1,858 @@
+<html lang="en">
+<head><meta charset="utf-8">
+	<link href="/css/final.ec0e2e26.css" media="screen, projection" rel="stylesheet" />
+	<link href="//fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic" rel="stylesheet" type="text/css" />
+	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,400italic,600italic" rel="stylesheet" type="text/css" /><meta name="msapplication-TileImage" content="/images/touch/apple-touch-icon-144x144-precomposed.394a1150.png"><meta name="msapplication-TileColor" content="#222222">
+	<link href="/images/touch/apple-touch-icon-152x152-precomposed.15c4e658.jpg" rel="apple-touch-icon-precomposed" sizes="152x152" />
+	<link href="/images/touch/apple-touch-icon-144x144-precomposed.394a1150.png" rel="apple-touch-icon-precomposed" sizes="144x144" />
+	<link href="/images/touch/apple-touch-icon-114x114-precomposed.2e690587.png" rel="apple-touch-icon-precomposed" sizes="114x114" />
+	<link href="/images/touch/apple-touch-icon-72x72-precomposed.e66161fd.png" rel="apple-touch-icon-precomposed" sizes="72x72" />
+	<link href="/images/touch/apple-touch-icon-57x57-precomposed.02370786.png" rel="apple-touch-icon-precomposed" /><!--[if lt IE 9]>
+		<script src="/js/libs/html5shiv.59067cb6.js"></script>
+	<![endif]--><script type="text/javascript" async="" src="https://widget.intercom.io/widget/dscmnhlb"></script><script src="https://dnn506yrbagrg.cloudfront.net/pages/scripts/0018/6590.js?397247" async="" type="text/javascript"></script><script type="text/javascript" async="" src="//static.addtoany.com/menu/page.js"></script><script async="" src="//connect.facebook.net/en_US/fbds.js"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script src="//cdn.optimizely.com/js/987935029.js"></script>
+	<title>Data Analysis Learning Path | SlideRule</title>
+	<meta name="description" content="Learn Data Analysis &amp; Data Science: Intro to Programming, R, Statistics, Machine Learning, Visualization, Big Data, Hadoop, MapReduce &amp; Social Network Analysis."><meta property="fb:app_id" content="1386756464875327"><meta property="og:type" content="mysliderule:course_study"><meta property="og:image" content="https://www.mysliderule.com/static/images/lp/Data_analysis_icon_blue.jpg"><meta property="og:title" content=""><meta property="og:url" content="https://www.mysliderule.com/learning-paths/data-analysis/learn/"><meta property="og:description" content="">
+	<link href="https://www.mysliderule.com/learning-paths/data-analysis/learn/" rel="canonical" /><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+</script><script>(function() {
+        var _fbq = window._fbq || (window._fbq = []);
+        if (!_fbq.loaded) {
+        var fbds = document.createElement('script');
+        fbds.async = true;
+        fbds.src = '//connect.facebook.net/en_US/fbds.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(fbds, s);
+        _fbq.loaded = true;
+        }
+        _fbq.push(['addPixelId', '986855681343301']);
+        })();
+window._fbq = window._fbq || [];
+window._fbq.push(['track', 'PixelInitialized', {}]);
+</script>
+	<style type="text/css">.a2a_menu,.a2a_menu * {-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;float:none;margin:0;padding:0;position: static;height:auto;width:auto;}.a2a_menu {border-radius: 6px;display:none;direction:ltr;background:#FFF;font: 16px sans-serif-light, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, Helvetica, "Liberation Sans", sans-serif;color:#000;line-height:12px;border: 1px solid #CCC;vertical-align:baseline;overflow:hidden;}.a2a_mini {min-width:200px;position:absolute;width: 300px;z-index:9999997;}.a2a_overlay {display: none;background: #CCC; _height: expression( ((e=document.documentElement.clientHeight)?e:document.body.clientHeight)+"px" ); _width: expression( ((e=document.documentElement.clientWidth)?e:document.body.clientWidth)+"px" ); filter: alpha(opacity=50); opacity: .7;position: fixed;_position: absolute; top: 0;right: 0;left: 0;bottom: 0;z-index: 9999998;-webkit-animation: a2aFadeInOverlay .14s ease-out;animation: a2aFadeInOverlay .14s ease-out;}.a2a_full {background: #FFF;height: auto;height: calc(320px);top: 15%;_top: expression(40+((e=document.documentElement.scrollTop)?e:document.body.scrollTop)+"px"); left: 50%;margin-left: -320px; position: fixed;_position: absolute; text-align: center;width: 640px;z-index: 9999999; -webkit-animation: a2aFadeIn .14s ease-in;    animation: a2aFadeIn .14s ease-in;}.a2a_full_header,.a2a_full_services,.a2a_full_footer {border: 0;margin: 0;padding: 12px;box-sizing: border-box;}.a2a_full_header {padding-bottom: 8px;}.a2a_full_services {height: 280px; overflow-y: scroll;padding: 0 12px;-webkit-overflow-scrolling: touch;}.a2a_full_services .a2a_i {display: inline-block;float: none;width: 181px;width: calc(33.334% - 18px);}div.a2a_full_footer {font-size: 12px;text-align: center;padding: 8px 14px;}div.a2a_full_footer a,div.a2a_full_footer a:visited {display: inline;font-size: 12px;line-height:14px;padding: 8px 14px; }div.a2a_full_footer a:hover {background: none;border: 0;color: #0166FF;}div.a2a_full_footer a span.a2a_s_a2a {background-size: 14px;border-radius: 3px;display: inline-block;height:14px;line-height:14px;margin: 0 3px 0 0;vertical-align: top;*vertical-align: middle; width:14px;}@media print {.a2a_menu,.a2a_overlay {visibility: hidden;}}@-webkit-keyframes a2aFadeIn {from { opacity: 0; }  to { opacity: 1; }}@keyframes a2aFadeIn {from { opacity: 0; }  to { opacity: 1; }}@-webkit-keyframes a2aFadeInOverlay {from { opacity: 0; }  to { opacity: .7; }}@keyframes a2aFadeInOverlay {from { opacity: 0; }  to { opacity: .7; }}@media (max-width: 639px) {.a2a_full {top: 15%;left: 0;margin-left: auto;width: 100%;}}@media (min-width: 318px) and (max-width: 437px) {.a2a_full .a2a_full_services .a2a_i {width: calc(50% - 18px);}}@media (max-width: 317px) {.a2a_full .a2a_full_services .a2a_i {width: calc(100% - 18px);}}@media (max-height: 436px) {.a2a_full {bottom: 40px;height: auto;top: 40px;}}.a2a_menu a {color:#0166FF;text-decoration:none;font: 16px sans-serif-light, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, Helvetica, "Liberation Sans", sans-serif;line-height:14px;height:auto;width:auto;outline:none;-moz-outline:none;}.a2a_menu a:visited{color:#0166FF}.a2a_menu a:hover,.a2a_menu a:active,.a2a_menu a.a2a_i:focus{color:#2A2A2A;border:1px solid #EEE;background-color:#EEE;text-decoration:none}.a2a_menu span.a2a_s_find {background-size: 24px;height:24px;left: 8px;position:absolute;top: 7px;width:24px;}.a2a_menu span.a2a_s_find svg {background-color: #FFF;}.a2a_menu span.a2a_s_find svg path {fill: #CCC;}#a2a_menu_container{display:inline-block} #a2a_menu_container{_display:inline} .a2a_menu_title_container {padding: 6px 8px;}.a2a_menu_find_container {border: 1px solid #CCC;border-radius: 6px;padding: 2px 24px 2px 0;position: relative;text-align: left;}.a2a_cols_container .a2a_col1{overflow-x:hidden;overflow-y:auto;-webkit-overflow-scrolling:touch}.a2a_menu input, .a2a_menu input[type="text"]{display:block;background-image:none;box-shadow:none;line-height:100%;margin:0;overflow:hidden;padding:0;-moz-box-shadow:none;-webkit-box-shadow:none;-webkit-appearance:none} .a2a_menu_title_container input.a2a_menu_title {background-color: #FFF;border: 0;color: #2A2A2A;font: inherit;margin: 0;padding: 0;width: 99%;}.a2a_menu_find_container input.a2a_menu_find {background-color: transparent;_background-color: #FFF;border: 0;color: #2A2A2A;font: inherit;font-size: 16px;height: 28px;line-height: 20px;left: 38px;outline: 0;padding: 2px 0;position: relative;width: 99%;}.a2a_clear{clear:both} .a2a_img {background:url(https://static.addtoany.com/menu/icons.31.png);border:0;line-height:16px}.a2a_img,.a2a_svg {background-repeat:no-repeat;display:block;overflow:hidden;}.a2a_img{height:16px;line-height:16px;width:16px;}.a2a_svg{height:32px;line-height:32px;width:32px;}a.a2a_i,i.a2a_i{display:block;float:left;border:1px solid #FFF;line-height:24px;padding:6px 8px;text-align:left;white-space:nowrap;overflow: hidden;text-overflow: ellipsis;width:132px;}a.a2a_i span,a.a2a_more span {display: inline-block;overflow: hidden;vertical-align: top;*vertical-align: middle; }a.a2a_i .a2a_img,a.a2a_i .a2a_svg {margin: 0 6px 0 0;}a.a2a_i .a2a_svg,a.a2a_more .a2a_svg {background-size: 24px;height:24px;line-height:24px;width:24px;}a.a2a_sss:hover {border-left: 1px solid #CCC;}a.a2a_menu_show_more_less{border-bottom:1px solid #FFF;border-left:0;border-right:0;line-height:24px;margin:6px 0 0;padding:6px}a.a2a_menu_show_more_less span{display:inline-block;height:24px;margin:0 6px 0 0;} .a2a_kit .a2a_svg { background-repeat: repeat; }.a2a_default_style a{float:left;line-height:16px;padding:0 2px}.a2a_default_style a:hover .a2a_img,.a2a_default_style a:hover .a2a_svg,.a2a_floating_style a:hover .a2a_img,.a2a_floating_style a:hover .a2a_svg {opacity: .7;}.a2a_default_style .a2a_count,.a2a_default_style .a2a_svg,.a2a_floating_style .a2a_svg,.a2a_menu .a2a_svg {border-radius:4px ;} .a2a_default_style .a2a_img, .a2a_default_style .a2a_dd, .a2a_default_style .a2a_svg{float:left}.a2a_default_style .a2a_img_text{margin-right:4px}.a2a_default_style .a2a_divider{border-left:1px solid #000;display:inline;float:left;height:16px;line-height:16px;margin:0 5px}.a2a_kit a{cursor:pointer}.a2a_floating_style { background-color: #fff; border-radius: 6px; padding: 4px; position: fixed; z-index: 9999995; }.a2a_vertical_style a { display: block; padding: 4px; }.a2a_floating_style.a2a_default_style { bottom: 0; }.a2a_floating_style.a2a_default_style a { padding: 4px; }.a2a_count {background-color: #fff;border: 1px solid #ccc;box-sizing: border-box;color: #2a2a2a;display: block;float: left;font: 12px Arial,Helvetica,sans-serif;height: 16px;margin-left: 4px;position: relative;text-align: center;width: 50px;}.a2a_count:before,.a2a_count:after {border: solid transparent;border-width: 4px 4px 4px 0;content: "";height: 0;left: 0;line-height: 0;margin: -4px 0 0 -4px;position: absolute;top: 50%;width: 0;}.a2a_count:before {border-right-color: #ccc;}.a2a_count:after {border-right-color: #fff;margin-left: -3px;}.a2a_count span {-webkit-animation: a2aFadeIn .14s ease-in;    animation: a2aFadeIn .14s ease-in;}.a2a_nowrap{white-space:nowrap}.a2a_note{margin:0 auto;padding:9px;font-size:12px;text-align:center}.a2a_note .a2a_note_note{margin:0;color:#2A2A2A}.a2a_wide a{display:block;margin-top:3px;border-top:1px solid #EEE;text-align:center}iframe.a2a_shim {background-color: transparent;border: 0;bottom: 0;filter: alpha(opacity=0); height: 100%;left: 0;right: 0;top: 0;position: absolute;width: 100%;z-index: 9999996;_height: expression( ((e=document.documentElement.clientHeight)?e:document.body.clientHeight)+"px" ); _width: expression( ((e=document.documentElement.clientWidth)?e:document.body.clientWidth)+"px" ); }.a2a_dd img {border:0;-ms-touch-action:manipulation;}iframe[id^="PIN_"][id$="_nag"] {display: none !important;}.a2a_i_a2a{background-position:0 0!important}.a2a_i_a2a_sm{background-position:0 -17px!important}.a2a_i_agregator{background-position:0 -34px!important}.a2a_i_aim{background-position:0 -51px!important}.a2a_i_amazon{background-position:0 -68px!important}.a2a_i_aol{background-position:0 -85px!important}.a2a_i_app_net{background-position:0 -102px!important}.a2a_i_baidu{background-position:0 -119px!important}.a2a_i_balatarin{background-position:0 -136px!important}.a2a_i_bibsonomy{background-position:0 -153px!important}.a2a_i_bitty{background-position:0 -170px!important}.a2a_i_blinklist{background-position:0 -187px!important}.a2a_i_blogger{background-position:0 -204px!important}.a2a_i_blogmarks{background-position:0 -221px!important}.a2a_i_bookmark{background-position:0 -238px!important}.a2a_i_bookmarks_fr{background-position:0 -255px!important}.a2a_i_box{background-position:0 -272px!important}.a2a_i_buddymarks{background-position:0 -289px!important}.a2a_i_buffer{background-position:0 -306px!important}.a2a_i_care2{background-position:0 -323px!important}.a2a_i_chrome{background-position:0 -340px!important}.a2a_i_citeulike{background-position:0 -357px!important}.a2a_i_dailyrotation{background-position:0 -374px!important}.a2a_i_default{background-position:0 -391px!important}.a2a_i_delicious{background-position:0 -408px!important}.a2a_i_designfloat{background-position:0 -425px!important}.a2a_i_diary_ru{background-position:0 -442px!important}.a2a_i_diaspora{background-position:0 -459px!important}.a2a_i_digg{background-position:0 -476px!important}.a2a_i_dihitt{background-position:0 -493px!important}.a2a_i_diigo{background-position:0 -510px!important}.a2a_i_dzone{background-position:0 -527px!important}.a2a_i_email{background-position:0 -544px!important}.a2a_i_evernote{background-position:0 -561px!important}.a2a_i_facebook{background-position:0 -578px!important}.a2a_i_fark{background-position:0 -595px!important}.a2a_i_feed{background-position:0 -612px!important}.a2a_i_feedblitz{background-position:0 -629px!important}.a2a_i_feedbucket{background-position:0 -646px!important}.a2a_i_feedly{background-position:0 -663px!important}.a2a_i_feedmailer{background-position:0 -680px!important}.a2a_i_find{background-position:0 -697px!important}.a2a_i_firefox{background-position:0 -714px!important}.a2a_i_flipboard{background-position:0 -731px!important}.a2a_i_folkd{background-position:0 -748px!important}.a2a_i_friendfeed{background-position:0 -765px!important}.a2a_i_gmail{background-position:0 -782px!important}.a2a_i_google{background-position:0 -799px!important}.a2a_i_google_plus{background-position:0 -816px!important}.a2a_i_hatena{background-position:0 -833px!important}.a2a_i_instapaper{background-position:0 -850px!important}.a2a_i_itunes{background-position:0 -867px!important}.a2a_i_jamespot{background-position:0 -884px!important}.a2a_i_kakao{background-position:0 -901px!important}.a2a_i_kindle{background-position:0 -918px!important}.a2a_i_klipfolio{background-position:0 -935px!important}.a2a_i_line{background-position:0 -952px!important}.a2a_i_linkedin{background-position:0 -969px!important}.a2a_i_livejournal{background-position:0 -986px!important}.a2a_i_mail_ru{background-position:0 -1003px!important}.a2a_i_mendeley{background-position:0 -1020px!important}.a2a_i_meneame{background-position:0 -1037px!important}.a2a_i_miro{background-position:0 -1054px!important}.a2a_i_mixi{background-position:0 -1071px!important}.a2a_i_myspace{background-position:0 -1088px!important}.a2a_i_netlog{background-position:0 -1105px!important}.a2a_i_netvibes{background-position:0 -1122px!important}.a2a_i_netvouz{background-position:0 -1139px!important}.a2a_i_newsalloy{background-position:0 -1156px!important}.a2a_i_newsisfree{background-position:0 -1173px!important}.a2a_i_newstrust{background-position:0 -1190px!important}.a2a_i_newsvine{background-position:0 -1207px!important}.a2a_i_nujij{background-position:0 -1224px!important}.a2a_i_odnoklassniki{background-position:0 -1241px!important}.a2a_i_oknotizie{background-position:0 -1258px!important}.a2a_i_oldreader{background-position:0 -1275px!important}.a2a_i_outlook_com{background-position:0 -1292px!important}.a2a_i_pinboard{background-position:0 -1309px!important}.a2a_i_pinterest{background-position:0 -1326px!important}.a2a_i_plurk{background-position:0 -1343px!important}.a2a_i_pocket{background-position:0 -1360px!important}.a2a_i_podnova{background-position:0 -1377px!important}.a2a_i_print{background-position:0 -1394px!important}.a2a_i_printfriendly{background-position:0 -1411px!important}.a2a_i_protopage{background-position:0 -1428px!important}.a2a_i_pusha{background-position:0 -1445px!important}.a2a_i_qzone{background-position:0 -1462px!important}.a2a_i_reddit{background-position:0 -1479px!important}.a2a_i_rediff{background-position:0 -1496px!important}.a2a_i_renren{background-position:0 -1513px!important}.a2a_i_segnalo{background-position:0 -1530px!important}.a2a_i_share{background-position:0 -1547px!important}.a2a_i_sina_weibo{background-position:0 -1564px!important}.a2a_i_sitejot{background-position:0 -1581px!important}.a2a_i_slashdot{background-position:0 -1598px!important}.a2a_i_springpad{background-position:0 -1615px!important}.a2a_i_stumbleupon{background-position:0 -1632px!important}.a2a_i_stumpedia{background-position:0 -1649px!important}.a2a_i_svejo{background-position:0 -1666px!important}.a2a_i_symbaloo{background-position:0 -1683px!important}.a2a_i_thefreedictionary{background-position:0 -1700px!important}.a2a_i_thefreelibrary{background-position:0 -1717px!important}.a2a_i_tuenti{background-position:0 -1734px!important}.a2a_i_tumblr{background-position:0 -1751px!important}.a2a_i_twiddla{background-position:0 -1768px!important}.a2a_i_twitter{background-position:0 -1785px!important}.a2a_i_typepad{background-position:0 -1802px!important}.a2a_i_viadeo{background-position:0 -1819px!important}.a2a_i_vk{background-position:0 -1836px!important}.a2a_i_wanelo{background-position:0 -1853px!important}.a2a_i_webnews{background-position:0 -1870px!important}.a2a_i_whatsapp{background-position:0 -1887px!important}.a2a_i_winksite{background-position:0 -1904px!important}.a2a_i_wordpress{background-position:0 -1921px!important}.a2a_i_wykop{background-position:0 -1938px!important}.a2a_i_xing{background-position:0 -1955px!important}.a2a_i_y18{background-position:0 -1972px!important}.a2a_i_yahoo{background-position:0 -1989px!important}.a2a_i_yim{background-position:0 -2006px!important}.a2a_i_yoolink{background-position:0 -2023px!important}.a2a_i_youmob{background-position:0 -2040px!important}.a2a_i_yummly{background-position:0 -2057px!important}
+	</style>
+	<script type="text/javascript" async="" src="//data-analysis-sliderule.disqus.com/embed.js"></script>
+	<link href="https://static.addtoany.com/menu/svg/icons.11.svg.css" rel="stylesheet" />
+</head>
+<body>
+<div class="bg"><a href="/workshops/data-science">INTRO TO DATA SCIENCE</a></div>
+
+<div class="bg">Build projects with expert feedback, kickstart your portfolio&nbsp;<a class="btn block enroll pink" href="/workshops/data-science">Tell me more</a></div>
+
+<section>
+<section class="learning_path_content">
+<div class="container">
+<div class="l_sidebar">
+<div class="toc_sidebar" style="margin-top: 10px;">
+<h4 id="toc-title-y" style="color: #999;padding-top: 0px;display:none;">Contents</h4>
+
+<div class="tocify tocify-hide" id="toc">
+<p class="tocify-item  active" style="cursor: pointer;"><a>1. Computer Programming</a></p>
+
+<p class="tocify-item " style="cursor: pointer;"><a><span class="float_left">1.1</span><span class="section-sub-title">Python</span></a></p>
+
+<p class="tocify-item " style="cursor: pointer;"><a><span class="float_left">1.2</span><span class="section-sub-title">Introduction to Algorithms</span></a></p>
+
+<p class="tocify-item " style="cursor: pointer;"><a><span class="float_left">1.3</span><span class="section-sub-title">Unix</span></a></p>
+
+<p class="tocify-item " style="cursor: pointer;"><a><span class="float_left">1.4</span><span class="section-sub-title">Git</span></a></p>
+
+<p class="tocify-item " style="cursor: pointer;"><a><span class="float_left">1.5</span><span class="section-sub-title">SQL and JSON</span></a></p>
+
+<p class="tocify-item " style="cursor: pointer;"><a>2. Data Analysis</a></p>
+
+<p class="tocify-item " style="cursor: pointer;"><a><span class="float_left">2.1</span><span class="section-sub-title">Introductory Statistics and Probability</span></a></p>
+
+<p class="tocify-item " style="cursor: pointer;"><a><span class="float_left">2.2</span><span class="section-sub-title">Data Visualization Best Practices</span></a></p>
+
+<p class="tocify-item " style="cursor: pointer;"><a><span class="float_left">2.3</span><span class="section-sub-title">Computing Tools for Data Analysis: R</span></a></p>
+
+<p class="tocify-item " style="cursor: pointer;"><a><span class="float_left">2.4</span><span class="section-sub-title">Analyzing Data Sets</span></a></p>
+
+<p class="tocify-item " style="cursor: pointer;"><a><span class="float_left">2.5</span><span class="section-sub-title">Python Data Tools</span></a></p>
+
+<p class="tocify-item " style="cursor: pointer;"><a><span class="float_left">2.6</span><span class="section-sub-title">Research Design</span></a></p>
+
+<p class="tocify-item " style="cursor: pointer;"><a><span class="float_left">2.7</span><span class="section-sub-title">Machine Learning</span></a></p>
+
+<p class="tocify-item " style="cursor: pointer;"><a>3. Elective Tracks (Optional)</a></p>
+
+<p class="tocify-item " style="cursor: pointer;"><a><span class="float_left">3.1</span><span class="section-sub-title">Visualizing Data</span></a></p>
+
+<p class="tocify-item " style="cursor: pointer;"><a><span class="float_left">3.2</span><span class="section-sub-title">Analyzing Social Networks</span></a></p>
+
+<p class="tocify-item " style="cursor: pointer;"><a><span class="float_left">3.3</span><span class="section-sub-title">Big Data: Hadoop and MapReduce</span></a></p>
+
+<p class="tocify-item " style="cursor: pointer;"><a>4. Capstone Projects</a></p>
+
+<p class="tocify-item " style="cursor: pointer;"><a>5. Closing Notes</a></p>
+</div>
+</div>
+</div>
+
+<div class="right_pane right_wrapper" id="if_mobile">
+<header class="section_header">
+<div class="container">
+<div class="title">
+<h2>Data Analysis</h2>
+
+<h2><span rel="author" style="text-transform: none;font-size: 15px;">Claudia Gold</span>, <span class="light" style="text-transform: none;font-size: 15px;">Data Scientist -- Good Eggs and Airbnb</span></h2>
+
+<div class="authors">
+<h5>&nbsp;</h5>
+</div>
+</div>
+
+<div class="size2of6 fright">
+<div class="no_resources">26 Resources</div>
+
+<div class="hours">310 Hours+</div>
+
+<div id="share_plugin">
+<style type="text/css">.a2a_menu,.a2a_menu_inside,.a2a_menu a,.a2a_tabs div,.a2a_menu_find_container,.a2a_menu_powered_by{-webkit-border-radius:0!important;-moz-border-radius:0!important;border-radius:0!important;}
+</style>
+<div class="a2a_kit  a2a_target share-this" style="margin-top:15px;">&nbsp;</div>
+
+<div class="a2a_kit  a2a_target share-this" style="margin-top:15px;">50.5+ Hours</div>
+</div>
+</div>
+</div>
+</header>
+
+<div class="content">
+<div class="level0 root inner">
+<div class="level0 lp_chapter">
+<header>
+<h2>Computer Programming</h2>
+
+<div class="description">
+<p>The first skill you will need in order to analyze data is a way to store, extract, and manipulate it.In the first part of this course, we will study a variety of tools to help you do that. First, we will learn python, an all-purpose programming language that is often used for data manipulation. Then, we will study some algorithms and learn to classify them based on their efficiency. Next we will learn some ways data can be stored and how to extract it. SQL is a querying language that is used to pull out specific rows and columns of data from a large spreadsheet-like database. JSON is an alternative way to store data, using keys and values rather than rows and columns. After data storage, we will learn some command-line tools in Unix, such as filesystem basics, SSH, and SCP. Lastly, we will practice using Git, which organize code over time and helps programmers collaborate on the same project.<br />
+<br />
+<strong>A Note on Learning Programming:</strong><br />
+&nbsp;<br />
+If you are new to computer programming, don&rsquo;t worry! While it may seem intimidating at first, programming is very learnable, and with practice, you will only get better. One useful tip to remember is that you are free to look up anything and use outside resources to complete the assignments in this path. Memorizing syntax is generally much less useful than being able to use it practically, and when you use something a lot, you will memorize it naturally. In real life, programmers look up functions they need very frequently. Get used to using Google a lot. Wikipedia often gives great overviews of topics. Finally, remember that very few individual problems in this path are, on their own, necessary to be a good data analyst. If you get stuck on something, move on and try to come back to it later.</p>
+</div>
+
+<div class="level1 lp_subchapter">
+<header>
+<div data-unique="45-python" name="45-python">&nbsp;</div>
+<span class="no_chapters">23.5+ Hours </span>
+
+<h4 class="strong">Python</h4>
+</header>
+
+<div class="description">
+<p>Python is one of the most common scripting languages used for data manipulation. It is known for being both powerful and intuitive.</p>
+
+<div class="level2 each_resource">
+<div class="group_buttons"><label class="checkbox change_progress" data-path="2" id="40"></label></div>
+
+<div class="heading">
+<div class="instruction">
+<div class="hours">3 - 5 Hours</div>
+
+<div class="text"><a href="http://www.codecademy.com/courses/python-beginner-en-kSQwt/0/1" target="_blank">Get started with Intro to Python at Codecademy</a></div>
+
+<div class="desc" full_text="
+&lt;p&gt;This is a great place to start if you have no programming background at all or want to brush up. If you have programming experience but have never seen Python, you may still want to skim through these lessons. You’ll learn basic programming techniques, such as loops, lists and dictionaries, functions, classes, and file input/ output.&lt;/p&gt;
+" trim_text="
+This is a great place to start if you have no programming background at all or want to brush up. If you have programming exper...&lt;button class='show_more_text'&gt;more&lt;/button&gt;">This is a great place to start if you have no programming background at all or want to brush up. If you have programming exper...<button class="show_more_text">more</button></div>
+</div>
+</div>
+</div>
+
+<div class="level2 each_resource">
+<div class="group_buttons"><label class="checkbox change_progress" data-path="2" id="41"></label></div>
+
+<div class="heading">
+<div class="instruction">
+<div class="hours">30 Minutes</div>
+
+<div class="text"><a href="http://www.codecademy.com/courses/python-intermediate-en-7mgOa/0/1" target="_blank">Complete the Python Statistics Problem Set at Codecademy</a></div>
+
+<div class="desc">
+<p>Get a little extra practice applying the Python skills you just learned.</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="level2 each_resource">
+<div class="group_buttons"><label class="checkbox change_progress" data-path="2" id="42"></label></div>
+
+<div class="heading">
+<div class="instruction">
+<div class="hours">20 - 30 Hours</div>
+
+<div class="text"><a href="https://www.udacity.com/course/cs212" target="_blank">Videos and Problem Sets of Design of Computer Programs at Udacity</a></div>
+
+<div class="desc" full_text="
+&lt;p&gt;Now that you’re ready to move on to more challenging programming exercises, this class will teach you to write elegant and efficient code. This will be essential in order to manipulate data effectively and write code that is reusable and easy for others to understand. You will also learn about some of the more sophisticated Python techniques, such as generator functions and list comprehensions. Watch all videos (include bonus ones) and complete all problem sets. It should take around 20-30 hours.&lt;/p&gt;
+" trim_text="
+Now that you’re ready to move on to more challenging programming exercises, this class will teach you to write elegant and eff...&lt;button class='show_more_text'&gt;more&lt;/button&gt;">Now that you&rsquo;re ready to move on to more challenging programming exercises, this class will teach you to write elegant and eff...<button class="show_more_text">more</button></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="level1 lp_subchapter">
+<header>
+<div data-unique="49-introduction-to-algorithms" name="49-introduction-to-algorithms">&nbsp;</div>
+<span class="no_chapters">15 Hours </span>
+
+<h4 class="strong">Introduction to Algorithms</h4>
+</header>
+
+<div class="description">
+<p>An algorithm is a set of steps that is used to perform a calculation. (For example, to sort a list of numbers you could first go through and find the smallest number and putting at the start of the list, in position 1. Then you could go through the second through last number in the list and place it in position 2, and so on until you have all the numbers in order. This would work but it would not be very efficient.) Studying algorithms will help you evaluate and improve the efficiency of your code. This is essential when you are working with very large datasets.</p>
+
+<div class="level2 each_resource">
+<div class="group_buttons"><label class="checkbox change_progress" data-path="2" id="44"></label></div>
+
+<div class="heading">
+<div class="instruction">
+<div class="hours">15 Hours</div>
+
+<div class="text"><a href="http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-introduction-to-algorithms-sma-5503-fall-2005/index.htm" target="_blank">Watch first four videos of Introduction to Algorithms at MIT OpenCourseWare</a></div>
+
+<div class="desc" full_text="
+&lt;p&gt;You will learn how to determine the efficiency of algorithms in terms of speed and memory. After watching the first four videos, you should attempt the first problem set.&lt;/p&gt;
+" trim_text="
+You will learn how to determine the efficiency of algorithms in terms of speed and memory. After watching the first four video...&lt;button class='show_more_text'&gt;more&lt;/button&gt;">You will learn how to determine the efficiency of algorithms in terms of speed and memory. After watching the first four video...<button class="show_more_text">more</button></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="level1 lp_subchapter">
+<header>
+<div data-unique="51-unix" name="51-unix">&nbsp;</div>
+<span class="no_chapters">1 Hour </span>
+
+<h4 class="strong">Unix</h4>
+</header>
+
+<div class="description">
+<p>Unix is the operating system that Mac is based on. You need to learn how to talk to your computer using the command line.</p>
+
+<div class="level2 each_resource">
+<div class="group_buttons"><label class="checkbox change_progress" data-path="2" id="46"></label></div>
+
+<div class="heading">
+<div class="instruction">
+<div class="hours">1 Hour</div>
+
+<div class="text"><a href="https://class.coursera.org/startup-001/lecture/107" target="_blank">Watch lectures 3 and 4a of Startup Engineering on Coursera</a></div>
+
+<div class="desc">
+<p>You will learn about command line tools, filesystem basics, paths, SSH, SCP, bash, text processing, and other related topics.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="level1 lp_subchapter">
+<header>
+<div data-unique="53-git" name="53-git">&nbsp;</div>
+<span class="no_chapters">1 Hour </span>
+
+<h4 class="strong">Git</h4>
+</header>
+
+<div class="description">
+<p>Git is a version control system. It enables programmers to work together on large projects without overwriting each other&rsquo;s work. Furthermore, it saves old versions of code in case you make a mistake and need to revert back. It can also be a useful portfolio of your programming and analysis projects to show potential employers.</p>
+
+<div class="level2 each_resource">
+<div class="group_buttons"><label class="checkbox change_progress" data-path="2" id="48"></label></div>
+
+<div class="heading">
+<div class="instruction">
+<div class="hours">1 Hour</div>
+
+<div class="text"><a href="https://www.codeschool.com/courses/try-git" target="_blank">Complete Try Git on Code School</a></div>
+
+<div class="desc" full_text="
+&lt;p&gt;Sign up for a Git account and go through the course. (If you like, they also have a more advanced course that you can pay for, but by the time you finish the intro course you should be able to teach yourself the rest of what you need to know.)&lt;/p&gt;
+" trim_text="
+Sign up for a Git account and go through the course. (If you like, they also have a more advanced course that you can pay for,...&lt;button class='show_more_text'&gt;more&lt;/button&gt;">Sign up for a Git account and go through the course. (If you like, they also have a more advanced course that you can pay for,...<button class="show_more_text">more</button></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="level1 lp_subchapter">
+<header>
+<div data-unique="55-sql-and-json" name="55-sql-and-json">&nbsp;</div>
+<span class="no_chapters">10 Hours </span>
+
+<h4 class="strong">SQL and JSON</h4>
+</header>
+
+<div class="description">
+<p>SQL is the most common language for querying (selecting out) data that is stored in a relational database (tables that consist of rows and columns). You should become comfortable querying, grouping, and merging data using SQL.<br />
+<br />
+JSON is another way that data is often stored. It is still semi-structured, but rather than using columns and rows, JSON data is stored as keys and values. The advantage is that it is more flexible and will be more compact for sparse data. On the other hand, it is a bit tricker to work with than data that is stored in a relational database.</p>
+
+<div class="level2 each_resource">
+<div class="group_buttons"><label class="checkbox change_progress" data-path="2" id="50"></label></div>
+
+<div class="heading">
+<div class="instruction">
+<div class="hours">10 Hours</div>
+
+<div class="text"><a href="https://class.stanford.edu/courses/Engineering/db/2014_1/about" target="_blank">Watch the first few videos of Stanford&rsquo;s Introduction to Databases </a></div>
+
+<div class="desc" full_text="
+&lt;p&gt;Watch the videos on Relational Databases, JSON Data, Relational Algebra, and SQL, and complete the exercises for those sections. The course materials are also &lt;a  data-cke-saved-href=&quot;https://www.coursera.org/course/db&quot; href=&quot;https://www.coursera.org/course/db&quot;&gt;archived on Coursera&lt;/a&gt; if you prefer that platform.&lt;/p&gt;
+" trim_text="
+Watch the videos on Relational Databases, JSON Data, Relational Algebra, and SQL, and complete the exercises for those section...&lt;button class='show_more_text'&gt;more&lt;/button&gt;">Watch the videos on Relational Databases, JSON Data, Relational Algebra, and SQL, and complete the exercises for those section...<button class="show_more_text">more</button></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+</div>
+
+<div class="level0 lp_chapter">
+<header><span class="no_chapters">184.5+ Hours </span>
+
+<div data-unique="57-data-analysis" name="57-data-analysis">&nbsp;</div>
+
+<h2>Data Analysis</h2>
+
+<div class="description">
+<p>Now that we have the necessary programming background and tools, we begin with data analysis. We will start with introductory statistics and work our way up to more advanced techniques, including some from machine learning. We will also watch some lectures on data visualization and read some papers on research design.</p>
+</div>
+
+<div class="level1 lp_subchapter">
+<header>
+<div data-unique="58-introductory-statistics-and-probability" name="58-introductory-statistics-and-probability">&nbsp;</div>
+<span class="no_chapters">25 Hours </span>
+
+<h4 class="strong">Introductory Statistics and Probability</h4>
+</header>
+
+<div class="description">
+<div class="level2 each_resource">
+<div class="group_buttons"><label class="checkbox change_progress" data-path="2" id="55"></label></div>
+
+<div class="heading">
+<div class="instruction">
+<div class="hours">25 Hours</div>
+
+<div class="text"><a href="https://www.udemy.com/statistics/#/" target="_blank">Complete Introductory Statistics on Udemy</a></div>
+
+<div class="desc" full_text="
+&lt;p&gt;Get a basic overview of probability with this class. You’ll learn about random samples, the central limit theorem, and a few other of the most important topics in probability. Alternatively, if you have a solid background in college-level calculus and want to pursue a more theoretical and advanced understanding of probability, take this &lt;a  data-cke-saved-href=&quot;https://www.edx.org/course/mitx/mitx-6-041x-introduction-probability-1296#.U3yb762SzIo&quot; href=&quot;https://www.edx.org/course/mitx/mitx-6-041x-introduction-probability-1296#.U3yb762SzIo&quot;&gt;Introduction to Probability&lt;/a&gt; course (150 hours) from MIT. The course takes about covers about random variables, conditional probability, Bayesian inference, Bernoulli and Poisson processes, and Markov chains.&lt;/p&gt;
+" trim_text="
+Get a basic overview of probability with this class. You’ll learn about random samples, the central limit theorem, and a few o...&lt;button class='show_more_text'&gt;more&lt;/button&gt;">Get a basic overview of probability with this class. You&rsquo;ll learn about random samples, the central limit theorem, and a few o...<button class="show_more_text">more</button></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="level1 lp_subchapter">
+<header>
+<div data-unique="60-data-visualization-best-practices" name="60-data-visualization-best-practices">&nbsp;</div>
+<span class="no_chapters">5 Hours </span>
+
+<h4 class="strong">Data Visualization Best Practices</h4>
+</header>
+
+<div class="description">
+<p>Data visualization is an essential skill for sharing results with others, and there&rsquo;s much more to it than just box plots and area graphs.</p>
+
+<div class="level2 each_resource">
+<div class="group_buttons"><label class="checkbox change_progress" data-path="2" id="54"></label></div>
+
+<div class="heading">
+<div class="instruction">
+<div class="hours">5 Hours</div>
+
+<div class="text"><a href="https://www.youtube.com/watch?v=fZswD5RC1G8&amp;list=PLa4VFIBUKrgLao-DalwedOCiq9RV6MPk9" target="_blank">Watch Introduction to Infographics and Data Visualization</a></div>
+
+<div class="desc" full_text="
+&lt;p&gt;This video series comes from a MOOC created by the Knight School of Journalism. (The MOOC itself is not always available online but the video is.) These videos are enjoyable and they make a nice break from the more technically challenging courses in this path. However, while the material in the course may be easy to understand, data visualization is a deeper topic than it seems. These examples should help illuminate what makes a good visualization and give ideas for some more creative ways to display information. You will also learn general principles of graphic design and visual perception.&lt;/p&gt;
+" trim_text="
+This video series comes from a MOOC created by the Knight School of Journalism. (The MOOC itself is not always available onlin...&lt;button class='show_more_text'&gt;more&lt;/button&gt;">This video series comes from a MOOC created by the Knight School of Journalism. (The MOOC itself is not always available onlin...<button class="show_more_text">more</button></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="level1 lp_subchapter">
+<header>
+<div data-unique="62-computing-tools-for-data-analysis-r" name="62-computing-tools-for-data-analysis-r">&nbsp;</div>
+<span class="no_chapters">10 Hours </span>
+
+<h4 class="strong">Computing Tools for Data Analysis: R</h4>
+</header>
+
+<div class="description">
+<p>R has become one of the main tools used by analysts, data scientists, and statisticians. R is both a statistical software package and a full computer programming language. It was designed so that non-programmers can start off as users and gradually work up to building their own functions.</p>
+
+<div class="level2 each_resource">
+<div class="group_buttons"><label class="checkbox change_progress" data-path="2" id="57"></label></div>
+
+<div class="heading">
+<div class="instruction">
+<div class="hours">5 Hours</div>
+
+<div class="text"><a href="http://tryr.codeschool.com/" target="_blank">Complete Try R on Code School</a></div>
+
+<div class="desc">
+<p>In this friendly and quick introduction to R, you&rsquo;ll go through the basics of R: data types, summary statistics, functions, and control structures.</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="level2 each_resource">
+<div class="group_buttons"><label class="checkbox change_progress" data-path="2" id="58"></label></div>
+
+<div class="heading">
+<div class="instruction">
+<div class="hours">5 Hours</div>
+
+<div class="text"><a href="http://cran.r-project.org/doc/manuals/R-intro.html" target="_blank">Skim through An Introduction to R from the R-Project</a></div>
+
+<div class="desc" full_text="
+&lt;p&gt;Learn more in depth R topics: reading/writing data, control simulation and modeling, plotting, object oriented programming, regular expressions, and more. You’ll get more hands-on practice in the next section.&lt;/p&gt;
+" trim_text="
+Learn more in depth R topics: reading/writing data, control simulation and modeling, plotting, object oriented programming, re...&lt;button class='show_more_text'&gt;more&lt;/button&gt;">Learn more in depth R topics: reading/writing data, control simulation and modeling, plotting, object oriented programming, re...<button class="show_more_text">more</button></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="level1 lp_subchapter">
+<header>
+<div data-unique="65-analyzing-data-sets" name="65-analyzing-data-sets">&nbsp;</div>
+<span class="no_chapters">100 Hours </span>
+
+<h4 class="strong">Analyzing Data Sets</h4>
+</header>
+
+<div class="description">
+<p>Now that you have some background in statistics and knowledge of tools, it&rsquo;s time to get some practice with analyzing data sets.</p>
+
+<div class="level2 each_resource">
+<div class="group_buttons"><label class="checkbox change_progress" data-path="2" id="60"></label></div>
+
+<div class="heading">
+<div class="instruction">
+<div class="hours">100 Hours</div>
+
+<div class="text"><a href="https://www.edx.org/course/mitx/mitx-15-071x-analytics-edge-1416#.U3ygT62SzIo" target="_blank">Complete MIT&rsquo;s The Analytics Edge on EdX</a></div>
+
+<div class="desc" full_text="
+&lt;p&gt;The material in this course particularly exemplifies the day-to-day work of a data analyst. It will give you a chance to try modeling, linear and logistic regression, trees, text analysis, clustering, and linear optimization on real datasets.&lt;/p&gt;
+" trim_text="
+The material in this course particularly exemplifies the day-to-day work of a data analyst. It will give you a chance to try m...&lt;button class='show_more_text'&gt;more&lt;/button&gt;">The material in this course particularly exemplifies the day-to-day work of a data analyst. It will give you a chance to try m...<button class="show_more_text">more</button></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="level1 lp_subchapter">
+<header>
+<div data-unique="67-python-data-tools" name="67-python-data-tools">&nbsp;</div>
+<span class="no_chapters">10+ Hours </span>
+
+<h4 class="strong">Python Data Tools</h4>
+</header>
+
+<div class="description">
+<p>Now that you&rsquo;ve learned more about statistics and machine learning, check out some of the Python libraries that are specific to data manipulation, such as Pandas, Scipy, Numpy, and Scikit- learn.</p>
+
+<div class="level2 each_resource">
+<div class="group_buttons"><label class="checkbox change_progress" data-path="2" id="62"></label></div>
+
+<div class="heading">
+<div class="instruction">
+<div class="hours">10 Minutes</div>
+
+<div class="text"><a href="http://pandas.pydata.org/pandas-docs/stable/10min.html" target="_blank">Read this 10-minute Introduction to Pandas</a></div>
+
+<div class="desc">&nbsp;</div>
+</div>
+</div>
+</div>
+
+<div class="level2 each_resource">
+<div class="group_buttons"><label class="checkbox change_progress" data-path="2" id="63"></label></div>
+
+<div class="heading">
+<div class="instruction">
+<div class="hours">10 Hours</div>
+
+<div class="text"><a href="http://www.scipy.org/install.html" target="_blank">Install and explore SciPy and Numpy libraries</a></div>
+
+<div class="desc" full_text="
+&lt;p&gt;First, read and install Scipy and Numpy. Then find a csv dataset that interests you, read it in to Python, and explore it using those libraries. Look for trends and make some graphs.&lt;/p&gt;
+" trim_text="
+First, read and install Scipy and Numpy. Then find a csv dataset that interests you, read it in to Python, and explore it usin...&lt;button class='show_more_text'&gt;more&lt;/button&gt;">First, read and install Scipy and Numpy. Then find a csv dataset that interests you, read it in to Python, and explore it usin...<button class="show_more_text">more</button></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="level1 lp_subchapter">
+<header>
+<div data-unique="70-research-design" name="70-research-design">&nbsp;</div>
+<span class="no_chapters">4.5+ Hours </span>
+
+<h4 class="strong">Research Design</h4>
+</header>
+
+<div class="description">
+<p>Research design is a plan to study a scientific or social science problem. Some common examples of research designs include surveys, interviewing, A/B testing, longitudinal studies, and many more. There are many important things to consider when creating a research design in order to make sure you can safely interpret your results the way you intend. For example, let&rsquo;s say you want to study whether a certain fertilizer is effective. Before you can conduct and experiment and analyze results, you have to decide what you mean by effective and figure out essential details like how many soil samples to observe. In other example, if you conduct a survey, you have to ensure that the questions you ask are unbiased and will be interpreted by your subjects in a way that is consistent with your intentions.</p>
+
+<div class="level2 each_resource">
+<div class="group_buttons"><label class="checkbox change_progress" data-path="2" id="65"></label></div>
+
+<div class="heading">
+<div class="instruction">
+<div class="hours">1 Hour</div>
+
+<div class="text"><a href="http://www.nyu.edu/classes/bkg/methods/005847ch1.pdf" target="_blank">Read this Chapter from an NYU professor&rsquo;s book on Research Design</a></div>
+
+<div class="desc">&nbsp;</div>
+</div>
+</div>
+</div>
+
+<div class="level2 each_resource">
+<div class="group_buttons"><label class="checkbox change_progress" data-path="2" id="66"></label></div>
+
+<div class="heading">
+<div class="instruction">
+<div class="hours">1 Hour</div>
+
+<div class="text"><a href="http://unstats.un.org/unsd/demographic/sources/surveys/Handbook23June05.pdf" target="_blank">Read Paper on Designing Survey Samples from the UN Department of Economic and Social Affairs</a></div>
+
+<div class="desc">
+<p>A paper from the UN Department of Economic and Social Affairs that provides guidelines for designing survey studies.</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="level2 each_resource">
+<div class="group_buttons"><label class="checkbox change_progress" data-path="2" id="67"></label></div>
+
+<div class="heading">
+<div class="instruction">
+<div class="hours">1 Hour</div>
+
+<div class="text"><a href="http://poq.oxfordjournals.org/content/61/4/576" target="_blank">Read &ldquo;Does Conversational Interviewing Reduce Survey Measurement Error?&rdquo;</a></div>
+
+<div class="desc">
+<p>A paper on interviewing and user research techniques by professors at The New School.</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="level2 each_resource">
+<div class="group_buttons"><label class="checkbox change_progress" data-path="2" id="68"></label></div>
+
+<div class="heading">
+<div class="instruction">
+<div class="hours">30 Minutes</div>
+
+<div class="text"><a href="http://www.wired.com/2012/04/ff_abtesting/" target="_blank">Read &ldquo;The A/B Test: Inside the Technology That&rsquo;s Changing the Rules of Business&rdquo; on Wired</a></div>
+
+<div class="desc">
+<p>A long read on the emergence of the A/B test.</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="level2 each_resource">
+<div class="group_buttons"><label class="checkbox change_progress" data-path="2" id="69"></label></div>
+
+<div class="heading">
+<div class="instruction">
+<div class="hours">1 Hour</div>
+
+<div class="text"><a href="http://www.nytimes.com/2007/09/16/magazine/16epidemiology-t.html?_r=0" target="_blank">Read &ldquo;Do We Really Know What Makes Us Healthy?&rdquo; in the New York Times</a></div>
+
+<div class="desc">
+<p>A long read about the complexities of medical research design.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="level1 lp_subchapter">
+<header>
+<div data-unique="76-machine-learning" name="76-machine-learning">&nbsp;</div>
+<span class="no_chapters">30 Hours </span>
+
+<h4 class="strong">Machine Learning</h4>
+</header>
+
+<div class="description">
+<p>Let&rsquo;s say you have a lot of emails, and you want to know which ones are spam and which ones are not. How would you use the text of the emails to find patterns that computers could use to automatically detect spam? This is a classic problem in machine learning, the &ldquo;construction and study of systems that can learn from data.&rdquo;1 One general approach is this: take some example emails, some of which are spam, and split it in half. Count which words are common in both the spam and non-spam emails in the first half of the data, and use that to &ldquo;train&rdquo; a model of what words to expect when a new unknown email comes in. Then you can check how good your prediction was on the second &ldquo;test&rdquo; set of data that you did not use to train your model, and use statistics to assess your model.</p>
+
+<div class="level2 each_resource">
+<div class="group_buttons"><label class="checkbox change_progress" data-path="2" id="71"></label></div>
+
+<div class="heading">
+<div class="instruction">
+<div class="hours">30 Hours</div>
+
+<div class="text"><a href="http://online.stanford.edu/course/statistical-learning-winter-2014" target="_blank">Complete Statistical Learning at Stanford Online</a></div>
+
+<div class="desc" full_text="
+&lt;p&gt;This fantastic class focuses on some practical techniques to conduct machine learning. The lecturers also wrote the &lt;a  data-cke-saved-href=&quot;http://statweb.stanford.edu/~tibs/ElemStatLearn/&quot; href=&quot;http://statweb.stanford.edu/~tibs/ElemStatLearn/&quot;&gt;textbook&lt;/a&gt; for this course, which is available for free online. Topics include regression techniques, classification, cross-validation, model selection, tree-based methods, and support vectors machines.&lt;/p&gt;
+" trim_text="
+This fantastic class focuses on some practical techniques to conduct machine learning. The lecturers also wrote the textbook f...&lt;button class='show_more_text'&gt;more&lt;/button&gt;">This fantastic class focuses on some practical techniques to conduct machine learning. The lecturers also wrote the textbook f...<button class="show_more_text">more</button></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+</div>
+
+<div class="level0 lp_chapter">
+<header><span class="no_chapters">75 Hours </span>
+
+<div data-unique="78-elective-tracks-optional" name="78-elective-tracks-optional">&nbsp;</div>
+
+<h2>Elective Tracks (Optional)</h2>
+
+<div class="description">
+<p>Great job making it this far through the learning path. By now, you have a solid understanding of programming and statistics, and you know how to manipulate data, analyze it, and display results in graphs and charts.<br />
+<br />
+Now it&rsquo;s time to expand your knowledge in an area of your choice. You can get practice building interactive visualizations; learn to analyze social networks and graphs; or become a big data expert with a course on Hadoop and MapReduce. Feel free to do more than one!</p>
+</div>
+
+<div class="level1 lp_subchapter">
+<header>
+<div data-unique="79-visualizing-data" name="79-visualizing-data">&nbsp;</div>
+<span class="no_chapters">15 Hours </span>
+
+<h4 class="strong">Visualizing Data</h4>
+</header>
+
+<div class="description">
+<p>Sometimes the best way to understand information is to visualize it so that you can look at it directly. This can go far beyond basic charts and graphics. For example, the New York Times is famous for building <a href="http://www.smallmeans.com/new-york-times-infographics/" target="_blank">useful and informative interactive visualizations</a> to predict who might win the next election or to show changing patterns of speech in US presidential speeches over time. Continue your study of the display of information to become an expert at creating beautiful and useful visualizations.<br />
+<br />
+In this section, we cover two different libraries that can be used for data visualization: Javascript D3 and Processing. Whether you learn D3 or Processing, as a final demonstration of your newly acquired skills, you should build an animated visualization that takes in a streaming dataset and meaningfully displays it. (It can be either interactive or not.)</p>
+
+<div class="level2 each_resource">
+<div class="group_buttons"><label class="checkbox change_progress" data-path="2" id="74"></label></div>
+
+<div class="heading">
+<div class="instruction">
+<div class="hours">1 Hour</div>
+
+<div class="text"><a href="http://www.informationisbeautifulawards.com/2013-longlist/data-visualization/" target="_blank">Check out some award-winning data visualizations </a></div>
+
+<div class="desc" full_text="
+&lt;p&gt;Take an hour or so to study 8-10 of these from across the Data Visualization and Interactive categories. Make sure you understand what the visualization is showing and what makes it effective. Then, for a humorous look at what not to do, check out some of the examples at &lt;a  data-cke-saved-href=&quot;http://wtfviz.net/&quot; href=&quot;http://wtfviz.net/&quot;&gt;WTF Visualizations&lt;/a&gt;.&lt;/p&gt;
+" trim_text="
+Take an hour or so to study 8-10 of these from across the Data Visualization and Interactive categories. Make sure you underst...&lt;button class='show_more_text'&gt;more&lt;/button&gt;">Take an hour or so to study 8-10 of these from across the Data Visualization and Interactive categories. Make sure you underst...<button class="show_more_text">more</button></div>
+</div>
+</div>
+</div>
+
+<div class="level2 each_resource">
+<div class="group_buttons"><label class="checkbox change_progress" data-path="2" id="75"></label></div>
+
+<div class="heading">
+<div class="instruction">
+<div class="hours">4 Hours</div>
+
+<div class="text"><a href="https://www.youtube.com/watch?v=n5NcCoa9dDU&amp;list=UUNYL0ZF2j8-OSGZ4iHBLNPA" target="_blank">Watch this video series on the D3 Javascript library</a></div>
+
+<div class="desc" full_text="
+&lt;p&gt;Now that you have seen some different creative ways to display data, it is time to learn some tools to create your own. To become an expert at creating data visualizations beyond the capabilities of R, you can learn D3, a JavaScript library. This useful video series teaches the basics, such as handling data and graphing.&lt;/p&gt;
+" trim_text="
+Now that you have seen some different creative ways to display data, it is time to learn some tools to create your own. To bec...&lt;button class='show_more_text'&gt;more&lt;/button&gt;">Now that you have seen some different creative ways to display data, it is time to learn some tools to create your own. To bec...<button class="show_more_text">more</button></div>
+</div>
+</div>
+</div>
+
+<div class="level2 each_resource">
+<div class="group_buttons"><label class="checkbox change_progress" data-path="2" id="76"></label></div>
+
+<div class="heading">
+<div class="instruction">
+<div class="hours">10 Hours</div>
+
+<div class="text"><a href="http://www.processing.org/tutorials/" target="_blank">Complete these tutorials on using Processing for visualizations</a></div>
+
+<div class="desc" full_text="
+&lt;p&gt;Another option for data visualization is the language Processing. Processing is designed to make it easy to create interactive visual computer programs. You can easily take in a stream of live data and create an animation that changes in time based on the data. Processing is based on Java, so if you are familiar with that, it could be a good choice. These tutorials teach the use of Processing for both static and interactive visualizations.&lt;/p&gt;
+" trim_text="
+Another option for data visualization is the language Processing. Processing is designed to make it easy to create interactive...&lt;button class='show_more_text'&gt;more&lt;/button&gt;">Another option for data visualization is the language Processing. Processing is designed to make it easy to create interactive...<button class="show_more_text">more</button></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="level1 lp_subchapter">
+<header>
+<div data-unique="83-analyzing-social-networks" name="83-analyzing-social-networks">&nbsp;</div>
+<span class="no_chapters">30 Hours </span>
+
+<h4 class="strong">Analyzing Social Networks</h4>
+</header>
+
+<div class="description">
+<p>You may have heard that almost all people in the world are within <a href="http://en.wikipedia.org/wiki/Six_degrees_of_separation" target="_blank">six degrees of separation</a> of each other, but do you know why? You&rsquo;ll find out in this section!</p>
+
+<div class="level2 each_resource">
+<div class="group_buttons"><label class="checkbox change_progress" data-path="2" id="78"></label></div>
+
+<div class="heading">
+<div class="instruction">
+<div class="hours">30 Hours</div>
+
+<div class="text"><a href="https://www.coursera.org/course/sna" target="_blank">Complete Social Network Analysis on Coursera</a></div>
+
+<div class="desc" full_text="
+&lt;p&gt;You will learn about Social Network Analysis and many other fascinating problems. Topics include measuring random graph models, centrality of a particular node in a network, community structure, and network resilience. Some of the topics have several lecture options with more and less math-intensive discussions.&lt;/p&gt;
+" trim_text="
+You will learn about Social Network Analysis and many other fascinating problems. Topics include measuring random graph models...&lt;button class='show_more_text'&gt;more&lt;/button&gt;">You will learn about Social Network Analysis and many other fascinating problems. Topics include measuring random graph models...<button class="show_more_text">more</button></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="level1 lp_subchapter">
+<header>
+<div data-unique="85-big-data-hadoop-and-mapreduce" name="85-big-data-hadoop-and-mapreduce">&nbsp;</div>
+<span class="no_chapters">30 Hours </span>
+
+<h4 class="strong">Big Data: Hadoop and MapReduce</h4>
+</header>
+
+<div class="description">
+<p>The scale of data today is very large, and it is getting larger. To process and analyze very large datasets, special techniques must be used to do some of the computations in parallel across many machines. Tech companies like Facebook use Hadoop to handle data on this scale: Hadoop is used in every Facebook product and in a variety of ways. User actions such as a &quot;like&quot; or a status update are stored in a highly distributed, customized MySQL database, but applications such as Facebook Messaging run on top of HBase, Hadoop&#39;s NoSQL database framework. All messages sent on desktop or mobile are persisted to HBase. Additionally, the company uses Hadoop and Hive to generate reports for third-party developers and advertisers who need to track the success of their applications or campaigns.</p>
+
+<div class="level2 each_resource">
+<div class="group_buttons"><label class="checkbox change_progress" data-path="2" id="80"></label></div>
+
+<div class="heading">
+<div class="instruction">
+<div class="hours">15 Hours</div>
+
+<div class="text"><a href="http://bigdatauniversity.com/courses/course/view.php?id=516&amp;justenroled=1" target="_blank">Complete this course on Big Data University</a></div>
+
+<div class="desc">
+<p>Continue your study of Big Data by learning about the different parts of a MapReduce in more detail and get additional practice writing code.</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="level2 each_resource">
+<div class="group_buttons"><label class="checkbox change_progress" data-path="2" id="81"></label></div>
+
+<div class="heading">
+<div class="instruction">
+<div class="hours">15 Hours</div>
+
+<div class="text"><a href="http://bigdatauniversity.com/courses/course/view.php?id=526&amp;justenroled=1" target="_blank">Complete MapReduce Programming on Big Data University</a></div>
+
+<div class="desc">
+<p>Continue your study of Big Data by learning about the different parts of a MapReduce in more detail and get additional practice writing code.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+</div>
+
+<div class="level0 lp_chapter">
+<header>
+<div data-unique="88-capstone-projects" name="88-capstone-projects">&nbsp;</div>
+
+<h2>Capstone Projects</h2>
+
+<div class="description">
+<p>The final project is to analyze a set of data, create graphs, and draw conclusions. Choose a set of data of your choice, and then use either R or Python to analyze it. You can choose a dataset from <a href="http://datamob.org/datasets" target="_blank">Datamob</a> or anywhere else you like. You could look at <a href="http://datamob.org/datasets/show/new-york-city-subway-data" target="_blank">NYC Subway data</a> on which trains were late; <a href="http://datamob.org/datasets/show/integrated-postsecondary-education-data-system-ipeds-data-feedback-report" target="_blank">US college admissions data</a>; or <a href="http://datamob.org/datasets/show/cornell-movie-review-data" target="_blank">movie reviews</a>. The only requirement is that it includes at least several thousand observations.<br />
+<br />
+Once you choose a dataset that interests you, look through the variables and choose one or more variables that you want to predict based on three more more other variables. Download the dataset in CSV, JSON, TXT, or XML format. Answer your research question(s) by going through the complete research process:<br />
+1. Formulate research question(s)<br />
+2. Design and implement a study (or in our case, acquire study data)<br />
+3. Examine the data for problems<br />
+4. Carry out preliminary and then formal analyses<br />
+5. Interpret and present results<br />
+<br />
+Make sure to use good research practices, such as recording all notes and methodology along the way in a research journal. Test your model out on test data. You should make sure to use or discuss all of the following in your project:<br />
+1. Research design<br />
+2. Independent and dependent variables<br />
+3. Qualitative and quantitative variables<br />
+4. Regression (any type)<br />
+5. Machine learning<br />
+6. Cross-validation (any type)<br />
+7. Null hypothesis testing<br />
+8. Sample size<br />
+9. At least three different kinds of graphs<br />
+<br />
+Where possible, showcase skills you learned in the elective(s) as well.<br />
+<br />
+Your finished project should be a write-up of your research process and findings. Put your final project into a public folder in Github (along with your code, of course!).<br />
+<br />
+In preparation for this capstone project, one optional final brief review is available. The last week of this <a href="https://class.coursera.org/introstats-001/lecture" target="_blank">Coursera Data Analysis class</a> goes through a basic data analysis problem, from formulating a question through analyzing data and drawing conclusions. If you like, watch lectures 8.1 through 8.4, which give a starting point for what you should do in your capstone project. Of course, you will also go farther in the capstone project, using some of the other techniques that we have covered in this class.</p>
+</div>
+</header>
+</div>
+
+<div class="level0 lp_chapter">
+<header>
+<div data-unique="89-closing-notes" name="89-closing-notes">&nbsp;</div>
+
+<h2>Closing Notes</h2>
+
+<div class="description">
+<p>Congratulations! You&rsquo;ve made it through the Data Analysis learning path. You are now ready to go off into the messy world of data and come back with brilliant results.<br />
+<br />
+Feedback is welcome. If you know of better resources on any of the topics in this path, tell us!<br />
+<br />
+Finally, we know that these aren&rsquo;t the only resources out there. If you know of better ones, please let us know. And, you can use SlideRule to <a href="http://www.mysliderule.com/search" target="_blank">search for online learning resources</a> on any subject, like you have in the past.<br />
+<br />
+<strong>Additional Resources</strong></p>
+
+<p><a href="http://www.codecademy.com/glossary/python#variables" target="_blank">Python glossary</a><br />
+<a href="http://www.rstudio.com/" target="_blank">R Studio</a> (an IDE for R)<br />
+<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank">HTML Reference</a><br />
+<a href="http://google-styleguide.googlecode.com/svn/trunk/Rguide.xml" target="_blank">R Style Guide from Google</a></p>
+</div>
+</header>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</section>
+</body>
+</html>
