@@ -146,4 +146,4 @@ In Automate the Boring Stuff with Python, you'll learn how to use Python to writ
 - [What is data Scientist](what%20is%20data%20scientist.md)
 - How to install logstash on a windows server with kibana in IIS - https://community.ulyaoth.net/threads/how-to-install-logstash-on-a-windows-server-with-kibana-in-iis.17/
 - Logstash - http://logstash.net/docs/1.4.2/
-- [Data Analysis Learning path]('Data Analysis Learning Path | SlideRule.html') on Sliderule
+- [Data Analysis Learning path](Data Analysis Learning Path | SlideRule.html) on Sliderule
