@@ -1,4 +1,4 @@
-[Problem Solving](http://techbus.safaribooksonline.com/9781491921685)  35 mins
+[Problem Solving - The missing ingredient for new programmers](http://techbus.safaribooksonline.com/9781491921685)  35 mins
 
 The real challenge of programming isn't learning a language's syntax—it's learning to creatively solve problems so you can build something great. In this one-of-a-kind webcast, author V. Anton Spraul breaks down some of the ways that programmers solve problems and teaches you how to 'Think Like a Programmer'.In this webcast we answer the questions:
     - What is "problem solving" for programmers, and why is it so important?
@@ -104,7 +104,7 @@ Description:
 Enterprise data grows over 65% a year. Last year, non-productive information work—reformatting, data entry, and so on—consumed more than US$1.5 Trillion. Yet companies continue to pour billions into human-driven paper-to-digital processes.
 
 ----
-R-DAy 
+R-Day 
 
 [An Easy System for Data Wrangling With tidyr and dplyr - Garrett Grolemund - Part 1](http://techbus.safaribooksonline.com/9781491924143#) 46 mins
 Description: 
@@ -155,5 +155,228 @@ Description:
 
 scikit-learn has emerged as one of the most popular open source machine learning toolkits, now widely used in academia and industry. scikit-learn provides easy-to-use interfaces to perform advanced analysis and build powerful predictive models. The tutorial will cover basic concepts of machine learning, such as supervised and unsupervised learning, cross validation and model selection. We will see how to prepare data for machine learning, and go from applying a single algorithm to building a machine learning pipeline. Material (probably notebooks and slides) will be made available here: https://github.com/amueller/pydata-strata-2015
 
-----
-incomplete...
+--
+Machine Learning with scikit-learn - Andreas Mueller - Part 2 - 40 mins
+
+--
+Slicing Through Data with NumPy - Jennifer Klay - Part 2 - 30 mins
+Description: 
+
+In this tutorial, attendees will learn the basics of the NumPy library and how it can be used to enable fast analysis of a wide spectrum of numerical datasets. Basics of array creation, slicing, broadcasting, and masking will be introduced and several hands-on examples of their use in data analysis will be shown. The tutorial will be presented using Python 2.7 in the IPython notebook. A basic 
+installation of Anaconda should be sufficient.
+
+--
+Intro to Numba and Performance Python - Travis Oliphant - Part 1 - 45 mins
+Description: 
+
+Numba is a just-in-time compiler for Python that can translate a wide range of Python functions into high performance machine code at runtime. This tutorial will give an overview of the capabilities of the Numba compiler and walk through several examples showing how to use Numba to generate fast implementations of numerical algorithms from pure Python. We will briefly touch on more advanced features of Numba, such as compiling for the GPU, at the end. Materials: A basic installation of Anaconda. Example IPython notebooks will be posted to GitHub before the tutorial.
+ 
+--
+Intro to Numba and Performance Python - Travis Oliphant - Part 2 - 40 mins
+Description: 
+
+Numba is a just-in-time compiler for Python that can translate a wide range of Python functions into high performance machine code at runtime. This tutorial will give an overview of the capabilities of the Numba compiler and walk through several examples showing how to use Numba to generate fast implementations of numerical algorithms from pure Python. We will briefly touch on more advanced features of Numba, such as compiling for the GPU, at the end. Materials: A basic installation of Anaconda. Example IPython notebooks will be posted to GitHub before the tutorial.
+
+--
+Python Data Applications with Blaze and Bokeh - Andy Terrel and Matthew Rocklin - Part 1  - 45 mins
+Description: 
+
+We use the Blaze and Bokeh libraries to interactively query and visualize large datasets through Python. Blaze provides a consistent query experience on data ranging from a small local CSV files to a large remote Impala or Spark clusters. It automates data migration and brings the power of other database systems into the hands of the armchair analyst. Bokeh is a Python interactive visualization library that targets modern web browsers for presentation. It provides elegant, concise construction of novel graphics in the style of D3.js, but also delivers this capability with high-performance interactivity over large or streaming datasets. Tutorial materials at github.com/ContinuumIO/pydata-strata-2014-sj We also recommend downloading Anaconda
+
+Example Files: Available on Extras tab
+
+--
+Python Data Applications with Blaze and Bokeh - Andy Terrel and Matthew Rocklin - Part 2 - 40 mins
+Description: 
+
+We use the Blaze and Bokeh libraries to interactively query and visualize large datasets through Python. Blaze provides a consistent query experience on data ranging from a small local CSV files to a large remote Impala or Spark clusters. It automates data migration and brings the power of other database systems into the hands of the armchair analyst. Bokeh is a Python interactive visualization library that targets modern web browsers for presentation. It provides elegant, concise construction of novel graphics in the style of D3.js, but also delivers this capability with high-performance interactivity over large or streaming datasets. Tutorial materials at github.com/ContinuumIO/pydata-strata-2014-sj We also recommend downloading Anaconda
+
+-- 
+Analytics Beyond the Basics with pandas and SQL - Wes McKinney - Part 1 - 42-mins
+Description: 
+
+In this tutorial, we’ll take a tour through a variety of useful, but sometimes tricky analytical tasks and show how they can be tackled with pandas or SQL. A part of the goal is to illustrate how SQL concepts map onto the pandas API and vice versa, and for the participant to learn more about advanced usage of each of the tools. Materials will be posted at http://github.com/wesm/strata-sj-2015
+
+--
+Analytics Beyond the Basics with pandas and SQL - Wes McKinney - Part 2 - 40-mins
+Description: 
+
+In this tutorial, we’ll take a tour through a variety of useful, but sometimes tricky analytical tasks and show how they can be tackled with pandas or SQL. A part of the goal is to illustrate how SQL concepts map onto the pandas API and vice versa, and for the participant to learn more about advanced usage of each of the tools. Materials will be posted at http://github.com/wesm/strata-sj-2015
+
+-- 
+GraphLab
+Large-scale Machine Learning Day - Yucheng Low - Part 2  - 35-mins
+Description: 
+
+Yucheng Low is a co-founder and Chief Architect of GraphLab Inc. He led the development of the SFrames and SGraphs scalable datastructures underpinning the GraphLab Create Product. He completed his PhD in Machine Learning in 2013 from Carnegie Mellon University advised by Prof. Carlos Guestrin where he studied parallel and distributed systems for large scale Machine Learning. As part of his thesis work he also co-developed the open source PowerGraph system for distributed Machine Learning which has achieved state of art performance on a variety of benchmarks.
+
+-- 
+Large-scale Machine Learning Day - Yucheng Low - Part 3  25-mins
+Description: 
+
+Yucheng Low is a co-founder and Chief Architect of GraphLab Inc. He led the development of the SFrames and SGraphs scalable datastructures underpinning the GraphLab Create Product. He completed his PhD in Machine Learning in 2013 from Carnegie Mellon University advised by Prof. Carlos Guestrin where he studied parallel and distributed systems for large scale Machine Learning. As part of his thesis work he also co-developed the open source PowerGraph system for distributed Machine Learning which has achieved state of art performance on a variety of benchmarks.
+
+--
+Large-scale Machine Learning Day - Alice Zheng - Part 4  30-mins
+Description: 
+
+Alice is the Director of Data Science at Dato (formerly called GraphLab), a Seattle-based startup that offers powerful large-scale machine learning and graph analytics tools. She loves playing with data and enabling others to play with data. She is a tool builder and an expert in Machine Learning algorithms. Her research spans software diagnosis, computer network security, and social network analysis. Prior to joining GraphLab, she was a researcher at Microsoft Research, Redmond. She holds Ph.D. and B.A. degrees in Computer Science, and a B.A. in Mathematics, all from U.C. Berkeley.
+
+--
+Large-scale Machine Learning Day - Chris DuBois - Part 5 38-mins
+Description: 
+
+Chris DuBois is a data scientist focused on building tools for other data scientists. At Dato, he has helped design and implement tools for creating recommendation systems as well as large-scale text analysis. His current work makes it simpler to train models that generalize well. After studying Applied Mathematics at Pomona College, he obtained a Ph.D. in Statistics from University of California, Irvine, where he researched latent variable models for social network data occurring over time.
+
+--
+Large-scale Machine Learning Day - Alice Zheng - Part 6 40-mins
+Description: 
+
+Alice is the Director of Data Science at Dato (formerly called GraphLab), a Seattle-based startup that offers powerful large-scale machine learning and graph analytics tools. She loves playing with data and enabling others to play with data. She is a tool builder and an expert in Machine Learning algorithms. Her research spans software diagnosis, computer network security, and social network analysis. Prior to joining GraphLab, she was a researcher at Microsoft Research, Redmond. She holds Ph.D. and B.A. degrees in Computer Science, and a B.A. in Mathematics, all from U.C. Berkeley.
+
+-- 
+Large-scale Machine Learning Day - Shawn Scully - Part 7  55-mins
+Description: 
+
+Shawn is the Director of Product at Dato where he helps make it easy to build cool experiences with data. He is data geeky and loves inspired technologies, businesses, and gadgets. His technical background spans recommendation systems and business analytics, physics simulations, and energy. He holds a PhD in Materials Science from Stanford University and a BA in Physics from Cornell University.
+
+=====
+Sponsored
+Large-scale Machine Learning Day - Shawn Scully - Part 7 35-mins
+Description: 
+
+Shawn is the Director of Product at Dato where he helps make it easy to build cool experiences with data. He is data geeky and loves inspired technologies, businesses, and gadgets. His technical background spans recommendation systems and business analytics, physics simulations, and energy. He holds a PhD in Materials Science from Stanford University and a BA in Physics from Cornell University.
+
+--
+Tackling the World’s Biggest Data: Human Data - Richard Caudle - 30-mins
+Description: 
+
+This session will outline strategies for cost effectively turning enormous streams of Social Data into intelligence for use in any application.
+
+--
+PostgreSQL Rising: The Other Elephant in the Room - Ozgun Erdogan 40-mins
+Description: 
+
+PostgreSQL has recently become the most popular database for technology companies. In part, it owes this success to rethinking the monolithic SQL database, and providing an extensible architecture instead. In this talk, we will describe key challenges associated with scaling out SQL. We will then show PostgreSQL extensions that overcome these challenges, and describe how they do so.
+
+--
+Your First Big Data Application on AWS - Rahul Pathak -30-mins
+Description: 
+
+Join us as we explore the big data services of AWS and watch a speaker-led tutorial and a link to a lab in which you can take with you.
+
+--
+Data Science: Where are We Going? - DJ Patil - 15-mins
+Description: 
+
+Data Science, where are we going? What impact can we expect?
+
+--
+Year Zero: How We’ll Run Our Lives in Ten Years’ Time - Alistair Croll - 5-mins
+Description: 
+
+Roughly every decade, some kind of military or enterprise technology makes its way into the mainstream: the personal computer; the consumer Internet; the mobile phone; the Internet of Things. What happens when Big Data turns into a consumer product? Strata chair Alistair Croll offers some speculation about what data will do to the way we live, love, work, and play.
+
+--
+**Solutions Showcase Theater**
+
+The Briefcase Cluster - Enabling Big Data Everywhere - Jim Scott 0:08:37
+
+--
+Why Event Analytics Matter - Rohit Shrivastava 0:10:41
+
+--
+Cracking the Data Conundrum - Steffin Harris 0:11:42
+
+--
+Smart Data for Smarter Utilities - Irshad Raihan 0:08:33
+
+--
+The Value of Churn Analytics at Cisco - Ivan Chen and Phil Hodsdon 0:12:57
+
+--
+Harnessing Big Social Data to Deliver Human Data Intelligence - Jason Rose 0:09:32
+
+--
+Multimedia Giant Turns Big Data into Real-Time Customer Insights - Brian Garrett 0:10:27
+
+--
+Data Wrangling in the Wild - Sean Ma 0:10:02
+
+--
+Gaining Value From Data Where It's Born - Ryan Peterson 0:07:21
+
+--
+Build a Foundation for Self-Service Data Prep, Analytics, and Governance - Oliver Claude 0:09:05
+
+--
+Connecting the Big-Data Driven Enterprise in Online Retail - Ashley Stirrup 0:07:24
+
+--
+Taming Data Variety: Intelligent Solutions Using Machine Learning and Expert Crowdsourcing - Alan Wagner 0:08:18
+
+--
+The Emergence of the Data Refinery - Chuck Yarbrough 0:12:28
+
+--
+Big Data Cluster Planning and Optimization Using Wolf Island Simulation Technology - Laurent Isenegger 0:10:37
+
+--
+Close the Skills Gap and Deliver Rapid Business Value with Big Data Apps - Manan Goel 0:10:46
+
+--
+Distributed R - Scaling the R Language for Even Bigger Data - Sunil Venkayala 0:10:51
+
+--
+Data Warehousing in the Cloud - Jon Bock 0:10:12
+
+--
+Proactive Product Intelligence for Electronics - Rami Lokas 0:12:29
+
+--
+Big Data vs. Climate Change - Srivatsan Ramanujam and John Cardente 0:11:13
+
+--
+Power Tools for Big Data Analytics - Dan Steinberg 0:10:53
+
+--
+Big Data on OpenStack - Kirk Lewis and Frank Rego 0:13:00
+
+--
+Dato Enables Large-Scale Deduplication at Zillow using GraphLab Create - Rajat Arya 0:08:04
+
+--
+To Catch a Thief with Big Data - Kevin Petrie 0:12:24
+
+--
+Predicting The Future To Improve Customer Satisfaction - Joe Rossi 0:08:38
+
+--
+The Practical, Profitable Magic of Prescriptive Analytics - Andy Flint 0:09:23
+
+--
+Changing the Culture Around Data: Empowering More People with Analytics - Gary Cottrell 0:09:53
+
+--
+How Havas Media Found New Revenue Streams with UNIFi Software - Sean Keenan 0:06:41
+
+--
+What Enterprises Can Learn From Real-Time Bidding - Peter Corless 0:10:49
+
+--
+Big Data and the Data Quality Imperative - Ed Wrazen 0:11:53
+
+--
+Tapjoy Scales and Saves Costs with Riak - Tom Sigler 0:09:34
+
+--
+Jagex Game Studio Case Study - Gregory McPhee 0:09:04
+
+--
+Supercharge Sqoop with magical JDBC drivers - Sumit Sarkar 0:09:59
+
+--
+Big Data Analytics: Diverse Use Cases, Diverse Architectures - Ben Conners 0:08:45
+
+--
+Accelerate your data with SequoiaDB - Tao Wang 0:07:36
