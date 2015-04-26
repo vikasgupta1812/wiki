@@ -135,13 +135,13 @@ Description:
 A data scientist is not finished when his or her result is calculated. A good scientist must report the results to a skeptical (or worse, uninformed) audience. The R Markdown package makes it easy to generate reproducible reports, intermingling text and code. Write your reports in R alongside your original code. Then export the report as an HTML, PDF, or Microsoft Word document with one click of a button (or one line of code).
 
 ----
-[] [Analytic Web Applications with Shiny - Winston Chang - Part 1](http://techbus.safaribooksonline.com/9781491924143#) 30 mins
+[ ] [Analytic Web Applications with Shiny - Winston Chang - Part 1](http://techbus.safaribooksonline.com/9781491924143#) 30 mins
 Description: 
 
 Shiny lets you move beyond static reports to easily build interactive web applications powered by R. Run your Shiny apps locally, or share them over a server with clients, customers, and colleagues. Your visitors will be in the driver seat. They can explore data, monitor dashboards, run R analyses, or do anything else you prepare for them all without knowing any R code. If a picture is worth 1000 words, a Shiny app is worth a million.
 
 ----
-[] [Analytic Web Applications with Shiny - Winston Chang - Part 2](http://techbus.safaribooksonline.com/9781491924143#) 30 mins
+- [ ] [Analytic Web Applications with Shiny - Winston Chang - Part 2](http://techbus.safaribooksonline.com/9781491924143#) 30 mins
 Description: 
 
 Shiny lets you move beyond static reports to easily build interactive web applications powered by R. Run your Shiny apps locally, or share them over a server with clients, customers, and colleagues. Your visitors will be in the driver seat. They can explore data, monitor dashboards, run R analyses, or do anything else you prepare for them all without knowing any R code. If a picture is worth 1000 words, a Shiny app is worth a million.
