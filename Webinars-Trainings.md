@@ -8,7 +8,7 @@ The real challenge of programming isn't learning a language's syntax—it's lear
 
 _____
 
-[Pumping Up Retail Profits with Predictive Analytics - Adam Jorgensen](http://techbus.safaribooksonline.com/9781491924143#) 20 mins
+==[Pumping Up Retail Profits with Predictive Analytics - Adam Jorgensen](http://techbus.safaribooksonline.com/9781491924143#)== 20 mins
 Description: 
 
 Retail buyers are the backbone of the industries’ profitability. These individuals drive organizational goals with their performance. Many decisions are made by intuition and “gut” feeling, where predictive analytics would have made significant improvements in outcomes. This session takes real world experiences and shows how to transform retail performance through data driven buying decisions.
@@ -283,10 +283,10 @@ Roughly every decade, some kind of military or enterprise technology makes its w
 The Briefcase Cluster - Enabling Big Data Everywhere - Jim Scott 0:08:37
 
 ----
-Why Event Analytics Matter - Rohit Shrivastava 0:10:41
+==Why Event Analytics Matter== - Rohit Shrivastava 0:10:41
 
 ----
-Cracking the Data Conundrum - Steffin Harris 0:11:42
+==Cracking the Data Conundrum== - Steffin Harris 0:11:42
 
 ----
 Smart Data for Smarter Utilities - Irshad Raihan 0:08:33
