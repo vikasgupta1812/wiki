@@ -1,5 +1,5 @@
 - [Readings](reading.md)
-- [Books](http://1drv.ms/1dc4VsB)
+- [Books](https://onedrive.live.com/redir?page=view&resid=46DDE5F519C073A0!13045&authkey=!AJe5_3kYKEeUkvQ)
 - [Capstone Writeup for presentation](http://1drv.ms/1Dt7UTC)
 - [Trainings](http://1drv.ms/1Dt839K)
 - [R-Tips](http://1drv.ms/1JDvQaC)
