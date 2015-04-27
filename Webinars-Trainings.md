@@ -380,3 +380,12 @@ Big Data Analytics: Diverse Use Cases, Diverse Architectures - Ben Conners 0:08:
 
 ----
 Accelerate your data with SequoiaDB - Tao Wang 0:07:36
+
+--- 
+###Cluster Analysis in Data Mining
+Learn how to take scattered data and organize it into groups for use in many applications, such as market analysis and biomedical data analysis, or as a pre-processing step for many data mining tasks.
+
+Preview - https://d1a2y8pfnfh44t.cloudfront.net/476766d0537711e4ae9b2dccf30e52ed/full/540p/index.mp4
+
+Recommended Background
+For this course you need basic computing proficiency including some programming experience in a typical programming language, such as C++, Java, or Python, and basic knowledge of database concepts, artificial intelligence, and statistics.
