@@ -389,3 +389,16 @@ Preview - https://d1a2y8pfnfh44t.cloudfront.net/476766d0537711e4ae9b2dccf30e52ed
 
 Recommended Background
 For this course you need basic computing proficiency including some programming experience in a typical programming language, such as C++, Java, or Python, and basic knowledge of database concepts, artificial intelligence, and statistics.
+
+----
+
+Understanding Complexity by Clustering Data with Machine Learning and R
+Video Description
+
+Although machine learning is most commonly used for prediction, it can also help make sense of the complexity in the world around us. In this webcast, we explore how R's open-source clustering packages can discover patterns in large data and inform our understanding of complex sociological phenomena such as teenage identities. -- 40 mins
+
+http://techbus.safaribooksonline.com/video/programming/r/9781491919170
+
+
+---
+

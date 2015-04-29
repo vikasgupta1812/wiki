@@ -1,4 +1,5 @@
 
+
 - R Trending repositories on Github -- https://github.com/trending?l=r
 - An introduction to data analysis, using R. Experimental. briatte / ida ranalytics / r-tutorials
 - Beginning Test-Driven Development in Python - http://code.tutsplus.com/tutorials/beginning-test-driven-development-in-python--net-30137 
@@ -152,6 +153,7 @@ In Automate the Boring Stuff with Python, you'll learn how to use Python to writ
 - dataviz [Looking For Work? These Companies Are On A Hiring Spree](http://dadaviz.com/i/3859) [image](images/Top Companies Hiring most Right now.png)
 	tl;dr - [forbes article](http://www.forbes.com/pictures/fjle45lhhd/no-1-amazon-corporate/) Data Source - indeed.com
 - [Tips to prepare an outstanding CV for data science roles](http://www.analyticsvidhya.com/blog/2014/11/tips-prepare-cv-data-science-roles/)
+- [30 Useful Linux Commands for System Administrators](http://www.tecmint.com/useful-linux-commands-for-system-administrators/)
 
 
 
