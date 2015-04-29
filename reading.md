@@ -154,18 +154,18 @@ In Automate the Boring Stuff with Python, you'll learn how to use Python to writ
 
 
 - Starup engineering
-	- <a target="_new" href="https://d396qusza40orc.cloudfront.net/startup/lecture_slides/lecture0-v3-logistics.pdf<\a>
-	- <a target="_new" href="https://d396qusza40orc.cloudfront.net/startup/lecture_slides/lecture1-v2-introduction.pdf<\a>
-	- <a target="_new" href="https://d396qusza40orc.cloudfront.net/startup/lecture_slides/lecture2-interactive-start.pdf<\a>
-	- <a target="_new" href="https://d396qusza40orc.cloudfront.net/startup/lecture_slides/lecture3-linux-ssjs-v2.pdf<\a>
-	- <a target="_new" href="https://d396qusza40orc.cloudfront.net/startup/lecture_slides/lecture4a-linux-command-line.pdf<\a>
-	- <a target="_new" href="https://d396qusza40orc.cloudfront.net/startup/lecture_slides/lecture4b-developer-environment.pdf<\a>
-	- <a target="_new" href="https://d396qusza40orc.cloudfront.net/startup/lecture_slides/lecture5-market-wireframing-design.pdf<\a>
-	- <a target="_new" href="https://d396qusza40orc.cloudfront.net/startup/lecture_slides/lecture6-html-css-js.pdf<\a>
-	- <a target="_new" href="https://d396qusza40orc.cloudfront.net/startup/lecture_slides/lecture7-deployment-dns-custom-domains.pdf<\a>
-	- <a target="_new" href="https://d396qusza40orc.cloudfront.net/startup/lecture_slides/lecture8-mobile-v2.pdf<\a>
-	- <a target="_new" href="https://d396qusza40orc.cloudfront.net/startup/lecture_slides/airbnb-slides.pdf<\a>
-	- <a target="_new" href="https://d396qusza40orc.cloudfront.net/startup/lecture_slides/judicata-slides.pdf<\a>
-	- <a target="_new" href="https://d396qusza40orc.cloudfront.net/startup/lecture_slides/square-slides.pdf<\a>
-	- <a target="_new" href="https://d396qusza40orc.cloudfront.net/startup/lecture_slides/twilio-slides.pdf<\a>
+    - [lecture0-v3-logistics.pdf](https://d396qusza40orc.cloudfront.net/startup/lecture_slides/lecture0-v3-logistics.pdf)
+    - [lecture1-v2-introduction.pdf](https://d396qusza40orc.cloudfront.net/startup/lecture_slides/lecture1-v2-introduction.pdf)
+    - [lecture2-interactive-start.pdf](https://d396qusza40orc.cloudfront.net/startup/lecture_slides/lecture2-interactive-start.pdf)
+    - [lecture3-linux-ssjs-v2.pdf](https://d396qusza40orc.cloudfront.net/startup/lecture_slides/lecture3-linux-ssjs-v2.pdf)
+    - [lecture4a-linux-command-line.pdf](https://d396qusza40orc.cloudfront.net/startup/lecture_slides/lecture4a-linux-command-line.pdf)
+    - [lecture4b-developer-environment.pdf](https://d396qusza40orc.cloudfront.net/startup/lecture_slides/lecture4b-developer-environment.pdf)
+    - [lecture5-market-wireframing-design.pdf](https://d396qusza40orc.cloudfront.net/startup/lecture_slides/lecture5-market-wireframing-design.pdf)
+    - [lecture6-html-css-js.pdf](https://d396qusza40orc.cloudfront.net/startup/lecture_slides/lecture6-html-css-js.pdf)
+    - [lecture7-deployment-dns-custom-domains.pdf](https://d396qusza40orc.cloudfront.net/startup/lecture_slides/lecture7-deployment-dns-custom-domains.pdf)
+    - [lecture8-mobile-v2.pdf](https://d396qusza40orc.cloudfront.net/startup/lecture_slides/lecture8-mobile-v2.pdf)
+    - [airbnb-slides.pdf](https://d396qusza40orc.cloudfront.net/startup/lecture_slides/airbnb-slides.pdf)
+    - [judicata-slides.pdf](https://d396qusza40orc.cloudfront.net/startup/lecture_slides/judicata-slides.pdf)
+    - [square-slides.pdf](https://d396qusza40orc.cloudfront.net/startup/lecture_slides/square-slides.pdf)
+    - [twilio-slides.pdf](https://d396qusza40orc.cloudfront.net/startup/lecture_slides/twilio-slides.pdf)
    - [airbnb-slides](startup-001/airbnb-slides.pdf)
