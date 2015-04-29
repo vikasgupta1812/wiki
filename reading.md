@@ -151,7 +151,9 @@ In Automate the Boring Stuff with Python, you'll learn how to use Python to writ
 - [Data Analysis Learning path](Data Analysis Learning Path | SlideRule.html) on Sliderule
 - dataviz [Looking For Work? These Companies Are On A Hiring Spree](http://dadaviz.com/i/3859) [image](images/Top Companies Hiring most Right now.png)
 	tl;dr - [forbes article](http://www.forbes.com/pictures/fjle45lhhd/no-1-amazon-corporate/) Data Source - indeed.com
-	
-
-
 - [Tips to prepare an outstanding CV for data science roles](http://www.analyticsvidhya.com/blog/2014/11/tips-prepare-cv-data-science-roles/)
+
+
+
+- Starup engineering
+   - [airbnb-slides](startup-001/airbnb-slides.pdf)
