@@ -1,4 +1,3 @@
-
 - R Trending repositories on Github -- https://github.com/trending?l=r
 - An introduction to data analysis, using R. Experimental. briatte / ida ranalytics / r-tutorials
 - Beginning Test-Driven Development in Python - http://code.tutsplus.com/tutorials/beginning-test-driven-development-in-python--net-30137 
@@ -137,8 +136,7 @@ In Automate the Boring Stuff with Python, you'll learn how to use Python to writ
     6.	Send reminder emails and text notifications ****
     7.	Fill out online forms ****
 - **Awesome R**- A curated list of awesome R frameworks, packages and software. https://github.com/qinwf/awesome-R
- - [Clever Algorithms For Machine Learning](https://github.com/jbrownlee/CleverAlgorithmsMachineLearning)
- - 
+- [Clever Algorithms For Machine Learning](https://github.com/jbrownlee/CleverAlgorithmsMachineLearning)
 - [Selected Tools for data visualization](http://selection.datavisualization.ch/?utm_campaign=Data_Elixir_32&utm_medium=email&utm_source=Data%2bElixir) Fantastic collection of 55 useful tools for data visualization. This collection is curated by the folks at Datavisualization.ch and is well-organized and easy to search. Highly Recommended.
 - [Prezi-Using R for Data Mining Competitions](https://prezi.com/embed/8fbsaa7mushs/)
 - Accelerate R Applications with CUDA - http://devblogs.nvidia.com/parallelforall/accelerate-r-applications-cuda/ nvidia devblog
@@ -156,4 +154,18 @@ In Automate the Boring Stuff with Python, you'll learn how to use Python to writ
 
 
 - Starup engineering
+	- <a target="_new" href="https://d396qusza40orc.cloudfront.net/startup/lecture_slides/lecture0-v3-logistics.pdf<\a>
+	- <a target="_new" href="https://d396qusza40orc.cloudfront.net/startup/lecture_slides/lecture1-v2-introduction.pdf<\a>
+	- <a target="_new" href="https://d396qusza40orc.cloudfront.net/startup/lecture_slides/lecture2-interactive-start.pdf<\a>
+	- <a target="_new" href="https://d396qusza40orc.cloudfront.net/startup/lecture_slides/lecture3-linux-ssjs-v2.pdf<\a>
+	- <a target="_new" href="https://d396qusza40orc.cloudfront.net/startup/lecture_slides/lecture4a-linux-command-line.pdf<\a>
+	- <a target="_new" href="https://d396qusza40orc.cloudfront.net/startup/lecture_slides/lecture4b-developer-environment.pdf<\a>
+	- <a target="_new" href="https://d396qusza40orc.cloudfront.net/startup/lecture_slides/lecture5-market-wireframing-design.pdf<\a>
+	- <a target="_new" href="https://d396qusza40orc.cloudfront.net/startup/lecture_slides/lecture6-html-css-js.pdf<\a>
+	- <a target="_new" href="https://d396qusza40orc.cloudfront.net/startup/lecture_slides/lecture7-deployment-dns-custom-domains.pdf<\a>
+	- <a target="_new" href="https://d396qusza40orc.cloudfront.net/startup/lecture_slides/lecture8-mobile-v2.pdf<\a>
+	- <a target="_new" href="https://d396qusza40orc.cloudfront.net/startup/lecture_slides/airbnb-slides.pdf<\a>
+	- <a target="_new" href="https://d396qusza40orc.cloudfront.net/startup/lecture_slides/judicata-slides.pdf<\a>
+	- <a target="_new" href="https://d396qusza40orc.cloudfront.net/startup/lecture_slides/square-slides.pdf<\a>
+	- <a target="_new" href="https://d396qusza40orc.cloudfront.net/startup/lecture_slides/twilio-slides.pdf<\a>
    - [airbnb-slides](startup-001/airbnb-slides.pdf)
