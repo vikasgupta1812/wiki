@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 
 
-=======
->>>>>>> bd1b982c1df083bf02cefc7fac2f6451a7db2d7e
 - R Trending repositories on Github -- https://github.com/trending?l=r
 - An introduction to data analysis, using R. Experimental. briatte / ida ranalytics / r-tutorials
 - Beginning Test-Driven Development in Python - http://code.tutsplus.com/tutorials/beginning-test-driven-development-in-python--net-30137 
