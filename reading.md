@@ -172,3 +172,4 @@ In Automate the Boring Stuff with Python, you'll learn how to use Python to writ
     - [square-slides.pdf](https://d396qusza40orc.cloudfront.net/startup/lecture_slides/square-slides.pdf)
     - [twilio-slides.pdf](https://d396qusza40orc.cloudfront.net/startup/lecture_slides/twilio-slides.pdf)
    - [airbnb-slides](startup-001/airbnb-slides.pdf)
+   - Taco Bell Programming-  Ted Dziuba http://web.archive.org/web/20101101173837/http://teddziuba.com/2010/10/taco-bell-programming.html Blog - http://web.archive.org/web/20101101153942/http://teddziuba.com/archives.html
