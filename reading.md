@@ -173,3 +173,11 @@ In Automate the Boring Stuff with Python, you'll learn how to use Python to writ
     - [twilio-slides.pdf](https://d396qusza40orc.cloudfront.net/startup/lecture_slides/twilio-slides.pdf)
    - [airbnb-slides](startup-001/airbnb-slides.pdf)
    - Taco Bell Programming-  Ted Dziuba http://web.archive.org/web/20101101173837/http://teddziuba.com/2010/10/taco-bell-programming.html Blog - http://web.archive.org/web/20101101153942/http://teddziuba.com/archives.html
+
+- Source - http://www.meetup.com/SF-Data-Science/messages/boards/thread/45359822/0#122334312
+Slides and Video from - How to Become a Data Scientist
+video https://www.youtube.com/watch?v=c52IOlnPw08
+Ryan's slides: http://www.slideshare.net/ryanorban/how-to-become-a-data-scientist
+Dennis' slides: https://www.dropbox.com/s/r4m9aym2xvyadzk/SFDataScience_DennisObrien.pdf
+
+- 
