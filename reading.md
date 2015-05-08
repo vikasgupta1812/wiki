@@ -180,4 +180,6 @@ video https://www.youtube.com/watch?v=c52IOlnPw08
 Ryan's slides: http://www.slideshare.net/ryanorban/how-to-become-a-data-scientist
 Dennis' slides: https://www.dropbox.com/s/r4m9aym2xvyadzk/SFDataScience_DennisObrien.pdf
 
+- Linux Text Editors: Vi and Nano - http://blog.pluralsight.com/linux-text-editors-vi-nano
+- Linux Commands for Beginners Part 2: Exploring the CLI - http://blog.pluralsight.com/command-line-basics
 - 
