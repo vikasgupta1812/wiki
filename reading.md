@@ -185,7 +185,7 @@ Dennis' slides: https://www.dropbox.com/s/r4m9aym2xvyadzk/SFDataScience_DennisOb
 - Linux Text Editors: Vi and Nano - http://blog.pluralsight.com/linux-text-editors-vi-nano
 - Linux Commands for Beginners Part 2: Exploring the CLI - http://blog.pluralsight.com/command-line-basics
 - Pluralsight - Commanding your text editor - http://blog.pluralsight.com/commanding-your-text-editor
-
+- How to extract a URL from a hyperlink on Excel - http://howtouseexcel.net/how-to-extract-a-url-from-a-hyperlink-on-excel
 
 
 
