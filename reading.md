@@ -162,6 +162,8 @@ In Automate the Boring Stuff with Python, you'll learn how to use Python to writ
     - [lecture2-interactive-start.pdf](https://d396qusza40orc.cloudfront.net/startup/lecture_slides/lecture2-interactive-start.pdf)
     - [lecture3-linux-ssjs-v2.pdf](https://d396qusza40orc.cloudfront.net/startup/lecture_slides/lecture3-linux-ssjs-v2.pdf)
     - [lecture4a-linux-command-line.pdf](https://d396qusza40orc.cloudfront.net/startup/lecture_slides/lecture4a-linux-command-line.pdf)
+       - [Linux Command line crash course ](http://cli.learncodethehardway.org/book/)
+       - ****
     - [lecture4b-developer-environment.pdf](https://d396qusza40orc.cloudfront.net/startup/lecture_slides/lecture4b-developer-environment.pdf)
     - [lecture5-market-wireframing-design.pdf](https://d396qusza40orc.cloudfront.net/startup/lecture_slides/lecture5-market-wireframing-design.pdf)
     - [lecture6-html-css-js.pdf](https://d396qusza40orc.cloudfront.net/startup/lecture_slides/lecture6-html-css-js.pdf)
@@ -182,4 +184,11 @@ Dennis' slides: https://www.dropbox.com/s/r4m9aym2xvyadzk/SFDataScience_DennisOb
 
 - Linux Text Editors: Vi and Nano - http://blog.pluralsight.com/linux-text-editors-vi-nano
 - Linux Commands for Beginners Part 2: Exploring the CLI - http://blog.pluralsight.com/command-line-basics
-- 
+- Pluralsight - Commanding your text editor - http://blog.pluralsight.com/commanding-your-text-editor
+
+
+
+
+Emacs - 
+ - [emacs starter kit - github](https://github.com/technomancy/emacs-starter-kit)
+ - http://stackoverflow.com/questions/162896/emacs-on-mac-os-x-leopard-key-bindings
