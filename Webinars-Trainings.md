@@ -1,3 +1,10 @@
+- [Rapid Prototyping Web Applications Using Node.js and MongoDB](http://techbus.safaribooksonline.com/video/web-development/9781491925416)
+
+webcast- Running time: 1:06:45 
+
+Let's rapidly prototype a web application from scratch in as little time as possible! Our prototype will be a fully featured interactive web application that persists data and is written with as few lines of code as possible. In this hands-on webcast you will learn how to leverage Node.js and Express.js to quickly bootstrap a web server, tie in MongoDB to persist data, and display it all using dynamic HTML templates. Finally we'll wrap it with Twitter's Bootstrap framework so it has a nice level of polish!
+
+-------
 [Problem Solving - The missing ingredient for new programmers](http://techbus.safaribooksonline.com/9781491921685)  35 mins
 
 The real challenge of programming isn't learning a language's syntax—it's learning to creatively solve problems so you can build something great. In this one-of-a-kind webcast, author V. Anton Spraul breaks down some of the ways that programmers solve problems and teaches you how to 'Think Like a Programmer'.In this webcast we answer the questions:
