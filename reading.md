@@ -198,7 +198,7 @@ Dennis' slides: https://www.dropbox.com/s/r4m9aym2xvyadzk/SFDataScience_DennisOb
 - [Hacking Google Finance in Real-Time for Algorithmic Traders](http://www.quantatrisk.com/2014/01/14/hacking-google-finance-in-real-time-for-algorithmic-traders/)
 - [Hacking Google Finance in Real-Time for Algorithmic Traders. (2) Pre-Market Trading.](http://www.quantatrisk.com/2015/05/07/hacking-google-finance-in-pre-market-trading-python/)
 - [Image Scaling using Deep Convolutional Neural Networks](http://engineering.flipboard.com/2015/05/scaling-convnets/) tl;dr- Convolutional Neural Networks. 
-
+- [Coursera - DataScience Specialization - Slides](http://DataScienceSpecialization.github.io)
 
 Emacs - 
  - [emacs starter kit - github](https://github.com/technomancy/emacs-starter-kit)
