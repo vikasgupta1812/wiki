@@ -186,7 +186,18 @@ Dennis' slides: https://www.dropbox.com/s/r4m9aym2xvyadzk/SFDataScience_DennisOb
 - Linux Commands for Beginners Part 2: Exploring the CLI - http://blog.pluralsight.com/command-line-basics
 - Pluralsight - Commanding your text editor - http://blog.pluralsight.com/commanding-your-text-editor
 - How to extract a URL from a hyperlink on Excel - http://howtouseexcel.net/how-to-extract-a-url-from-a-hyperlink-on-excel
-
+- [GitHub Atom: 5 Tips For Getting Started](http://readwrite.com/2014/05/20/github-atom-5-tips-getting-started-tutorial-corey-johnson)
+- [Upcoming Tutorial: Analyzing US Census Data in R](https://justanrblog.wordpress.com/2015/05/11/upcoming-tutorial-analyzing-us-census-data-in-r/) [Github](https://github.com/arilamstein/r-census-tutorial-2015-05) tl;dr chloropeth, nice geo graphs.
+- [Tips and Tools you may need for working on BIG data](http://onetipperday.blogspot.com/2015/05/tips-and-tools-you-may-need-for-working.html)
+- [TidyR Challenge: Update](http://jeffreyhorner.tumblr.com/post/118447392333/tidyr-challenge-update) 
+- [TidyR Challenge: Help Me Do My Job](http://jeffreyhorner.tumblr.com/post/118297392563/tidyr-challenge-help-me-do-my-job) 
+  tl;dr - Code Practics
+- [RevolutionR - April Roundup](http://blog.revolutionanalytics.com/2015/05/in-case-you-missed-it-april-2015-roundup.html)
+  - [R for more powerful clustering](http://blog.revolutionanalytics.com/2015/04/r-for-more-powerful-clustering.html)
+- [Comparing data frames, data.table and dplyr with random walks](http://freakonometrics.hypotheses.org/19645) tl;dr - nice code practice
+- [Hacking Google Finance in Real-Time for Algorithmic Traders](http://www.quantatrisk.com/2014/01/14/hacking-google-finance-in-real-time-for-algorithmic-traders/)
+- [Hacking Google Finance in Real-Time for Algorithmic Traders. (2) Pre-Market Trading.](http://www.quantatrisk.com/2015/05/07/hacking-google-finance-in-pre-market-trading-python/)
+- [Image Scaling using Deep Convolutional Neural Networks](http://engineering.flipboard.com/2015/05/scaling-convnets/) tl;dr- Convolutional Neural Networks. 
 
 
 Emacs - 
