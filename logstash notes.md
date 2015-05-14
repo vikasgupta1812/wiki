@@ -2,8 +2,8 @@
 ###TODO
 
 
-- [ ] Install on AWS 2012 IIS 
-- [ ] Install on Win7 Tomcat 8 
+- [x] Install on AWS 2012 IIS 
+- [x] Install on Win7 Tomcat 8 
 - [ ] Configure Existing logs 
 - [ ] Build Dashboards in Kibana
 - [ ] Configure Tomcat log4j for access logs
