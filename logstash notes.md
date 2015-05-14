@@ -1,5 +1,5 @@
 
-###TODO
+## TODO
 
 
 - [x] Install on AWS 2012 IIS 
@@ -13,7 +13,8 @@
 Logstash configuration for getting IIS logs - https://github.com/sbagmeijer/ulyaoth/blob/master/guides/logstash/windows/logstash.conf
 
 
-###Log Shipper
+## Log Shipper
+
 - Documentation  http://logstash.net/docs/1.0.17/getting-started-centralized
 Provides more details about configuration file
 can reference to live file
@@ -29,7 +30,7 @@ Other tuts from same blog - http://www.ragingcomputer.com/2014/02/securing-elast
 - stackoverflow - Discussion about log shipper - http://stackoverflow.com/questions/25685650/why-do-people-ship-logs-to-logstash-with-nxlog-and-not-logstash-itself
 
 
-###Kibana setup 
+## Kibana setup 
 
 - Getting Kibana Up and Running - http://www.elastic.co/guide/en/kibana/current/setup.html
 The first time you access Kibana, you are prompted to define an `index pattern` that matches the name of one or more of your indices. You can add index patterns at any time from the Settings tab
@@ -40,7 +41,7 @@ By default, Kibana connects to the Elasticsearch instance running on localhost. 
 
 - Kibana 4 Tutorial – Part 1: Introduction - https://www.timroes.de/2015/02/07/kibana-4-tutorial-part-1-introduction/
 
-###Elasticsearch urls 
+## Elasticsearch urls 
 
 - Search Elastic Search - http://localhost:9200/_search
 - http://localhost:9200/_mapping?pretty
@@ -54,15 +55,13 @@ yellow open   .kibana               1   1          2            0      6.7kb    
 ```
 
 
-###Logstash-Grok
+## Logstash-Grok
 
 - [Little Logstash Lessons - Part I: Using grok and mutate to type your data](https://www.elastic.co/blog/little-logstash-lessons-part-using-grok-mutate-type-data)
 - Grok Patterns = https://github.com/elastic/logstash/blob/v1.4.2/patterns/grok-patterns
 - http://logstash.net/docs/1.0.17/filters/grok
 
-###Find patterns for Reliance log
-
-
+##Find patterns for Reliance log
 
 Matching Patterns found so far. 
 ```
@@ -71,10 +70,6 @@ Matching Patterns found so far.
 %{TIMESTAMP_ISO8601} %{SYSLOG5424SD}
 %{TIMESTAMP_ISO8601} %{SYSLOG5424SD} %{LOGLEVEL} %{JAVACLASS}
 ```
-
-
-
-
 
 ---------------
 ## Sample Setup of Logstash 
@@ -174,7 +169,7 @@ Inevitably, there will be `mess` in your logs that doesn’t conform to your gro
 
 The `date` filter can accept a comma separated list of timestamp patterns to match. This allows either the `CATALINA_DATESTAMP` pattern or the `TOMCAT_DATESTAMP` pattern to match the date filter and be ingested by Logstash correctly.
 
-###Output
+## Output
 The output is simply an embedded Elasticsearch config as well as debugging to stdout. If you’d like to see the full config, have a look at the [gist](https://gist.github.com/LanyonM/8390458#file-logstash-java-conf).
 
 Full Config 
@@ -341,7 +336,7 @@ The cluster name should match what you set in C:\Program Files\elasticsearch-1.3
 - http://dotnetanalysis.blogspot.com/2014/11/logstash-config-for-iis-logs.html
 
 ---- 
-###Accessing Tomcat manager 
+## Accessing Tomcat manager 
 
 - To be able to access your tomcat manager app at https://localhost:8443/ add this to apache-tomcat-7.0.55\conf\tomcat-users.xml
 
@@ -470,14 +465,10 @@ and more..
 
 ----
 
-#### Logstash Book Configurations
+## Logstash Book Configurations
 Shipper configuration - http://logstashbook.com/code/6/shipper.conf
 
 
-##### Install Tomcat 
+## Install Tomcat 
 
 http://www.ntu.edu.sg/home/ehchua/programming/howto/Tomcat_HowTo.html
-
-
-
-
