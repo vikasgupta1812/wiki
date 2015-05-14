@@ -296,4 +296,86 @@ By default, each event is assumed to be one line. If you want to join lines, you
 
 Files are followed in a manner similar to "tail -0F". File rotation is detected and handled by this input.
 
+-------
+[Viewing tomcat logs with Logstash in a Windows 7 machine](http://dotnetanalysis.blogspot.com/2014/11/viewing-tomcat-logs-with-logstash-in.html)
 
+Input: This tells logstash where the data is coming from. For example File, eventlog, twitter, tcp and so on. All the supported inputs can be found here.
+
+
+http://logstash.net/docs/1.4.2/
+
+http://logstash.net/docs/1.4.2/inputs/syslog
+This input is a good choice if you already use syslog today. It is also a good choice if you want to receive logs from appliances and network devices where you cannot run your own log collector.
+
+
+http://logstash.net/docs/1.4.2/inputs/log4j
+
+Read events over a TCP socket from a Log4j SocketAppender.
+
+Can either accept connections from clients or connect to a server, depending on mode. Depending on which mode is configured, you need a matching SocketAppender or a SocketHubAppender on the remote side.
+
+http://logstash.net/docs/1.4.2/inputs/file
+
+Files are followed in a manner similar to “tail -0F”. File rotation is detected and handled by this input.
+
+http://logstash.net/docs/1.4.2/inputs/wmi
+
+Collect data from WMI query
+
+This is useful for collecting performance metrics and other data which is accessible via WMI on a Windows host
+
+
+Filter: This tells logstash what you want to do to the data before you output it into your log store (in our case elasticsearch). This accepts regular expressions. Most people use precreated regular expressions called grok, instead of writing their own regular expressions to parse log data. The complete list of filters you can use can be seen here.
+
+Output: This tells logstash where to putput this filtered data to. We are going to output it into elasticsearch. You can have multiple outputs if you want.
+
+
+This is how my logstash.conf looks like 
+
+```
+input {
+    file {        
+    path => ["C:/Program Files/apache-tomcat-7.0.55/logs/*.log"]
+    }
+}
+
+filter {
+ 
+}
+output{
+
+   elasticsearch {
+     cluster=>"VivekLocalMachine"
+      port => "9200"
+      protocol => "http"
+    }
+}
+```
+
+The cluster name should match what you set in C:\Program Files\elasticsearch-1.3.4\config\elasticsearch.yml
+
+
+http://dotnetanalysis.blogspot.com/2014/11/logstash-config-for-iis-logs.html
+
+
+
+Accessing Tomcat manager
+To be able to access your tomcat manager app at https://localhost:8443/ add this to apache-tomcat-7.0.55\conf\tomcat-users.xml
+
+```
+<tomcat-users>
+  <role rolename="manager-gui"/>
+  <role rolename="manager-script"/>
+  <role rolename="manager-jmx"/>
+  <role rolename="manager-status"/>
+  <role rolename="admin-gui"/>
+  <role rolename="admin-script"/>
+  <user username="tomcat" password="tomcat" roles="manager-gui,manager-script,manager-jmx,manager-status,admin-gui,admin-script"/>
+  </tomcat-users>
+```
+
+Now you can access everything in the manager gui using
+```
+username: tomcat
+password: tomcat
+```
