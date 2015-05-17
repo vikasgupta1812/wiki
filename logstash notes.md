@@ -39,7 +39,7 @@ By default, Kibana connects to the Elasticsearch instance running on localhost. 
 
 - Using Kibana in a Production Environment - http://www.elastic.co/guide/en/kibana/current/production.html
 
-- Kibana 4 Tutorial – Part 1: Introduction - https://www.timroes.de/2015/02/07/kibana-4-tutorial-part-1-introduction/
+- ![Anna Roes](https://2.gravatar.com/avatar/eaac33b12e49df64af0fc522aeb6e460?s=96&amp;d=mm&amp;r=g)Kibana 4 Tutorial – Part 1: Introduction - https://www.timroes.de/2015/02/07/kibana-4-tutorial-part-1-introduction/ 
 
 ## Elasticsearch urls 
 
@@ -472,3 +472,26 @@ Shipper configuration - http://logstashbook.com/code/6/shipper.conf
 ## Install Tomcat 
 
 http://www.ntu.edu.sg/home/ehchua/programming/howto/Tomcat_HowTo.html
+
+-----
+## Other links
+
+
+[Logstash Tutorial: Using Logstash to Streamline Email Notifications](http://www.toptal.com/java/using-logstash-to-streamline-email-notifications)
+
+[How to Setup Logstash on Linux with ElasticSearch, Redis, Nginx](http://www.thegeekstuff.com/2014/12/logstash-setup/)
+
+
+[USING LOGSTASH, ELASTICSEARCH AND KIBANA TO MONITOR YOUR VIDEO CARD – A TUTORIAL](http://blog.trifork.com/2014/01/28/using-logstash-elasticsearch-and-kibana-to-monitor-your-video-card-a-tutorial/)
+
+
+
+[Monitor your cluster of Tomcat applications with Logstash and Kibana](https://spredzy.wordpress.com/2013/03/02/monitor-your-cluster-of-tomcat-applications-with-logstash-and-kibana/)
+
+
+[5-minute Logstash: Parsing and Sending a Log File](http://blog.sematext.com/2013/12/19/getting-started-with-logstash/)
+
+[Logstash - Windows install notes](https://github.com/verbosemode/public-notes/blob/master/logstash-windows.md)
+
+
+
