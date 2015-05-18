@@ -200,6 +200,9 @@ Dennis' slides: https://www.dropbox.com/s/r4m9aym2xvyadzk/SFDataScience_DennisOb
 - [Image Scaling using Deep Convolutional Neural Networks](http://engineering.flipboard.com/2015/05/scaling-convnets/) tl;dr- Convolutional Neural Networks. 
 - [Coursera - DataScience Specialization - Slides](http://DataScienceSpecialization.github.io)
 
-Emacs - 
+## Emacs - 
  - [emacs starter kit - github](https://github.com/technomancy/emacs-starter-kit)
  - http://stackoverflow.com/questions/162896/emacs-on-mac-os-x-leopard-key-bindings
+
+- [Sublime Text from Command Line (Win7)](http://stackoverflow.com/questions/9440639/sublime-text-from-command-line-win7)
+- 
