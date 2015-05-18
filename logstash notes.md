@@ -19,9 +19,6 @@
 ## Installers 
 - Logstash 1.5.0 - http://download.elastic.co/logstash/logstash/logstash-1.5.0.zip
 
-
-
-
 ## Log Shipper
 
 - Documentation  http://logstash.net/docs/1.0.17/getting-started-centralized
@@ -483,19 +480,19 @@ Shipper configuration - http://logstashbook.com/code/6/shipper.conf
 - https://www.elastic.co/guide/en/elasticsearch/reference/current/indices-delete-index.html
 
 ```
-$ curl -XDELETE 'http://localhost:9200/twitter/'
+$curl -XDELETE localhost:9200/twitter/
+{"error":"IndexMissingException[[twitter] missing]","status":404}
 ```
-
 The above example deletes an index called twitter. Specifying an index, alias or wildcard expression is required.
+
+```
+curl -XDELETE localhost:9200/_all/
+{"acknowledged":true}
+```
 
 The delete index API can also be applied to more than one index, or on all indices (be careful!) by using _all or * as index.
 
-
 - http://stackoverflow.com/a/22932471
-
-
-
-
 
 ## Install Tomcat 
 
@@ -529,3 +526,5 @@ http://www.reddit.com/r/sysadmin/comments/2m8qzf/sysadmins_what_do_you_do_with_y
 Nice presentation: = http://www.soit.sk/media/a542/file/item/sk/0000/elk_stack_alexander_szalonnas.w5s3.pdf
 http://www.cybertechquestions.com/how-to-setup-logstash-on-azure-with-windows-configuration_1114421.html
 
+
+[The above example deletes an index called twitter. Specifying an index, alias or wildcard expression is required.](http://stackoverflow.com/questions/25156517/logstash-date-parsing-as-timestamp-using-the-date-filter)
