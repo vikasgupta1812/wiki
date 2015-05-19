@@ -1,6 +1,9 @@
 Webinars-Trainings
 ====
 
+## 
+
+----
 ## [Rapid Prototyping Web Applications Using Node.js and MongoDB](http://techbus.safaribooksonline.com/video/web-development/9781491925416)
 Webcast- Running time: 1:06:45 
 
@@ -226,14 +229,10 @@ scikit-learn has emerged as one of the most popular open source machine learning
 	Description: 
 
 	Join us as we explore the big data services of AWS and watch a speaker-led tutorial and a link to a lab in which you can take with you.
-
-----
 - Data Science: Where are We Going? - DJ Patil - 15-mins
 	Description: 
 
 	Data Science, where are we going? What impact can we expect?
-
-----
 - Year Zero: How We’ll Run Our Lives in Ten Years’ Time - Alistair Croll - 5-mins
 	Description: 
 
@@ -242,107 +241,45 @@ scikit-learn has emerged as one of the most popular open source machine learning
 ----
 ## Solutions Showcase Theater
 - The Briefcase Cluster - Enabling Big Data Everywhere - Jim Scott 0:08:37
-
-----
 - ==Why Event Analytics Matter== - Rohit Shrivastava 0:10:41
-
-----
 - ==Cracking the Data Conundrum== - Steffin Harris 0:11:42
-
-----
 - Smart Data for Smarter Utilities - Irshad Raihan 0:08:33
-
-----
 - The Value of Churn Analytics at Cisco - Ivan Chen and Phil Hodsdon 0:12:57
-
-----
 - Harnessing Big Social Data to Deliver Human Data Intelligence - Jason Rose 0:09:32
-
-----
 - Multimedia Giant Turns Big Data into Real-Time Customer Insights - Brian Garrett 0:10:27
-
-----
 - Data Wrangling in the Wild - Sean Ma 0:10:02
-
-----
 - Gaining Value From Data Where It's Born - Ryan Peterson 0:07:21
-
-----
 - Build a Foundation for Self-Service Data Prep, Analytics, and Governance - Oliver Claude 0:09:05
-
-----
 - Connecting the Big-Data Driven Enterprise in Online Retail - Ashley Stirrup 0:07:24
-
-----
 - Taming Data Variety: Intelligent Solutions Using Machine Learning and Expert Crowdsourcing - Alan Wagner 0:08:18
-
-----
 - The Emergence of the Data Refinery - Chuck Yarbrough 0:12:28
-
-----
 - Big Data Cluster Planning and Optimization Using Wolf Island Simulation Technology - Laurent Isenegger 0:10:37
-
-----
 - Close the Skills Gap and Deliver Rapid Business Value with Big Data Apps - Manan Goel 0:10:46
-
-----
 - Distributed R - Scaling the R Language for Even Bigger Data - Sunil Venkayala 0:10:51
-
-----
 - Data Warehousing in the Cloud - Jon Bock 0:10:12
-
-----
 - Proactive Product Intelligence for Electronics - Rami Lokas 0:12:29
-
-----
 - Big Data vs. Climate Change - Srivatsan Ramanujam and John Cardente 0:11:13
-
-----
 - Power Tools for Big Data Analytics - Dan Steinberg 0:10:53
-
-----
 - Big Data on OpenStack - Kirk Lewis and Frank Rego 0:13:00
-
-----
 - Dato Enables Large-Scale Deduplication at Zillow using GraphLab Create - Rajat Arya 0:08:04
-
-----
 - To Catch a Thief with Big Data - Kevin Petrie 0:12:24
-
-----
 - Predicting The Future To Improve Customer Satisfaction - Joe Rossi 0:08:38
-
-----
 - The Practical, Profitable Magic of Prescriptive Analytics - Andy Flint 0:09:23
-
-----
 - Changing the Culture Around Data: Empowering More People with Analytics - Gary Cottrell 0:09:53
-
-----
 - How Havas Media Found New Revenue Streams with UNIFi Software - Sean Keenan 0:06:41
-
-----
 - What Enterprises Can Learn From Real-Time Bidding - Peter Corless 0:10:49
-
-----
 - Big Data and the Data Quality Imperative - Ed Wrazen 0:11:53
 
 ----
 - Tapjoy Scales and Saves Costs with Riak - Tom Sigler 0:09:34
-
-----
 - Jagex Game Studio Case Study - Gregory McPhee 0:09:04
-
-----
 - Supercharge Sqoop with magical JDBC drivers - Sumit Sarkar 0:09:59
-
-----
 - Big Data Analytics: Diverse Use Cases, Diverse Architectures - Ben Conners 0:08:45
 
 ----
 - Accelerate your data with SequoiaDB - Tao Wang 0:07:36
 
---- 
+----
 ## Cluster Analysis in Data Mining
 Learn how to take scattered data and organize it into groups for use in many applications, such as market analysis and biomedical data analysis, or as a pre-processing step for many data mining tasks.
 

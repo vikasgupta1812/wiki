@@ -13,8 +13,14 @@
 ## Logstash configuration
 - For getting IIS logs - https://github.com/sbagmeijer/ulyaoth/blob/master/guides/logstash/windows/logstash.conf
 - https://github.com/elastic/logstash/issues/1382
-- http://stackoverflow.com/questions/24457004/logstash-1-4-1-multiline-codec-not-working
+
 - http://www.logstashbook.com/code/6/shipper.conf
+
+
+## Multiline Codec
+- http://stackoverflow.com/questions/24457004/logstash-1-4-1-multiline-codec-not-working
+- [Logstash Multiline Filter for Java Stacktrace (tested on field)](http://webcache.googleusercontent.com/search?q=cache:4TVOi2erYS4J:https://gist.github.com/3182192+&cd=7&hl=en&ct=clnk&gl=us) - Code with example
+- [Use rsyslog as a local agent to ship logs to logstash.](https://github.com/logstash/cookbook/blob/gh-pages/recipes/rsyslog-agent/index.md)
 
 ## Installers 
 - Logstash 1.5.0 - http://download.elastic.co/logstash/logstash/logstash-1.5.0.zip
@@ -29,7 +35,7 @@ can reference to live file
 It can read windows event logs
 Other tuts from same blog - http://www.ragingcomputer.com/2014/02/securing-elasticsearch-kibana-with-nginx
 
-- **Logstash Cookbook** - Recipies for configuring the windows service https://github.com/logstash/cookbook/tree/gh-pages/recipes/windows-service
+- How to Start logstash on boot up. - Logstash Cookbook Recipie - https://github.com/logstash/cookbook/tree/gh-pages/recipes/windows-service
 
 - List of log shippers https://github.com/logstash/cookbook/blob/gh-pages/recipes/log-shippers/index.md
 
@@ -76,9 +82,17 @@ Matching Patterns found so far.
 %{TIMESTAMP_ISO8601} %{SYSLOG5424SD}
 %{TIMESTAMP_ISO8601} %{SYSLOG5424SD} %{LOGLEVEL} %{JAVACLASS}
 ```
+----
 
----------------
-## Sample Setup of Logstash 
+## File inputs 
+http://logstash.net/docs/1.3.2/inputs/file
+
+By default, each event is assumed to be one line. If you want to join lines, you'll want to use the multiline filter.
+
+Files are followed in a manner similar to "tail -0F". File rotation is detected and handled by this input.
+
+----
+## Logstash Multiline Tomcat and Apache Log Parsing
 
 - http://blog.lanyonm.org/articles/2014/01/12/logstash-multiline-tomcat-log-parsing.html
 
@@ -105,8 +119,7 @@ javax.xml.ws.WebServiceException: Failed to access the WSDL at: https://api.exam
 Caused by: java.net.SocketException: Connection reset
     ... 17 more
 ```
-
-
+Parse the message and convert time to timestring.
 ```
 filter {
   if [type] == "apache" {
@@ -143,15 +156,14 @@ TOMCAT_DATESTAMP 20%{YEAR}-%{MONTHNUM}-%{MONTHDAY} %{HOUR}:?%{MINUTE}(?::?%{SECO
     }
 ```
 
-The next thing to do is *parse* each event into its constituent parts. In the Tomcat log example above, the timestamp is followed by a `logging level`, `classname` and `log message`. Grok already provides some of of these patterns, so we just had to glue them together. Again, because there are two different syntaxes for a log statement, we have two patterns:
+The next thing to do is `parse` each event into its constituent parts. In the Tomcat log example above, the timestamp is followed by a `logging level`, `classname` and `log message`. Grok already provides some of of these patterns, so we just had to glue them together. Again, because there are two different syntaxes for a log statement, we have two patterns:
 
 ```
 CATALINALOG %{CATALINA_DATESTAMP:timestamp} %{JAVACLASS:class} %{JAVALOGMESSAGE:logmessage}
 TOMCATLOG %{TOMCAT_DATESTAMP:timestamp} \| %{LOGLEVEL:level} \| %{JAVACLASS:class} - %{JAVALOGMESSAGE:logmessage}
 ```
 
-We see some of the filter nuance below. These two `patterns` can be checked against an `event` by specifying the `match` with a `hash` of comma-separated `keys` and `values`. The grok filter will attempt to match each pattern before failing to parse. The filter’s [match documentation](http://logstash.net/docs/1.3.2/filters/grok#match) isn’t quite perfected on this point yet. Have a look at the grok filter below:
-
+We see some of the filter nuance below. These two `patterns` can be checked against an `event` by specifying the `match` with a `hash` of comma-separated `keys` and `values`. The grok filter will attempt to match each pattern before failing to parse. The filter’s [match documentation](http://logstash.net/docs/1.3.2/filters/grok#match) isn’t quite perfected on this point yet. Have a look at the grok `filter` below:
 
 ```
     if "_grokparsefailure" in [tags] {
@@ -170,12 +182,11 @@ We see some of the filter nuance below. These two `patterns` can be checked agai
 
 Inevitably, there will be `mess` in your logs that doesn’t conform to your grok parser. You can choose to drop events that fail to parse by using the drop filter inside a conditional as shown on the second line above. Where do `[tags]` come from you might ask?
 
-**`Tags`** can be applied to events at several points in the processing pipeline. For example, when the `multiline` filter successfully parses an event, it tags the event with `multiline`.
-
+`Tags` can be applied to events at several points in the processing pipeline. For example, when the `multiline` filter successfully parses an event, it tags the event with `multiline`.
 
 The `date` filter can accept a comma separated list of timestamp patterns to match. This allows either the `CATALINA_DATESTAMP` pattern or the `TOMCAT_DATESTAMP` pattern to match the date filter and be ingested by Logstash correctly.
 
-## Output
+### Output
 The output is simply an embedded Elasticsearch config as well as debugging to stdout. If you’d like to see the full config, have a look at the [gist](https://gist.github.com/LanyonM/8390458#file-logstash-java-conf).
 
 Full Config 
@@ -246,7 +257,7 @@ output {
 }
 ```
 
-###Grok Patterns
+### Grok Patterns
 
 There’s no magic to grok patterns (unless the built-ins work for you). There are however a couple resources that can make your parsing go faster. 
 
@@ -276,25 +287,12 @@ CATALINALOG %{CATALINA_DATESTAMP:timestamp} %{JAVACLASS:class} %{JAVALOGMESSAGE:
 # 2014-01-09 20:03:28,269 -0800 | ERROR | com.example.service.ExampleService - something compeletely unexpected happened...
 TOMCATLOG %{TOMCAT_DATESTAMP:timestamp} \| %{LOGLEVEL:level} \| %{JAVACLASS:cl
 ```
-
-###The Kibana Dashboard
-
-Elasticsearch and Kibana can put all logs on the same timeline.  
-
-
-## File inputs 
-http://logstash.net/docs/1.3.2/inputs/file
-
-By default, each event is assumed to be one line. If you want to join lines, you'll want to use the multiline filter.
-
-Files are followed in a manner similar to "tail -0F". File rotation is detected and handled by this input.
-
 -------
+[Viewing tomcat logs with Logstash in a Windows 7 machine](http://dotnetanalysis.blogspot.com/2014/11/viewing-tomcat-logs-with-logstash-in.html)
 
+#### Input: 
 
-- [Viewing tomcat logs with Logstash in a Windows 7 machine](http://dotnetanalysis.blogspot.com/2014/11/viewing-tomcat-logs-with-logstash-in.html)
-
-Input: This tells logstash where the data is coming from. For example File, eventlog, twitter, tcp and so on. All the supported inputs can be found here. http://logstash.net/docs/1.4.2/
+This tells logstash where the data is coming from. For example File, eventlog, twitter, tcp and so on. All the supported inputs can be found here. http://logstash.net/docs/1.4.2/
 
 - http://logstash.net/docs/1.4.2/inputs/syslog - This input is a good choice if you already use syslog today. It is also a good choice if you want to receive logs from appliances and network devices where you cannot run your own log collector.
 
@@ -306,11 +304,11 @@ Can either accept connections from clients or connect to a server, depending on 
 - http://logstash.net/docs/1.4.2/inputs/wmi - Collect data from WMI query
 This is useful for collecting performance metrics and other data which is accessible via WMI on a Windows host
 
-###Filter: 
+#### Filter: 
 
 This tells logstash what you want to do to the data before you output it into your log store (in our case elasticsearch). This accepts regular expressions. Most people use precreated regular expressions called grok, instead of writing their own regular expressions to parse log data. The complete list of filters you can use can be seen here.
 
-###Output: 
+#### Output: 
 
 This tells logstash where to output this filtered data to. We are going to output it into elasticsearch. You can have multiple outputs if you want.
 
@@ -335,11 +333,74 @@ output{
     }
 }
 ```
+
 The cluster name should match what you set in C:\Program Files\elasticsearch-1.3.4\config\elasticsearch.yml
--------
 
-
+----
+## Logstash config for IIS logs
 - http://dotnetanalysis.blogspot.com/2014/11/logstash-config-for-iis-logs.html
+
+```
+input {
+    file {     
+    path => ["C:/inetpub/logs/LogFiles/W3SVC1/*.log"]
+     type => ["iislog"]
+    } 
+ file {     
+      path => ["C:/Program Files/apache-tomcat-7.0.55/logs/*.txt"]
+      type => ["tomcatTxtLog"]
+    } 
+}
+
+
+filter {
+  if [type] == "iislog" {
+         #ignore log comments
+         if [message] =~ "^#"
+         {
+           drop {}
+         }
+   grok {
+     match => ["message", "%{TIMESTAMP_ISO8601:log_timestamp} %{WORD:iisSite} %{IPORHOST:site} %{NOTSPACE:Sip} %{NOTSPACE:verb} %{URIPATH:request} %{NOTSPACE:QueryString} %{NUMBER:port} %{NOTSPACE:Hyphen1} %{NOTSPACE:Cip} %{NOTSPACE:httpversion} %{NOTSPACE:UserAgent} %{NOTSPACE:Hyphen2} %{NOTSPACE:Hyphen3} %{NOTSPACE:referer} %{NUMBER:response} %{NUMBER:subresponse} %{NUMBER:scstatus} %{NUMBER:bytes:int} %{NUMBER:timetaken:int}"]
+        }
+   date
+   {
+      match => [ "log_timestamp", "YYYY-MM-dd HH:mm:ss" ]
+      timezone => "Etc/GMT"
+   }
+   mutate {
+     remove_field => [ "Hyphen1","Hyphen2","Hyphen3","Sip","Cip","log_timestamp"]
+     }
+   }
+  else if [type] == "tomcatTxtLog" {
+  #ignore log comments
+  if [message] =~ "^#"
+   {
+            drop {}
+         }
+         grok {
+           match => ["message", "%{COMMONAPACHELOG}"]
+           }
+     date
+     {     
+            match => [ "timestamp", "dd/MMM/yyyy:HH:mm:ss Z" ]
+            timezone => "Etc/GMT"
+           }
+      mutate {
+            remove_field => [ "timestamp"]
+         }
+ 
+     }
+}
+
+output{
+   elasticsearch {
+     cluster=>"VivekLocalMachine"
+      port => "9200"
+      protocol => "http"
+    }
+ }
+```
 
 ---- 
 ## Accessing Tomcat manager 
@@ -365,6 +426,7 @@ password: tomcat
 ```
 
 ----
+## Oh no, more logs, start with logstash 
 
 
 http://www.gridshore.nl/2013/11/10/oh-no-more-logs-start-with-logstash/
@@ -372,7 +434,7 @@ http://www.gridshore.nl/2013/11/10/oh-no-more-logs-start-with-logstash/
 Provides information abuot how to access tomcat access logs. If you want to obtain access logs in tomcat you need to add a valve to the configured host in server.xml.
  
 ```
- <Valve className="org.apache.catalina.valves.AccessLogValveDC"
+<Valve className="org.apache.catalina.valves.AccessLogValveDC"
        directory="/Users/jcoenradie/temp/logs/"
        prefix="localhost_access_log"
        suffix=".txt"
@@ -382,25 +444,16 @@ Provides information abuot how to access tomcat access logs. If you want to obta
 
 An example output from the logs than is, the table shows what the pattern we have means
 
-
 ```
-0:0:0:0:0:0:0:1 [2013-11-10T16:28:00.580+0100] C054CED0D87023911CC07DB00B2F8F75 "GET /admin/partials/dashboard.html HTTP/1.1" 200 988
-0:0:0:0:0:0:0:1 [2013-11-10T16:28:00.580+0100] C054CED0D87023911CC07DB00B2F8F75 "GET /admin/api/settings HTTP/1.1" 200 90
-0:0:0:0:0:0:0:1 [2013-11-10T16:28:02.753+0100] C054CED0D87023911CC07DB00B2F8F75 "GET /admin/partials/users.html HTTP/1.1" 200 7160
-0:0:0:0:0:0:0:1 [2013-11-10T16:28:02.753+0100] C054CED0D87023911CC07DB00B2F8F75 "GET /admin/api/users HTTP/1.1" 200 1332
-```
-
-```
-h	remote host
-t	timestamp
-S	session id
-r	first line of request
-s	http status code of response
-b	bytes send
+h remote host
+t timestamp
+S session id
+r first line of request
+s http status code of response
+b bytes send
 ```
 
-If you want mote information about the logging options check the tomcat configuration. http://tomcat.apache.org/tomcat-7.0-doc/config/valve.html#Access_Log_Valve
-
+If you want mote information about the logging options check the [tomcat configuration](http://tomcat.apache.org/tomcat-7.0-doc/config/valve.html#Access_Log_Valve). 
 
 First step is get the contents of this file into logstash. Therefore we have to make a change to add an input coming from a file.
 
@@ -422,17 +475,33 @@ output {
 }
 ```
 
+Logstash filtering
 
-The debug output now becomes.
+You can use filters to enhance the received events. The following configuration shows how to extract client, timestamp, session id, method, uri path, uri param, protocol, status code and bytes.
 
 ```
-output received {:event=>#"0:0:0:0:0:0:0:1 [2013-11-10T17:15:11.028+0100] 9394CB826328D32FEB5FE1F510FD8F22 \"GET /static/js/mediaOverview.js HTTP/1.1\" 304 -", "@timestamp"=>"2013-11-10T16:15:20.554Z", "@version"=>"1", "type"=>"tomcat-access", "host"=>"jettro-coenradies-macbook-pro.fritz.box", "path"=>"/Users/jcoenradie/temp/dpclogs/localhost_access_log.txt"}>, :level=>:info}
+input {
+  stdin { }
+  file {
+    type => "tomcat-access"
+    path => ["/Users/jcoenradie/temp/dpclogs/localhost_access_log.txt"]
+  }
+}
+filter {
+  if [type] == "tomcat-access" {
+    grok {
+      match => ["message","%{IP:client} \[%{TIMESTAMP_ISO8601:timestamp}\] (%{WORD:session_id}|-) \"%{WORD:method} %{URIPATH:uri_path}(?:%{URIPARAM:uri_param})? %{DATA:protocol}\" %{NUMBER:code} (%{NUMBER:bytes}|-)"]
+    }
+  }
+}
+output {
+  stdout { }
+ 
+  elasticsearch {
+    cluster => "logstash"
+  }
+}
 ```
-
-
-and more.. 
-
-----
 
 Another post showing how to access\configure tomcat logs 
 
@@ -476,7 +545,7 @@ Shipper configuration - http://logstashbook.com/code/6/shipper.conf
 
 
 ----
-## ElasticSearch Delete Index
+## How to Delete ElasticSearch Index
 - https://www.elastic.co/guide/en/elasticsearch/reference/current/indices-delete-index.html
 
 ```
@@ -486,17 +555,82 @@ $curl -XDELETE localhost:9200/twitter/
 The above example deletes an index called twitter. Specifying an index, alias or wildcard expression is required.
 
 ```
-curl -XDELETE localhost:9200/_all/
+$curl -XDELETE localhost:9200/_all/
 {"acknowledged":true}
 ```
 
-The delete index API can also be applied to more than one index, or on all indices (be careful!) by using _all or * as index.
-
-- http://stackoverflow.com/a/22932471
-
-## Install Tomcat 
+The delete index API can also be applied to more than one index, or on all indices (be careful!) by using _all or * as index. http://stackoverflow.com/a/22932471
+----
+## HOWTO: Install Tomcat 
 
 http://www.ntu.edu.sg/home/ehchua/programming/howto/Tomcat_HowTo.html
+----
+
+## HOWTO: Configure Access Logging in Tomcat
+
+http://www.techstacks.com/howto/configure-access-logging-in-tomcat.html
+
+Tomcat access logging is enabled by modifying the server.xml file and uncommenting the Access Log Valve.   In a default tomcat implementation, the access log valve section is located within the Host element.   Uncommenting the entry will enable an access log that contains fields equivalent to a "common" log file format from Apache. 
+
+The defaults for the valve will result in a file named "localhost_access_log" followed by the date, followed by a ".txt" file extension.   IP addresses will be logged, not hostnames and log file will be written into the ${tomcat.home}/logs directory.   The fields present in the log file using a common format are:
+
+  - Client host name (recorded as an IP if the default resolveHosts is not changed to "true").
+  - Remote logical username (which always prints a "-").
+  - Remote authenticated user ID (if one exists)
+  - Date and Time of the request
+  - HTTP Method and URI requested
+  - HTTP Response Status Code
+  - Size, in bytes, of the response (excluding http response headers)
+
+### Customizing the Access Log
+
+The common log format is ok but changing the pattern to combined adds the User-Agent (browser or robot type) and the referring web site and URI.   Tomcat also provides additional options to log things like the `request protocol`, the `local port` that received the request, `user session ID's`, `incoming` or `outgoing` `request headers`, etc.   A full list is documented at the [Tomcat Configuration Reference Valve Component page](http://tomcat.apache.org/tomcat-6.0-doc/config/valve.html#Access_Log_Valve).
+
+If you are running a version of tomcat greater than version 6.0.21 or tomcat 7, you can take advantage of the new `Remote IP Valve`. For access logging, the nice thing about this valve is that it will swap the client IP with an IP address passed with the X-Forwarded-For header—automatically—if an IP address is passed in the X-Forwarded-For header.  Loading it is pretty easy. Just add the org.apache.catalina.valves.RemoteIpValve to your server.xml before your AccessLogValve declaration. For example:
+
+```
+    <Valve className="org.apache.catalina.valves.RemoteIpValve" />
+    <!-- Access log processes all example.
+      Documentation at: /docs/config/valve.html -->
+         
+    <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" 
+      prefix="localhost_access_log." suffix=".txt"
+      pattern="combined" resolveHosts="false"/>
+```
+----
+[Monitor your cluster of Tomcat applications with Logstash and Kibana](https://spredzy.wordpress.com/2013/03/02/monitor-your-cluster-of-tomcat-applications-with-logstash-and-kibana/)
+
+Logs Access
+
+```
+<Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs"
+    prefix="localhost_access_log." suffix=".txt" renameOnRotate="true"
+    pattern="%h %l %u %t &quot;%r&quot; %s %b" />
+```
+
+Application Logs
+
+Here a library that will output log4j message directly to the logstash json_event format will be used
+
+Special thanks to [@lusis](https://twitter.com/lusis) for the hard work – so no groking will be required
+
+Jar : [jsonevent-layout](http://search.maven.org/remotecontent?filepath=net/logstash/log4j/jsonevent-layout/1.3/jsonevent-layout-1.3.jar)
+Dependency : [json-smart](http://json-smart.googlecode.com/files/json-smart-1.1.1.jar)
+Configure log4j.xml
+
+Edit the /usr/share/tomcat7/wepapps/myapp1/WEB-INF/classes/log4j.xml
+
+```
+<appender name="MYLOGFILE" class="org.apache.log4j.DailyRollingFileAppender">
+    <param name="File" value="/path/to/my/log.log"/>
+    <param name="Append" value="false"/>
+    <param name="DatePattern" value="'.'yyyy-MM-dd"/>
+    <layout class="net.logstash.log4j.JSONEventLayout"/>
+</appender>
+```
+
+
+
 
 -----
 ## Other links
@@ -506,9 +640,9 @@ http://www.ntu.edu.sg/home/ehchua/programming/howto/Tomcat_HowTo.html
 
 [How to Setup Logstash on Linux with ElasticSearch, Redis, Nginx](http://www.thegeekstuff.com/2014/12/logstash-setup/)
 
-[USING LOGSTASH, ELASTICSEARCH AND KIBANA TO MONITOR YOUR VIDEO CARD – A TUTORIAL](http://blog.trifork.com/2014/01/28/using-logstash-elasticsearch-and-kibana-to-monitor-your-video-card-a-tutorial/)
+[Using logstash, elasticsearch and kibana to monitor your video card – a tutorial](http://blog.trifork.com/2014/01/28/using-logstash-elasticsearch-and-kibana-to-monitor-your-video-card-a-tutorial/)
 
-[Monitor your cluster of Tomcat applications with Logstash and Kibana](https://spredzy.wordpress.com/2013/03/02/monitor-your-cluster-of-tomcat-applications-with-logstash-and-kibana/)
+
 
 [5-minute Logstash: Parsing and Sending a Log File](http://blog.sematext.com/2013/12/19/getting-started-with-logstash/)
 
@@ -526,5 +660,67 @@ http://www.reddit.com/r/sysadmin/comments/2m8qzf/sysadmins_what_do_you_do_with_y
 Nice presentation: = http://www.soit.sk/media/a542/file/item/sk/0000/elk_stack_alexander_szalonnas.w5s3.pdf
 http://www.cybertechquestions.com/how-to-setup-logstash-on-azure-with-windows-configuration_1114421.html
 
+[Logstash date parsing as timestamp using the date filter](http://stackoverflow.com/questions/25156517/logstash-date-parsing-as-timestamp-using-the-date-filter) 
 
-[The above example deletes an index called twitter. Specifying an index, alias or wildcard expression is required.](http://stackoverflow.com/questions/25156517/logstash-date-parsing-as-timestamp-using-the-date-filter)
+
+
+
+------------
+
+```
+%a - Remote IP address
+%A - Local IP address
+%b - Bytes sent, excluding HTTP headers, or '-' if zero
+%B - Bytes sent, excluding HTTP headers
+%h - Remote host name (or IP address if enableLookups for the connector is false)
+%H - Request protocol
+%l - Remote logical username from identd (always returns '-')
+%m - Request method (GET, POST, etc.)
+%p - Local port on which this request was received. See also %{xxx}p below.
+%q - Query string (prepended with a '?' if it exists)
+%r - First line of the request (method and request URI)
+%s - HTTP status code of the response
+%S - User session ID
+%t - Date and time, in Common Log Format
+%u - Remote user that was authenticated (if any), else '-'
+%U - Requested URL path
+%v - Local server name
+%D - Time taken to process the request, in millis
+%T - Time taken to process the request, in seconds
+%F - Time taken to commit the response, in millis
+%I - Current request thread name (can compare later with stacktraces)
+```
+
+Default
+```
+pattern="%h %l %u %t &quot;%r&quot; %s %b" />
+```
+
+```
+%h - Remote host name (or IP address if enableLookups for the connector is false)
+%l - Remote logical username from identd (always returns '-')
+%u - Remote user that was authenticated (if any), else '-'
+%t - Date and time, in Common Log Format
+
+%r - First line of the request (method and request URI)
+
+%s - HTTP status code of the response
+%b - Bytes sent, excluding HTTP headers, or '-' if zero
+```
+
+Proposed
+
+```
+pattern="%h %t %S &quot;%r&quot; %s %b" />
+```
+
+```
+h remote host
+t timestamp
+S session id
+r first line of request
+s http status code of response
+b bytes send
+```
+
+
