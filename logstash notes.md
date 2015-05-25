@@ -728,7 +728,7 @@ Slides
 ====
 1- [Logging with Logstash](files/2014-04-22_LoggingWithLogstash_BastianWidmer_CampusBern.pdf) [source](http://bastianwidmer.ch/slides/2014-04-22_LoggingWithLogstash_BastianWidmer_CampusBern.pdf)
 
-2- 
+2-  [Logstash Kibana Intro](files/logstash-kibana-intro.pdf) [Source](https://secure.trifork.com/dl/goto-berlin-2014/GOTO_Night/logstash-kibana-intro.pdf)
 
 
 
