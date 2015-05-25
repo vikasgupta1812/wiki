@@ -724,3 +724,11 @@ b bytes send
 ```
 
 
+Slides
+====
+1- [Logging with Logstash](files/2014-04-22_LoggingWithLogstash_BastianWidmer_CampusBern.pdf) [source](http://bastianwidmer.ch/slides/2014-04-22_LoggingWithLogstash_BastianWidmer_CampusBern.pdf)
+
+2- 
+
+
+
