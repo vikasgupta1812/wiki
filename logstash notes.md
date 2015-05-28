@@ -753,6 +753,7 @@ b bytes send
 ```
 
 
+<<<<<<< HEAD
 http://www.ragingcomputer.com/2014/02/removing-old-records-for-logstash-elasticsearch-kibana
 
 
@@ -867,3 +868,13 @@ JSON different fields - http://logstash.net/docs/1.4.2/filters/json
 http://stackoverflow.com/questions/21907261/having-logstash-reading-json
 
 https://www.elastic.co/guide/en/logstash/current/input-plugins.html
+=======
+Slides
+====
+1- [Logging with Logstash](files/2014-04-22_LoggingWithLogstash_BastianWidmer_CampusBern.pdf) [source](http://bastianwidmer.ch/slides/2014-04-22_LoggingWithLogstash_BastianWidmer_CampusBern.pdf)
+
+2-  [Logstash Kibana Intro](files/logstash-kibana-intro.pdf) [Source](https://secure.trifork.com/dl/goto-berlin-2014/GOTO_Night/logstash-kibana-intro.pdf)
+
+
+
+>>>>>>> 0f7e5f861565fb28c21a6e7dde2c99b012d3e665

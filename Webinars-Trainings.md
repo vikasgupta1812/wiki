@@ -337,3 +337,54 @@ Our course syllabus can be seen at www.codeskulptor.org/coursera/principlescompu
 ----
 ## [COMP102.2x: Introduction to Java Programming – Part 2](https://www.edx.org/course/introduction-java-programming-part-2-hkustx-comp102-2x)
 The Hong Kong University of Science and Technology via edX
+
+----
+## Special May Meetup
+Bay Area useR Group (R Programming Language)
+
+**Markus Gesmann**
+
+Communicating risk - a perspective from an insurer 
+
+Communicating risk makes risk transfer possible. Over the last tenyears we have observed a convergence of the insurance and capital markets. Insurance linked securities (ILS), such as catastrophe bonds, have become more popular by investors looking for ‘non-correlated’ risks.   
+At the same time R has gained much momentum in the financial services industry as a tool of choice for risk analytics. 
+The author has worked with R in a major insurance and reinsurance market and a major investment bank over the last 10 years and gained much experience in measuring, monitoring and communicating the performance of underwriters, who are portfolio risk selectors on behalf of insurance companies and their capital providers. 
+The talk will give an overview of R packages and that have been introduced and used over the years to measure and communicate risk and performance in the insurance context.
+
+
+
+**Anthony Goldbloom**
+
+Kaggle is a community of over 300K data scientists who build 60K models per month to participate in our competitions. Kaggle is currently focused on building tooling that makes it easier for data scientists to collaborate and build off each other's work. This lightening talk will demo some of that functionality and show how it can be used by the R community to learn and push the state of the art 
+
+
+**Karim Chine**
+
+Towards a universal platform for data science
+
+Today, R and Python are everywhere, their capabilities are deployed in a broad spectrum of ways. We have built and made accessible ElasticR, an on-line platform to broaden that spectrum and make R and Python even more Ubiquitous.
+
+ElasticR enables everyone to seamlessly provision and control on any public or private cloud, any cluster, any cheap computing device, interactive dual environment (R+Python) engines and use them:
+
+From an R+Python workbench or notebook, running in the browser, accessible collaboratively like a Google document from anywhere and any device including tablets and mobile phones.
+
+From an R or Python command lines, to build programmatically, in a fully reproducible manner data science infrastructures, services, workflows, applications, dashboards, etc.
+
+To embed R+Python capabilities, programmatically or interactively, in Microsoft Office documents, spreadsheets or presentations.
+
+To enable data science-centric social networking and to make the sharing of data science artificats, static and interactive, as easy as sharing a file on dropbox 
+
+To instrumentalize R+Python in the IoT realm and to create links between R+Python engines and the physical world.
+
+The presentation will be an overview of the main concepts behind the platform's design and will include live demos of ElasticR on AWS, GCE, Azure and Raspberry Pis.
+
+
+
+The video of the meetup, provided courtesy of Microsoft, may be found : https://www.youtube.com/watch?v=0Szs3RXVjpg
+
+Excellent meetup - three high level speakers, lots of good info 
+- On insurance, risk, terminology, R libraries, data visualization from Markus
+- Kaggle competition insights from Anthony
+- ElasticR - mind blowing demo of data science cloud platform (kind of Google spreadsheets with R and Python on AWS/Google cloud) from Karim.
+----
+

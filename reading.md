@@ -205,4 +205,8 @@ Dennis' slides: https://www.dropbox.com/s/r4m9aym2xvyadzk/SFDataScience_DennisOb
  - http://stackoverflow.com/questions/162896/emacs-on-mac-os-x-leopard-key-bindings
 
 - [Sublime Text from Command Line (Win7)](http://stackoverflow.com/questions/9440639/sublime-text-from-command-line-win7)
-- 
+- [Nodejs app running on Azure app service developed in Visual Studio Code published by Git](http://azure.microsoft.com/blog/2015/05/11/visual-studio-code-and-azure-app-service-a-perfect-fit/)
+
+
+
+
