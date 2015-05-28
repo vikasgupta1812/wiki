@@ -560,10 +560,39 @@ $curl -XDELETE localhost:9200/_all/
 ```
 
 The delete index API can also be applied to more than one index, or on all indices (be careful!) by using _all or * as index. http://stackoverflow.com/a/22932471
+
+
+####Delete Mapping [Source](https://www.elastic.co/guide/en/elasticsearch/reference/current/indices-delete-mapping.html)
+
+Allow to delete a mapping (type) along with its data. The REST endpoints are
+
+```
+[DELETE] /{index}/{type}
+[DELETE] /{index}/{type}/_mapping
+[DELETE] /{index}/_mapping/{type}
+```
+where
+
+index
+```
+* | _all | glob pattern | name1, name2, …
+```
+type
+```
+* | _all | glob pattern | name1, name2, …
+```
+Note, most times, it make more sense to reindex the data into a fresh index compared to delete large chunks of it.
+
+
+
+
+
+
 ----
 ## HOWTO: Install Tomcat 
 
 http://www.ntu.edu.sg/home/ehchua/programming/howto/Tomcat_HowTo.html
+
 ----
 
 ## HOWTO: Configure Access Logging in Tomcat
@@ -642,8 +671,6 @@ Edit the /usr/share/tomcat7/wepapps/myapp1/WEB-INF/classes/log4j.xml
 
 [Using logstash, elasticsearch and kibana to monitor your video card – a tutorial](http://blog.trifork.com/2014/01/28/using-logstash-elasticsearch-and-kibana-to-monitor-your-video-card-a-tutorial/)
 
-
-
 [5-minute Logstash: Parsing and Sending a Log File](http://blog.sematext.com/2013/12/19/getting-started-with-logstash/)
 
 [Logstash - Windows install notes](https://github.com/verbosemode/public-notes/blob/master/logstash-windows.md)
@@ -655,14 +682,16 @@ Edit the /usr/share/tomcat7/wepapps/myapp1/WEB-INF/classes/log4j.xml
 [Logstash Multiline Tomcat and Apache Log Parsing](http://blog.lanyonm.org/articles/2014/01/12/logstash-multiline-tomcat-log-parsing.html)
 
 http://stackoverflow.com/questions/26828099/kibana-returns-connection-failed
+
 https://groups.google.com/forum/#!topic/logstash-users/7-cxJLlhDD0
+
 http://www.reddit.com/r/sysadmin/comments/2m8qzf/sysadmins_what_do_you_do_with_your_logs/
-Nice presentation: = http://www.soit.sk/media/a542/file/item/sk/0000/elk_stack_alexander_szalonnas.w5s3.pdf
+
+Nice presentation: http://www.soit.sk/media/a542/file/item/sk/0000/elk_stack_alexander_szalonnas.w5s3.pdf
+
 http://www.cybertechquestions.com/how-to-setup-logstash-on-azure-with-windows-configuration_1114421.html
 
 [Logstash date parsing as timestamp using the date filter](http://stackoverflow.com/questions/25156517/logstash-date-parsing-as-timestamp-using-the-date-filter) 
-
-
 
 
 ------------
@@ -724,3 +753,117 @@ b bytes send
 ```
 
 
+http://www.ragingcomputer.com/2014/02/removing-old-records-for-logstash-elasticsearch-kibana
+
+
+
+
+
+https://www.ddreier.com/logstash-configuration-dissection/
+
+To get Event Logs from the Windows boxes, I'm using nxlog-ce and (the first half of) a config that I found on the 'net somewhere
+http://nxlog.org/
+
+
+
+
+Logging Windows event log information to Logstash using nxlog and JSON transport
+
+
+https://gist.github.com/robinsmidsrod/4215337
+http://webcache.googleusercontent.com/search?q=cache:zWLISralqrkJ:https://gist.github.com/robinsmidsrod/4215337+&cd=5&hl=en&ct=clnk&gl=us
+
+
+Config files used to send Windows Eventlog data with NXLOG to Logstash
+https://gist.github.com/LVLAaron/8085923
+
+Building up a logging server – OSS style!
+http://girl-germs.com/?p=438
+
+
+https://www.elastic.co/guide/en/logstash/master/plugins-inputs-eventlog.html
+
+
+http://cppii.kcc.com/ProcessesReport?name=USTWA013&date=2015-05-18&workload=byGroup&scope=day&hour=12&statsOnly=false&summarize=false&link#
+
+http://cppii.kcc.com/ProcessesReport?name=&date=2015-05-18&workload=byGroup&scope=day&hour=12&statsOnly=false&summarize=true&link=
+
+http://cppii.kcc.com/ResponseTime?name=USTWA013&date=2015-05-18&workload=byGroup&scope=day&hour=12&statsOnly=false&summarize=false&link=
+
+http://cppii.kcc.com/IOReport?name=USTWA013&date=2015-05-18&workload=byGroup&scope=day&hour=12&statsOnly=false&summarize=false&link=
+
+http://cppii.kcc.com/MemoryReport?name=&date=2015-05-18&workload=byGroup&scope=day&hour=12&statsOnly=true&summarize=true&link=
+
+http://cppii.kcc.com/DiskReport?name=&date=2015-05-18&workload=byGroup&scope=day&hour=12&statsOnly=true&summarize=true&link=
+
+http://cppii.kcc.com/NetworkReport?name=&date=2015-05-18&workload=byGroup&scope=day&hour=12&statsOnly=true&summarize=true&link=
+
+http://cppii.kcc.com/ResponseTime?name=&date=2015-05-18&workload=byGroup&scope=day&hour=12&statsOnly=false&summarize=true&link=
+
+http://cppii.kcc.com/CorrelationReport?name=&date=2015-05-18&workload=byGroup&scope=day&hour=12&statsOnly=false&summarize=true&link=
+
+http://cppii.kcc.com/ProcessesReport?name=UKTCAW01&date=2015-05-18&workload=byGroup&scope=day&hour=12&statsOnly=false&summarize=false&link
+
+http://cppii.kcc.com/ProcessesReport?name=USTWA013&date=2015-05-18&workload=byGroup&scope=day&hour=12&statsOnly=false&summarize=false&link#
+
+####JSON output 
+- http://cppii.kcc.com/GetProcesses?report=ProcessesReport&nodeName=USTWA013&date=2015-05-18&workload=byGroup&scope=day&hour=12&listProcesses=true&statsOnly=false&summarize=false
+
+
+####Download Json output
+```
+curl -v "cppii.kcc.com/GetProcesses?report=ProcessesReport&nodeName=USTWA013&date=2015-05-23&workload=byGroup&scope=day&hour=12&listProcesses=true&statsOnly=false&summarize=false" > C:\Logstash\Logs\prodlog.23-05-2015.json
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0*   Trying 165.28.44.88...
+* Connected to cppii.kcc.com (165.28.44.88) port 80 (#0)
+> GET /GetProcesses?report=ProcessesReport&nodeName=USTWA013&date=2015-05-23&workload=byGroup&scope=day&hour=12&listProcesses=true&statsOnly=false&summarize=false HTTP/1.1
+> User-Agent: curl/7.41.0
+> Host: cppii.kcc.com
+> Accept: */*
+>
+< HTTP/1.1 200 OK
+< Cache-Control: no-store
+< Expires:-1
+< Content-Type: text/json
+< Content-Length: 1443554
+< X-UA-Compatible:IE=edge
+<
+{ [16384 bytes data]
+100 1409k  100 1409k    0     0  6024k      0 --:--:-- --:--:-- --:--:-- 6024k
+* Connection #0 to host cppii.kcc.com left intact
+
+```
+
+### windows-powershell-getprocess https://github.com/svennergr/windows-powershell-getprocess
+A NodeJS Module to get process information on Windows runtimes
+
+Injesting Json 
+http://stackoverflow.com/a/21915231
+
+```
+input {
+   stdin {
+   type => "stdin-type"
+ }
+
+ file {
+    type => "prodlog"
+
+    # Wildcards work, here :)
+    path => [ "/root/isaac/Mylogs/testlog.log"]
+
+    codec => json
+ }
+}
+
+output {
+  stdout { debug => true }
+  elasticsearch { embedded => true }
+}
+```
+
+JSON different fields - http://logstash.net/docs/1.4.2/filters/json
+http://stackoverflow.com/questions/21907261/having-logstash-reading-json
+
+https://www.elastic.co/guide/en/logstash/current/input-plugins.html
