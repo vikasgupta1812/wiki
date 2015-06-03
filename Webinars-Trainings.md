@@ -1,7 +1,11 @@
 Webinars-Trainings
 ====
 
-## 
+## Rstudio Webinars 
+Webinar Recordings: Previous webinars can be found here http://info.rstudio.com/CXP0040GS03N0CYC2O01N04
+
+
+
 
 ----
 ## [Rapid Prototyping Web Applications Using Node.js and MongoDB](http://techbus.safaribooksonline.com/video/web-development/9781491925416)

@@ -153,3 +153,20 @@ set the new line delimiter, defaults to "\n"
 
 Resolve host name from IP address `nslookup`
 http://serverfault.com/questions/74042/resolve-host-name-from-ip-address
+----
+
+
+
+ELK and Kafka by Elastic Co - https://speakerdeck.com/elastic/elk-and-kafka
+Video (thanks Tin!) of both talks: https://www.youtube.com/watch?v=51wKfT4t7Jg
+http://www.meetup.com/Silicon-Valley-Elastic-Fantastics/events/221527825/?eventId=221527825&action=detail
+
+
+Logstash 1.5 and the three silly plugins by Elastic Co
+https://speakerdeck.com/elastic/logstash-1-dot-5-and-the-three-silly-plugins
+
+Talks by Elastic Co
+https://speakerdeck.com/elastic?page=2
+
+What's Cookin' in Kibana 4
+https://speakerdeck.com/elastic/whats-cookin-in-kibana-4
