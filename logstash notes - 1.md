@@ -1,8 +1,8 @@
 
-### your-logs-are-your-data-logstash-elasticsearch
+## Your-logs-are-your-data-logstash-elasticsearch
 http://www.javacodegeeks.com/2013/02/your-logs-are-your-data-logstash-elasticsearch.html
 
-### Run elastic search 
+## Run elastic search 
 
 ```
 elasticsearch.bat -Des.index.store.type=memory -Des.network.host=localhost
@@ -52,10 +52,12 @@ java -cp logstash-1.1.9-monolithic logstash.runner agent -f logstash.conf
 ```
 
 
-Install plugin from downloaded file. 
+## Install plugin from downloaded file. 
 
 ```
 C:\Logstash\elasticsearch\bin>plugin.bat -u "file:///C:/Users/q02874/AppData/Local/Temp/elasticsearch-kopf-master.zip" -i lmenezes/elasticsearch-kopf
+```
+```
 -> Installing lmenezes/elasticsearch-kopf...
 Trying file:/C:/Users/q02874/AppData/Local/Temp/elasticsearch-kopf-master.zip...
 Downloading ....................DONE
@@ -65,60 +67,53 @@ Identified as a _site plugin, moving to _site structure ...
 
 
 
-
+## delete old indices
 If you want to delete old indices after a certain time period, you can use the Elasticsearch Curator tool.
 http://www.elastic.co/guide/en/elasticsearch/client/curator/current/index.html
 
 
------------
-
-Tomcat Manager: 
+## Tomcat Manager: 
 xml 
 - https://www.elastic.co/guide/en/logstash/current/plugins-filters-xml.html
 - best practice for XML data / elasticsearch https://groups.google.com/forum/#!topic/logstash-users/e6pQLQ_hBZ0
 
------------
-- 9 uses for cURL worth knowing - http://httpkit.com/resources/HTTP-from-the-Command-Line/
 
------------
+## 9 uses for cURL worth knowing 
+> http://httpkit.com/resources/HTTP-from-the-Command-Line/
 
-Download Json data from cpp site. 
+----
+## Download Json data from cpp site. 
 
-Stack overflow find and replace (with regex)
+### Sublime find and replace (with regex)
 ```
 \}, \{ 
 \}\n\{ 
 ```
 
-Remove leading and trailing junk from json output
+### Remove leading and trailing junk from json output
 ```
 sed s/"{ \"fProcesses\" : \["//g prodlog.22-05-2015.json
 sed s/"}\]"//g prodlog.22-05-2015.json
 ```
-
-Attempt to have the new line character entered by sed -- unsuccessful. 
+### Attempt to have the new line character entered by sed -- unsuccessful. 
 ```
 sed s/"}, {"/"} \
 {"/g prodlog.22-05-2015.json | wc -l
 ```
-It seems that new logstash supports delimiter clause, where ", " can be defined as delimiter. 
-----
+### New logstash supports delimiter clause, where ", " can be defined as delimiter. 
 
 
-Email output - https://www.elastic.co/guide/en/logstash/current/plugins-outputs-email.html
+## Email output 
+> https://www.elastic.co/guide/en/logstash/current/plugins-outputs-email.html
 
-
-
----- 
-LumberJack --> logstash forwarder
+ 
+## LumberJack --> logstash forwarder
 
 https://logstash.jira.com/browse/LOGSTASH-1856
 
 "go build" the project, it creates a "logstash-forwarder-master.exe" executable in the base directory.
 
 And don't forget that the path names in Windows need to be of the format : `c:\\apps\\mylogs`
-
-
 
 ----
 How to Logstash-forwarder as Windows Service http://stackoverflow.com/questions/29610991/logstash-forwarder-as-windows-service
@@ -138,7 +133,6 @@ I use NXLog to ship Windows event logs, IIS logs and etc to the ELK stack withou
 http://everythingshouldbevirtual.com/highly-available-elk-elasticsearch-logstash-kibana-setup﻿
 
 ----
-
 Logstash File configuration options:
 
 `delimiter`
@@ -147,26 +141,27 @@ Value type is string
 Default value is "\n"
 set the new line delimiter, defaults to "\n"
 
-
 ----
 
-
-Resolve host name from IP address `nslookup`
+## Resolve host name from IP address `nslookup`
 http://serverfault.com/questions/74042/resolve-host-name-from-ip-address
-----
 
+## ELK and Kafka by Elastic Co
 
-
-ELK and Kafka by Elastic Co - https://speakerdeck.com/elastic/elk-and-kafka
-Video (thanks Tin!) of both talks: https://www.youtube.com/watch?v=51wKfT4t7Jg
+https://speakerdeck.com/elastic/elk-and-kafka
+Video of both talks: https://www.youtube.com/watch?v=51wKfT4t7Jg
 http://www.meetup.com/Silicon-Valley-Elastic-Fantastics/events/221527825/?eventId=221527825&action=detail
 
 
-Logstash 1.5 and the three silly plugins by Elastic Co
+## Logstash 1.5 and the three silly plugins by Elastic Co
 https://speakerdeck.com/elastic/logstash-1-dot-5-and-the-three-silly-plugins
 
-Talks by Elastic Co
+## Talks by Elastic Co
 https://speakerdeck.com/elastic?page=2
 
-What's Cookin' in Kibana 4
+## What's Cookin' in Kibana 4
 https://speakerdeck.com/elastic/whats-cookin-in-kibana-4
+
+## 5 Logstash Pitfalls and How to Avoid Them
+http://logz.io/blog/5-logstash-pitfalls-and-how-to-avoid-them/
+
