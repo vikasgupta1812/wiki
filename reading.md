@@ -205,8 +205,20 @@ Dennis' slides: https://www.dropbox.com/s/r4m9aym2xvyadzk/SFDataScience_DennisOb
  - http://stackoverflow.com/questions/162896/emacs-on-mac-os-x-leopard-key-bindings
 
 - [Sublime Text from Command Line (Win7)](http://stackoverflow.com/questions/9440639/sublime-text-from-command-line-win7)
+
 - [Nodejs app running on Azure app service developed in Visual Studio Code published by Git](http://azure.microsoft.com/blog/2015/05/11/visual-studio-code-and-azure-app-service-a-perfect-fit/)
-- []
+
+- [6 Characteristics Of Data-Driven Rock Stars](http://www.informationweek.com/big-data/big-data-analytics/6-characteristics-of-data-driven-rock-stars/d/d-id/1320502?image_number=1)
+    - They understand the data 
+    - they are curious
+    - They actively collaborate with others. 
+    - They avoid confirmation bias - donot disregard\omit an evidence because it differs from their opinion.
+    - They update their skills. - meeups, online programs, boot camps, 
+    - They are concerned about business impact. 
+
+- [Data science demands elastic infrastructure.#DataScience,#BigData,#DataScience, #DataInfrastructure,#DataIntegration](http://www.techrepublic.com/article/data-science-demands-elastic-infrastructure/)
+    tl;;dr - success of big data depends on iteraton, on experimentation as you figure our the right questions to ask and the best way to answer them. 
+
 
 
 

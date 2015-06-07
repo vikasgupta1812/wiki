@@ -1,6 +1,14 @@
 Webinars-Trainings
 ====
 
+## Data Science at the Command Line 
+2 Hours: Free @OReillyMedia Webcast: Learn about #DataScience at the Command Line w/ @jeroenhjanssens
+https://beta.oreilly.com/learning/data-science-at-the-command-line?cmp=tw-data-webcast-lp-stny15_3115
+
+![](https://cfvod.kaltura.com/p/1681692/sp/168169200/thumbnail/entry_id/0_fath51xi/version/100000/acv/92/width/960/height/565)
+
+
+----
 ## Rstudio Webinars 
 Webinar Recordings: Previous webinars can be found here http://info.rstudio.com/CXP0040GS03N0CYC2O01N04
 
@@ -391,4 +399,5 @@ Excellent meetup - three high level speakers, lots of good info
 - Kaggle competition insights from Anthony
 - ElasticR - mind blowing demo of data science cloud platform (kind of Google spreadsheets with R and Python on AWS/Google cloud) from Karim.
 ----
+
 
