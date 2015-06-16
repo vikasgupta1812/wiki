@@ -2,8 +2,7 @@ Machine Learning with R
 ====
 
 ## Book - Machine Learning with R Cookbook 
-http://goo.gl/PpsgO0
-
+![http://goo.gl/PpsgO0](http://techbus.safaribooksonline.com/static/201506-7962-techbus/images/9781783982042/9781783982042_s.jpg)
 
 ## Caret package 
 - caret - Classification and Regression Training: Unified interface to ~150 ML algorithms in R. - http://caret.r-forge.r-project.org/
@@ -25,14 +24,9 @@ http://goo.gl/PpsgO0
 - Build a SPAM filter with R - http://thinktostart.com/build-a-spam-filter-with-r/
 
 ## Docker and Azure -- 
-Introducing Docker in Microsoft Azure Marketplace  -https://azure.microsoft.com/blog/2015/01/08/introducing-docker-in-microsoft-azure-marketplace/
-Docker Client for Windows is Now Available - https://azure.microsoft.com/blog/2015/04/16/docker-client-for-windows-is-now-available/
-Docker client for Mac - https://docs.docker.com/installation/mac/
+- Introducing Docker in Microsoft Azure Marketplace  -https://azure.microsoft.com/blog/2015/01/08/introducing-docker-in-microsoft-azure-marketplace/
 
+	![](https://www.google.com/webpagethumbnail?c=41&r=4&s=300&d=https://azure.microsoft.com/blog/2015/01/08/introducing-docker-in-microsoft-azure-marketplace/&a=AIYkKU9E8bGErlme0PrkPPFkt7Ldxkulrw)
 
-<img class="gwt-Image" src="https://www.google.com/webpagethumbnail?c=41&amp;r=4&amp;s=300&amp;d=https://github.com/ivanliu1989/SwiftKey-Natural-language&amp;a=AIYkKU9PtuqB4js63ph2oY3Qg4vZEh_cHQ" style="position: absolute; top: 0px; left: 0px;">
-
-
-https://www.google.com/webpagethumbnail?c=41&amp;r=4&amp;s=300&amp;d=https://github.com/ivanliu1989/SwiftKey-Natural-language&amp;a=AIYkKU9PtuqB4js63ph2oY3Qg4vZEh_cHQ
-https://www.google.com/webpagethumbnail?c=41&amp;r=4&amp;s=300&amp;d=https://github.com/ivanliu1989/SwiftKey-Natural-language&amp
-
+- Docker Client for Windows is Now Available - https://azure.microsoft.com/blog/2015/04/16/docker-client-for-windows-is-now-available/
+- Docker client for Mac - https://docs.docker.com/installation/mac/ ![](https://www.google.com/webpagethumbnail?c=41&r=4&s=300&d=https://docs.docker.com/installation/mac/&a=AIYkKU8pr3BCR2XBP1jF1tYgXIkdPZu6mQ)
