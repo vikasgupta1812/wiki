@@ -2,7 +2,9 @@ Machine Learning with R
 ====
 
 ## Book - Machine Learning with R Cookbook 
-![http://goo.gl/PpsgO0](http://techbus.safaribooksonline.com/static/201506-7962-techbus/images/9781783982042/9781783982042_s.jpg)
+http://goo.gl/PpsgO0
+
+![](http://techbus.safaribooksonline.com/static/201506-7962-techbus/images/9781783982042/9781783982042_s.jpg)
 
 ## Caret package 
 - caret - Classification and Regression Training: Unified interface to ~150 ML algorithms in R. - http://caret.r-forge.r-project.org/
