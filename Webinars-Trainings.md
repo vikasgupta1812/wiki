@@ -1,5 +1,59 @@
 Webinars-Trainings
 ====
+## Thoughtful Machine Learning: Sentiment Analysis Using Support Vector Machines in Ruby
+In this webcast Matthew Kirk will detect sentiment in tweets using the Support Vector Machines algorithm.
+Video by Matthew Kirk, May 15, 2015
+![](https://cfvod.kaltura.com/p/1681692/sp/168169200/thumbnail/entry_id/0_18fzd9kr/version/100000/acv/152/width/960/height/565)
+
+
+## The Cloud Data Science Process: Live Webinar with Azure Data Scientists
+https://azureinfo.microsoft.com/CO-Azure-WBNR-FY15-03March-CloudDataScienceProcess-Register.html?ls=Social&lsd=twitter
+The Cloud Data Science Process (CDSP) demonstrates the end-to-end data science process in the cloud, using the full spectrum of Azure technologies, programming languages such as Python and R, and other tools. The end-to-end process starts from raw data, and ends at consuming the web service API of machine learning models that predicts new observations in production. The CDSP showcases solutions in a group of scenarios of varying scale and complexity, and provides supporting artifacts which include detailed guides, tutorials, videos, templates, and published code.
+
+This webinar covers an end-to-end story using SQL Server and IPython Notebook on Azure virtual machines as the data storage and processing tools. It walks through the end-to-end data science process using a publicly available dataset – the NYC Taxi Trips Data – in the first half, followed by an open Q&A session to address further questions.
+https://event.on24.com/interface/registration/autoreg/index.html?eventid=992744&sessionid=1&key=5FC9F56E3D4B2BB69B77C39ECDD01C36&firstname=Vikas&lastname=Gupta&company=Cognizant&email=vikas.gupta@cognizant.com&job_title=Developer+%2F+Engineer&country=North+America&zip=076666804&work_phone=02018010233
+
+## DSC Webinar Series: From Insight to Action – Predictive and Prescriptive Analytics from IBM
+http://www.datasciencecentral.com/video/from-insight-to-action-predictive-and-prescriptive-analytics
+
+## DSC Webinar Series: The Beautiful Science of Data Visualization
+http://www.datasciencecentral.com/video/dsc-webinar-series-the-beautiful-science-of-data-visualization
+
+## DSC Webinar Series: Learn How To Work with Large Datasets to Build Predictive Models with Microsoft’s Analytics Toolkit
+http://www.datasciencecentral.com/video/dsc-webinar-series-learn-how-to-work-with-large-datasets
+
+## DSC Webinar Series: Data Lakes, Reservoirs, and Swamps: A Data Science and Engineering Perspective
+http://www.datasciencecentral.com/video/dsc-webinar-series-data-lakes-reservoirs-and-swamps
+
+## DSC Webinar Series: Predictive Analytics – Rethinking how you process your Big Data
+http://www.datasciencecentral.com/video/dsc-webinar-series-predictive-analytics-rethinking-how-you
+
+## DSC Webinar Series: Toolsets to Streamline the Workflow for Today’s Data Analytics
+http://www.datasciencecentral.com/video/dsc-webinar-series-toolsets-to-streamline-the-workflow-for-today
+
+## DSC Webinar Series: Avoiding Data Pitfalls - Gaps between Data & Reality
+http://www.datasciencecentral.com/video/dsc-webinar-series-avoiding-data-pitfalls-gaps-between-data-and-r
+
+## DSC Webinar Series: How United Way Embraces Data Visualization To Drive Social Impact
+http://www.datasciencecentral.com/video/dsc-webinar-series-how-united-way-embraces-data-visualization
+
+## DSC Webinar Series: Data Transformation and Acquisition Techniques, to Handle Petabytes of Data
+http://www.datasciencecentral.com/video/dsc-webinar-series-data-transformation-and-acquisition-techniques
+
+## DSC Webinar Series: Improving the Data Modeling Workflow
+http://www.datasciencecentral.com/video/dsc-webinar-series-improving-the-data-modeling-workflow
+
+## DSC Webinar Series: Using Data Science Techniques for Automatic Clustering of IT Infrastructure Alerts
+http://www.datasciencecentral.com/video/dsc-webinar-using-data-science-techniques-for-automatic-cluster
+
+## DSC Webinar Series: Combining Data Visualization with Data Management to Achieve Faster Results
+http://www.datasciencecentral.com/video/combining-data-visualization-with-data-management-faster-results
+
+
+## lynda.com Training | Up and Running with Raspberry Pi
+http://www.lynda.com/Linux-tutorials/Up-Running-Raspberry-Pi/132717-2.html
+
+
 
 ## Data Science at the Command Line 
 2 Hours: Free @OReillyMedia Webcast: Learn about #DataScience at the Command Line w/ @jeroenhjanssens

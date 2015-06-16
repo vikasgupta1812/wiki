@@ -5,3 +5,4 @@
 - [Books](https://onedrive.live.com/redir?page=view&resid=46DDE5F519C073A0!13045&authkey=!AJe5_3kYKEeUkvQ)
 - [Logstash Notes](logstash notes.md)
 - [Azure Certification](Azure Certification.md)
+- [Machine Learning with R](Machine Learning with R.md)
