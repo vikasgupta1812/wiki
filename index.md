@@ -6,3 +6,4 @@
 - [Logstash Notes](logstash notes.md)
 - [Azure Certification](Azure Certification.md)
 - [Machine Learning with R](Machine Learning with R.md)
+- [Motivational Quotes](Motivational Quotes.md)
