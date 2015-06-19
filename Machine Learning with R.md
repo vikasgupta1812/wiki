@@ -10,7 +10,7 @@ http://goo.gl/PpsgO0
 - caret - Classification and Regression Training: Unified interface to ~150 ML algorithms in R. - http://caret.r-forge.r-project.org/
 - caretEnsemble - caretEnsemble: Framework for fitting multiple caret models as well as creating ensembles of such models. - http://cran.r-project.org/web/packages/caretEnsemble/index.html
 - http://topepo.github.io/caret/ --> https://github.com/topepo/caret 
-- Model list - http://topepo.github.io/caret/modelList.html
+- Caret Model list - http://topepo.github.io/caret/modelList.html
 - Comparing the Bootstrap and Cross-Validation = http://appliedpredictivemodeling.com/blog/2014/11/27/08ks7leh0zof45zpf5vqe56d1sahb0
 
 ## Machine Learning Mastery Blog

@@ -1,5 +1,5 @@
 
-
+- Free Kaggle Machine Learning Tutorial for R - http://blog.datacamp.com/machine-learning-tutorial-for-r/
 - R Trending repositories on Github -- https://github.com/trending?l=r
 - An introduction to data analysis, using R. Experimental. briatte / ida ranalytics / r-tutorials
 - Beginning Test-Driven Development in Python - http://code.tutsplus.com/tutorials/beginning-test-driven-development-in-python--net-30137 

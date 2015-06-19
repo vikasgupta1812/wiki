@@ -1,5 +1,8 @@
 Quotes 
 ====
+An idea is worthless unless you use it. -John Maxwell
+
+![](https://pbs.twimg.com/media/BhiwbveIIAAOTPL.jpg:large)
 
 ![](https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-15/11326826_837677926288156_849252427_n.jpg)
 ----
