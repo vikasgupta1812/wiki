@@ -221,4 +221,20 @@ Dennis' slides: https://www.dropbox.com/s/r4m9aym2xvyadzk/SFDataScience_DennisOb
 
 
 
+- [100 Best Data Science Companies to Work for in 2015](http://www.datasciencecentral.com/profiles/blogs/100-best-data-science-companies-to-work-for-in-2015?utm_content=buffer40803&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer)
+
+    ![](http://api.ning.com/files/Vlz-VcMBEulkDax7CKH*GJVCb7Iq8hcqydDg6o3m24gMm7LnSKThKwX2az1vuKy4S94r8*fxK8AYVak9exWHFNBvyBJnJ5PB/bor55.PNG)
+
+- [Using data science to get a good deal on a Macbook](http://blog.dominodatalab.com/using-data-science-to-get-a-good-deal-on-a-macbook/?utm_content=bufferbc21f&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer) #python
+
+- [Kaggle's R Tutorial on Machine Learing](https://www.datacamp.com/courses/kaggle-tutorial-on-machine-learing)
+
+- [Model-Based Machine Learning, Free Early Book Draft](http://www.kdnuggets.com/2015/06/model-based-machine-learning-book-draft.html#.VYgY75uuctE.facebook)
+
+
+- [Comprehensive Intro to Predictive modeling](http://sebastianraschka.com/Articles/2014_intro_supervised_learning.html?utm_content=bufferc511a&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer)
+    ![](http://sebastianraschka.com/Images/2014_intro_supervised_learning/classify_example.png)
+
+
+- [http://sebastianraschka.com/articles.html](http://sebastianraschka.com/articles.html)
 
