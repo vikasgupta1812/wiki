@@ -1,11 +1,9 @@
 elasticR
 =====
 
-
 https://www.elasticr.com/welcome
 
 https://www.elasticr.com/videos1
-
 
 Chine K (2010) Open science in the cloud: towards a universal platform for scientific and statistical computing. In: Furht B, Escalante A (eds) Handbook of cloud computing, Springer, USA, pp 453-474. ISBN 978-1-4419-6524-0.
 

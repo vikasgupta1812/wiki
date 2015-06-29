@@ -8,3 +8,8 @@
 - [Machine Learning with R](Machine Learning with R.md)
 - [ML Pipelines](ML Pipelines.md)
 - [Motivational Quotes](Motivational Quotes.md)
+- [Best Big Data, Data Science, Data Mining, and Machine Learning podcasts](Best Big Data, Data Science, Data Mining, and Machine Learning podcasts.md)
+- [Channel9 Learning Resources](Channel9 Learning Resources.md)
+- [DataScience - Coursera Specialization slides](Data Science Slides.md)
+- [elasticR.md](elasticR.md)
+- [ElasticSearch Notes](Elasticsearch.md)

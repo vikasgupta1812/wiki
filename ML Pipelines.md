@@ -4,7 +4,6 @@ Idea - Create something simlar to Azure ML using Caret
 Start with simple and later (2nd round) add more complexity to the process. Most problems require application of simple concepts to solve them. (Andrew Ng., Sam Stokes). Its easy to explain. 
 
 
-
 ## Meetup: Streamline the workflow for data analytics (R caret vs. Azure ML studio)
 
 http://www.meetup.com/data-science-dojo/events/221981185/
