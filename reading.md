@@ -238,3 +238,13 @@ Dennis' slides: https://www.dropbox.com/s/r4m9aym2xvyadzk/SFDataScience_DennisOb
 
 - [http://sebastianraschka.com/articles.html](http://sebastianraschka.com/articles.html)
 
+- Fix X11 issues in Max Yoesmite - http://stackoverflow.com/questions/26489928/cant-load-x11-in-r-after-os-x-yosemite-upgrade
+- Machine learning lectures - https://class.coursera.org/ml-003/lecture
+- NNetwork implementation in Pyhton - https://github.com/bmoscon/NeuralNets
+- NOtes - http://www.cs.colostate.edu/~anderson/cs440/index.html/doku.php?id=notes:supervisedlearning1
+- rnn package for neural networks - http://www.cs.colostate.edu/~idfah/main/projects/rnn
+- Using Built-in nnet Function - http://www.cs.colostate.edu/~anderson/cs545/assignments/solutionsGoodExamples/assignment8Yoensky.pdf
+- TODO - find more exmaples like above 
+- NeuralNetTools 1.0.0 now on CRAN - https://beckmw.wordpress.com/tag/neural-network/
+- Neural Networks with R – A Simple Example - http://gekkoquant.com/2012/05/26/neural-networks-with-r-simple-example/
+- 
