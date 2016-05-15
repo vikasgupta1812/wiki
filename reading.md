@@ -247,4 +247,10 @@ Dennis' slides: https://www.dropbox.com/s/r4m9aym2xvyadzk/SFDataScience_DennisOb
 - TODO - find more exmaples like above 
 - NeuralNetTools 1.0.0 now on CRAN - https://beckmw.wordpress.com/tag/neural-network/
 - Neural Networks with R – A Simple Example - http://gekkoquant.com/2012/05/26/neural-networks-with-r-simple-example/
+
+- [datascienceplus.com]() tl;dr - project based tutorials with step-by-step instructions and examples.Practice your skills from the basic to advanced R programming, across different topics including statistics, data manipulation and visualization. 
+- How do I become better at Kaggle? I am just getting started in Kaggle. I have a background in Machine Learning and Probabilistic Graphical Models. [http://www.quora.com/How-do-I-become-better-at-Kaggle-I-am-just-getting-started-in-Kaggle-I-have-a-background-in-Machine-Learning-and-Probabilistic-Graphical-Models]()
+- Azure template based deployments - [http://azure.microsoft.com/blog/2015/04/29/iaas-just-got-easier-again/]() [https://github.com/Azure/azure-quickstart-templates/tree/master/docker-wordpress-mysql]()
+
 - 
+
