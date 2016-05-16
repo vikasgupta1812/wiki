@@ -1,3 +1,5 @@
+- Python Tensorflow Tutorial - https://github.com/aymericdamien/TensorFlow-Examples
+Code examples for some popular machine learning algorithms, using TensorFlow library. This tutorial is designed to easily dive into TensorFlow, through examples. It includes both notebook and code with explanations. 
 
 - Free Kaggle Machine Learning Tutorial for R - http://blog.datacamp.com/machine-learning-tutorial-for-r/
 - R Trending repositories on Github -- https://github.com/trending?l=r
