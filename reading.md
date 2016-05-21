@@ -1,3 +1,7 @@
+- DataScienceR - https://github.com/ujjwalkarn/DataScienceR
+a curated list of R tutorials for Data Science, NLP and Machine Learning
+- The "Python Machine Learning" book code repository and info resource - https://github.com/rasbt/python-machine-learning-book
+- nice profile for data science- https://www.linkedin.com/in/ujjwalkarn
 - Python Tensorflow Tutorial - https://github.com/aymericdamien/TensorFlow-Examples
 Code examples for some popular machine learning algorithms, using TensorFlow library. This tutorial is designed to easily dive into TensorFlow, through examples. It includes both notebook and code with explanations. 
 
@@ -27,7 +31,6 @@ Part 2 - http://theanalyticalminds.blogspot.com/2015/02/part-2-data-preparation.
 
 - 5 ways to ask for feedback without feeling uncomfortable. http://www.fastcompany.com/3044362/hit-the-ground-running/the-5-best-times-and-ways-to-ask-for-feedback
 
-
 - Amazon Mechanical Turk – https://www.mturk.com/mturk/welcome
 Alternatives - http://moneypantry.com/amazon-mechanical-turk-crowdsourcing-alternatives/
 Quora - http://www.quora.com/What-are-some-crowdsourcing-services-similar-to-Amazon-Mechanical-Turk Saved here - #freelance #microworkers 
@@ -36,9 +39,6 @@ Quora - http://www.quora.com/What-are-some-crowdsourcing-services-similar-to-Ama
 - 4 hottest data analytics job titles in India. http://articles.economictimes.indiatimes.com/2015-03-19/news/60286549_1_data-analytics-fractal-analytics-hadoop 
 
 - More Airline Crashes via the Hadleyverse - http://rud.is/b/2015/03/31/more-airline-crashes-via-the-hadleyverse/
-
-- Text bashing in R for SQL - http://www.beardedanalytics.com/text-bashing-in-r-for-sql/ 
-td;lr simple way to get list of ids from excel to R and then querying the sql table with the imported list in where clause.
 
 - Tools in Tandem – SQL and ggplot. But is it Really R? - http://blog.ouseful.info/2015/02/28/tools-in-tandem-sql-and-ggplot-but-is-it-really-r/ 
 td;lr runs r script on database. sql does the data analysis and r did the visalization. Blog title is also interesting – emerging technologies in emerging eduation.
