@@ -1,3 +1,4 @@
+- Steps to use tensorflow library on AWS clusters - http://cs224d.stanford.edu/supplementary/aws-tutorial-2.pdf
 - DataScienceR - https://github.com/ujjwalkarn/DataScienceR
 a curated list of R tutorials for Data Science, NLP and Machine Learning
 - The "Python Machine Learning" book code repository and info resource - https://github.com/rasbt/python-machine-learning-book
