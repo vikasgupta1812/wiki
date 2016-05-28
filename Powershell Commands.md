@@ -1,3 +1,6 @@
+Powershell Commands
+====
+
 - `pwd` print working directory
 - `hostname` my computer's network name
 - `mkdir` make directory
@@ -22,3 +25,6 @@
 - `runas` DANGER! become super user root DANGER!
 - `attrib` change permission modifiers
 - `iCACLS` change ownership
+
+
+To Do - Add some exmaple scripts

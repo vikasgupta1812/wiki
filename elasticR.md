@@ -20,6 +20,3 @@ http://elastic-r.net/doc/IEEE_Biocep.pdf
 Karim Chine, "Biocep, towards a federative, collaborative, user-centric, grid-enabled and cloud-ready computational open platform" escience,pp.321-322, 2008 Fourth IEEE International Conference on eScience, 2008.
 
 http://elastic-r.net/doc/biocep_abstract.pdf
-
-
-

@@ -1,4 +1,4 @@
-Parallel Computing
+#### Parallel Computing
 
 Example code for the book Parallel R by McCallum and Weston.  - http://shop.oreilly.com/product/0636920021421.do
 
@@ -317,12 +317,10 @@ fun(1:3, 1:4)
 ##### Example 3. Calling an R function
 
 RcppParallel - http://cran.r-project.org/web/packages/RcppParallel/index.html
-
 caret - http://cran.r-project.org/web/packages/caret/index.html
 
 
 #### ggplot2
-
 Some examples: http://blog.diegovalle.net/2015/01/the-74-most-violent-cities-in-mexico.html
 
 Introduction - https://www.youtube.com/watch?v=SaJCKpYX5Lo&t=2742

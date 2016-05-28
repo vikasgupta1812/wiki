@@ -2,6 +2,7 @@
 [Source](http://webcache.googleusercontent.com/search?q=cache:GoLoejt_LZAJ:taichimd.us/mediawiki/index.php/R&amp;hl=en&amp;gl=us&amp;strip=0&amp;vwsrc=0 "Permalink to R - BRB-ArrayTools")
 
 # R - BRB-ArrayTools
+Steps for installing R and related tools 
 
 ## Install Rtools for Windows users
 
@@ -9,27 +10,27 @@ See <http: goo.gl="" gyh6c=""> for a step-by-step instruction with screenshot.
 
 My preferred way is not to check the option of setting PATH environment. But I manually add the followings to the PATH environment (based on Rtools v3.0)
 
-    c:Rtoolsbin;
-    c:Rtoolsgcc-4.6.3bin;
-    C:Program FilesRR-2.15.2bini386;
+    c:\Rtools\bin;
+    c:\Rtools\gcc-4.6.3\bin;
+    c:\Program Files\R\R-2.15.2\bin\i386;
 
-We can make our life easy by creating a file <rcommand.bat> with the content (also useful if you have C:cygwinbin in your PATH although cygwin setup will not do it automatically for you.)
+We can make our life easy by creating a file `rcommand.bat` with the content (also useful if you have `C:\cygwinbin` in your `PATH` although cygwin setup will not do it automatically for you.)
 
-PS. I put <rcommand.bat> under C:Program FilesR folder. I create a shortcut called 'Rcmd' on desktop. I enter **C:WindowsSystem32cmd.exe /K "Rcommand.bat"** in the _Target_ entry and **"C:Program FilesR"** in _Start in_ entry.
+PS. I put <`rcommand.bat`> under `C:\Program Files\R` folder. I create a shortcut called '`Rcmd`' on desktop. I enter **`C:\Windows\System32\cmd.exe /K "Rcommand.bat"`** in the `Target` entry and **"`C:\Program Files\R`"** in `Start in` entry.
 
     @echo off
-    set PATH=C:Rtoolsbin;c:Rtoolsgcc-4.6.3bin;%PATH%
-    set PATH=C:Program FilesRR-2.15.2bini386;%PATH%
+    set PATH=C:\Rtools\bin;c:\Rtools\gcc-4.6.3\bin;%PATH%
+    set PATH=C:\Program Files\R\R-2.15.2\bin\i386;%PATH%
     set PKG_LIBS=`Rscript -e "Rcpp:::LdFlags()"`
     set PKG_CPPFLAGS=`Rscript -e "Rcpp:::CxxFlags()"`
     echo Setting environment for using R
     cmd
 
-So we can open the Command Prompt anywhere and run <rcommand.bat> to get all environment variables ready! On Windows Vista, 7 and 8, we need to run it as administrator. OR we can change the security of the property so the current user can have an executive right.
+So we can open the Command Prompt anywhere and run <`rcommand.bat`> to get all environment variables ready! We need to run it as administrator. OR we can change the security of the property so the current user can have an executive right.
 
 ### [Windows Toolset][1]
 
-Note that R on Windows supports [Mingw-w64][2] (not Mingw which is a separate project). See [here][3] for the issue of developing a Qt application that links against R using Rcpp. And <http: qt-project.org="" wiki="" mingw=""> is the wiki for compiling Qt using MinGW and MinGW-w64.
+Note that R on Windows supports [`Mingw-w64`][2] (not Mingw which is a separate project). See [here][3] for the issue of developing a Qt application that links against R using Rcpp. And <http: qt-project.org="" wiki="" mingw=""> is the wiki for compiling Qt using MinGW and MinGW-w64.
 
 ### Build R from its source
 
@@ -39,14 +40,14 @@ Download tcl file from <http: www.stats.ox.ac.uk="" pub="" rtools="" r_tcl_8-5-8
 
 "Open a command prompt as Administrator"
 
-Below it is supposed we have created a directory C:R and the source tar ball is placed under this directory.
+Below it is supposed we have created a directory C:\R\ and the source tar ball is placed under this directory.
 
-    set PATH=c:Rtoolsbin;c:Rtoolsgcc-4.6.3bin;%PATH%
+    set PATH=c:\R\tools\bin;c:\Rtools\gcc-4.6.3\bin;%PATH%
 
-    cd C:R
+    cd C:\R
     tar xzvf R-3.0.2.tar.gz
 
-    cd R-3.0.2srcgnuwin32
+    cd R-3.0.2\src\gnuwin32
 
     set TMPDIR=C:/tmp
 
@@ -60,9 +61,9 @@ See also [Create_a_standalone_Rmath_library][4] below about how to create and us
 
 **Command line**
 
-    cd C:Documents and Settingsbrb
+    cd C:\Documents and Settings\brb
     wget http://www.bioconductor.org/packages/2.11/bioc/src/contrib/affxparser_1.30.2.tar.gz
-    C:progra~1rr-2.15.2binR CMD INSTALL --build affxparser_1.30.2.tar.gz
+    C:\progra~1\r\r-2.15.2\bin\R CMD INSTALL --build affxparser_1.30.2.tar.gz
 
 **R console**
 
@@ -111,12 +112,12 @@ or via sudo:
 
 On my debian system in [Pogoplug][7] (armv5), [Raspberry Pi][8] (armv6) OR [Beaglebone Black][9] &amp; [Udoo][10](armv7), I can compile R. See R's [admin manual][11]. If the OS needs x11, I just need to install 2 required packages.
 
-* install gfortran: **apt-get install build-essential gfortran** (gfortran is not part of build-essential)
-* install readline library: **apt-get install libreadline5-dev** (pogoplug), **apt-get install libreadline6-dev** (raspberry pi/BBB), **apt-get install libreadline-dev** (Ubuntu)
+* install gfortran: **`apt-get install build-essential gfortran`** (gfortran is not part of build-essential)
+* install readline library: **`apt-get install libreadline5-dev`** (pogoplug), **`apt-get install libreadline6-dev`** (raspberry pi/BBB), **`apt-get install libreadline-dev`** (Ubuntu)
 
-Note: if I need X11, I should install
+Note: if I need `X11`, I should install
 
-* libX11 and libX11-devel, libXt, libXt-devel (for fedora)
+* `libX11` and `libX11-devel`, libXt, libXt-devel (for fedora)
 * **libx11-dev** (for debian) or **xorg-dev** (for pogoplug/raspberry pi/BBB)
 
 and optional
@@ -434,9 +435,9 @@ To check whether we have Java installed, type 'java -version'.
 
 ### R CMD
 
-* R CMD build someDirectory - create a package
-* R CMD check somePackage_1.2-3.tar.gz - check a package
-* R CMD INSTALL somePackage_1.2-3.tar.gz - install a package from its source
+* `R CMD build someDirectory` - create a package
+* `R CMD check somePackage_1.2-3.tar.gz` - check a package
+* `R CMD INSTALL somePackage_1.2-3.tar.gz` - install a package from its source
 
 ### bin/R (shell script) and bin/exec/R (binary executable) on Linux OS
 

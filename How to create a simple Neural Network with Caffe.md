@@ -1,4 +1,4 @@
-Creating a simple Neural Network with Caffe
+How to create a simple Neural Network with Caffe
 ====
 
 

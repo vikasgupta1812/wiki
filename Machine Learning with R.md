@@ -3,12 +3,7 @@ Machine Learning with R
 
 ## Book - Machine Learning with R Cookbook 
 http://goo.gl/PpsgO0
-
 ![](http://techbus.safaribooksonline.com/static/201506-7962-techbus/images/9781783982042/9781783982042_s.jpg)
-
-
-
-
 
 ## Docker and Azure -- 
 - Introducing Docker in Microsoft Azure Marketplace  -https://azure.microsoft.com/blog/2015/01/08/introducing-docker-in-microsoft-azure-marketplace/

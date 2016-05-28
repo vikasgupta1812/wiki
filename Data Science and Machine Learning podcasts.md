@@ -1,4 +1,4 @@
-Best Big Data, Data Science, Data Mining, and Machine Learning podcasts
+Data Science and Machine Learning podcasts
 ====
 
 

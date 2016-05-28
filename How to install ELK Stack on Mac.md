@@ -1,4 +1,4 @@
-	ELK Stack 
+How to install ELK Stack on Mac
 ====
 
 

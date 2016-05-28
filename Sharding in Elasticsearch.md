@@ -1,4 +1,4 @@
-Elasticsearch 
+Sharding in Elasticsearch 
 ====
 
 **shard** A shard is a single Lucene instance. It is a low-level “worker” unit which is managed automatically by elasticsearch. An index is a **logical namespace** which points to **primary** and **replica shards**. Other than defining the number of primary and replica shards that an index should have, you never need to refer to shards directly. Instead, your code should deal only with an index. Elasticsearch distributes shards amongst all nodes in the cluster, and can move shards automatically from one node to another in the case of node failure, or the addition of new nodes.

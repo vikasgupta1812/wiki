@@ -1,4 +1,4 @@
-Configuring remote access to mysql
+How to configure remote access to mysql
 ====
 
 http://stackoverflow.com/questions/14779104/how-to-allow-remote-connection-to-mysql
