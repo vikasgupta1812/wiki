@@ -1,6 +1,6 @@
+# Installation Commands from Docker
 
-
-```sh
+```
 root@docker-dev:~# docker search rstudio 
 root@docker-dev:~# sudo docker run -d -P rocker/rstudio 
 root@docker-dev:~# ifconfig eth0
@@ -40,7 +40,7 @@ root@dev:~/r-base# docker pull rocker/hadleyverse
 The connection to the client interface. General `rocker/rstudio` ttuiwooryeomyeon the container `8787` using the port and `rocker/hadleyverse` If you launch a container 7777 uses the port.
 
 
-```sh
+```
 #delete process with the command. 
 docker kill 
 ```
@@ -58,13 +58,13 @@ docker pull rocker/rstudio
 ```
 Run:
 
-```sh
+```
 docker run --name=rstudio -d -p 127.0.0.1:8787:8787 rocker/rstudio
 ```
 
 WebFrame:
 
-```sh
+```
 firefox http://127.0.0.1:8787
 ```
 
@@ -72,7 +72,7 @@ adminuser/password=rstudio/rstudio
 
 Uninstall:
 
-```sh
+```
 docker stop rstudio
 docker rm rstudio
 docker rmi rocker/rstudio﻿
@@ -80,7 +80,7 @@ docker rmi rocker/rstudio﻿
 
 
 
-```sh
+```
 docker run 
 			-dp 8787:8787 
 			-v /c/Users/shawn graham/docker:/home/rstudio/ 
@@ -97,7 +97,7 @@ docker run
 
 http://keeganhin.es/blog/docker.html
 
-```sh
+```
 docker pull rocker/rstudio
 docker run -d -p 8787:8787 rocker/rstudio
 ```
@@ -105,7 +105,7 @@ This deploys Rstudio server on port 8787 and with the default username/password 
 
 Since we're deploying Rstudio, we'll probably want to add some extra security with our own username and password.
 
-```sh
+```
 docker run -d -p 8787:8787 -e USERNAME=someusername -e PASSWORD=somepassword rocker/rstudio 
 ```
 And there we have, rather effortlessly, set up Rstudio Server so we can do our number crunching from a web brower.
@@ -113,7 +113,7 @@ And there we have, rather effortlessly, set up Rstudio Server so we can do our n
 
 
 
-```sh
+```
 docker run -dp 80:80 -it rocker/hadleyverse /bin/bash
 docker run -dp 80:80 -it kaggle/rstats /bin/bash
 docker run -dp 80:80 -it revolutionanalytics/rro-ubuntu /bin/bash
@@ -125,7 +125,9 @@ docker run -dp 80:80 -p 443:443 -it kaggle/rstats /bin/bash
 source('http://r.research.att.com/benchmarks/R-benchmark-25.R')
 ```
 
-```sh
+
+
+```
 /bin/sh /usr/lib/R/bin/BATCH train_gbm_cross_dept_v1.R
 
 /usr/lib/R/bin/exec/R --slave --no-restore -e parallel:::.slaveRSOCK() --args MASTER=localhost PORT=11385 OUT=/dev/null TIMEOUT=2592000 METHODS=TRUE XDR=TRUE
