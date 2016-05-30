@@ -1,4 +1,4 @@
-#### Parallel Computing
+## Parallel Computing
 
 Example code for the book Parallel R by McCallum and Weston.  - http://shop.oreilly.com/product/0636920021421.do
 
@@ -6,7 +6,7 @@ An introduction to distributed memory parallelism in R and C - http://www.stat.b
 
 Processing: When does it worth? - http://danielmarcelino.com/parallel-processing/Parallel
 
-#### Windows Security Warning
+### Windows Security Warning
 It seems it is safe to choose 'Cancel' when Windows Firewall tried to block R program when we use makeCluster() to create a socket cluster.
 
 ```
@@ -18,22 +18,21 @@ stopCluster(cl)
 
 If we like to see current firewall settings, just click Windows Start button, search 'Firewall' and choose 'Windows Firewall with Advanced Security'. In the 'Inbound Rules', we can see what programs (like, R for Windows GUI front-end, or Rserve) are among the rules. These rules are called 'private' in the 'Profile' column. Note that each of them may appear twice because one is 'TCP' protocol and the other one has a 'UDP' protocol.
 
+### Parallel package
 
-##### parallel package
+Parallel package was included in `R 2.14.0`. It is derived from the `snow` and `multicore` packages and provides many of the same functions as those packages.
 
-Parallel package was included in R 2.14.0. It is derived from the snow and multicore packages and provides many of the same functions as those packages.
-
-The parallel package provides several *apply functions for R users to quickly modify their code using parallel computing.
+The parallel package provides several `*apply` functions for `R` users to quickly modify their code using parallel computing.
 
 
-* makeCluster(makePSOCKcluster, makeForkCluster), stopCluster. Other cluster * types are passed to package snow.
-* clusterCall, clusterEvalQ, clusterSplit
-* clusterApply, clusterApplyLB
-* clusterExport
-* clusterMap
-* parLapply, parSapply, parApply, parRapply, parCapply
-* parLapplyLB, parSapplyLB (load balance version)
-* clusterSetRNGStream, nextRNGStream, nextRNGSubStream
+* `makeCluster`(makePSOCKcluster, makeForkCluster), stopCluster. Other cluster * types are passed to package snow.
+* `clusterCall`, clusterEvalQ, clusterSplit
+* `clusterApply`, clusterApplyLB
+* `clusterExport`
+* `clusterMap`
+* `parLapply`, `parSapply`, `parApply`, `parRapply`, `parCapply`
+* `parLapplyLB`, parSapplyLB (load balance version)
+* `clusterSetRNGStream`, `nextRNGStream`, nextRNGSubStream
 Examples (See ?clusterApply)
 
 ```r
@@ -49,17 +48,13 @@ parSapply(cl, 1:20, get("+"), 3)
 #  [1]  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23
 stopCluster(cl)
 ```
-##### `snow` package
-
+### `snow` package
 Supported cluster types are "SOCK", "PVM", "MPI", and "NWS".
 
-##### `multicore` package
+### `multicore` package
+This package is removed from CRAN. Consider using package `parallel` instead.
 
-This package is removed from CRAN.
-
-Consider using package `parallel` instead.
-
-##### `foreach` package
+### `foreach` package
 
 This package depends on one of the following
 
@@ -69,7 +64,7 @@ This package depends on one of the following
 * doMPI - Foreach parallel adaptor for the Rmpi package
 * doRedis - Foreach parallel adapter for the `rredis` package as a backend.
 
-```
+```r
 library(foreach)
 library(doParallel)
 
@@ -83,56 +78,59 @@ foreach(i=1:nrow(m), .combine=rbind) %dopar%
 stopCluster(cl)
 ```
 
-##### snowfall package
+### `snowfall` package
 
 http://www.imbi.uni-freiburg.de/parallel/docs/Reisensburg2009_TutParallelComputing_Knaus_Porzelius.pdf
 
 
-##### Rmpi package
+### Rmpi package
 
 Some examples/tutorials
 
-http://trac.nchc.org.tw/grid/wiki/R-MPI_Install
-http://www.arc.vt.edu/resources/software/r/index.php
-https://www.sharcnet.ca/help/index.php/Using_R_and_MPI
-http://math.acadiau.ca/ACMMaC/Rmpi/examples.html
-http://www.umbc.edu/hpcf/resources-tara/how-to-run-R.html
-Ryan Rosario - http://www.slideshare.net/bytemining/taking-r-to-the-limit-high-performance-computing-in-r-part-1-parallelization-la-r-users-group-727
-http://pj.freefaculty.org/guides/Rcourse/parallel-1/parallel-1.pdf
-http://biowulf.nih.gov/apps/R.html
+- http://trac.nchc.org.tw/grid/wiki/R-MPI_Install
+- http://www.arc.vt.edu/resources/software/r/index.php
+- ~~https://www.sharcnet.ca/help/index.php/Using_R_and_MPI~~
+- http://math.acadiau.ca/ACMMaC/Rmpi/examples.html
+- http://www.umbc.edu/hpcf/resources-tara/how-to-run-R.html
+- Ryan Rosario - http://www.slideshare.net/bytemining/taking-r-to-the-limit-high-performance-computing-in-r-part-1-parallelization-la-r-users-group-727
+- http://pj.freefaculty.org/guides/Rcourse/parallel-1/parallel-1.pdf
+- http://biowulf.nih.gov/apps/R.html
 
 
-#### Cloud Computing
 
-##### Install R on Amazon EC2
+## Cloud Computing
+
+### Install R on Amazon EC2
 http://randyzwitch.com/r-amazon-ec2/
 
-##### Bioconductor on Amazon EC2
+### Bioconductor on Amazon EC2
 http://www.bioconductor.org/help/bioconductor-cloud-ami/
 
-##### Big Data Analysis
+### Big Data Analysis
 http://blog.comsysto.com/2013/02/14/my-favorite-community-links/
 
-##### Useful R packages
+## Useful R packages
 awesome-R - https://github.com/qinwf/awesome-R
 
-##### RInside
+## RInside
 
 http://dirk.eddelbuettel.com/code/rinside.html
 http://dirk.eddelbuettel.com/papers/rfinance2010_rcpp_rinside_tutorial_handout.pdf
 
-
-##### Plot IP on google map
+## Plot IP on google map
 
 http://thebiobucket.blogspot.com/2011/12/some-fun-with-googlevis-plotting-blog.html#more (RCurl, RJONIO, plyr, googleVis)
 http://devblog.icans-gmbh.com/using-the-maxmind-geoip-api-with-r/ (RCurl, RJONIO, maps)
 http://cran.r-project.org/web/packages/geoPlot/index.html (geoPlot package (deprecated as 8/12/2013))
 http://archive09.linux.com/feature/135384 (Not R) ApacheMap
-http://batchgeo.com/features/geolocation-ip-lookup/ (Not R) (Enter a spreadsheet of adress, city, zip or a column of IPs and it will show the location on google map)
+http://batchgeo.com/features/geolocation-ip-lookup/ (Not R) (Enter a spreadsheet 
+of adress, city, zip or a column of IPs and it will show the location on google map)
+
 http://code.google.com/p/apachegeomap/
 
 
 The following example is modified from the first of above list.
+
 
 ```r
 require(RJSONIO) # fromJSON
@@ -181,23 +179,24 @@ The plot.gvis() method in `googleVis` packages also teaches the `startDynamicHel
 
 http://jeffreyhorner.tumblr.com/page/3
 
-#### Map
+## Maps
 
-##### leaflet 
+### leaflet 
 rstudio.github.io/leaflet/#installation-and-use
 
-##### choroplethr
+### choroplethr
 
 http://blog.revolutionanalytics.com/2014/01/easy-data-maps-with-r-the-choroplethr-package-.html
 http://www.arilamstein.com/blog/2015/06/25/learn-to-map-census-data-in-r/
 
-#### Use Rcpp in RStudio
 
-RStudio makes it easy to use Rcpp package.
+## Use `Rcpp` in RStudio
+
+RStudio makes it easy to use `Rcpp` package.
 
 Open RStudio, click New File -> C++ File. It will create a C++ template on the RStudio editor
 
-```c
+```
 #include <Rcpp.h>
 using namespace Rcpp;
 
@@ -212,6 +211,7 @@ int timesTwo(int x) {
    return x * 2;
 }
 ```
+
 Now in R console, type
 
 ```r
@@ -228,7 +228,7 @@ See more examples on http://adv-r.had.co.nz/Rcpp.html.
 
 If we wan to test `Boost` library, we can try it in RStudio. Consider the following example in stackoverflow.com.
 
-```c
+```
 // [[Rcpp::depends(BH)]]
 #include <Rcpp.h>
 #include <boost/foreach.hpp>
@@ -266,11 +266,11 @@ identical( boost_gamma(0:10 + 1), factorial(0:10) )
 ```
 # [1] TRUE
 ```
-##### Example 1. convolution example
+### Example 1. Convolution example
 
 First, Rcpp package should be installed (I am working on Linux system). Next we try one example shipped in Rcpp package.
 
-PS. If R was not available in global environment (such as built by ourselves), we need to modify 'Makefile' file by replacing 'R' command with its complete path (4 places).
+PS. If `R` was not available in global environment (such as built by ourselves), we need to modify 'Makefile' file by replacing 'R' command with its complete path (4 places).
 
 ```
 cd ~/R/x86_64-pc-linux-gnu-library/3.0/Rcpp/examples/ConvolveBenchmarks/
@@ -292,7 +292,7 @@ export PKG_CXXFLAGS=`Rscript -e "Rcpp:::CxxFlags()"`
 export PKG_LIBS=`Rscript -e "Rcpp:::LdFlags()"`
 R CMD SHILB xxxx.cpp
 ```
-##### Example 2. Use together with inline package
+### Example 2. Use together with inline package
 
 http://adv-r.had.co.nz/C-interface.html#calling-c-functions-from-r
 
@@ -314,31 +314,31 @@ fun <- cxxfunction(signature(a = "numeric", b = "numeric"),
 fun(1:3, 1:4) 
 # [1]  1  4 10 16 17 12
 ```
-##### Example 3. Calling an R function
+### Example 3. Calling an R function
 
 RcppParallel - http://cran.r-project.org/web/packages/RcppParallel/index.html
 caret - http://cran.r-project.org/web/packages/caret/index.html
 
 
-#### ggplot2
+## ggplot2
 Some examples: http://blog.diegovalle.net/2015/01/the-74-most-violent-cities-in-mexico.html
 
 Introduction - https://www.youtube.com/watch?v=SaJCKpYX5Lo&t=2742
-#### ggthemr: 
+
+### ggthemr: 
 Themes for ggplot2
 
 
 
-#### stringr and plyr packages
+## `stringr` and `plyr` packages
 
 http://martinsbioblogg.wordpress.com/2013/03/24/using-r-reading-tables-that-need-a-little-cleaning/
 
 A data.frame is pretty much a list of vectors, so we use plyr to apply over the list and stringr to search and replace in the vectors.
 
-#### magrittr
+## magrittr
 
 Instead of nested statements, it is using pipe operator %>%. So the code is easier to read. Impressive!
 
 http://rud.is/b/2015/02/04/a-step-to-the-right-in-r-assignments/
 http://rpubs.com/tjmahr/pipelines_2015
-
