@@ -13,6 +13,7 @@
 - [DataScience - Coursera Specialization slides](Data Science Slides.md)
 - [elasticR.md](elasticR.md)
 - [ElasticSearch Notes](Elasticsearch.md)
+- [Github Repositories](Github Repositories.md)
 - [YouTubeVideos](YouTubeVideos.md)
 
 [Notebooks](http://nbviewer.jupyter.org/github/vikasgupta1812/wiki/tree/gh-pages/notebooks/) 
@@ -20,3 +21,23 @@
 
 - [`tensroflow` Google datalab notebooks](http://nbviewer.jupyter.org/github/GoogleCloudPlatform/datalab/blob/a82d95f40a4c5faf9cfd527afb86f801ced6f969/content/datalab/samples/TensorFlow%20Machine%20Learning%20with%20Financial%20Data%20on%20Google%20Cloud%20Platform.ipynb) -- Old Commit
 - ['tensorflow tutorials'](http://nbviewer.jupyter.org/github/pkmital/tensorflow_tutorials/tree/master/notebooks/)
+
+## [startup-001](startup-001)
+- [Env Path and Home.md](startup-001\Env Path and Home.md)
+- [First application.md](startup-001\First application.md)
+- [Windows Powershell commands.md](startup-001\Windows Powershell commands.md)
+- [airbnb-slides.pdf](startup-001\airbnb-slides.pdf)
+- [judicata-slides.pdf](startup-001\judicata-slides.pdf)
+- [lecture0-v3-logistics.pdf](startup-001\lecture0-v3-logistics.pdf)
+- [lecture1-v2-introduction.pdf](startup-001\lecture1-v2-introduction.pdf)
+- [lecture2-interactive-start.pdf](startup-001\lecture2-interactive-start.pdf)
+- [lecture3-linux-ssjs-v2.pdf](startup-001\lecture3-linux-ssjs-v2.pdf)
+- [lecture4a-linux-command-line.pdf](startup-001\lecture4a-linux-command-line.pdf)
+- [lecture4b-developer-environment.pdf](startup-001\lecture4b-developer-environment.pdf)
+- [lecture5-market-wireframing-design.pdf](startup-001\lecture5-market-wireframing-design.pdf)
+- [lecture6-html-css-js.pdf](startup-001\lecture6-html-css-js.pdf)
+- [lecture7-deployment-dns-custom-domains.pdf](startup-001\lecture7-deployment-dns-custom-domains.pdf)
+- [lecture8-mobile-v2.pdf](startup-001\lecture8-mobile-v2.pdf)
+- [square-slides.pdf](startup-001\square-slides.pdf)
+- [ssh.md](startup-001\ssh.md)
+- [twilio-slides.pdf](startup-001\twilio-slides.pdf)
