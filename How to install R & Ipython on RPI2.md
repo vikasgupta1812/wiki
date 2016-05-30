@@ -1,10 +1,10 @@
-How to install R & Ipython on RPI2 
+## How to install R & Ipython on RPI2 
 
 
-Install ZMQ3
+Install `ZMQ3`
 
 
-```sh
+```
 $wget http://Download.zeromq.org/zeromq-3.2.4.tar.gz
 $tar zxvf zeromq-3.2.4.tar.gz
 #and in the new zeromq directory:
@@ -25,7 +25,7 @@ install.packages('IRdisplay', repos = c('http://irkernel.github.io/', getOption(
 
 Cython 16.0 
 
-```sh
+```
 sudo apt-get install python-pip python-dev
 wget http://pypi.python.org/packages/source/C/Cython/Cython-0.16.tar.gz
 tar xvzf Cython-0.16.tar.gz
@@ -34,13 +34,13 @@ sudo python setup.py install
 
 Cython 20
 
-```sh
+```
 pip install cython==0.20.2
 ```
 
 Cython 22
 
-```sh
+```
 wget https://pypi.python.org/packages/source/C/Cython/Cython-0.22.1.tar.gz#md5=b920f3c81ae767477a342807bf5e68e8
 tar xvzf Cython-0.22.1.tar.gz
 sudo python setup.py install
@@ -58,7 +58,7 @@ https://www.digitalocean.com/community/tutorials/how-to-use-logstash-and-kibana-
 Source - http://stackoverflow.com/a/27137346
 
 I is all about the swap value.
-```sh
+```
 #Know the swap value    
 cat /proc/sys/vm/swappiness
 1

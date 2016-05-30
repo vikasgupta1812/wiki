@@ -189,7 +189,7 @@ git-latexdiff		   pure
 homebrew/dupes/tidy	   shell.fm
 ```
 
-```sh
+```
 $ brew install emacs --with-cocoa
 ```
 
@@ -223,7 +223,7 @@ Vikas:bin Vikas$ brew linkapps emacs
 Linking /usr/local/opt/emacs/Emacs.app to /Applications.
 ```
 
-```sh
+```
 $ ln -s /usr/local/Cellar/emacs/24.5/Emacs.app /Applications
 $ cp -r /usr/local/Cellar/emacs/24.5/Emacs.app /Applications/
 

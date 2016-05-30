@@ -133,7 +133,7 @@ make[1]: Leaving directory `/mnt/usb/R-2.15.2/src/library/Recommended'
 make: *** [stamp-recommended] Error 2
 ```
 
-```sh
+```
 root@debian:/mnt/usb/R-2.15.2#
 root@debian:/mnt/usb/R-2.15.2# bin/R
 ```

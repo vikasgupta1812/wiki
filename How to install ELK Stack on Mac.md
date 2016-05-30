@@ -20,7 +20,7 @@ homebrew/versions/elasticsearch11		       homebrew/versions/elasticsearch14
 
 
 
-```sh
+```
 logstash: stable 1.5.2
 Tool for managing events and logs
 https://www.elastic.co/products/logstash
@@ -33,7 +33,7 @@ Please read the getting started guide located at:
 https://www.elastic.co/guide/en/logstash/current/getting-started-with-logstash.html
 ```
 
-```sh
+```
 kibana: stable 4.1.0 (bottled), HEAD
 Visualization tool for elasticsearch
 https://www.elastic.co/products/kibana
@@ -52,7 +52,7 @@ Or, if you don't want/need launchctl, you can just run:
     kibana
 ```
 
-```sh
+```
 elasticsearch: stable 1.6.0, HEAD
 Distributed real-time search & analytics engine for the cloud
 https://www.elastic.co/products/elasticsearch

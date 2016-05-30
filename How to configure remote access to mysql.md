@@ -18,5 +18,5 @@ And then find the following line and comment it out in your my.cnf file, which u
 ```
 
 
-./configure
-make
+	./configure
+	make
