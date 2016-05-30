@@ -1,4 +1,4 @@
-```sh
+```
 Vikas:~ Vikas$ chmod 400 aws-startup.pem 
 Vikas:~ Vikas$ ssh -i aws-startup.pem ubuntu@52.11.144.15
 ```
@@ -36,7 +36,7 @@ Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
 applicable law.
 ```
 
-```sh 
+``` 
 ubuntu@ip-172-30-0-181:~$ sudo apt-get install -y git-core
 ```
 ```
@@ -79,7 +79,7 @@ Setting up git-core (1:1.9.1-1ubuntu0.1) ...
 ```
 
 
-```sh
+```
 ubuntu@ip-172-30-0-181:~$ wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
 This script requires superuser access to install apt packages.
 You will be prompted for your password by sudo.
@@ -203,20 +203,20 @@ Setting up libruby2.0:amd64 (2.0.0.484-1ubuntu2.2) ...
 Processing triggers for libc-bin (2.19-0ubuntu6.6) ...
 ```
 
-```sh
+```
 ubuntu@ip-172-30-0-181:~$ which git
 ```
 ```
 /usr/bin/git
 ```
-```sh
+```
 ubuntu@ip-172-30-0-181:~$ which heroku
 ```
 ```
 /usr/bin/heroku
 ```
 
-```sh
+```
 ubuntu@ip-172-30-0-181:~$ heroku login
 ```
 ```
@@ -225,7 +225,7 @@ Email: vikas.ymca@gmail.com
 Password (typing will be hidden): 
 Authentication successful.
 ```
-```sh
+```
 ubuntu@ip-172-30-0-181:~$ ssh-keygen -t rsa
 ```
 
@@ -252,7 +252,7 @@ The key's randomart image is:
 +-----------------+
 ```
 
-```sh
+```
 ubuntu@ip-172-30-0-181:~$ cd /home/ubuntu/.ssh/
 ubuntu@ip-172-30-0-181:~/.ssh$ ls -la
 ```
@@ -264,7 +264,7 @@ drwxr-xr-x 5 ubuntu ubuntu 4096 Apr 29 04:24 ..
 -rw------- 1 ubuntu ubuntu 1679 Apr 29 04:25 id_rsa
 -rw-r--r-- 1 ubuntu ubuntu  404 Apr 29 04:25 id_rsa.pub
 ```
-```sh
+```
 ubuntu@ip-172-30-0-181:~/.ssh$ cat id_rsa
 ```
 
@@ -298,7 +298,7 @@ bFIEO4P2JtN1FXc6dVs2O3Nwu1Sa1Dbzs+F41HbpzPQS9MUYA6HJAw==
 -----END RSA PRIVATE KEY-----
 ```
 
-```sh
+```
 ubuntu@ip-172-30-0-181:~$ heroku keys:add
 ```
 
@@ -308,7 +308,7 @@ Would you like to upload it to Heroku? [Yn] Y
 Uploading SSH public key /home/ubuntu/.ssh/id_rsa.pub... done
 ```
 
-```sh
+```
 ubuntu@ip-172-30-0-181:~$ git clone https://github.com/heroku/node-js-sample.git
 ```
 
@@ -321,7 +321,7 @@ Resolving deltas: 100% (46/46), done.
 Checking connectivity... done.
 ```
 
-```sh
+```
 ubuntu@ip-172-30-0-181:~$ cd node-js-sample/
 ubuntu@ip-172-30-0-181:~/node-js-sample$ ls -la
 ```
@@ -339,7 +339,7 @@ drwxrwxr-x 2 ubuntu ubuntu 4096 Apr 29 04:26 public
 -rw-rw-r-- 1 ubuntu ubuntu 1240 Apr 29 04:26 README.md
 ```
 
-```sh
+```
 ubuntu@ip-172-30-0-181:~/node-js-sample$ heroku create
 ```
 ```
@@ -348,7 +348,7 @@ https://mysterious-falls-7309.herokuapp.com/ | https://git.heroku.com/mysterious
 Git remote heroku added
 ```
 
-```sh
+```
 ubuntu@ip-172-30-0-181:~/node-js-sample$ git push heroku master
 ```
 ```

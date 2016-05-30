@@ -1,12 +1,12 @@
 Logstash troubleshooting 
 =====
 
-```sh
+```
 ps --cols 1000 -o cputime,etime,rss,args, -u logstash
 ```
 Watch memory usage 
 
-```sh
+```
 watch -n 5 free -m
 ```
 

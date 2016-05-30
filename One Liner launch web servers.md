@@ -7,25 +7,25 @@ Each of these commands will run an ad hoc http static server in your current (or
 
 ### Python 2.x
 
-```shell
+```
 $ python -m SimpleHTTPServer 8000
 ```
 
 ### Python 3.x
 
-```shell
+```
 $ python -m http.server 8000
 ```
 
 ### Twisted <sub><sup>(Python)</sup></sub>
 
-```shell
+```
 $ twistd -n web -p 8000 --path .
 ```
 
 Or:
 
-```shell
+```
 $ python -c 'from twisted.web.server import Site; from twisted.web.static import File; from twisted.internet import reactor; reactor.listenTCP(8000, Site(File("."))); reactor.run()'
 ```
 
@@ -33,7 +33,7 @@ Depends on [Twisted](http://twistedmatrix.com/trac/wiki/Downloads).
 
 ### Ruby
 
-```shell
+```
 $ ruby -rwebrick -e'WEBrick::HTTPServer.new(:Port => 8000, :DocumentRoot => Dir.pwd).start'
 ```
 
@@ -41,7 +41,7 @@ Credit: [Barking Iguana](http://barkingiguana.com/2010/04/11/a-one-line-web-serv
 
 ### Ruby 1.9.2+
 
-```shell
+```
 $ ruby -run -ehttpd . -p8000
 ```
 
@@ -49,7 +49,7 @@ Credit: [nobu](https://gist.github.com/willurd/5720255#comment-855952)
 
 ### adsf <sub><sup>(Ruby)</sup></sub>
 
-```shell
+```
 $ gem install adsf   # install dependency
 $ adsf -p 8000
 ```
@@ -60,7 +60,7 @@ Credit: [twome](https://gist.github.com/willurd/5720255/#comment-841393)
 
 ### Sinatra <sub><sup>(Ruby)</sup></sub>
 
-```shell
+```
 $ gem install sinatra   # install dependency
 $ ruby -rsinatra -e'set :public_folder, "."; set :port, 8000'
 ```
@@ -69,7 +69,7 @@ $ ruby -rsinatra -e'set :public_folder, "."; set :port, 8000'
 
 ### Perl
 
-```shell
+```
 $ cpan HTTP::Server::Brick   # install dependency
 $ perl -MHTTP::Server::Brick -e '$s=HTTP::Server::Brick->new(port=>8000); $s->mount("/"=>{path=>"."}); $s->start'
 ```
@@ -78,7 +78,7 @@ Credit: [Anonymous Monk](http://www.perlmonks.org/?node_id=865239)
 
 ### Plack <sub><sup>(Perl)</sup></sub>
 
-```shell
+```
 $ cpan Plack   # install dependency
 $ plackup -MPlack::App::Directory -e 'Plack::App::Directory->new(root=>".");' -p 8000
 ```
@@ -87,7 +87,7 @@ Credit: [miyagawa](http://advent.plackperl.org/2009/12/day-5-run-a-static-file-w
 
 ### Mojolicious <sub><sup>(Perl)</sup></sub>
 
-```shell
+```
 $ cpan Mojolicious::Lite   # install dependency
 $ perl -MMojolicious::Lite -MCwd -e 'app->static->paths->[0]=getcwd; app->start' daemon -l http://*:8000
 ```
@@ -96,7 +96,7 @@ $ perl -MMojolicious::Lite -MCwd -e 'app->static->paths->[0]=getcwd; app->start'
 
 ### http-server <sub><sup>(Node.js)</sup></sub>
 
-```shell
+```
 $ npm install -g http-server   # install dependency
 $ http-server -p 8000
 ```
@@ -105,7 +105,7 @@ $ http-server -p 8000
 
 ### node-static <sub><sup>(Node.js)</sup></sub>
 
-```shell
+```
 $ npm install -g node-static   # install dependency
 $ static -p 8000
 ```
@@ -114,7 +114,7 @@ $ static -p 8000
 
 ### PHP <sub><sup>(>= 5.4)</sup></sub>
 
-```shell
+```
 $ php -S 127.0.0.1:8000
 ```
 
@@ -124,7 +124,7 @@ Credit: [/u/prawnsalad](http://www.reddit.com/r/webdev/comments/1fs45z/list_of_a
 
 ### Erlang
 
-```shell
+```
 $ erl -s inets -eval 'inets:start(httpd,[{server_name,"NAME"},{document_root, "."},{server_root, "."},{port, 8000},{mime_types,[{"html","text/html"},{"htm","text/html"},{"js","text/javascript"},{"css","text/css"},{"gif","image/gif"},{"jpg","image/jpeg"},{"jpeg","image/jpeg"},{"png","image/png"}]}]).'
 ```
 
@@ -134,7 +134,7 @@ Credit: [nivertech](https://gist.github.com/willurd/5720255/#comment-841166) (wi
 
 ### busybox httpd
 
-```shell
+```
 $ busybox httpd -f -p 8000
 ```
 
@@ -142,7 +142,7 @@ Credit: [lvm](https://gist.github.com/willurd/5720255#comment-841915)
 
 ### webfs
 
-```shell
+```
 $ webfsd -F -p 8000
 ```
 
@@ -150,7 +150,7 @@ Depends on [webfs](http://linux.bytesex.org/misc/webfs.html).
 
 ### IIS Express
 
-```shell
+```
 C:\> "C:\Program Files (x86)\IIS Express\iisexpress.exe" /path:C:\MyWeb /port:8000
 ```
 

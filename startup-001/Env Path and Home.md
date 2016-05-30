@@ -1,9 +1,9 @@
-Basic Linux Commands
+## Basic Linux Commands
 
 
-EC2 SUSE LINUX 
+### EC2 SUSE LINUX 
 
-```SH
+```
 env
 ```
 
@@ -60,14 +60,14 @@ COLORTERM=1
 _=/usr/bin/env
 ```
 
-```sh
+```
 ec2-user@ip-172-30-0-194:~> env | grep '^PATH'
 ```
 ```
 PATH=/home/ec2-user/bin:/usr/local/bin:/usr/bin:/bin:/usr/games
 ```
 
-default order 
+## default order 
 
 ```
 /home/ec2-user/bin

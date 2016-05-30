@@ -110,7 +110,7 @@ or via sudo:
 
 #### Simplest configuration
 
-On my debian system in [Pogoplug][7] (armv5), [Raspberry Pi][8] (armv6) OR [Beaglebone Black][9] &amp; [Udoo][10](armv7), I can compile R. See R's [admin manual][11]. If the OS needs x11, I just need to install 2 required packages.
+On my debian system in [Pogoplug][7] (armv5), [Raspberry Pi][8] (armv6) OR [Beaglebone Black][9] & [Udoo][10](armv7), I can compile R. See R's [admin manual][11]. If the OS needs x11, I just need to install 2 required packages.
 
 * install gfortran: **`apt-get install build-essential gfortran`** (gfortran is not part of build-essential)
 * install readline library: **`apt-get install libreadline5-dev`** (pogoplug), **`apt-get install libreadline6-dev`** (raspberry pi/BBB), **`apt-get install libreadline-dev`** (Ubuntu)
@@ -238,9 +238,9 @@ PS 3. On my x86 system, it shows
     'help.start()' for an HTML browser interface to help.
     Type 'q()' to quit R.
 
-    &gt; library(MASS)
-    Error in library(MASS)&nbsp;: there is no package called 'MASS'
-    &gt; library()
+    > library(MASS)
+    Error in library(MASS) : there is no package called 'MASS'
+    > library()
     Packages in library '/mnt/usb/R-2.15.2/library':
 
     base                    The R Base Package
@@ -258,10 +258,10 @@ PS 3. On my x86 system, it shows
     tcltk                   Tcl/Tk Interface
     tools                   Tools for Package Development
     utils                   The R Utils Package
-    &gt; Sys.info()["machine"]
+    > Sys.info()["machine"]
        machine
     "armv5tel"
-    &gt; gc()
+    > gc()
              used (Mb) gc trigger (Mb) max used (Mb)
     Ncells 170369  4.6     350000  9.4   350000  9.4
     Vcells 163228  1.3     905753  7.0   784148  6.0
@@ -281,7 +281,7 @@ PS 4. The complete log of building R from source is in here [File:Build R log.tx
 
 See the page [here][15].
 
-#### Update: R 3.1.3 &amp; R 3.2.0 on Raspberry Pi 2
+#### Update: R 3.1.3 & R 3.2.0 on Raspberry Pi 2
 
 It took 134m to run 'make -j 4' on RPi 2 using R 3.1.3.
 
@@ -330,7 +330,7 @@ This is a comprehensive list. This list is even larger than r-base-dev.
 
 Note that texi2dvi has to be installed first to avoid the following error. It is better to follow the Ubuntu instruction (<https: github.com="" wch="" r-source="" wiki="" ubuntu-build-instructions="">) when we work on Ubuntu OS.
 
-    $ (cd doc/manual &amp;&amp; make front-matter html-non-svn)
+    $ (cd doc/manual && make front-matter html-non-svn)
     creating RESOURCES
     /bin/bash: number-sections: command not found
     make: [../../doc/RESOURCES] Error 127 (ignored)
@@ -371,18 +371,18 @@ To build R, run the following script. To run the built R, type 'bin/R'.
     # https://github.com/wch/r-source/commit/4f13e5325dfbcb9fc8f55fc6027af9ae9c7750a3
 
     # Need to build FAQ
-    (cd doc/manual &amp;&amp; make front-matter html-non-svn)
+    (cd doc/manual && make front-matter html-non-svn)
 
     rm -f non-tarball
 
     # Get current SVN revsion from git log and save in SVN-REVISION
-    echo -n 'Revision: ' &gt; SVN-REVISION
+    echo -n 'Revision: ' > SVN-REVISION
     git log --format=%B -n 1
       | grep "^git-svn-id"
       | sed -E 's/^git-svn-id: https://svn.r-project.org/R/.*?@([0-9]+).*$/1/'
-      &gt;&gt; SVN-REVISION
-    echo -n 'Last Changed Date: ' &gt;&gt;  SVN-REVISION
-    git log -1 --pretty=format:"%ad" --date=iso | cut -d' ' -f1 &gt;&gt; SVN-REVISION
+      >> SVN-REVISION
+    echo -n 'Last Changed Date: ' >>  SVN-REVISION
+    git log -1 --pretty=format:"%ad" --date=iso | cut -d' ' -f1 >> SVN-REVISION
 
     # End workaround
 
@@ -396,9 +396,9 @@ If we DO NOT use -depth option in git clone command, we can use git checkout SHA
 
 The svn revision number for a certain git revision can be found in the blue box on the github website (git-svn-id). For example, [this revision][16] has an svn revision number 68302 even the current trunk is 68319.
 
-Now suppose we have run 'git check trunk', create a devel'R successfully. If we want to build R for a certain svn or git revision, we run 'git checkout SHA1', 'make distclean', code to generate the _SVN-REVISION_ file (it will update this number) and finally './configure' &amp; 'make'.
+Now suppose we have run 'git check trunk', create a devel'R successfully. If we want to build R for a certain svn or git revision, we run 'git checkout SHA1', 'make distclean', code to generate the _SVN-REVISION_ file (it will update this number) and finally './configure' & 'make'.
 
-    time (./configure --with-recommended-packages=no &amp;&amp; make --jobs=5)
+    time (./configure --with-recommended-packages=no && make --jobs=5)
 
 The timing is 4m36s if I skip recommended packages and 7m37s if I don't skip. This is based on Xeon W3690 @ 3.47GHz.
 
@@ -450,7 +450,7 @@ To check whether we have Java installed, type 'java -version'.
 
 from command line like
 
-    brb@brb-P45T-A:~/Downloads$ ~/R-3.0.1/bin/R --slave --no-save --no-restore --no-environ --silent --args arg1=abc &lt; test.R
+    brb@brb-P45T-A:~/Downloads$ ~/R-3.0.1/bin/R --slave --no-save --no-restore --no-environ --silent --args arg1=abc < test.R
     -- reading arguments
       /home/brb/R-3.0.1/bin/exec/R
       --slave
@@ -465,7 +465,7 @@ we can see R actually call **bin/exec/R** program.
 
 ### Ubuntu/Debian
 
-Since the R packages **XML** &amp; **RCurl** are frequently used by other packages (e.g. miniCRAN), it is useful to run the following so the _install.packages("RCurl")_ and _install.packages("XML")_ can work without hiccups.
+Since the R packages **XML** & **RCurl** are frequently used by other packages (e.g. miniCRAN), it is useful to run the following so the _install.packages("RCurl")_ and _install.packages("XML")_ can work without hiccups.
 
     sudo apt-get update
     sudo apt-get install libxml2-dev
@@ -518,7 +518,7 @@ Software requirement
 
 Slide #22 gives an instruction to create
 
-* regular html file by using RStudio -&gt; Knit HTML button
+* regular html file by using RStudio -> Knit HTML button
 * HTML5 slides by using pandoc from command line.
 
 Files:
@@ -527,7 +527,7 @@ Files:
 * markdown output: 009-slides.md
 * HTML output: 009-slides.html
 
-We can create Rcmd source in Rstudio by File -&gt; New -&gt; R Markdown.
+We can create Rcmd source in Rstudio by File -> New -> R Markdown.
 
 There are 4 ways to produce slides with pandoc
 
@@ -568,28 +568,28 @@ It gets more difficult depending on how much of HTTP you want to support - POST 
 
 #### Example in R
 
-    &gt; co &lt;- socketConnection(port=8080, server=TRUE, blocking=TRUE)
-    &gt; # Now open a web browser and type http://localhost:8080/index.html
-    &gt; readLines(co,1)
-    [1] "GET /index.html HTTP/1.1"
-    &gt; readLines(co,1)
-    [1] "Host: localhost:8080"
-    &gt; readLines(co,1)
-    [1] "User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:23.0) Gecko/20100101 Firefox/23.0"
-    &gt; readLines(co,1)
-    [1] "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
-    &gt; readLines(co,1)
-    [1] "Accept-Language: en-US,en;q=0.5"
-    &gt; readLines(co,1)
-    [1] "Accept-Encoding: gzip, deflate"
-    &gt; readLines(co,1)
-    [1] "Connection: keep-alive"
-    &gt; readLines(co,1)
-    [1] ""
+	> co <- socketConnection(port=8080, server=TRUE, blocking=TRUE)
+	> # Now open a web browser and type http://localhost:8080/index.html
+	> readLines(co,1)
+	[1] "GET /index.html HTTP/1.1"
+	> readLines(co,1)
+	[1] "Host: localhost:8080"
+	> readLines(co,1)
+	[1] "User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:23.0) Gecko/20100101 Firefox/23.0"
+	> readLines(co,1)
+	[1] "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
+	> readLines(co,1)
+	[1] "Accept-Language: en-US,en;q=0.5"
+	> readLines(co,1)
+	[1] "Accept-Encoding: gzip, deflate"
+	> readLines(co,1)
+	[1] "Connection: keep-alive"
+	> readLines(co,1)
+	[1] ""
 
 #### Example in C ([Very simple http server written in C][27], 187 lines)
 
-Create a simple hello world html page and save it as &lt;[index.html][28]&gt; in the current directory (/home/brb/Downloads/)
+Create a simple hello world html page and save it as <[index.html][28]> in the current directory (/home/brb/Downloads/)
 
 Launch the server program (assume we have done _gcc http_server.c -o http_server_)
 
@@ -654,11 +654,11 @@ If we use telnet program to test, wee need to type anything we want
     Trying 127.0.0.1...
     Connected to localhost.
     Escape character is '^]'.
-    ThisCanBeAnything        &lt;=== This is what I typed in the client and it is also shown on server
-    HTTP/1.1 200 OK          &lt;=== From here is what I got from server
+    ThisCanBeAnything        <=== This is what I typed in the client and it is also shown on server
+    HTTP/1.1 200 OK          <=== From here is what I got from server
     Content-length: 37Content-Type: text/html
 
-    HTML_DATA_HERE_AS_YOU_MENTIONED_ABOVE &lt;=== The html tags are not passed from server, interesting!
+    HTML_DATA_HERE_AS_YOU_MENTIONED_ABOVE <=== The html tags are not passed from server, interesting!
     Connection closed by foreign host.
     $
 
@@ -680,14 +680,14 @@ The following is what we see on a browser after we run an example from shiny pac
 
 shiny depends on [websockets][36], caTools, bitops, digest packages.
 
-Q &amp; A:
+Q & A:
 
 * Q: If we run _runExample('01_hello')_ in Rserve from an R client, we can continue our work in R client without losing the functionality of the GUI from shiny. Question: how do we kill the job?
 * If I run the example "01_hello", the browser only shows the control but not graph on Firefox? A: Use Chrome or Opera as the default browser.
 * If I run the example "01_hello" on RHEL the first time, it works fine. But if I click 'Ctrl + C' to stop it and run it again, I got a message
 
-    Warning in .SOCK_SERVE(port)&nbsp;: R-Websockets(tcpserv): bind() failed.
-    Error in createContext(port, webpage, is.binary = is.binary)&nbsp;:
+    Warning in .SOCK_SERVE(port) : R-Websockets(tcpserv): bind() failed.
+    Error in createContext(port, webpage, is.binary = is.binary) :
       Unable to bind socket on port 8100; is it realsy in use?
 
 A simple solution is to close R and open it again.
@@ -767,7 +767,7 @@ Advantage
 4 lines of code [example][50].
 
     library(Rook)
-    s &lt;- Rhttpd$new()
+    s <- Rhttpd$new()
     s$start(quiet=TRUE)
     s$print()
     s$browse(1)  # OR s$browse("RookTest")
@@ -776,17 +776,11 @@ Notice that after s$browse() command, the cursor will return to R because the co
 
 ![Rook.png][51] ![Rook2.png][52] ![Rookapprnorm.png][53]
 
-We can add Rook **application** to the server; see&nbsp;?Rhttpd.
+We can add Rook **application** to the server; see ?Rhttpd.
 
-    s$add(
-        app=system.file('exampleApps/helloworld.R',package='Rook'),name='hello'
-    )
-    s$add(
-        app=system.file('exampleApps/helloworldref.R',package='Rook'),name='helloref'
-    )
-    s$add(
-        app=system.file('exampleApps/summary.R',package='Rook'),name='summary'
-    )
+    s$add(app=system.file('exampleApps/helloworld.R',package='Rook'),name='hello')
+    s$add(app=system.file('exampleApps/helloworldref.R',package='Rook'),name='helloref')
+    s$add(app=system.file('exampleApps/summary.R',package='Rook'),name='summary')
 
     s$print()
 
@@ -808,16 +802,16 @@ For example, the interface and the source code of _summary_ app are given below
 
 ![Rookappsummary.png][54]
 
-    app &lt;- function(env) {
-        req &lt;- Rook::Request$new(env)
-        res &lt;- Rook::Response$new()
+    app <- function(env) {
+        req <- Rook::Request$new(env)
+        res <- Rook::Response$new()
         res$write('Choose a CSV file:n')
         res$write('<form method="POST" enctype="multipart/form-data">n')
         res$write('<input type="file" name="data">n')
         res$write('<input type="submit" name="Upload">n</form>n<br>')
 
         if (!is.null(req$POST())){
-    	data &lt;- req$POST()[['data']]
+    	data <- req$POST()[['data']]
     	res$write("<h3>Summary of Data</h3>");
     	res$write("<pre>")
     	res$write(paste(capture.output(summary(read.csv(data$tempfile,stringsAsFactors=FALSE)),file=NULL),collapse='n'))
@@ -850,8 +844,6 @@ CGHwithR is still working with old version of R although it is removed from CRAN
 
 This is not a web application. But the **manipulate** package can be used to create interactive plot within R(Studio) environment easily. Its source is available at [here][62].
 
-Mathematica also has manipulate function for plotting; see [here][63].
-
 ### [RCloud][64]
 
 RCloud is an environment for collaboratively creating and sharing data analysis scripts. RCloud lets you mix analysis code in R, HTML5, Markdown, Python, and others. Much like Sage, iPython notebooks and Mathematica, RCloud provides a notebook interface that lets you easily record a session and annotate it with text, equations, and supporting images.
@@ -861,12 +853,6 @@ See also the [Talk][65] in UseR 2014.
 ### Web page scraping
 
 [rvest][66] package.
-
-### Send email
-
-### [GEO (Gene Expression Omnibus)][67]
-
-See [this internal link][68].
 
 ### Interactive html output
 
@@ -882,9 +868,9 @@ In addition to tooltip boxes, the package can create a [table showing all inform
 
     library(d3Network)
 
-    Source &lt;- c("A", "A", "A", "A", "B", "B", "C", "C", "D")
-    Target &lt;- c("B", "C", "D", "J", "E", "F", "G", "H", "I")
-    NetworkData &lt;- data.frame(Source, Target)
+    Source <- c("A", "A", "A", "A", "B", "B", "C", "C", "D")
+    Target <- c("B", "C", "D", "J", "E", "F", "G", "H", "I")
+    NetworkData <- data.frame(Source, Target)
 
     d3SimpleNetwork(NetworkData, height = 800, width = 1024, file="tmp.html")
 
@@ -918,8 +904,8 @@ Path: path/to/subdirectory
 
 #### Space requirement if we want to mirror WHOLE repository
 
-* Whole CRAN takes about 92GB (rsync -avn cran.r-project.org::CRAN &gt; ~/Downloads/cran).
-* Bioconductor is big (&gt; 64G for BioC 2.11). Please check the size of what will be transferred with e.g. (rsync -avn bioconductor.org::2.11 &gt; ~/Downloads/bioc) and make sure you have enough room on your local disk before you start.
+* Whole CRAN takes about 92GB (rsync -avn cran.r-project.org::CRAN > ~/Downloads/cran).
+* Bioconductor is big (> 64G for BioC 2.11). Please check the size of what will be transferred with e.g. (rsync -avn bioconductor.org::2.11 > ~/Downloads/bioc) and make sure you have enough room on your local disk before you start.
 
 On the other hand, we if only care about Windows binary part, the space requirement is largely reduced.
 
@@ -952,7 +938,7 @@ Before creating a local repository please give a dry run first. You don't want t
 
 Dry run (-n option). Pipe out the process to a text file for an examination.
 
-    rsync -avn cran.r-project.org::CRAN &gt; crandryrun.txt
+    rsync -avn cran.r-project.org::CRAN > crandryrun.txt
 
 To mirror only partial repository, it is necessary to create directories before running rsync command.
 
@@ -991,7 +977,7 @@ For example (as of 1/7/2013),
 
 Dry run
 
-    rsync -avn bioconductor.org::2.11 &gt; biocdryrun.txt
+    rsync -avn bioconductor.org::2.11 > biocdryrun.txt
 
 Then creates directories before running rsync.
 
@@ -1076,14 +1062,14 @@ The soft link mode should be 777.
 
 Replace the host name arraytools.no-ip.org by IP address 10.133.2.111 if necessary.
 
-    r &lt;- getOption("repos"); r["CRAN"] &lt;- "http://arraytools.no-ip.org/CRAN"
+    r <- getOption("repos"); r["CRAN"] <- "http://arraytools.no-ip.org/CRAN"
     options(repos=r)
     install.packages("glmnet")
 
 We can test if the backup server is working or not by installing a package which was removed from the CRAN. For example, 'ForImp' was removed from CRAN in 11/8/2012, but I still a local copy built on R 2.15.2 (run rsync on 11/6/2012).
 
-    r &lt;- getOption("repos"); r["CRAN"] &lt;- "http://cran.r-project.org"
-    r &lt;- c(r, BRB='http://arraytools.no-ip.org/CRAN')
+    r <- getOption("repos"); r["CRAN"] <- "http://cran.r-project.org"
+    r <- c(r, BRB='http://arraytools.no-ip.org/CRAN')
     #                        CRAN                            CRANextra                                  BRB
     # "http://cran.r-project.org" "http://www.stats.ox.ac.uk/pub/RWin"   "http://arraytools.no-ip.org/CRAN"
     options(repos=r)
@@ -1091,21 +1077,20 @@ We can test if the backup server is working or not by installing a package which
 
 Note by default, CRAN mirror is selected interactively.
 
-    &gt; getOption("repos")
+    > getOption("repos")
                                     CRAN                            CRANextra
                                 "@CRAN@" "http://www.stats.ox.ac.uk/pub/RWin"
 
 #### To test Bioconductor
 
     # CRAN part:
-    r &lt;- getOption("repos"); r["CRAN"] &lt;- "http://arraytools.no-ip.org/CRAN"
+    r <- getOption("repos"); r["CRAN"] <- "http://arraytools.no-ip.org/CRAN"
     options(repos=r)
     # Bioconductor part:
     options("BioC_mirror" = "http://arraytools.no-ip.org/Bioc")
     source("http://bioconductor.org/biocLite.R")
     # This source biocLite.R line can be placed either before or after the previous 2 lines
     biocLite("aCGH")
-
 If there is a connection problem, check folder attributes.
 
     chmod -R 755 ~/CRAN/bin
@@ -1119,7 +1104,7 @@ So for example, if the mirror does not have contents under src directory, we nee
 
 * If we only mirror the essential directories, we can run biocLite() successfully. However, the R console will give some warning
 
-    &gt; biocLite("aCGH")
+    > biocLite("aCGH")
     BioC_mirror: http://arraytools.no-ip.org/Bioc
     Using Bioconductor version 2.11 (BiocInstaller 1.8.3), R version 2.15.
     Installing package(s) 'aCGH'
@@ -1138,7 +1123,7 @@ So for example, if the mirror does not have contents under src directory, we nee
             C:UserslimingcAppDataLocalTempRtmp8IGGyGdownloaded_packages
     Warning: unable to access index for repository http://arraytools.no-ip.org/Bioc/packages/2.11/data/experiment/bin/windows/contrib/2.15
     Warning: unable to access index for repository http://arraytools.no-ip.org/Bioc/packages/2.11/extra/bin/windows/contrib/2.15
-    &gt; library()
+    > library()
 
 ### CRAN repository directory structure
 
@@ -1209,7 +1194,7 @@ See [METACRAN][80] for packages hosted on CRAN. The '<https: github.com="" metac
 It seems it is safe to choose 'Cancel' when Windows Firewall tried to block R program when we use **makeCluster()** to create a socket cluster.
 
     library(parallel)
-    cl &lt;- makeCluster(2)
+    cl <- makeCluster(2)
     clusterApply(cl, 1:2, get("+"), 3)
     stopCluster(cl)
 
@@ -1232,10 +1217,10 @@ The parallel package provides several *apply functions for R users to quickly mo
 * parLapplyLB, parSapplyLB (load balance version)
 * clusterSetRNGStream, nextRNGStream, nextRNGSubStream
 
-Examples (See&nbsp;?[clusterApply][85])
+Examples (See ?[clusterApply][85])
 
     library(parallel)
-    cl &lt;- makeCluster(2, type = "SOCK")
+    cl <- makeCluster(2, type = "SOCK")
     clusterApply(cl, 1:2, function(x) x*3)    # OR clusterApply(cl, 1:2, get("*"), 3)
     # [[1]]
     # [1] 3
@@ -1271,11 +1256,11 @@ as a backend.
     library(foreach)
     library(doParallel)
 
-    m &lt;- matrix(rnorm(9), 3, 3)
+    m <- matrix(rnorm(9), 3, 3)
 
-    cl &lt;- makeCluster(2, type = "SOCK")
+    cl <- makeCluster(2, type = "SOCK")
     registerDoParallel(cl)
-    foreach(i=1:nrow(m), .combine=rbind)&nbsp;%dopar%
+    foreach(i=1:nrow(m), .combine=rbind) %dopar%
       (m[i,] / mean(m[i,]))
 
     stopCluster(cl)
@@ -1428,37 +1413,37 @@ The following example is modified from the first of above list.
 
     temp = getURL("https://gist.github.com/arraytools/6743826/raw/23c8b0bc4b8f0d1bfe1c2fad985ca2e091aeb916/ip.txt",
                                ssl.verifypeer = FALSE)
-    ip &lt;- read.table(textConnection(temp), as.is=TRUE)
-    names(ip) &lt;- "IP"
+    ip <- read.table(textConnection(temp), as.is=TRUE)
+    names(ip) <- "IP"
     nr = nrow(ip)
 
-    Lon &lt;- as.numeric(rep(NA, nr))
-    Lat &lt;- Lon
-    Coords &lt;- data.frame(Lon, Lat)
+    Lon <- as.numeric(rep(NA, nr))
+    Lat <- Lon
+    Coords <- data.frame(Lon, Lat)
 
-    ip2coordinates &lt;- function(ip) {
-      api &lt;- "http://freegeoip.net/json/"
-      get.ips &lt;- getURL(paste(api, URLencode(ip), sep=""))
-      # result &lt;- ldply(fromJSON(get.ips), data.frame)
-      result &lt;- data.frame(fromJSON(get.ips))
-      names(result)[1] &lt;- "ip.address"
+    ip2coordinates <- function(ip) {
+      api <- "http://freegeoip.net/json/"
+      get.ips <- getURL(paste(api, URLencode(ip), sep=""))
+      # result <- ldply(fromJSON(get.ips), data.frame)
+      result <- data.frame(fromJSON(get.ips))
+      names(result)[1] <- "ip.address"
       return(result)
     }
 
     for (i in 1:nr){
       cat(i, "n")
       try(
-      Coords[i, 1:2] &lt;- ip2coordinates(ip$IP[i])[c("longitude", "latitude")]
+      Coords[i, 1:2] <- ip2coordinates(ip$IP[i])[c("longitude", "latitude")]
       )
     }
 
     # append to log-file:
-    logfile &lt;- data.frame(ip, Lat = Coords$Lat, Long = Coords$Lon,
+    logfile <- data.frame(ip, Lat = Coords$Lat, Long = Coords$Lon,
                                            LatLong = paste(round(Coords$Lat, 1), round(Coords$Lon, 1), sep = ":"))
-    log_gmap &lt;- logfile[!is.na(logfile$Lat), ]
+    log_gmap <- logfile[!is.na(logfile$Lat), ]
 
     require(googleVis) # gvisMap
-    gmap &lt;- gvisMap(log_gmap, "LatLong",
+    gmap <- gvisMap(log_gmap, "LatLong",
                     options = list(showTip = TRUE, enableScrollWheel = TRUE,
                                    mapType = 'hybrid', useMapTypeControl = TRUE,
                                    width = 1024, height = 800))
@@ -1488,7 +1473,7 @@ See an example from [RJSONIO][109] above.
 
 RStudio makes it easy to use Rcpp package.
 
-Open RStudio, click New File -&gt; C++ File. It will create a C++ template on the RStudio editor
+Open RStudio, click New File -> C++ File. It will create a C++ template on the RStudio editor
 
     #include <rcpp.h>
     using namespace Rcpp;
@@ -1526,7 +1511,7 @@ If we wan to test Boost library, we can try it in RStudio. Consider the followin
 
     //[[Rcpp::export]]
     Rcpp::NumericVector boost_gamma( Rcpp::NumericVector x ) {
-      foreach( double&amp; elem, x ) {
+      foreach( double& elem, x ) {
         elem = boost::math::tgamma(elem);
       };
 
@@ -1555,7 +1540,7 @@ PS. If R was not available in global environment (such as built by ourselves), w
 Then type the following in an R session to see how it works. Note that we don't need to issue **library(Rcpp)** in R.
 
     dyn.load("convolve3_cpp.so")
-    x &lt;- .Call("convolve3cpp", 1:3, 4:6)
+    x <- .Call("convolve3cpp", 1:3, 4:6)
     x # 4 13 28 27 18
 
 If we have our own cpp file, we need to use the following way to create dynamic loaded library file. Note that the character ([grave accent][113]) ` is not (single quote)'. If you mistakenly use ', it won't work.
@@ -1567,18 +1552,18 @@ If we have our own cpp file, we need to use the following way to create dynamic 
 #### Example 2. Use together with inline package
 
     library(inline)
-    src &lt;-'
+    src <-'
      Rcpp::NumericVector xa(a);
      Rcpp::NumericVector xb(b);
      int n_xa = xa.size(), n_xb = xb.size();
 
      Rcpp::NumericVector xab(n_xa + n_xb - 1);
-     for (int i = 0; i &lt; n_xa; i++)
-     for (int j = 0; j &lt; n_xb; j++)
+     for (int i = 0; i < n_xa; i++)
+     for (int j = 0; j < n_xb; j++)
      xab[i + j] += xa[i] * xb[j];
      return xab;
     '
-    fun &lt;- cxxfunction(signature(a = "numeric", b = "numeric"),
+    fun <- cxxfunction(signature(a = "numeric", b = "numeric"),
      src, plugin = "Rcpp")
     fun(1:3, 1:4)
     # [1]  1  4 10 16 17 12
@@ -1599,7 +1584,7 @@ If we have our own cpp file, we need to use the following way to create dynamic 
 
 For the Chromosome column, integer values becomes strings (but converted to double, so 5 becomes 5.000000) or NA (empty on sheets).
 
-    &gt; head(read_excel("~/Downloads/BRCA.xls", 4)[ , -9], 3)
+    > head(read_excel("~/Downloads/BRCA.xls", 4)[ , -9], 3)
       UniqueID (Double-click) CloneID UGCluster
     1                   HK1A1   21652 Hs.445981
     2                   HK1A2   22012 Hs.119177
@@ -1615,7 +1600,7 @@ For the Chromosome column, integer values becomes strings (but converted to doub
 
 The hidden worksheets become visible (Not sure what are those first rows mean in the output).
 
-    &gt; excel_sheets("~/Downloads/BRCA.xls")
+    > excel_sheets("~/Downloads/BRCA.xls")
     DEFINEDNAME: 21 00 00 01 0b 00 00 00 02 00 00 00 00 00 00 0d 3b 01 00 00 00 9a 0c 00 00 1a 00
     DEFINEDNAME: 21 00 00 01 0b 00 00 00 04 00 00 00 00 00 00 0d 3b 03 00 00 00 9b 0c 00 00 0a 00
     DEFINEDNAME: 21 00 00 01 0b 00 00 00 03 00 00 00 00 00 00 0d 3b 02 00 00 00 9a 0c 00 00 06 00
@@ -1625,7 +1610,7 @@ The hidden worksheets become visible (Not sure what are those first rows mean in
 
 The Chinese character works too.
 
-    &gt; read_excel("~/Downloads/testChinese.xlsx", 1)
+    > read_excel("~/Downloads/testChinese.xlsx", 1)
        中文 B C
     1     a b c
     2     1 2 3
@@ -1660,7 +1645,7 @@ Use **acast()** function in reshape2 package. It will convert data.frame used fo
 
 #### [magrittr][122]
 
-Instead of nested statements, it is using pipe operator **%&gt;%**. So the code is easier to read. Impressive!
+Instead of nested statements, it is using pipe operator **%>%**. So the code is easier to read. Impressive!
 
 ### [jpeg][123]
 
@@ -1711,8 +1696,8 @@ Some issues
 
 will result in
 
-    &gt; tidy_source("clipboard")
-    Error in base::parse(text = code, srcfile = NULL)&nbsp;:
+    > tidy_source("clipboard")
+    Error in base::parse(text = code, srcfile = NULL) :
       3:1: unexpected string constant
     2: invisible(".BeGiN_TiDy_IdEnTiFiEr_HaHaHa# This is my comment.HaHaHa_EnD_TiDy_IdEnTiFiEr")
     3: "defg"
@@ -1748,17 +1733,17 @@ Still bad!!
 will result in
 
 ```
-    &gt; tidy_source("clipboard", width.cutoff=70)
-    Error in base::parse(text = code, srcfile = NULL)&nbsp;:
+    > tidy_source("clipboard", width.cutoff=70)
+    Error in base::parse(text = code, srcfile = NULL) :
       3:129: unexpected SPECIAL
     2: "<hr size="5" width="100%" noshade="">" ,
-    3: ifelse ( codeSurv == 0 , "<h3><a name="Genes"><b><u>Genes which are differentially expressed among classes:</u></b></a></h3>" ,&nbsp;%InLiNe_IdEnTiFiEr%
+    3: ifelse ( codeSurv == 0 , "<h3><a name="Genes"><b><u>Genes which are differentially expressed among classes:</u></b></a></h3>" , %InLiNe_IdEnTiFiEr%
 ```
 
 * _width.cutoff_ parameter is not always working. For example, there is no any change for the following snippet though I hope it will move the cat() to the next line.
 
 ```
-    if (codePF &amp;&nbsp;!GlobalTest &amp;&nbsp;!DoExactPermTest) cat(paste("Multivariate Permutations test was computed based on",
+    if (codePF & !GlobalTest & !DoExactPermTest) cat(paste("Multivariate Permutations test was computed based on",
         NumPermutations, "random permutations"), "<br>", " ", file = ExternalFileName,
         sep = "n", append = T)
 ```
@@ -1835,7 +1820,7 @@ Example: Create <embed.c> file
 
         // create and evaluate 'library(splines)'
         PROTECT(e = lang2(install("library"), mkString("splines")));
-        R_tryEval(e, R_GlobalEnv, &amp;errorOccurred);
+        R_tryEval(e, R_GlobalEnv, &errorOccurred);
         if (errorOccurred) {
             // handle error
         }
@@ -1850,7 +1835,7 @@ Example: Create <embed.c> file
 
         // 'example("ns")'
         PROTECT(e = lang2(install("example"), mkString("ns")));
-        R_tryEval(e, R_GlobalEnv, &amp;errorOccurred);
+        R_tryEval(e, R_GlobalEnv, &errorOccurred);
         UNPROTECT(1);
     }
 
@@ -1889,17 +1874,17 @@ This example is coming from this [paper][136].
 
 Create an R function
 
-    simpleServer &lt;- function(port=6543)
+    simpleServer <- function(port=6543)
     {
-      sock &lt;- socketConnection ( port=port , server=TRUE)
+      sock <- socketConnection ( port=port , server=TRUE)
       on.exit(close( sock ))
-      cat("nWelcome to R!nR&gt;" ,file=sock )
-      while(( line &lt;- readLines ( sock , n=1))&nbsp;!= "quit")
+      cat("nWelcome to R!nR>" ,file=sock )
+      while(( line <- readLines ( sock , n=1)) != "quit")
       {
-        cat(paste("socket &gt;" , line , "n"))
-        out&lt;- capture.output (try(eval(parse(text=line ))))
+        cat(paste("socket >" , line , "n"))
+        out<- capture.output (try(eval(parse(text=line ))))
         writeLines ( out , con=sock )
-        cat("nR&gt; " ,file =sock )
+        cat("nR> " ,file =sock )
       }
     }
 
@@ -1911,16 +1896,16 @@ Then run simpleServer(). Open another terminal and try to communicate with the s
     Escape character is '^]'.
 
     Welcome to R!
-    R&gt; summary(iris[, 3:5])
+    R> summary(iris[, 3:5])
       Petal.Length    Petal.Width          Species
-     Min.  &nbsp;:1.000   Min.  &nbsp;:0.100   setosa   &nbsp;:50
+     Min.   :1.000   Min.   :0.100   setosa    :50
      1st Qu.:1.600   1st Qu.:0.300   versicolor:50
-     Median&nbsp;:4.350   Median&nbsp;:1.300   virginica&nbsp;:50
-     Mean  &nbsp;:3.758   Mean  &nbsp;:1.199
+     Median :4.350   Median :1.300   virginica :50
+     Mean   :3.758   Mean   :1.199
      3rd Qu.:5.100   3rd Qu.:1.800
-     Max.  &nbsp;:6.900   Max.  &nbsp;:2.500
+     Max.   :6.900   Max.   :2.500
 
-    R&gt; quit
+    R> quit
     Connection closed by foreign host.
 
 #### [Rserve][137]
@@ -2000,7 +1985,7 @@ The above can be compared to the Hello world example in Qt.
         QPushButton hello( "Hello world!", 0 );
         hello.resize( 100, 30 );
 
-        app.setMainWidget( &amp;hello );
+        app.setMainWidget( &hello );
         hello.show();
 
         return app.exec();
@@ -2057,13 +2042,13 @@ Suppose we have downloaded R source code and build R from its source. See [Build
 
 Test the executable program. Note that the executable program _RmathEx1.exe_ can be transferred to and run in another computer without R installed. Isn't it cool!
 
-    c:R&gt;RmathEx1
+    c:R>RmathEx1
     Enter a argument for the normal cdf:
     1
     Enter a argument for the chi-squared cdf:
     1
-    Prob(Z &lt;= 1) = 0.841345
-    Prob(Chi^2 &lt;= 1)= 0.682689
+    Prob(Z <= 1) = 0.841345
+    Prob(Chi^2 <= 1)= 0.682689
 
 Below is the cpp program <rmathex1.cpp>.
 
@@ -2077,15 +2062,15 @@ Below is the cpp program <rmathex1.cpp>.
     int main()
     {
       double x1, x2;
-      cout &lt;&lt; "Enter a argument for the normal cdf:" &lt;&lt; endl;
-      cin &gt;&gt; x1;
-      cout &lt;&lt; "Enter a argument for the chi-squared cdf:" &lt;&lt; endl;
-      cin &gt;&gt; x2;
+      cout << "Enter a argument for the normal cdf:" << endl;
+      cin >> x1;
+      cout << "Enter a argument for the chi-squared cdf:" << endl;
+      cin >> x2;
 
-      cout &lt;&lt; "Prob(Z &lt;= " &lt;&lt; x1 &lt;&lt; ") = " &lt;&lt;
-        pnorm(x1, 0, 1, 1, 0)  &lt;&lt; endl;
-      cout &lt;&lt; "Prob(Chi^2 &lt;= " &lt;&lt; x2 &lt;&lt; ")= " &lt;&lt;
-        pchisq(x2, 1, 1, 0) &lt;&lt; endl;
+      cout << "Prob(Z <= " << x1 << ") = " <<
+        pnorm(x1, 0, 1, 1, 0)  << endl;
+      cout << "Prob(Chi^2 <= " << x2 << ")= " <<
+        pchisq(x2, 1, 1, 0) << endl;
       return 0;
     }
 
@@ -2099,7 +2084,7 @@ See here
 
 ### Create presentation file (beamer)
 
-1. Create Rmd file first in Rstudio by File -&gt; R markdown. Select Presentation &gt; choose pdf (beamer) as output format.
+1. Create Rmd file first in Rstudio by File -> R markdown. Select Presentation > choose pdf (beamer) as output format.
 2. Edit the template created by RStudio.
 3. Click 'Knit pdf' button (Ctrl+Shift+k) to create/display the pdf file.
 
@@ -2169,20 +2154,20 @@ Makes zebra-striped tables (tables with alternating row colors) in LaTeX and HTM
 
     # Idea:
     #        knitr        pdflatex
-    #   rnw -------&gt; tex ----------&gt; pdf
+    #   rnw -------> tex ----------> pdf
     library(knitr)
     knit("example.rnw") # create example.tex file
 
-* A very simple example &lt;002-minimal.Rnw&gt; from [yihui.name][154] works fine on linux.
+* A very simple example <002-minimal.Rnw> from [yihui.name][154] works fine on linux.
 * <knitr-minimal.rnw>. I have no problem to create pdf file on Windows but still cannot generate pdf on Linux from tex file. Some people suggested to run **sudo apt-get install texlive-fonts-recommended** to install missing fonts. It works!
 
 To see a real example, check out [DESeq2][155] package (inst/doc subdirectory). In addition to DESeq2, I also need to install **DESeq, BiocStyle, airway, vsn, gplots**, and **pasilla** packages from Bioconductor. Note that, it is best to use sudo/admin account to install packages.
 
-Or starts with markdown file. Download the example &lt;001-minimal.Rmd&gt; and remove the last line of getting png file from internet.
+Or starts with markdown file. Download the example <001-minimal.Rmd> and remove the last line of getting png file from internet.
 
     # Idea:
     #        knitr        pandoc
-    #   rmd -------&gt; md ----------&gt; pdf
+    #   rmd -------> md ----------> pdf
 
     R -e "library(knitr); knit('001-minimal.Rmd')"
     pandoc 001-minimal.md -o 001-minimal.pdf
@@ -2191,7 +2176,7 @@ To create an epub file (not success yet on Windows OS, missing figures on Linux 
 
     # Idea:
     #        knitr        pandoc
-    #   rnw -------&gt; tex ----------&gt; markdown or epub
+    #   rnw -------> tex ----------> markdown or epub
 
     library(knitr)
     knit("DESeq2.Rnw") # create DESeq2.tex
@@ -2231,13 +2216,13 @@ It is better to create rmd file in RStudio. Rstudio provides a template for rmd 
 
     # Idea:
     #        knitr       pandoc
-    #   rmd -------&gt; md --------&gt; docx
+    #   rmd -------> md --------> docx
     library(knitr)
     knit2html("example.rmd") #Create md and html files
 
 and then
 
-    FILE &lt;- "example"
+    FILE <- "example"
     system(paste0("pandoc -o ", FILE, ".docx ", FILE, ".md"))
 
 Note. For example reason, if I play around the above 2 commands for several times, the knit2html() does not work well. However, if I click 'Knit HTML' button on the RStudio, it then works again.
@@ -2263,10 +2248,10 @@ We can also create the epub file for reading on Kobo ereader. For example, downl
 
 PS. If we don't remove the link, we will get an error message (pandoc 1.10.1 on Windows 7)
 
-    &gt; pandoc("Rmd_to_Epub.md", format="epub")
+    > pandoc("Rmd_to_Epub.md", format="epub")
     executing pandoc   -f markdown -t epub -o Rmd_to_Epub.epub "Rmd_to_Epub.utf8md"
     pandoc.exe: ..http://i.imgur.com/RVNmr.jpg: openBinaryFile: invalid argument (Invalid argument)
-    Error in (function (input, format, ext, cfg) &nbsp;: conversion failed
+    Error in (function (input, format, ext, cfg)  : conversion failed
     In addition: Warning message:
     running command 'pandoc   -f markdown -t epub -o Rmd_to_Epub.epub "Rmd_to_Epub.utf8md"' had status 1
 
@@ -2288,8 +2273,8 @@ Where the content of the "minimal.brew" file is something you might have got use
 
 Use [R2wd][158] package. However, only 32-bit R is allowed and sometimes it can not produce all 'table's.
 
-    &gt; library(R2wd)
-    &gt; wdGet()
+    > library(R2wd)
+    > wdGet()
     Loading required package: rcom
     Loading required package: rscproxy
     rcom requires a current version of statconnDCOM installed.
@@ -2300,7 +2285,7 @@ Use [R2wd][158] package. However, only 32-bit R is allowed and sometimes it can 
 
     You will need a working Internet connection
     because installation needs to download a file.
-    Error in if (wdapp[["Documents"]][["Count"]] == 0) wdapp[["Documents"]]$Add()&nbsp;:
+    Error in if (wdapp[["Documents"]][["Count"]] == 0) wdapp[["Documents"]]$Add() :
       argument is of length zero
 
 The solution is to launch 32-bit R instead of 64-bit R since statconnDCOM does not support 64-bit R.
@@ -2365,23 +2350,23 @@ where the dot (.) is a metacharacter. It is used to refer to any character.
 
 Using **Sys.glob()"' as**
 
-    &gt; Sys.glob("~/Downloads/*.txt")
+    > Sys.glob("~/Downloads/*.txt")
     [1] "/home/brb/Downloads/ip.txt"       "/home/brb/Downloads/valgrind.txt"
 
 ### Hidden tool: rsync in Rtools
 
-    c:Rtoolsbin&gt;rsync -avz "/cygdrive/c/users/limingc/Downloads/a.exe" "/cygdrive/c/users/limingc/Documents/"
+    c:Rtoolsbin>rsync -avz "/cygdrive/c/users/limingc/Downloads/a.exe" "/cygdrive/c/users/limingc/Documents/"
     sending incremental file list
     a.exe
 
     sent 323142 bytes  received 31 bytes  646346.00 bytes/sec
     total size is 1198416  speedup is 3.71
 
-    c:Rtoolsbin&gt;
+    c:Rtoolsbin>
 
 And rsync works best when we need to sync folder.
 
-    c:Rtoolsbin&gt;rsync -avz "/cygdrive/c/users/limingc/Downloads/binary" "/cygdrive/c/users/limingc/Documents/"
+    c:Rtoolsbin>rsync -avz "/cygdrive/c/users/limingc/Downloads/binary" "/cygdrive/c/users/limingc/Documents/"
     sending incremental file list
     binary/
     binary/Eula.txt
@@ -2400,7 +2385,7 @@ And rsync works best when we need to sync folder.
     sent 4115294 bytes  received 244 bytes  1175868.00 bytes/sec
     total size is 8036311  speedup is 1.95
 
-    c:Rtoolsbin&gt;rm c:userslimingcDocumentsbinaryprocexp.exe
+    c:Rtoolsbin>rm c:userslimingcDocumentsbinaryprocexp.exe
     cygwin warning:
       MS-DOS style path detected: c:userslimingcDocumentsbinaryprocexp.exe
       Preferred POSIX equivalent is: /cygdrive/c/users/limingc/Documents/binary/procexp.exe
@@ -2408,7 +2393,7 @@ And rsync works best when we need to sync folder.
       Consult the user's guide for more details about POSIX paths:
         http://cygwin.com/cygwin-ug-net/using.html#using-pathnames
 
-    c:Rtoolsbin&gt;rsync -avz "/cygdrive/c/users/limingc/Downloads/binary" "/cygdrive/c/users/limingc/Documents/"
+    c:Rtoolsbin>rsync -avz "/cygdrive/c/users/limingc/Downloads/binary" "/cygdrive/c/users/limingc/Documents/"
     sending incremental file list
     binary/
     binary/procexp.exe
@@ -2416,7 +2401,7 @@ And rsync works best when we need to sync folder.
     sent 1767277 bytes  received 35 bytes  3534624.00 bytes/sec
     total size is 8036311  speedup is 4.55
 
-    c:Rtoolsbin&gt;
+    c:Rtoolsbin>
 
 Unforunately, if the destination is a network drive, I could get a permission denied (13) error. See also <http: superuser.com="" questions="" 69620="" rsync-file-permissions-on-windows="">
 
@@ -2424,7 +2409,7 @@ Unforunately, if the destination is a network drive, I could get a permission de
 
     sudo apt-get install libgdal1-dev libproj-dev
     R
-    &gt; install.packages("rgdal")
+    > install.packages("rgdal")
 
 ### Set up Emacs on Windows
 
@@ -2439,8 +2424,6 @@ Edit the file _C:Program FilesGNU Emacs 23.2site-lispsite-start.el_ with somethi
 
 #### [RSQLite][167]
 
-[<http: blog.sobbayi.com="" sql="">
-
 #### MongoDB
 
 ### Github
@@ -2449,11 +2432,9 @@ Edit the file _C:Program FilesGNU Emacs 23.2site-lispsite-start.el_ with somethi
 
 #### github
 
-<https: github.com="" languages="" r="">
-
 #### Send local repository to Github in R by using reports package
 
-<http: www.youtube.com="" watch?v="WdOI_-aZV0Y">
+https://www.youtube.com/watch?v=WdOI_-aZV0Y
 
 #### My collection
 
@@ -2475,11 +2456,11 @@ or First download the json file from
 and then
 
     library(RJSONIO)
-    x &lt;- fromJSON("~/Downloads/gists.json")
+    x <- fromJSON("~/Downloads/gists.json")
     setwd("~/Downloads/")
-    gist.id &lt;- lapply(x, "[[", "id")
+    gist.id <- lapply(x, "[[", "id")
     lapply(gist.id, function(x){
-      cmd &lt;- paste0("git clone https://gist.github.com/", x, ".git")
+      cmd <- paste0("git clone https://gist.github.com/", x, ".git")
       system(cmd)
     })
 
@@ -2497,25 +2478,25 @@ Using [persp][168] function to create the following plot.
 
     ### Random pattern
      # Create matrix with random values with dimension of final grid
-      rand &lt;- rnorm(441, mean=0.3, sd=0.1)
-      mat.rand &lt;- matrix(rand, nrow=21)
+      rand <- rnorm(441, mean=0.3, sd=0.1)
+      mat.rand <- matrix(rand, nrow=21)
 
     # Create another matrix for the colors. Start by making all cells green
-      fill &lt;- matrix("green3", nr = 21, nc = 21)
+      fill <- matrix("green3", nr = 21, nc = 21)
 
     # Change colors in each cell based on corresponding mat.rand value
-      fcol &lt;- fill
-      fcol[] &lt;- terrain.colors(40)[cut(mat.rand,
+      fcol <- fill
+      fcol[] <- terrain.colors(40)[cut(mat.rand,
          stats::quantile(mat.rand, seq(0,1, len = 41),
          na.rm=T), include.lowest = TRUE)]
 
     # Create concave surface using expontential function
-      x &lt;- -10:10
-      y &lt;- x^2
-      y &lt;- as.matrix(y)
-      y1 &lt;- y
-      for(i in 1:20){tmp &lt;- cbind(y,y1); y1 &lt;- tmp[,1]; y &lt;- tmp;}
-      mat &lt;- tmp[1:21, 1:21]
+      x <- -10:10
+      y <- x^2
+      y <- as.matrix(y)
+      y1 <- y
+      for(i in 1:20){tmp <- cbind(y,y1); y1 <- tmp[,1]; y <- tmp;}
+      mat <- tmp[1:21, 1:21]
 
     # Plot it up!
       persp(1:21, 1:21, t(mat)/10, theta = 90, phi = 35,col=fcol,
@@ -2523,29 +2504,29 @@ Using [persp][168] function to create the following plot.
 
     ### Organized pattern
     # Same as before
-      rand &lt;- rnorm(441, mean=0.3, sd=0.1)
+      rand <- rnorm(441, mean=0.3, sd=0.1)
 
     # Create concave surface using expontential function
-      x &lt;- -10:10
-      y &lt;- x^2
-      y &lt;- as.matrix(y)
-      for(i in 1:20){tmp &lt;- cbind(y,y); y1 &lt;- tmp[,1]; y &lt;- tmp;}
-      mat &lt;- tmp[1:21, 1:21]
+      x <- -10:10
+      y <- x^2
+      y <- as.matrix(y)
+      for(i in 1:20){tmp <- cbind(y,y); y1 <- tmp[,1]; y <- tmp;}
+      mat <- tmp[1:21, 1:21]
 
     ###Organize rand by y and put into matrix form
-      o &lt;- order(rand,as.vector(mat))
-      o.tmp &lt;- cbind(rand[o], rev(sort(as.vector(mat))))
-      mat.org &lt;- matrix(o.tmp[,1], nrow=21)
-      half.1 &lt;- mat.org[,seq(1,21,2)]
-      half.2 &lt;- mat.org[,rev(seq(2,20,2))]
-      full &lt;- cbind(half.1, half.2)
-      full &lt;- t(full)
+      o <- order(rand,as.vector(mat))
+      o.tmp <- cbind(rand[o], rev(sort(as.vector(mat))))
+      mat.org <- matrix(o.tmp[,1], nrow=21)
+      half.1 <- mat.org[,seq(1,21,2)]
+      half.2 <- mat.org[,rev(seq(2,20,2))]
+      full <- cbind(half.1, half.2)
+      full <- t(full)
 
     # Again, create color matrix and populate using rand values
-    zi &lt;- full[-1, -1] + full[-1, -21] + full[-21,-1] + full[-21, -21]
-    fill &lt;- matrix("green3", nr = 20, nc = 20)
-    fcol &lt;- fill
-    fcol[] &lt;- terrain.colors(40)[cut(zi,
+    zi <- full[-1, -1] + full[-1, -21] + full[-21,-1] + full[-21, -21]
+    fill <- matrix("green3", nr = 20, nc = 20)
+    fcol <- fill
+    fcol[] <- terrain.colors(40)[cut(zi,
             stats::quantile(zi, seq(0,1, len = 41), na.rm=T),
             include.lowest = TRUE)]
 
@@ -2560,7 +2541,7 @@ Using [persp][168] function to create the following plot.
     # http://blogs.sas.com/content/iml/2012/12/14/a-fractal-christmas-tree/
     # Each row is a 2x2 linear transformation
     # Christmas tree
-    L &lt;-  matrix(
+    L <-  matrix(
         c(0.03,  0,     0  ,  0.1,
             0.85,  0.00,  0.00, 0.85,
             0.8,   0.00,  0.00, 0.8,
@@ -2570,7 +2551,7 @@ Using [persp][168] function to create the following plot.
             -0.2,   0.1,   0.12, 0.2),
         nrow=4)
     # ... and each row is a translation vector
-    B &lt;- matrix(
+    B <- matrix(
         c(0, 0,
             0, 1.5,
             0, 1.5,
@@ -2586,7 +2567,7 @@ Using [persp][168] function to create the following plot.
     N = 1e5 #5  #   number of iterations
     x = matrix(NA,nrow=2,ncol=N)
     x[,1] = c(0,2)   # initial point
-    k &lt;- sample(1:7,N,prob,replace=TRUE) # values 1-7
+    k <- sample(1:7,N,prob,replace=TRUE) # values 1-7
 
     for (i in 2:N)
       x[,i] = crossprod(matrix(L[,k[i]],nrow=2),x[,i-1]) + B[,k[i]] # iterate
@@ -2601,7 +2582,7 @@ Using [persp][168] function to create the following plot.
         xlab='',
         ylab='' )#,pch='.')
 
-    bals &lt;- sample(N,20)
+    bals <- sample(N,20)
     points(x=x[1,bals],y=x[2,bals]-.1,
         col=c('red','blue','yellow','orange'),
         cex=2,
@@ -2634,7 +2615,7 @@ Using [persp][168] function to create the following plot.
 
 Edit global Rprofile file. On *NIX platforms, it's located in /usr/lib/R/library/base/R/Rprofile although local .Rprofile settings take precedence.
 
-For example, I can specify the R mirror I like by creating a single line &lt;.Rprofile&gt; file under my home directory.
+For example, I can specify the R mirror I like by creating a single line <.Rprofile> file under my home directory.
 
     options(repos = "http://cran.rstudio.com/")
 
@@ -2645,37 +2626,37 @@ For example, I can specify the R mirror I like by creating a single line &lt;.Rp
 1. inst - a data frame with columns as the matrix returned by **installed.packages** plus "Status", a factor with levels c("ok", "upgrade"). Note: the manual does not mention "unavailable" case (but I do get it) in R 3.2.0?
 2. avail - a data frame with columns as the matrix returned by **available.packages** plus "Status", a factor with levels c("installed", "not installed", "unavailable"). Note: I don't get the "unavailable" case in R 3.2.0?
 
-    &gt; x &lt;- packageStatus()
-    &gt; names(x)
+    > x <- packageStatus()
+    > names(x)
     [1] "inst"  "avail"
-    &gt; dim(x[['inst']])
+    > dim(x[['inst']])
     [1] 225  17
-    &gt; x[['inst']][1:3, ]
+    > x[['inst']][1:3, ]
                   Package                            LibPath Version Priority               Depends Imports
     acepack       acepack C:/Program Files/R/R-3.1.2/library 1.3-3.3     <na>                  <na>    <na>
     adabag         adabag C:/Program Files/R/R-3.1.2/library     4.0     <na> rpart, mlbench, caret    <na>
-    affxparser affxparser C:/Program Files/R/R-3.1.2/library  1.38.0     <na>          R (&gt;= 2.6.0)    <na>
+    affxparser affxparser C:/Program Files/R/R-3.1.2/library  1.38.0     <na>          R (>= 2.6.0)    <na>
                LinkingTo                                                        Suggests Enhances
     acepack         <na>                                                            <na>     <na>
     adabag          <na>                                                            <na>     <na>
-    affxparser      <na> R.oo (&gt;= 1.18.0), R.utils (&gt;= 1.32.4),nAffymetrixDataTestFiles     <na>
+    affxparser      <na> R.oo (>= 1.18.0), R.utils (>= 1.32.4),nAffymetrixDataTestFiles     <na>
                           License License_is_FOSS License_restricts_use OS_type MD5sum NeedsCompilation Built
     acepack    MIT + file LICENSE            <na>                  <na>    <na>   <na>              yes 3.1.2
-    adabag             GPL (&gt;= 2)            <na>                  <na>    <na>   <na>               no 3.1.2
-    affxparser        LGPL (&gt;= 2)            <na>                  <na>    <na>   <na>             <na> 3.1.1
+    adabag             GPL (>= 2)            <na>                  <na>    <na>   <na>               no 3.1.2
+    affxparser        LGPL (>= 2)            <na>                  <na>    <na>   <na>             <na> 3.1.1
                     Status
     acepack             ok
     adabag              ok
     affxparser unavailable
-    &gt; dim(x[['avail']])
+    > dim(x[['avail']])
     [1] 6538   18
-    &gt; x[['avail']][1:3, ]
+    > x[['avail']][1:3, ]
                     Package Version Priority                        Depends        Imports LinkingTo
-    A3                   A3   0.9.2     <na> R (&gt;= 2.15.0), xtable, pbapply           <na>      <na>
+    A3                   A3   0.9.2     <na> R (>= 2.15.0), xtable, pbapply           <na>      <na>
     ABCExtremes ABCExtremes     1.0     <na>      SpatialExtremes, combinat           <na>      <na>
-    ABCanalysis ABCanalysis   1.0.1     <na>                    R (&gt;= 2.10) Hmisc, plotrix      <na>
+    ABCanalysis ABCanalysis   1.0.1     <na>                    R (>= 2.10) Hmisc, plotrix      <na>
                            Suggests Enhances    License License_is_FOSS License_restricts_use OS_type Archs
-    A3          randomForest, e1071     <na> GPL (&gt;= 2)            <na>                  <na>    <na>  <na>
+    A3          randomForest, e1071     <na> GPL (>= 2)            <na>                  <na>    <na>  <na>
     ABCExtremes                <na>     <na>      GPL-2            <na>                  <na>    <na>  <na>
     ABCanalysis                <na>     <na>      GPL-3            <na>                  <na>    <na>  <na>
                 MD5sum NeedsCompilation File                                      Repository        Status
@@ -2703,7 +2684,7 @@ it will only install 'digest' and 'downloader' packages. If I use
 
 it will also install 'testhat' package.
 
-The **install.packages** function source code can be found in R -&gt; src -&gt; library -&gt; utils -&gt; R -&gt; [packages2.R][173] file from [Github][174] repository (put 'install.packages' in the search box).
+The **install.packages** function source code can be found in R -> src -> library -> utils -> R -> [packages2.R][173] file from [Github][174] repository (put 'install.packages' in the search box).
 
 #### Query an R package installed locally
 
@@ -2716,13 +2697,13 @@ The **install.packages** function source code can be found in R -&gt; src -&gt; 
 
     available.packages() # List Available Packages at CRAN-like Repositories
 
-The **available.packages()** command is useful for understanding package dependency. Use **setRepositories()** or 'RGUI -&gt; Packages -&gt; select repositories' to select repositories and **options()$repos** to check or change the repositories.
+The **available.packages()** command is useful for understanding package dependency. Use **setRepositories()** or 'RGUI -> Packages -> select repositories' to select repositories and **options()$repos** to check or change the repositories.
 
 Also the **packageStatus()** is another useful function for query how many packages are in the repositories, how many have been installed, and individual package status (installed or not, needs to be upgraded or not).
 
-    &gt; options()$repos
+    > options()$repos
 
-    &gt; packageStatus()
+    > packageStatus()
     Number of installed packages:
 
                                           ok upgrade unavailable
@@ -2735,19 +2716,19 @@ Also the **packageStatus()** is another useful function for query how many packa
       http://www.stats.ox.ac.uk/pub/RWin/bin/windows/contrib/3.0                                0             5
       http://www.bioconductor.org/packages/2.12/bioc/bin/windows/contrib/3.0                   16           625
       http://www.bioconductor.org/packages/2.12/data/annotation/bin/windows/contrib/3.0         4           686
-    &gt; tmp &lt;- available.packages()
-    &gt; str(tmp)
+    > tmp <- available.packages()
+    > str(tmp)
      chr [1:5975, 1:17] "A3" "ABCExtremes" "ABCp2" "ACCLMA" "ACD" "ACNE" "ADGofTest" "ADM3" "AER" ...
      - attr(*, "dimnames")=List of 2
-      ..$&nbsp;: chr [1:5975] "A3" "ABCExtremes" "ABCp2" "ACCLMA" ...
-      ..$&nbsp;: chr [1:17] "Package" "Version" "Priority" "Depends" ...
-    &gt; tmp[1:3,]
+      ..$ : chr [1:5975] "A3" "ABCExtremes" "ABCp2" "ACCLMA" ...
+      ..$ : chr [1:17] "Package" "Version" "Priority" "Depends" ...
+    > tmp[1:3,]
                 Package       Version Priority Depends                     Imports LinkingTo Suggests
     A3          "A3"          "0.9.2" NA       "xtable, pbapply"           NA      NA        "randomForest, e1071"
     ABCExtremes "ABCExtremes" "1.0"   NA       "SpatialExtremes, combinat" NA      NA        NA
     ABCp2       "ABCp2"       "1.1"   NA       "MASS"                      NA      NA        NA
                 Enhances License      License_is_FOSS License_restricts_use OS_type Archs MD5sum NeedsCompilation File
-    A3          NA       "GPL (&gt;= 2)" NA              NA                    NA      NA    NA     NA               NA
+    A3          NA       "GPL (>= 2)" NA              NA                    NA      NA    NA     NA               NA
     ABCExtremes NA       "GPL-2"      NA              NA                    NA      NA    NA     NA               NA
     ABCp2       NA       "GPL-2"      NA              NA                    NA      NA    NA     NA               NA
                 Repository
@@ -2757,14 +2738,14 @@ Also the **packageStatus()** is another useful function for query how many packa
 
 And the following commands find which package depends on Rcpp and also which are from bioconductor repository.
 
-    &gt; pkgName &lt;- "Rcpp"
-    &gt; rownames(tmp)[grep(pkgName, tmp[,"Depends"])]
-    &gt; tmp[grep("Rcpp", tmp[,"Depends"]), "Depends"]
+    > pkgName <- "Rcpp"
+    > rownames(tmp)[grep(pkgName, tmp[,"Depends"])]
+    > tmp[grep("Rcpp", tmp[,"Depends"]), "Depends"]
 
-    &gt; ind &lt;- intersect(grep(pkgName, tmp[,"Depends"]), grep("bioconductor", tmp[, "Repository"]))
-    &gt; rownames(grep)[ind]
+    > ind <- intersect(grep(pkgName, tmp[,"Depends"]), grep("bioconductor", tmp[, "Repository"]))
+    > rownames(grep)[ind]
     NULL
-    &gt; rownames(tmp)[ind]
+    > rownames(tmp)[ind]
      [1] "ddgraph"            "DESeq2"             "GeneNetworkBuilder" "GOSemSim"           "GRENITS"
      [6] "mosaics"            "mzR"                "pcaMethods"         "Rdisop"             "Risa"
     [11] "rTANDEM"
@@ -2790,10 +2771,10 @@ Make sure only one instance of R is running
     # [4] "/usr/lib/R/library"
 
     Sys.getenv("R_LIBS_USER") # equivalent to .libPaths()[1]
-    ul &lt;- unlist(strsplit(Sys.getenv("R_LIBS_USER"), "/"))
-    src &lt;- file.path(paste(ul[1:(length(ul)-1)], collapse="/"), "3.1")
-    des &lt;- file.path(paste(ul[1:(length(ul)-1)], collapse="/"), "3.2")
-    pkg &lt;- dir(src, full.names = TRUE)
+    ul <- unlist(strsplit(Sys.getenv("R_LIBS_USER"), "/"))
+    src <- file.path(paste(ul[1:(length(ul)-1)], collapse="/"), "3.1")
+    des <- file.path(paste(ul[1:(length(ul)-1)], collapse="/"), "3.2")
+    pkg <- dir(src, full.names = TRUE)
     if (!file.exists(des)) dir.create(des)  # If 3.2 subdirectory does not exist yet!
     file.copy(pkg, des, overwrite=FALSE, recursive = TRUE)
     source("http://www.bioconductor.org/biocLite.R")
@@ -2804,7 +2785,7 @@ From Robert Kabacoff (R in Action)
 * If you have a customized **Rprofile.site file** (see appendix B), save a copy outside of R.
 * Launch your current version of R and issue the following statements
 
-    oldip &lt;- installed.packages()[,1]
+    oldip <- installed.packages()[,1]
     save(oldip, file="path/installedPackages.Rdata")
 
 where _path_ is a directory outside of R.
@@ -2814,7 +2795,7 @@ where _path_ is a directory outside of R.
 * Launch the new version of R, and issue the following statements
 
     load("path/installedPackages.Rdata")
-    newip &lt;- installed.packages()[,1]
+    newip <- installed.packages()[,1]
     for(i in setdiff(oldip, newip))
       install.packages(i)
 
@@ -2829,39 +2810,39 @@ This approach will install only packages that are available from the CRAN. It wo
 
 #### List installed packages and versions
 
-    ip &lt;- as.data.frame(installed.packages()[,c(1,3:4)])
-    rownames(ip) &lt;- NULL
+    ip <- as.data.frame(installed.packages()[,c(1,3:4)])
+    rownames(ip) <- NULL
     unique(ip$Priority)
     # [1] <na>        base        recommended
     # Levels: base recommended
-    ip &lt;- ip[is.na(ip$Priority),1:2,drop=FALSE]
+    ip <- ip[is.na(ip$Priority),1:2,drop=FALSE]
     print(ip, row.names=FALSE)
 
 #### Query the names of outdated packages
 
-    psi &lt;- packageStatus()$inst
+    psi <- packageStatus()$inst
     subset(psi, Status == "upgrade", drop = FALSE)
     #                     Package                                  LibPath     Version    Priority                Depends
     # RcppArmadillo RcppArmadillo C:/Users/brb/Documents/R/win-library/3.2 0.5.100.1.0        <na>                   <na>
-    # Matrix               Matrix       C:/Program Files/R/R-3.2.0/library       1.2-0 recommended R (&gt;= 2.15.2), methods
+    # Matrix               Matrix       C:/Program Files/R/R-3.2.0/library       1.2-0 recommended R (>= 2.15.2), methods
     #                                             Imports LinkingTo                 Suggests
-    # RcppArmadillo                      Rcpp (&gt;= 0.11.0)      Rcpp RUnit, Matrix, pkgKitten
+    # RcppArmadillo                      Rcpp (>= 0.11.0)      Rcpp RUnit, Matrix, pkgKitten
     # Matrix        graphics, grid, stats, utils, lattice      <na>               expm, MASS
     #                                            Enhances    License License_is_FOSS License_restricts_use OS_type MD5sum
-    # RcppArmadillo                                  <na> GPL (&gt;= 2)            <na>                  <na>    <na>   <na>
-    # Matrix        MatrixModels, graph, SparseM, sfsmisc GPL (&gt;= 2)            <na>                  <na>    <na>   <na>
+    # RcppArmadillo                                  <na> GPL (>= 2)            <na>                  <na>    <na>   <na>
+    # Matrix        MatrixModels, graph, SparseM, sfsmisc GPL (>= 2)            <na>                  <na>    <na>   <na>
     #               NeedsCompilation Built  Status
     # RcppArmadillo              yes 3.2.0 upgrade
     # Matrix                     yes 3.2.0 upgrade
 
 The above output does not show the package version from the latest packages on CRAN. So the following snippet does that.
 
-    psi &lt;- packageStatus()$inst
-    pl &lt;- unname(psi$Package[psi$Status == "upgrade"])  # List package names
+    psi <- packageStatus()$inst
+    pl <- unname(psi$Package[psi$Status == "upgrade"])  # List package names
 
-    out &lt;- cbind(subset(psi, Status == "upgrade")[, c("Package", "Version")], ap[match(pl, ap$Package), "Version"])
-    colnames(out)[2:3] &lt;- c("OldVersion", "NewVersion")
-    rownames(out) &lt;- NULL
+    out <- cbind(subset(psi, Status == "upgrade")[, c("Package", "Version")], ap[match(pl, ap$Package), "Version"])
+    colnames(out)[2:3] <- c("OldVersion", "NewVersion")
+    rownames(out) <- NULL
     out
     #         Package  OldVersion  NewVersion
     # 1 RcppArmadillo 0.5.100.1.0 0.5.200.1.0
@@ -2869,21 +2850,21 @@ The above output does not show the package version from the latest packages on C
 
 To consider also the packages from Bioconductor, we have the following code. Note that "3.1" means the Bioconductor version and "3.2" is the R version. See [Bioconductor release versions][176] page.
 
-    psic &lt;- packageStatus(repos = c(contrib.url(getOption("repos")),
+    psic <- packageStatus(repos = c(contrib.url(getOption("repos")),
                                     "http://bioconductor.org/packages/3.1/bioc/bin/windows/contrib/3.2",
                                     "http://www.bioconductor.org/packages/3.1/data/annotation/bin/windows/contrib/3.2"))$inst
     subset(psic, Status == "upgrade", drop = FALSE)
-    pl &lt;- unname(psic$Package[psic$Status == "upgrade"])
+    pl <- unname(psic$Package[psic$Status == "upgrade"])
 
-    # ap &lt;- as.data.frame(available.packages()[, c(1,2,3)], stringsAsFactors = FALSE)
-    ap   &lt;- as.data.frame(available.packages(c(contrib.url(getOption("repos")),
+    # ap <- as.data.frame(available.packages()[, c(1,2,3)], stringsAsFactors = FALSE)
+    ap   <- as.data.frame(available.packages(c(contrib.url(getOption("repos")),
                                     "http://bioconductor.org/packages/3.1/bioc/bin/windows/contrib/3.2",
                                     "http://www.bioconductor.org/packages/3.1/data/annotation/bin/windows/contrib/3.2"))[, c(1:3)],
                           stringAsFactors = FALSE)
 
-    out &lt;- cbind(subset(psic, Status == "upgrade")[, c("Package", "Version")], ap[match(pl, ap$Package), "Version"])
-    colnames(out)[2:3] &lt;- c("OldVersion", "NewVersion")
-    rownames(out) &lt;- NULL
+    out <- cbind(subset(psic, Status == "upgrade")[, c("Package", "Version")], ap[match(pl, ap$Package), "Version"])
+    colnames(out)[2:3] <- c("OldVersion", "NewVersion")
+    rownames(out) <- NULL
     out
     #         Package  OldVersion  NewVersion
     # 1         limma      3.24.5      3.24.9
@@ -2918,11 +2899,11 @@ Note:
 
 Instance 2.
 
-    # On a fresh R 3.2.0, I install Bioconductor's depPkgTools &amp; lumi packages. Then I close R, re-open it,
+    # On a fresh R 3.2.0, I install Bioconductor's depPkgTools & lumi packages. Then I close R, re-open it,
     # and install depPkgTools package again.
-    &gt; source("http://bioconductor.org/biocLite.R")
-    Bioconductor version 3.1 (BiocInstaller 1.18.2),&nbsp;?biocLite for help
-    &gt; biocLite("pkgDepTools")
+    > source("http://bioconductor.org/biocLite.R")
+    Bioconductor version 3.1 (BiocInstaller 1.18.2), ?biocLite for help
+    > biocLite("pkgDepTools")
     BioC_mirror: http://bioconductor.org
     Using Bioconductor version 3.1 (BiocInstaller 1.18.2), R version 3.2.0.
     Installing package(s) 'pkgDepTools'
@@ -2935,8 +2916,8 @@ Instance 2.
 
     The downloaded binary packages are in
             C:UsersbrbAppDataLocalTempRtmpYd2l7idownloaded_packages
-    &gt; library(pkgDepTools)
-    Error in library(pkgDepTools)&nbsp;: there is no package called 'pkgDepTools'
+    > library(pkgDepTools)
+    Error in library(pkgDepTools) : there is no package called 'pkgDepTools'
 
 The pkgDepTools library folder appears in C:UsersbrbDocumentsRwin-library3.2, but it is empty. The weird thing is if I try the above steps again, I cannot reproduce the problem.
 
@@ -2950,11 +2931,11 @@ The problem seems to happen only on virtual machines (Virtualbox).
 Here is a note of my trouble shooting.
 
 1. If I try to ignore the warning and load the lumi package. I will get an error.
-2. If I try to run biocLite("lumi") again, it will only download &amp; install lumi without checking missing 'plyr' package. Therefore, when I try to load the lumi package, it will give me an error again.
+2. If I try to run biocLite("lumi") again, it will only download & install lumi without checking missing 'plyr' package. Therefore, when I try to load the lumi package, it will give me an error again.
 3. Even I install the plyr package manually, library(lumi) gives another error - missing mclust package.
 
 ```
-    &gt; biocLite("lumi")
+    > biocLite("lumi")
     trying URL 'http://bioconductor.org/packages/3.1/bioc/bin/windows/contrib/3.2/BiocInstaller_1.18.2.zip'
     Content type 'application/zip' length 114097 bytes (111 KB)
     downloaded 111 KB
@@ -2997,15 +2978,15 @@ Here is a note of my trouble shooting.
 
     The downloaded binary packages are in
             C:UsersbrbAppDataLocalTempRtmpyUjsJDdownloaded_packages
-    &gt; library(lumi)
-    Error in loadNamespace(i, c(lib.loc, .libPaths()), versionCheck = vI[[i]])&nbsp;:
+    > library(lumi)
+    Error in loadNamespace(i, c(lib.loc, .libPaths()), versionCheck = vI[[i]]) :
       there is no package called 'plyr'
     Error: package or namespace load failed for 'lumi'
-    &gt; search()
+    > search()
      [1] ".GlobalEnv"            "package:BiocInstaller" "package:Biobase"       "package:BiocGenerics"  "package:parallel"      "package:stats"
      [7] "package:graphics"      "package:grDevices"     "package:utils"         "package:datasets"      "package:methods"       "Autoloads"
     [13] "package:base"
-    &gt; biocLite("lumi")
+    > biocLite("lumi")
     BioC_mirror: http://bioconductor.org
     Using Bioconductor version 3.1 (BiocInstaller 1.18.2), R version 3.2.0.
     Installing package(s) 'lumi'
@@ -3017,15 +2998,15 @@ Here is a note of my trouble shooting.
 
     The downloaded binary packages are in
             C:UsersbrbAppDataLocalTempRtmpyUjsJDdownloaded_packages
-    &gt; search()
+    > search()
      [1] ".GlobalEnv"            "package:BiocInstaller" "package:Biobase"       "package:BiocGenerics"  "package:parallel"      "package:stats"
      [7] "package:graphics"      "package:grDevices"     "package:utils"         "package:datasets"      "package:methods"       "Autoloads"
     [13] "package:base"
-    &gt; library(lumi)
-    Error in loadNamespace(i, c(lib.loc, .libPaths()), versionCheck = vI[[i]])&nbsp;:
+    > library(lumi)
+    Error in loadNamespace(i, c(lib.loc, .libPaths()), versionCheck = vI[[i]]) :
       there is no package called 'plyr'
     Error: package or namespace load failed for 'lumi'
-    &gt; biocLite("plyr")
+    > biocLite("plyr")
     BioC_mirror: http://bioconductor.org
     Using Bioconductor version 3.1 (BiocInstaller 1.18.2), R version 3.2.0.
     Installing package(s) 'plyr'
@@ -3038,24 +3019,24 @@ Here is a note of my trouble shooting.
     The downloaded binary packages are in
             C:UsersbrbAppDataLocalTempRtmpyUjsJDdownloaded_packages
 
-    &gt; library(lumi)
-    Error in loadNamespace(j &lt;- i[[1L]], c(lib.loc, .libPaths()), versionCheck = vI[[j]])&nbsp;:
+    > library(lumi)
+    Error in loadNamespace(j <- i[[1L]], c(lib.loc, .libPaths()), versionCheck = vI[[j]]) :
       there is no package called 'mclust'
     Error: package or namespace load failed for 'lumi'
 
-    &gt;&nbsp;?biocLite
+    > ?biocLite
     Warning messages:
-    1: In read.dcf(file.path(p, "DESCRIPTION"), c("Package", "Version"))&nbsp;:
+    1: In read.dcf(file.path(p, "DESCRIPTION"), c("Package", "Version")) :
       cannot open compressed file 'C:/Users/brb/Documents/R/win-library/3.2/Biostrings/DESCRIPTION', probable reason 'No such file or directory'
-    2: In find.package(if (is.null(package)) loadedNamespaces() else package, &nbsp;:
+    2: In find.package(if (is.null(package)) loadedNamespaces() else package,  :
       there is no package called 'Biostrings'
-    &gt; library(lumi)
-    Error in loadNamespace(j &lt;- i[[1L]], c(lib.loc, .libPaths()), versionCheck = vI[[j]])&nbsp;:
+    > library(lumi)
+    Error in loadNamespace(j <- i[[1L]], c(lib.loc, .libPaths()), versionCheck = vI[[j]]) :
       there is no package called 'mclust'
     In addition: Warning messages:
-    1: In read.dcf(file.path(p, "DESCRIPTION"), c("Package", "Version"))&nbsp;:
+    1: In read.dcf(file.path(p, "DESCRIPTION"), c("Package", "Version")) :
       cannot open compressed file 'C:/Users/brb/Documents/R/win-library/3.2/Biostrings/DESCRIPTION', probable reason 'No such file or directory'
-    2: In find.package(if (is.null(package)) loadedNamespaces() else package, &nbsp;:
+    2: In find.package(if (is.null(package)) loadedNamespaces() else package,  :
       there is no package called 'Biostrings'
     Error: package or namespace load failed for 'lumi'
 ```
@@ -3067,7 +3048,7 @@ Some possible solutions:
 1. Delete ALL folders under R/library (e.g. C:/Progra~1/R/R-3.2.0/library) folder and install the main package again using install.packages() or biocLite().
 2. For specific package like 'lumi' from Bioconductor, we can [find out all dependency packages][178] and then install them one by one.
 3. Find out and install the top level package which misses dependency packages.
-    1. This is based on the fact that install.packages() or biocLite() **sometimes** just checks &amp; installs the 'Depends' and 'Imports' packages and **won't install all packages recursively**
+    1. This is based on the fact that install.packages() or biocLite() **sometimes** just checks & installs the 'Depends' and 'Imports' packages and **won't install all packages recursively**
     2. we can do a small experiment by removing a package which is not directly dependent/imported by another package; e.g. 'iterators' is not dependent/imported by 'glment' directly but indirectly. So if we run **remove.packages("iterators"); install.packages("glmnet")**, then the 'iterator' package is still missing.
     3. A real example is if the missing packages are 'Biostrings', 'limma', 'mclust' (these are packages that 'minfi' directly depends/imports although they should be installed when I run biocLite("lumi") command), then I should just run the command **remove.packages("minfi"); biocLite("minfi")**. If we just run biocLite("lumi") or biocLite("methylumi"), the missing packages won't be installed.
 
@@ -3077,19 +3058,19 @@ HTTP status was '404 Not Found'
 
 Tested on an existing R-3.2.0 session. Note that VariantAnnotation 1.14.4 was just uploaded to Bioc.
 
-    &gt; biocLite("COSMIC.67")
+    > biocLite("COSMIC.67")
     BioC_mirror: http://bioconductor.org
     Using Bioconductor version 3.1 (BiocInstaller 1.18.3), R version 3.2.0.
     Installing package(s) 'COSMIC.67'
     also installing the dependency 'VariantAnnotation'
 
     trying URL 'http://bioconductor.org/packages/3.1/bioc/bin/windows/contrib/3.2/VariantAnnotation_1.14.3.zip'
-    Error in download.file(url, destfile, method, mode = "wb", ...)&nbsp;:
+    Error in download.file(url, destfile, method, mode = "wb", ...) :
       cannot open URL 'http://bioconductor.org/packages/3.1/bioc/bin/windows/contrib/3.2/VariantAnnotation_1.14.3.zip'
     In addition: Warning message:
-    In download.file(url, destfile, method, mode = "wb", ...)&nbsp;:
+    In download.file(url, destfile, method, mode = "wb", ...) :
       cannot open: HTTP status was '404 Not Found'
-    Warning in download.packages(pkgs, destdir = tmpd, available = available, &nbsp;:
+    Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
       download of package 'VariantAnnotation' failed
     installing the source package 'COSMIC.67'
 
@@ -3100,10 +3081,10 @@ However, when I tested on a new R-3.2.0 (just installed in VM), the COSMIC packa
 
 The cause of the error is the [**available.package()][179]** function will read the rds file first from cache in a tempdir (C:UsersXXXXAppDataLocalTempRtmpYYYYYY). See lines 51-55 of <packages.r>.
 
-     dest &lt;- file.path(tempdir(),
+     dest <- file.path(tempdir(),
                        paste0("repos_", URLencode(repos, TRUE), ".rds"))
      if(file.exists(dest)) {
-        res0 &lt;- readRDS(dest)
+        res0 <- readRDS(dest)
      } else {
         ...
      }
@@ -3132,13 +3113,13 @@ The **getInstallOrder** function is useful to get a list of all (recursive) depe
       biocLite("pkgDepTools", ask = FALSE)
       library(pkgDepTools)
     }
-    MkPlot &lt;- FALSE
+    MkPlot <- FALSE
 
     library(BiocInstaller)
-    biocUrl &lt;- biocinstallRepos()["BioCsoft"]
-    biocDeps &lt;- makeDepGraph(biocUrl, type="source", dosize=FALSE) # pkgDepTools defines its makeDepGraph()
+    biocUrl <- biocinstallRepos()["BioCsoft"]
+    biocDeps <- makeDepGraph(biocUrl, type="source", dosize=FALSE) # pkgDepTools defines its makeDepGraph()
 
-    PKG &lt;- "lumi"
+    PKG <- "lumi"
     if (MkPlot) {
       if (!require(Biobase))  {
         biocLite("Biobase", ask = FALSE)
@@ -3148,23 +3129,23 @@ The **getInstallOrder** function is useful to get a list of all (recursive) depe
         biocLite("Rgraphviz", ask = FALSE)
         library(Rgraphviz)
       }
-      categoryNodes &lt;- c(PKG, names(acc(biocDeps, PKG)[[1]]))
-      categoryGraph &lt;- subGraph(categoryNodes, biocDeps)
-      nn &lt;- makeNodeAttrs(categoryGraph, shape="ellipse")
-      plot(categoryGraph, nodeAttrs=nn)   # Complete but plot is too complicated &amp; font is too small.
+      categoryNodes <- c(PKG, names(acc(biocDeps, PKG)[[1]]))
+      categoryGraph <- subGraph(categoryNodes, biocDeps)
+      nn <- makeNodeAttrs(categoryGraph, shape="ellipse")
+      plot(categoryGraph, nodeAttrs=nn)   # Complete but plot is too complicated & font is too small.
     }
 
-    system.time(allDeps &lt;- makeDepGraph(biocinstallRepos(), type="source",
+    system.time(allDeps <- makeDepGraph(biocinstallRepos(), type="source",
                                keep.builtin=TRUE, dosize=FALSE)) # takes a little while
     #    user  system elapsed
     # 175.737  10.994 186.875
     # Warning messages:
-    # 1: In .local(from, to, graph)&nbsp;: edges replaced: 'SNPRelate|gdsfmt'
-    # 2: In .local(from, to, graph)&nbsp;:
+    # 1: In .local(from, to, graph) : edges replaced: 'SNPRelate|gdsfmt'
+    # 2: In .local(from, to, graph) :
     #   edges replaced: 'RCurl|methods', 'NA|bitops'
 
     # When needed.only=TRUE, only those dependencies not currently installed are included in the list.
-    x1 &lt;- sort(getInstallOrder(PKG, allDeps, needed.only=TRUE)$packages); x1
+    x1 <- sort(getInstallOrder(PKG, allDeps, needed.only=TRUE)$packages); x1
      [1] "affy"                              "affyio"
      [3] "annotate"                          "AnnotationDbi"
      [5] "base64"                            "beanplot"
@@ -3204,7 +3185,7 @@ The **getInstallOrder** function is useful to get a list of all (recursive) depe
     [73] "zlibbioc"
 
     # When needed.only=FALSE the complete list of dependencies is given regardless of the set of currently installed packages.
-    x2 &lt;- sort(getInstallOrder(PKG, allDeps, needed.only=FALSE)$packages); x2
+    x2 <- sort(getInstallOrder(PKG, allDeps, needed.only=FALSE)$packages); x2
      [1] "affy"                              "affyio"                            "annotate"
      [4] "AnnotationDbi"                     "base64"                            "beanplot"
      [7] "Biobase"                           "BiocGenerics"                      "BiocInstaller"
@@ -3237,7 +3218,7 @@ The **getInstallOrder** function is useful to get a list of all (recursive) depe
     [88] "TxDb.Hsapiens.UCSC.hg19.knownGene" "utils"                             "XML"
     [91] "xtable"                            "XVector"                           "zlibbioc"
 
-    &gt; sort(setdiff(x2, x1)) # Not all R's base packages are included; e.g. 'base', 'boot', ...
+    > sort(setdiff(x2, x1)) # Not all R's base packages are included; e.g. 'base', 'boot', ...
      [1] "BiocGenerics"  "BiocInstaller" "codetools"     "graphics"      "grDevices"
      [6] "grid"          "KernSmooth"    "lattice"       "MASS"          "Matrix"
     [11] "methods"       "mgcv"          "nlme"          "parallel"      "splines"
@@ -3257,33 +3238,33 @@ Before we go into R, we need to install some packages from Ubuntu terminal. See 
       install.packages("miniCRAN", dependencies = TRUE, repos="http://cran.rstudio.com") # include 'igraph' in Suggests.
       library(miniCRAN)
     }
-    if (!"igraph"&nbsp;%in% installed.packages()[,1]) install.packages("igraph")
+    if (!"igraph" %in% installed.packages()[,1]) install.packages("igraph")
 
-    tags &lt;- "glmnet"
+    tags <- "glmnet"
     pkgDep(tags, suggests=TRUE, enhances=TRUE) # same as pkgDep(tags)
     #  [1] "glmnet"    "Matrix"    "foreach"   "codetools" "iterators" "lattice"   "evaluate"  "digest"
     #  [9] "formatR"   "highr"     "markdown"  "stringr"   "yaml"      "mime"      "survival"  "knitr"
     # [17] "lars"
 
-    dg &lt;- makeDepGraph(tags, suggests=TRUE, enhances=TRUE) # miniCRAN defines its makeDepGraph()
+    dg <- makeDepGraph(tags, suggests=TRUE, enhances=TRUE) # miniCRAN defines its makeDepGraph()
     plot(dg, legendPosition = c(-1, 1), vertex.size=20)
 
 ![MiniCRAN dep.svg][185] ![PkgDepTools dep.svg][186] ![Glmnet dep.svg][187]
 
 We can also display the dependence for a package from the [Bioconductor][188] repository.
 
-    tags &lt;- "DESeq2"
-    # Depends	S4Vectors, IRanges, GenomicRanges, Rcpp (&gt;= 0.10.1), RcppArmadillo (&gt;= 0.3.4.4)
-    # Imports	BiocGenerics(&gt;= 0.7.5), Biobase, BiocParallel, genefilter, methods, locfit, geneplotter, ggplot2, Hmisc
-    # Suggests	RUnit, gplots, knitr, RColorBrewer, BiocStyle, airway,npasilla (&gt;= 0.2.10), DESeq, vsn
+    tags <- "DESeq2"
+    # Depends	S4Vectors, IRanges, GenomicRanges, Rcpp (>= 0.10.1), RcppArmadillo (>= 0.3.4.4)
+    # Imports	BiocGenerics(>= 0.7.5), Biobase, BiocParallel, genefilter, methods, locfit, geneplotter, ggplot2, Hmisc
+    # Suggests	RUnit, gplots, knitr, RColorBrewer, BiocStyle, airway,npasilla (>= 0.2.10), DESeq, vsn
     # LinkingTo     Rcpp, RcppArmadillo
-    index &lt;- function(url, type="source", filters=NULL, head=5, cols=c("Package", "Version")){
-      contribUrl &lt;- contrib.url(url, type=type)
+    index <- function(url, type="source", filters=NULL, head=5, cols=c("Package", "Version")){
+      contribUrl <- contrib.url(url, type=type)
       available.packages(contribUrl, type=type, filters=filters)
     }
 
-    bioc &lt;- local({
-      env &lt;- new.env()
+    bioc <- local({
+      env <- new.env()
       on.exit(rm(env))
       evalq(source("http://bioconductor.org/biocLite.R", local=TRUE), env)
       biocinstallRepos() # return URLs
@@ -3304,15 +3285,15 @@ We can also display the dependence for a package from the [Bioconductor][188] re
     #                   "http://www.stats.ox.ac.uk/pub/RWin"
     str(index(bioc["BioCsoft"])) # similar to cranJuly2014 object
 
-    system.time(dg &lt;- makeDepGraph(tags, suggests=TRUE, enhances=TRUE, availPkgs = index(bioc["BioCsoft"]))) # Very quick!
+    system.time(dg <- makeDepGraph(tags, suggests=TRUE, enhances=TRUE, availPkgs = index(bioc["BioCsoft"]))) # Very quick!
     plot(dg, legendPosition = c(-1, 1), vertex.size=20)
 
 ![Deseq2 dep.svg][189] ![Lumi dep.svg][190]
 
 The dependencies of [GenomicFeature][191] and [GenomicAlignments][192] are more complicated. So we turn the 'suggests' option to FALSE.
 
-    tags &lt;- "GenomicAlignments"
-    dg &lt;- makeDepGraph(tags, suggests=FALSE, enhances=FALSE, availPkgs = index(bioc["BioCsoft"]))
+    tags <- "GenomicAlignments"
+    dg <- makeDepGraph(tags, suggests=FALSE, enhances=FALSE, availPkgs = index(bioc["BioCsoft"]))
     plot(dg, legendPosition = c(-1, 1), vertex.size=20)
 
 ![Genomicfeature dep dep.svg][193] ![Genomicalignments dep.svg][194]
@@ -3351,16 +3332,16 @@ The process requires 3 components: RStudio software, devtools and [roxygen2][198
 
 ### Detect number of running R instances in Windows
 
-    C:Program FilesR&gt;tasklist /FI "IMAGENAME eq Rscript.exe"
+    C:Program FilesR>tasklist /FI "IMAGENAME eq Rscript.exe"
     INFO: No tasks are running which match the specified criteria.
 
-    C:Program FilesR&gt;tasklist /FI "IMAGENAME eq Rgui.exe"
+    C:Program FilesR>tasklist /FI "IMAGENAME eq Rgui.exe"
 
     Image Name                     PID Session Name        Session#    Mem Usage
     ========================= ======== ================ =========== ============
     Rgui.exe                      1096 Console                    1     44,712 K
 
-    C:Program FilesR&gt;tasklist /FI "IMAGENAME eq Rserve.exe"
+    C:Program FilesR>tasklist /FI "IMAGENAME eq Rserve.exe"
 
     Image Name                     PID Session Name        Session#    Mem Usage
     ========================= ======== ================ =========== ============
@@ -3368,13 +3349,13 @@ The process requires 3 components: RStudio software, devtools and [roxygen2][198
 
 In R, we can use
 
-    &gt; system('tasklist /FI "IMAGENAME eq Rgui.exe" ', intern = TRUE)
+    > system('tasklist /FI "IMAGENAME eq Rgui.exe" ', intern = TRUE)
     [1] ""
     [2] "Image Name                     PID Session Name        Session#    Mem Usage"
     [3] "========================= ======== ================ =========== ============"
     [4] "Rgui.exe                      1096 Console                    1     44,804 K"
 
-    &gt; length(system('tasklist /FI "IMAGENAME eq Rgui.exe" ', intern = TRUE))-3
+    > length(system('tasklist /FI "IMAGENAME eq Rgui.exe" ', intern = TRUE))-3
 
 ### Editor
 
@@ -3404,23 +3385,23 @@ See [Assignments within functions][204] in the **An Introduction to R** manual.
 
 Example 1.
 
-    &gt; ttt &lt;- data.frame(type=letters[1:5], JpnTest=rep("999", 5), stringsAsFactors = F)
-    &gt; ttt
+    > ttt <- data.frame(type=letters[1:5], JpnTest=rep("999", 5), stringsAsFactors = F)
+    > ttt
       type JpnTest
     1    a     999
     2    b     999
     3    c     999
     4    d     999
     5    e     999
-    &gt; jpntest &lt;- function() { ttt$JpnTest[1] ="N5"; print(ttt)}
-    &gt; jpntest()
+    > jpntest <- function() { ttt$JpnTest[1] ="N5"; print(ttt)}
+    > jpntest()
       type JpnTest
     1    a      N5
     2    b     999
     3    c     999
     4    d     999
     5    e     999
-    &gt; ttt
+    > ttt
       type JpnTest
     1    a     999
     2    b     999
@@ -3428,7 +3409,7 @@ Example 1.
     4    d     999
     5    e     999
 
-Example 2. [How can we set global variables inside a function?][205] The answer is to use the "&lt;&lt;-" operator or **assign(, , envir = .GlobalEnv)** function.
+Example 2. [How can we set global variables inside a function?][205] The answer is to use the "<<-" operator or **assign(, , envir = .GlobalEnv)** function.
 
 Other resource: [Advanced R][206] by Hadley Wickham.
 
@@ -3438,8 +3419,8 @@ Other resource: [Advanced R][206] by Hadley Wickham.
 
 #### Mean of duplicated rows
 
-    &gt; attach(mtcars)
-    &gt; head(mtcars)
+    > attach(mtcars)
+    > head(mtcars)
                        mpg cyl disp  hp drat    wt  qsec vs am gear carb
     Mazda RX4         21.0   6  160 110 3.90 2.620 16.46  0  1    4    4
     Mazda RX4 Wag     21.0   6  160 110 3.90 2.875 17.02  0  1    4    4
@@ -3447,9 +3428,9 @@ Other resource: [Advanced R][206] by Hadley Wickham.
     Hornet 4 Drive    21.4   6  258 110 3.08 3.215 19.44  1  0    3    1
     Hornet Sportabout 18.7   8  360 175 3.15 3.440 17.02  0  0    3    2
     Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1
-    &gt; aggdata &lt;-aggregate(mtcars, by=list(cyl,vs),
+    > aggdata <-aggregate(mtcars, by=list(cyl,vs),
     +   FUN=mean, na.rm=TRUE)
-    &gt; print(aggdata)
+    > print(aggdata)
       Group.1 Group.2      mpg cyl   disp       hp     drat       wt     qsec vs
     1       4       0 26.00000   4 120.30  91.0000 4.430000 2.140000 16.70000  0
     2       6       0 20.56667   6 155.00 131.6667 3.806667 2.755000 16.32667  0
@@ -3462,7 +3443,7 @@ Other resource: [Advanced R][206] by Hadley Wickham.
     3 0.1428571 3.285714 3.500000
     4 0.7000000 4.000000 1.500000
     5 0.0000000 3.500000 2.500000
-    &gt; detach(mtcars)
+    > detach(mtcars)
 
 ### Apply family
 
@@ -3494,7 +3475,7 @@ Examples of using dplyr:
 
 llply is equivalent to lapply except that it will preserve labels and can display a progress bar. This is handy if we want to do a crazy thing.
 
-    LLID2GOIDs &lt;- lapply(rLLID, function(x) get("org.Hs.egGO")[[x]])
+    LLID2GOIDs <- lapply(rLLID, function(x) get("org.Hs.egGO")[[x]])
 
 where rLLID is a list of entrez ID. For example,
 
@@ -3520,9 +3501,9 @@ Note that Windows OS can not take advantage of it.
 
 Another choice for Windows OS is to use parLapply() function in parallel package.
 
-    ncores &lt;- as.integer( Sys.getenv('NUMBER_OF_PROCESSORS') )
-    cl &lt;- makeCluster(getOption("cl.cores", ncores))
-    LLID2GOIDs2 &lt;- parLapply(cl, rLLID, function(x) {
+    ncores <- as.integer( Sys.getenv('NUMBER_OF_PROCESSORS') )
+    cl <- makeCluster(getOption("cl.cores", ncores))
+    LLID2GOIDs2 <- parLapply(cl, rLLID, function(x) {
                                         library(org.Hs.eg.db); get("org.Hs.egGO")[[x]]}
                             )
     stopCluster(cl)
@@ -3565,7 +3546,7 @@ The following table is from [endmemo.com][215].
 |  i{n}  |  i occurs n times in sequence  |
 |  i{n1,n2}  |  i occurs n1 - n2 times in sequence  |
 |  i{n1,n2}?  |  non greedy match, see above example  |
-|  i{n,}  |  i occures &gt;= n times  |
+|  i{n,}  |  i occures >= n times  |
 |  [:alnum:]  |  Alphanumeric characters: [:alpha:] and [:digit:]  |
 |  [:alpha:]  |  Alphabetic characters: [:lower:] and [:upper:]  |
 |  [:blank:]  |  Blank characters: e.g. space, tab  |
@@ -3635,12 +3616,12 @@ The following example is coming from the book 'Data Manipulation with R' by [Phi
 #### Examples
 
 * grep("\.zip$", pkgs) or grep("\.tar.gz$", pkgs) will search for the string ending with zip or tar.gz
-* grep("9.11", string) will search for the string containing '9', any character (to split 9 &amp; 11) and '11'.
+* grep("9.11", string) will search for the string containing '9', any character (to split 9 & 11) and '11'.
 * pipe metacharacter; it is translated to 'or'. flood|fire will match strings containing floor or fire.
 * [^?.]$ will match anyone not ending with the question mark or period.
 * ^[Gg]ood|[Bb]ad will match strings starting with Good/good and anywhere containing Bad/bad.
 * ^([Gg]ood|[Bb]ad) will look for strings beginning with Good/good/Bad/bad.
-* &nbsp;? character; it means optional. [Gg]eorge( [Ww].)? [Bb]ush will match strings like 'george bush', 'George W. Bush' or 'george bushes'. Note that we escape the metacharacter dot by '.' so it becomes a literal period.
+*  ? character; it means optional. [Gg]eorge( [Ww].)? [Bb]ush will match strings like 'george bush', 'George W. Bush' or 'george bushes'. Note that we escape the metacharacter dot by '.' so it becomes a literal period.
 * star and plus sign. star means any number including none and plus means at least one. For example, (.*) matches 'abc(222 )' and '()'.
 * [0-9]+ (.*) [0-9]+ will match one number and following by any number of characters and a number; e.g. 'afda1080 p' and '4 by 5 size'.
 * {} refers to as interval quantifiers; specify the minimum and maximum number of match of an expression.
@@ -3652,7 +3633,7 @@ The following example is coming from the book 'Data Manipulation with R' by [Phi
 
 ### read/manipulate binary data
 
-* x &lt;\- readBin(fn, raw(), file.info(fn)$size)
+* x <\- readBin(fn, raw(), file.info(fn)$size)
 * rawToChar(x[1:16])
 * See Biostrings C API
 
@@ -3668,7 +3649,7 @@ The following example is coming from the book 'Data Manipulation with R' by [Phi
 
 #### Simple text file http
 
-    retail &lt;- read.csv("http://robjhyndman.com/data/ausretail.csv",header=FALSE)
+    retail <- read.csv("http://robjhyndman.com/data/ausretail.csv",header=FALSE)
 
 #### Zip file and url() function
 
@@ -3676,7 +3657,7 @@ The following example is coming from the book 'Data Manipulation with R' by [Phi
     source(con)
     close(con)
 
-Here url() function is like file(), gzfile(), bzfile(), xzfile(), unz(), pipe(), fifo(), socketConnection(). They are used to create connections. By default, the connection is not opened (except for 'socketConnection'), but may be opened by setting a non-empty value of argument 'open'. See&nbsp;?url.
+Here url() function is like file(), gzfile(), bzfile(), xzfile(), unz(), pipe(), fifo(), socketConnection(). They are used to create connections. By default, the connection is not opened (except for 'socketConnection'), but may be opened by setting a non-empty value of argument 'open'. See ?url.
 
 Another example of using url() is
 
@@ -3689,7 +3670,7 @@ This package provides a wrapper for the download.file function, making it possib
 #### Google drive file based on https using [RCurl][219] package
 
     require(RCurl)
-    myCsv &lt;- getURL("https://docs.google.com/spreadsheet/pub?hl=en_US&amp;hl=en_US&amp;key=0AkuuKBh0jM2TdGppUFFxcEdoUklCQlJhM2kweGpoUUE&amp;single=true&amp;gid=0&amp;output=csv")
+    myCsv <- getURL("https://docs.google.com/spreadsheet/pub?hl=en_US&hl=en_US&key=0AkuuKBh0jM2TdGppUFFxcEdoUklCQlJhM2kweGpoUUE&single=true&gid=0&output=csv")
     read.csv(textConnection(myCsv))
 
 #### Github files https using RCurl package
@@ -3704,8 +3685,8 @@ See p13 for example in <http: www.ianwatson.com.au="" stata="" tabout_tutorial.p
 
 R's [tables][220] packages is the best solution. For example,
 
-    &gt; library(tables)
-    &gt; tabular( (Species + 1) ~ (n=1) + Format(digits=2)*
+    > library(tables)
+    > tabular( (Species + 1) ~ (n=1) + Format(digits=2)*
     +          (Sepal.Length + Sepal.Width)*(mean + sd), data=iris )
 
                     Sepal.Length      Sepal.Width
@@ -3714,27 +3695,27 @@ R's [tables][220] packages is the best solution. For example,
      versicolor  50 5.94         0.52 2.77        0.31
      virginica   50 6.59         0.64 2.97        0.32
      All        150 5.84         0.83 3.06        0.44
-    &gt; str(iris)
+    > str(iris)
     'data.frame':   150 obs. of  5 variables:
      $ Sepal.Length: num  5.1 4.9 4.7 4.6 5 5.4 4.6 5 4.4 4.9 ...
-     $ Sepal.Width&nbsp;: num  3.5 3 3.2 3.1 3.6 3.9 3.4 3.4 2.9 3.1 ...
+     $ Sepal.Width : num  3.5 3 3.2 3.1 3.6 3.9 3.4 3.4 2.9 3.1 ...
      $ Petal.Length: num  1.4 1.4 1.3 1.5 1.4 1.7 1.4 1.5 1.4 1.5 ...
-     $ Petal.Width&nbsp;: num  0.2 0.2 0.2 0.2 0.2 0.4 0.3 0.2 0.2 0.1 ...
-     $ Species    &nbsp;: Factor w/ 3 levels "setosa","versicolor",..: 1 1 1 1 1 1 1 1 1 1 ...
+     $ Petal.Width : num  0.2 0.2 0.2 0.2 0.2 0.4 0.3 0.2 0.2 0.1 ...
+     $ Species     : Factor w/ 3 levels "setosa","versicolor",..: 1 1 1 1 1 1 1 1 1 1 ...
 
 and
 
     # This example shows some of the less common options
-    &gt; Sex &lt;- factor(sample(c("Male", "Female"), 100, rep=TRUE))
-    &gt; Status &lt;- factor(sample(c("low", "medium", "high"), 100, rep=TRUE))
-    &gt; z &lt;- rnorm(100)+5
-    &gt; fmt &lt;- function(x) {
-      s &lt;- format(x, digits=2)
-      even &lt;- ((1:length(s))&nbsp;%% 2) == 0
-      s[even] &lt;- sprintf("(%s)", s[even])
+    > Sex <- factor(sample(c("Male", "Female"), 100, rep=TRUE))
+    > Status <- factor(sample(c("low", "medium", "high"), 100, rep=TRUE))
+    > z <- rnorm(100)+5
+    > fmt <- function(x) {
+      s <- format(x, digits=2)
+      even <- ((1:length(s)) %% 2) == 0
+      s[even] <- sprintf("(%s)", s[even])
       s
     }
-    &gt; tabular( Justify(c)*Heading()*z*Sex*Heading(Statistic)*Format(fmt())*(mean+sd) ~ Status )
+    > tabular( Justify(c)*Heading()*z*Sex*Heading(Statistic)*Format(fmt())*(mean+sd) ~ Status )
                       Status
      Sex    Statistic high   low    medium
      Female mean       4.88   4.96   5.17
@@ -3746,7 +3727,7 @@ See also a collection of R packages related to reproducible research in <http: c
 
 ### Create flat tables in R console using ftable()
 
-    &gt; ftable(Titanic, row.vars = 1:3)
+    > ftable(Titanic, row.vars = 1:3)
                        Survived  No Yes
     Class Sex    Age
     1st   Male   Child            0   5
@@ -3765,7 +3746,7 @@ See also a collection of R packages related to reproducible research in <http: c
                  Adult          670 192
           Female Child            0   0
                  Adult            3  20
-    &gt; ftable(Titanic, row.vars = 1:2, col.vars = "Survived")
+    > ftable(Titanic, row.vars = 1:2, col.vars = "Survived")
                  Survived  No Yes
     Class Sex
     1st   Male            118  62
@@ -3776,7 +3757,7 @@ See also a collection of R packages related to reproducible research in <http: c
           Female          106  90
     Crew  Male            670 192
           Female            3  20
-    &gt; ftable(Titanic, row.vars = 2:1, col.vars = "Survived")
+    > ftable(Titanic, row.vars = 2:1, col.vars = "Survived")
                  Survived  No Yes
     Sex    Class
     Male   1st            118  62
@@ -3787,15 +3768,15 @@ See also a collection of R packages related to reproducible research in <http: c
            2nd             13  93
            3rd            106  90
            Crew             3  20
-    &gt; str(Titanic)
+    > str(Titanic)
      table [1:4, 1:2, 1:2, 1:2] 0 0 35 0 0 0 17 0 118 154 ...
      - attr(*, "dimnames")=List of 4
-      ..$ Class  &nbsp;: chr [1:4] "1st" "2nd" "3rd" "Crew"
-      ..$ Sex    &nbsp;: chr [1:2] "Male" "Female"
-      ..$ Age    &nbsp;: chr [1:2] "Child" "Adult"
+      ..$ Class   : chr [1:4] "1st" "2nd" "3rd" "Crew"
+      ..$ Sex     : chr [1:2] "Male" "Female"
+      ..$ Age     : chr [1:2] "Child" "Adult"
       ..$ Survived: chr [1:2] "No" "Yes"
-    &gt; x &lt;- ftable(mtcars[c("cyl", "vs", "am", "gear")])
-    &gt; x
+    > x <- ftable(mtcars[c("cyl", "vs", "am", "gear")])
+    > x
               gear  3  4  5
     cyl vs am
     4   0  0        0  0  0
@@ -3810,7 +3791,7 @@ See also a collection of R packages related to reproducible research in <http: c
            1        0  0  2
         1  0        0  0  0
            1        0  0  0
-    &gt; ftable(x, row.vars = c(2, 4))
+    > ftable(x, row.vars = c(2, 4))
             cyl  4     6     8
             am   0  1  0  1  0  1
     vs gear
@@ -3820,9 +3801,9 @@ See also a collection of R packages related to reproducible research in <http: c
     1  3         1  0  2  0  0  0
        4         2  6  2  0  0  0
        5         0  1  0  0  0  0
-    &gt;
-    &gt; ## Start with expressions, use table()'s "dnn" to change labels
-    &gt; ftable(mtcars$cyl, mtcars$vs, mtcars$am, mtcars$gear, row.vars = c(2, 4),
+    >
+    > ## Start with expressions, use table()'s "dnn" to change labels
+    > ftable(mtcars$cyl, mtcars$vs, mtcars$am, mtcars$gear, row.vars = c(2, 4),
              dnn = c("Cylinders", "V/S", "Transmission", "Gears"))
 
               Cylinders     4     6     8
@@ -3857,33 +3838,33 @@ See [R-admin.html][222].
 
 From R News for 3.0.0 release:
 
-_There is a subtle change in behaviour for numeric index values 2^31 and larger. These never used to be legitimate and so were treated as NA, sometimes with a warning. They are now legal for long vectors so there is no longer a warning, and x[2^31] &lt;\- y will now extend the vector on a 64-bit platform and give an error on a 32-bit one. _
+_There is a subtle change in behaviour for numeric index values 2^31 and larger. These never used to be legitimate and so were treated as NA, sometimes with a warning. They are now legal for long vectors so there is no longer a warning, and x[2^31] <\- y will now extend the vector on a 64-bit platform and give an error on a 32-bit one. _
 
 In R 2.15.2, if I try to assign a vector of length 2^31, I will get an error
 
-    &gt; x &lt;- seq(1, 2^31)
-    Error in from:to&nbsp;: result would be too long a vector
+    > x <- seq(1, 2^31)
+    Error in from:to : result would be too long a vector
 
 However, for R 3.0.0 (tested on my 64-bit Ubuntu with 16GB RAM. The R was compiled by myself):
 
-    &gt; system.time(x &lt;- seq(1,2^31))
+    > system.time(x <- seq(1,2^31))
        user  system elapsed
       8.604  11.060 120.815
-    &gt; length(x)
+    > length(x)
     [1] 2147483648
-    &gt; length(x)/2^20
+    > length(x)/2^20
     [1] 2048
-    &gt; gc()
+    > gc()
                  used    (Mb) gc trigger    (Mb)   max used    (Mb)
     Ncells     183823     9.9     407500    21.8     350000    18.7
     Vcells 2147764406 16386.2 2368247221 18068.3 2148247383 16389.9
-    &gt;
+    >
 
 Note:
 
 1. 2^31 length is about 2 Giga length. It takes about 16 GB (2^31*8/2^20 MB) memory.
 2. On Windows, it is almost impossible to work with 2^31 length of data if the memory is less than 16 GB because virtual disk on Windows does not work well. For example, when I tested on my 12 GB Windows 7, the whole Windows system freezes for several minutes before I force to power off the machine.
-3. My slide in <http: goo.gl="" g7sgx=""> shows the screenshots of running the above command on my Ubuntu and RHEL machines. As you can see the linux is pretty good at handling large (&gt; system RAM) data. That said, as long as your linux system is 64-bit, you can possibly work on large data without too much pain.
+3. My slide in <http: goo.gl="" g7sgx=""> shows the screenshots of running the above command on my Ubuntu and RHEL machines. As you can see the linux is pretty good at handling large (> system RAM) data. That said, as long as your linux system is 64-bit, you can possibly work on large data without too much pain.
 4. For large dataset, it makes sense to use database or specially crafted packages like [bigmemory][223] or [ff][224].
 
 ### NA in index
@@ -3892,44 +3873,44 @@ Note:
 
 Answer: It will reserve the element with NA in indexing and return the value NA for it.
 
-* Question: What is TRUE &amp; NA?
+* Question: What is TRUE & NA?
 
 Answer: NA
 
-* Question: What is FALSE &amp; NA?
+* Question: What is FALSE & NA?
 
 Answer: FALSE
 
-* Question: c("A", "B", NA)&nbsp;!= ""&nbsp;?
+* Question: c("A", "B", NA) != "" ?
 
 Answer: TRUE TRUE NA
 
-* Question: which(c("A", "B", NA)&nbsp;!= "")&nbsp;?
+* Question: which(c("A", "B", NA) != "") ?
 
 Answer: 1 2
 
-* Question: c(1, 2, NA)&nbsp;!= "" &amp;&nbsp;!is.na(c(1, 2, NA))&nbsp;?
+* Question: c(1, 2, NA) != "" & !is.na(c(1, 2, NA)) ?
 
 Answer: TRUE TRUE FALSE
 
-* Question: c("A", "B", NA)&nbsp;!= "" &amp;&nbsp;!is.na(c("A", "B", NA))&nbsp;?
+* Question: c("A", "B", NA) != "" & !is.na(c("A", "B", NA)) ?
 
 Answer: TRUE TRUE FALSE
 
-**Conclusion**: In order to exclude empty or NA for numerical or character data type, we can use **which()** or a convenience function **keep.complete(x) &lt;\- function(x) x&nbsp;!= "" &amp;&nbsp;!is.na(x)**. This will guarantee return logical values and not contain NAs.
+**Conclusion**: In order to exclude empty or NA for numerical or character data type, we can use **which()** or a convenience function **keep.complete(x) <\- function(x) x != "" & !is.na(x)**. This will guarantee return logical values and not contain NAs.
 
-Don't just use x&nbsp;!= "" OR&nbsp;!is.na(x).
+Don't just use x != "" OR !is.na(x).
 
 ### Data frame
 
 ### matrix vs data.frame
 
-    ip1 &lt;- installed.packages()[,c(1,3:4)] # class(ip1) = 'matrix'
+    ip1 <- installed.packages()[,c(1,3:4)] # class(ip1) = 'matrix'
     unique(ip1$Priority)
-    # Error in ip1$Priority&nbsp;: $ operator is invalid for atomic vectors
+    # Error in ip1$Priority : $ operator is invalid for atomic vectors
     unique(ip1[, "Priority"])   # OK
 
-    ip2 &lt;- as.data.frame(installed.packages()[,c(1,3:4)], stringsAsFactors = FALSE) # matrix -&gt; data.frame
+    ip2 <- as.data.frame(installed.packages()[,c(1,3:4)], stringsAsFactors = FALSE) # matrix -> data.frame
     unique(ip2$Priority)     # OK
 
 ### Print a vector by suppressing names
@@ -3946,15 +3927,15 @@ Use **unname**.
 
 within() is similar to with() except it is used to create new columns and merge them with the original data sets. See [youtube video][225].
 
-    closePr &lt;- with(mariokart, totalPr - shipPr)
+    closePr <- with(mariokart, totalPr - shipPr)
     head(closePr, 20)
 
-    mk &lt;- within(mariokart, {
-                 closePr &lt;- totalPr - shipPr
+    mk <- within(mariokart, {
+                 closePr <- totalPr - shipPr
          })
     head(mk) # new column closePr
 
-    mk &lt;- mariokart
+    mk <- mariokart
     aggregate(. ~ wheels + cond, mk, mean)
     # create mean according to each level of (wheels, cond)
 
@@ -3981,13 +3962,13 @@ within() is similar to with() except it is used to create new columns and merge 
 
 Use 'colClasses' option in read.table, read.delim, .... For example, the following example reads only the 3rd column of the text file and also changes its data type from a data frame to a vector. Note that we have include double quotes around NULL.
 
-    x &lt;- read.table("var_annot.vcf", colClasses = c(rep("NULL", 2), "character", rep("NULL", 7)),
+    x <- read.table("var_annot.vcf", colClasses = c(rep("NULL", 2), "character", rep("NULL", 7)),
                     skip=62, header=T, stringsAsFactors = FALSE)[, 1]
 
 To know the number of columns, we might want to read the first row first.
 
     library(magrittr)
-    scan("var_annot.vcf", sep="t", what="character", skip=62, nlines=1, quiet=TRUE)&nbsp;%&gt;% length()
+    scan("var_annot.vcf", sep="t", what="character", skip=62, nlines=1, quiet=TRUE) %>% length()
 
 ### Read excel files
 
@@ -3997,19 +3978,19 @@ My experience is to save the Excel file as csv file (before it can be read into 
 
 If we want to pass an R object to C (use recv() function), we can use writeBin() to output the stream size and then use serialize() function to output the stream to a file. See the [post][227] on R mailing list.
 
-    &gt; a &lt;- list(1,2,3)
-    &gt; a_serial &lt;- serialize(a, NULL)
-    &gt; a_length &lt;- length(a_serial)
-    &gt; a_length
+    > a <- list(1,2,3)
+    > a_serial <- serialize(a, NULL)
+    > a_length <- length(a_serial)
+    > a_length
     [1] 70
-    &gt; writeBin(as.integer(a_length), connection, endian="big")
-    &gt; serialize(a, connection)
+    > writeBin(as.integer(a_length), connection, endian="big")
+    > serialize(a, connection)
 
 In C++ process, I receive one int variable first to get the length, and then read <length> bytes from the connection.
 
 ### socketConnection
 
-See&nbsp;?socketconnection.
+See ?socketconnection.
 
 #### Simple example
 
@@ -4017,18 +3998,18 @@ from the socketConnection's manual.
 
 Open one R session
 
-    con1 &lt;- socketConnection(port = 22131, server = TRUE) # wait until a connection from some client
+    con1 <- socketConnection(port = 22131, server = TRUE) # wait until a connection from some client
     writeLines(LETTERS, con1)
     close(con1)
 
 Open another R session (client)
 
-    con2 &lt;- socketConnection(Sys.info()["nodename"], port = 22131)
+    con2 <- socketConnection(Sys.info()["nodename"], port = 22131)
     # as non-blocking, may need to loop for input
     readLines(con2)
     while(isIncomplete(con2)) {
        Sys.sleep(1)
-       z &lt;- readLines(con2)
+       z <- readLines(con2)
        if(length(z)) print(z)
     }
     close(con2)
@@ -4053,7 +4034,7 @@ Some post I don't have a chance to read. <http: digitheadslabnotebook.blogspot.c
 
 On the server,
 
-    con1 &lt;- socketConnection(port = 8080, server = TRUE)
+    con1 <- socketConnection(port = 8080, server = TRUE)
 
 On the client,
 
@@ -4061,7 +4042,7 @@ On the client,
 
 Then go to the server,
 
-    while(nchar(x &lt;- readLines(con1, 1)) &gt; 0) cat(x, "n")
+    while(nchar(x <- readLines(con1, 1)) > 0) cat(x, "n")
 
     close(con1) # return cursor in the client machine
 
@@ -4069,7 +4050,7 @@ Then go to the server,
 
 On the server,
 
-    con1 &lt;- socketConnection(port = 8080, server = TRUE)
+    con1 <- socketConnection(port = 8080, server = TRUE)
 
 On the client,
 
@@ -4092,10 +4073,10 @@ Some [tutorial][229] about using telnet on http request. And [this][230] is a su
 
 [Subset assignment of R Language Definition][231] and [Manipulation of functions][232].
 
-The result of the command **x[3:5] &lt;\- 13:15** is as if the following had been executed
+The result of the command **x[3:5] <\- 13:15** is as if the following had been executed
 
-    `*tmp*` &lt;- x
-    x &lt;- "[&lt;-"(`*tmp*`, 3:5, value=13:15)
+    `*tmp*` <- x
+    x <- "[<-"(`*tmp*`, 3:5, value=13:15)
     rm(`*tmp*`)
 
 ### S3 and S4
@@ -4108,7 +4089,7 @@ To get the source code of S4 methods, we can use showMethod(), getMethod() and s
     showMethod("gcPlot", "FASTQSummary") # good.
 
     library(IRanges)
-    ir &lt;- IRanges(start=c(10, 20, 30), width=5)
+    ir <- IRanges(start=c(10, 20, 30), width=5)
     ir
 
     class(ir)
@@ -4146,7 +4127,7 @@ Related functions are cuts() and split(). See also
 
 Lots of examples. See for example [this one][233] for creating a data frame from a vector.
 
-    x &lt;- readLines(textConnection("---CLUSTER 1 ---
+    x <- readLines(textConnection("---CLUSTER 1 ---
      3
      4
      5
@@ -4158,15 +4139,15 @@ Lots of examples. See for example [this one][233] for creating a data frame from
      11"))
 
      # create a list of where the 'clusters' are
-     clust &lt;- c(grep("CLUSTER", x), length(x) + 1L)
+     clust <- c(grep("CLUSTER", x), length(x) + 1L)
 
      # get size of each cluster
-     clustSize &lt;- diff(clust) - 1L
+     clustSize <- diff(clust) - 1L
 
      # get cluster number
-     clustNum &lt;- gsub("[^0-9]+", "", x[grep("CLUSTER", x)])
+     clustNum <- gsub("[^0-9]+", "", x[grep("CLUSTER", x)])
 
-     result &lt;- do.call(rbind, lapply(seq(length(clustNum)), function(.cl){
+     result <- do.call(rbind, lapply(seq(length(clustNum)), function(.cl){
          cbind(Object = x[seq(clust[.cl] + 1L, length = clustSize[.cl])]
              , Cluster = .cl
              )
@@ -4192,7 +4173,7 @@ See [this post][234]. Method 1:
 
 Method 2:
 
-    Rd &lt;- utils:::.getHelpFile(?acf)
+    Rd <- utils:::.getHelpFile(?acf)
     tools::Rd2ex(Rd)
 
 ### "[" and "[[" with the sapply() function
@@ -4212,7 +4193,7 @@ is the same as
     d2 = Sys.Date()
     class(d2) # "Date"
 
-    format(d2, "%a&nbsp;%b&nbsp;%d")
+    format(d2, "%a %b %d")
 
     library(lubridate); ymd("20140108") # "2014-01-08 UTC"
     mdy("08/04/2013") # "2013-08-04 UTC"
@@ -4232,13 +4213,13 @@ is the same as
 * eval(expr, envir), evalq(expr, envir) - eval evaluates its first argument in the current scope before passing it to the evaluator: evalq avoids this.
 * deparse(expr) - turns unevaluated expressions into character strings. For example,
 
-    &gt; deparse(args(lm))
+    > deparse(args(lm))
     [1] "function (formula, data, subset, weights, na.action, method = "qr", "
     [2] "    model = TRUE, x = FALSE, y = FALSE, qr = TRUE, singular.ok = TRUE, "
     [3] "    contrasts = NULL, offset, ...) "
     [4] "NULL"
 
-    &gt; deparse(args(lm), width=20)
+    > deparse(args(lm), width=20)
     [1] "function (formula, data, "        "    subset, weights, "
     [3] "    na.action, method = "qr", " "    model = TRUE, x = FALSE, "
     [5] "    y = FALSE, qr = TRUE, "       "    singular.ok = TRUE, "
@@ -4252,32 +4233,32 @@ is the same as
 * Example 1. By default, R function arguments are lazy.
 
 ```
-    f &lt;- function(x) {
+    f <- function(x) {
       999
     }
     f(stop("This is an error!"))
-    #&gt; [1] 999
+    #> [1] 999
 ```
 
 * Example 2. If you want to ensure that an argument is evaluated you can use **force()**.
 
 ```
-    add &lt;- function(x) {
+    add <- function(x) {
       force(x)
       function(y) x + y
     }
-    adders2 &lt;- lapply(1:10, add)
+    adders2 <- lapply(1:10, add)
     adders2[[1]](10)
-    #&gt; [1] 11
+    #> [1] 11
     adders2[[10]](10)
-    #&gt; [1] 20
+    #> [1] 20
 ```
 
 * Example 3. Default arguments are evaluated inside the function.
 
 ```
-    f &lt;- function(x = ls()) {
-      a &lt;- 1
+    f <- function(x = ls()) {
+      a <- 1
       x
     }
 
@@ -4293,15 +4274,15 @@ is the same as
 * Example 4. Laziness is useful in if statements — the second statement below will be evaluated only if the first is true.
 
 ```
-    x &lt;- NULL
-    if (!is.null(x) &amp;&amp; x &gt; 0) {
+    x <- NULL
+    if (!is.null(x) && x > 0) {
 
     }
 ```
 
 ### Backtick sign, infix/prefix/postfix operators
 
-The backtick sign ` (not the single quote) refers to functions or variables that have otherwise reserved or illegal names; e.g. '&amp;&amp;', '+', '(', 'for', 'if', etc. See some examples in [this note][206].
+The backtick sign ` (not the single quote) refers to functions or variables that have otherwise reserved or illegal names; e.g. '&&', '+', '(', 'for', 'if', etc. See some examples in [this note][206].
 
 [**infix][236]** operator.
 
@@ -4316,26 +4297,26 @@ The backtick sign ` (not the single quote) refers to functions or variables that
 #### [Calling a function given a list of arguments][206]
 
 ```
-    &gt; args &lt;- list(c(1:10, NA, NA), na.rm = TRUE)
-    &gt; do.call(mean, args)
+    > args <- list(c(1:10, NA, NA), na.rm = TRUE)
+    > do.call(mean, args)
     [1] 5.5
-    &gt; mean(c(1:10, NA, NA), na.rm = TRUE)
+    > mean(c(1:10, NA, NA), na.rm = TRUE)
     [1] 5.5
 ```
 
 ### Error handling and exceptions
 
 ```
-    out &lt;- try({
-      a &lt;- 1
-      b &lt;- "x"
+    out <- try({
+      a <- 1
+      b <- "x"
       a + b
     })
 
-    elements &lt;- list(1:10, c(-1, 10), c(T, F), letters)
-    results &lt;- lapply(elements, log)
-    is.error &lt;- function(x) inherits(x, "try-error")
-    succeeded &lt;-&nbsp;!sapply(results, is.error)
+    elements <- list(1:10, c(-1, 10), c(T, F), letters)
+    results <- lapply(elements, log)
+    is.error <- function(x) inherits(x, "try-error")
+    succeeded <- !sapply(results, is.error)
 ```
 
 * tryCatch(): With tryCatch() you map conditions to handlers (like switch()), named functions that are called with the condition as an input. Note that try() is a simplified version of tryCatch().
@@ -4343,7 +4324,7 @@ The backtick sign ` (not the single quote) refers to functions or variables that
 ```
     tryCatch(expr, ..., finally)
 
-    show_condition &lt;- function(code) {
+    show_condition <- function(code) {
       tryCatch(code,
         error = function(c) "error",
         warning = function(c) "warning",
@@ -4351,13 +4332,13 @@ The backtick sign ` (not the single quote) refers to functions or variables that
       )
     }
     show_condition(stop("!"))
-    #&gt; [1] "error"
+    #> [1] "error"
     show_condition(warning("?!"))
-    #&gt; [1] "warning"
+    #> [1] "warning"
     show_condition(message("?"))
-    #&gt; [1] "message"
+    #> [1] "message"
     show_condition(10)
-    #&gt; [1] 10
+    #> [1] 10
 ```
 
 ### Using list type
@@ -4367,10 +4348,10 @@ The backtick sign ` (not the single quote) refers to functions or variables that
 ```
 ?plot.stepfun.
 
-    y0 &lt;- c(1,2,4,3)
-    sfun0  &lt;- stepfun(1:3, y0, f = 0)
-    sfun.2 &lt;- stepfun(1:3, y0, f = .2)
-    sfun1  &lt;- stepfun(1:3, y0, right = TRUE)
+    y0 <- c(1,2,4,3)
+    sfun0  <- stepfun(1:3, y0, f = 0)
+    sfun.2 <- stepfun(1:3, y0, f = .2)
+    sfun1  <- stepfun(1:3, y0, right = TRUE)
 
     for(i in 1:3)
       lines(list(sfun0, sfun.2, stepfun(1:3, y0, f = 1))[[i]], col = i)
@@ -4485,8 +4466,6 @@ The following trick is useful when we want to draw multiple plots with a common 
 [64]: https://github.com/att/rcloud
 [65]: http://user2014.stat.ucla.edu/abstracts/talks/193_Harner.pdf
 [66]: http://blog.rstudio.org/2014/11/24/rvest-easy-web-scraping-with-r/
-[67]: http://www.ncbi.nlm.nih.gov/geo/
-[68]: /mediawiki/index.php/GEO#R_packages "GEO"
 [69]: http://cran.r-project.org/web/packages/sendplot/index.html
 [70]: http://cran.r-project.org/web/packages/RIGHT/index.html
 [71]: http://righthelp.github.io/tutorial/interactivity
@@ -4521,7 +4500,7 @@ The following trick is useful when we want to draw multiple plots with a common 
 [100]: http://cran.r-project.org/web/packages/curl/
 [101]: http://cran.r-project.org/web/packages/gWidgets/index.html
 [102]: http://cran.r-project.org/web/packages/GenOrd/index.html
-[103]: http://statistical-research.com/simulating-random-multivariate-correlated-data-categorical-variables/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=simulating-random-multivariate-correlated-data-categorical-variables
+[103]: http://statistical-research.com/simulating-random-multivariate-correlated-data-categorical-variables/?utm_source=rss&utm_medium=rss&utm_campaign=simulating-random-multivariate-correlated-data-categorical-variables
 [104]: http://cran.r-project.org/web/packages/rjson/index.html
 [105]: http://cran.r-project.org/web/packages/RJSONIO/index.html
 [106]: http://webcache.googleusercontent.com/mediawiki/images/thumb/9/9d/GoogleVis.png/200px-GoogleVis.png
@@ -4643,7 +4622,7 @@ The following trick is useful when we want to draw multiple plots with a common 
 [222]: http://cran.r-project.org/doc/manuals/R-admin.html#Choosing-between-32_002d-and-64_002dbit-builds
 [223]: http://cran.r-project.org/web/packages/bigmemory/
 [224]: http://cran.r-project.org/web/packages/ff/
-[225]: http://www.youtube.com/watch?v=pZ6Bnxg9E8w&amp;list=PLOU2XLYxmsIK9qQfztXeybpHvru-TrqAP
+[225]: http://www.youtube.com/watch?v=pZ6Bnxg9E8w&list=PLOU2XLYxmsIK9qQfztXeybpHvru-TrqAP
 [226]: http://webcache.googleusercontent.com/mediawiki/images/thumb/9/98/RugFunction.png/200px-RugFunction.png
 [227]: https://stat.ethz.ch/pipermail/r-devel/attachments/20130628/56473803/attachment.pl
 [228]: https://stat.ethz.ch/pipermail/r-sig-hpc/2009-April/000144.html
