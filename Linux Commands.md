@@ -116,4 +116,96 @@ Shows calendar of year 2145 for the month of July, that will advancing
 	25 26 27 28 29 30 31
 	
 
-### 
+### Configure SSH config for less typing
+
+Configure `~/.ssh/config` so you can just type a shortcut (e.g. ssh aws) to connect.
+
+	mkdir -p ~/.ssh
+	mv ~/Downloads/identity.pem ~/.ssh
+	chmod 400 ~/.ssh/identity.pem # if you haven't already
+	chmod 700 ~/.ssh
+	nano ~/.ssh/config # see below for content
+	chmod 600 ~/.ssh/config
+
+Contents of `~/.ssh/config` should look like this.
+
+	Host aws
+	Hostname ec2-54-218-72-128.us-west-2.compute.amazonaws.com # or use the IP address
+	User ubuntu
+	IdentityFile "~/.ssh/identity.pem"
+
+
+### Transferring files
+
+Copy files to/from the server using `scp` (GUI options exist and one is built-in to Ubuntu). E.g. to copy a file from the server to your local machine:
+
+	scp -i identity_file.pem ubuntu@ec2-01-234-56-789.compute-1.amazonaws.com:~/foo/bar.txt .
+
+Or to copy from local machine to AWS instance (and place it in $HOME):
+
+	scp -i identity_file.pem file1 file2 ubuntu@ec2-01-234-56-789.compute-1.amazonaws.com:~/
+
+If you set up your SSH config file , then scp becomes a lot simpler to use:
+
+	scp foo.txt aws:~/bar.txt
+	
+
+### (Re)claim ownership of directories
+
+Some commands, like `npm`, require superuser permissions. Instead of using `sudo` every time, you can claim ownership of the appropriate directory. E.g. `sudo chown -Rwhoami~/.npm`
+
+- `rsync` is generally a better alternative to scp
+- `ln -s` for creating symbolic links (having a file in two places at once via a pointer)
+- cut commonly used for selecting fields (default is to delimit by tab)
+- sort for sorting, has many options
+- uniq for unique data
+- wc for many types of counts, e.g. words, chars, lines, longest line (for pre-allocating a buffer)
+- split splits files, handy for parallel processing jobs
+- paste combines columns (commonly used with cut)
+- wget & curl for grabbing online resources; curl is handy for APIs
+- nl prepend line numbers
+- xargs execute commands from STDIN, useful when dealing with a huge number of files (use -P to enable multiple processors)
+- find non-indexed search, e.g. find /etc | nl
+- locate indexed search. works out of the box on Ubuntu, but on MacOS you need to do
+	sudo apt-get install -y locate;
+	sudo updatedb;
+	locate fstab
+- grep print lines matching a pattern
+- sed stream editor for filtering and transforming text, useful for search and replace - [one liners](http://www.catonmat.net/blog/wp-content/uploads/2008/09/sed1line.txt)
+- awk pattern scanning and text processing language, useful for tab-delimited data - [one liners](http://www.pement.org/awk/awk1line.txt)
+
+#### [Bash keyboard shortcuts](http://www.howtogeek.com/howto/ubuntu/keyboard-shortcuts-for-bash-command-shell-for-ubuntu-debian-suse-redhat-linux-etc/)
+Should also work in fish shell.
+
+- <kbd>CTRL</kbd> + <kbd>l</kbd>: clear screen
+- <kbd>CTRL</kbd> + <kbd>u</kbd>: clear text before cursor
+- <kbd>CTRL</kbd> + <kbd>c</kbd>: kill current process
+- <kbd>CTRL</kbd> + <kbd>d</kbd>: exit current shell
+- <kbd>CTRL</kbd> + <kbd>z</kbd>: puts the current process in the background, restore with `fg`  
+  You can also use <kbd>&</kbd>. E.g. `sleep 10 &`
+- <kbd>CTRL</kbd> + <kbd>w</kbd>: clear word before cursor
+- <kbd>TAB</kbd>: auto-complete
+
+
+#### `screen` tab manager for remote sessions
+
+Allows you to reconnect and resume your session where you left off. Useful if a remote connection drops or for any long-running computation (running as a background process--see above--is a viable alternative).
+
+`tmux` is considered [a better alternative](http://honnef.co/posts/2010/10/why_you_should_try_tmux_instead_of_screen/) to `screen`. Use it with [teamocil](https://github.com/remiprev/teamocil) to automatically create sessions, windows and panes with YAML files.
+
+In `screen`, type
+- <kbd>C-t ?</kbd> to bring up the help
+- <kbd>C-t c</kbd> to create new tabs
+- <kbd>C-t u</kbd> or <kbd>j</kbd> to switch tabs
+- <kbd>C-t 0..9</kbd> to go to a specific tab (starts at 0)
+- <kbd>C-t C-t</kbd> to go back and forth between the current and previous tab
+- <kbd>C-d</kbd> to exit the current tab
+- <kbd>C-t [</kbd> to go into copy mode  
+  now you can use the arrow keys to move around or <kbd>C-p/n</kbd> to move up and down  
+  copy stuff with <kbd>(space)</kbd> or <kbd>(enter)</kbd>, you have to set beginning and end  
+  paste with <kbd>C-t ]</kbd>  
+  abort with <kbd>C-(space)</kbd>
+- <kbd>screen -d</kbd> to detach the screen (type inside screen)
+- <kbd>screen -r</kbd> to resume the screen (type in shell)
+
+Note: <kbd>C-t ?</kbd> means <kbd>CTRL</kbd> and <kbd>t</kbd> followed by <kbd>?</kbd>.
