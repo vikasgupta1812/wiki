@@ -8,6 +8,7 @@ Provides intuition about testing and training datasets.  Nice example, can be go
 - [Comprehensive Intro to Predictive modeling](http://sebastianraschka.com/Articles/2014_intro_supervised_learning.html?utm_content=bufferc511a)
     ![](http://sebastianraschka.com/Images/2014_intro_supervised_learning/classify_example.png)
 - [http://sebastianraschka.com/articles.html](http://sebastianraschka.com/articles.html)
+- [How to choose algorithms for Microsoft Azure Machine Learning](https://azure.microsoft.com/en-us/documentation/articles/machine-learning-algorithm-choice/)
 
 ### Deep Learning
 - [Image Scaling using Deep Convolutional Neural Networks](http://engineering.flipboard.com/2015/05/scaling-convnets/) tl;dr- Convolutional Neural Networks. 
