@@ -1,3 +1,35 @@
+# Packages in R
+
+## awesome-R
+https://awesome-r.com/
+https://github.com/qinwf/awesome-R
+
+## magrittr
+
+Instead of nested statements, it is using pipe operator %>%. So the code is easier to read. Impressive!
+
+- [Slides - Pipelines in R](http://rpubs.com/tjmahr/pipelines_2015) [Drive](https://drive.google.com/file/d/0B0J1O2jMMERWWEx0STJVTVh2U28)
+- [Slides - dplyr: verbs for manipulating data-frames](http://rpubs.com/tjmahr/dplyr_2015) [Drive](https://drive.google.com/file/d/0B0J1O2jMMERWSlh0cE9pNVRHYlE/view?usp=drivesdk)
+- [Slides - Making pretty regression tables with pipes](http://rpubs.com/tjmahr/prettytables_2015) [Drive](https://drive.google.com/file/d/0B0J1O2jMMERWV3hsQWdQSW4wM1E/view?usp=drivesdk)
+- http://rud.is/b/2015/02/04/a-step-to-the-right-in-r-assignments/ [cache](https://drive.google.com/file/d/0B0J1O2jMMERWX1p3THM4b0tqZ28/view?usp=drivesdk)
+
+
+## stringr and plyr packages
+
+http://martinsbioblogg.wordpress.com/2013/03/24/using-r-reading-tables-that-need-a-little-cleaning/
+
+A data.frame is pretty much a list of vectors, so we use plyr to apply over the list and stringr to search and replace in the vectors.
+
+
+## ggplot2
+Some examples: http://blog.diegovalle.net/2015/01/the-74-most-violent-cities-in-mexico.html
+
+Introduction - https://www.youtube.com/watch?v=SaJCKpYX5Lo&t=2742
+
+### ggthemr: 
+Themes for ggplot2
+
+
 ## Parallel Computing
 
 Example code for the book Parallel R by McCallum and Weston.  - http://shop.oreilly.com/product/0636920021421.do
@@ -85,13 +117,15 @@ http://www.imbi.uni-freiburg.de/parallel/docs/Reisensburg2009_TutParallelComputi
 
 ### Rmpi package
 
+MPI defines an environment where programs can run in parallel and communicate with each other by passing messages to each other. 
+
 Some examples/tutorials
 
-- http://trac.nchc.org.tw/grid/wiki/R-MPI_Install
+- ~~http://trac.nchc.org.tw/grid/wiki/R-MPI_Install~~
+- http://trac.3du.me/grid/wiki/R-MPI_Install [cache](https://drive.google.com/file/d/0B0J1O2jMMERWVUdNMGhnd0NKbU0/view?usp=drivesdk)
 - http://www.arc.vt.edu/resources/software/r/index.php
 - ~~https://www.sharcnet.ca/help/index.php/Using_R_and_MPI~~
-- http://math.acadiau.ca/ACMMaC/Rmpi/examples.html
-- http://www.umbc.edu/hpcf/resources-tara/how-to-run-R.html
+- ~~http://math.acadiau.ca/ACMMaC/Rmpi/examples.html~~
 - Ryan Rosario - http://www.slideshare.net/bytemining/taking-r-to-the-limit-high-performance-computing-in-r-part-1-parallelization-la-r-users-group-727
 - http://pj.freefaculty.org/guides/Rcourse/parallel-1/parallel-1.pdf
 - http://biowulf.nih.gov/apps/R.html
@@ -106,38 +140,28 @@ http://randyzwitch.com/r-amazon-ec2/
 ### Bioconductor on Amazon EC2
 http://www.bioconductor.org/help/bioconductor-cloud-ami/
 
-### Big Data Analysis
-http://blog.comsysto.com/2013/02/14/my-favorite-community-links/
 
-## Useful R packages
-awesome-R - https://github.com/qinwf/awesome-R
 
-## RInside
+### RInside (embed R inside C++ code)
 
 http://dirk.eddelbuettel.com/code/rinside.html
 http://dirk.eddelbuettel.com/papers/rfinance2010_rcpp_rinside_tutorial_handout.pdf
 
 ## Plot IP on google map
 
-http://thebiobucket.blogspot.com/2011/12/some-fun-with-googlevis-plotting-blog.html#more (RCurl, RJONIO, plyr, googleVis)
-http://devblog.icans-gmbh.com/using-the-maxmind-geoip-api-with-r/ (RCurl, RJONIO, maps)
-http://cran.r-project.org/web/packages/geoPlot/index.html (geoPlot package (deprecated as 8/12/2013))
-http://archive09.linux.com/feature/135384 (Not R) ApacheMap
-http://batchgeo.com/features/geolocation-ip-lookup/ (Not R) (Enter a spreadsheet 
-of adress, city, zip or a column of IPs and it will show the location on google map)
-
-http://code.google.com/p/apachegeomap/
-
+- [Mapping blog visits on google maps with googleVis](http://thebiobucket.blogspot.com/2011/12/some-fun-with-googlevis-plotting-blog.html#more) [cache](https://drive.google.com/file/d/0B0J1O2jMMERWR0xDdkM3WHlfc2M/view?usp=drivesdk) (RCurl, RJONIO, plyr, googleVis) 
+- http://devblog.icans-gmbh.com/using-the-maxmind-geoip-api-with-r/ (RCurl, RJONIO, maps)
+- http://cran.r-project.org/web/packages/geoPlot/index.html (geoPlot package (deprecated as 8/12/2013))
+- http://batchgeo.com/features/geolocation-ip-lookup/ (Not R) (Enter a spreadsheet of adress, city, zip or a column of IPs and it will show the location on google map)
+- http://code.google.com/p/apachegeomap/
 
 The following example is modified from the first of above list.
-
 
 ```r
 require(RJSONIO) # fromJSON
 require(RCurl)   # getURL
 
-temp = getURL("https://gist.github.com/arraytools/6743826/raw/23c8b0bc4b8f0d1bfe1c2fad985ca2e091aeb916/ip.txt", 
-                           ssl.verifypeer = FALSE)
+temp = getURL("https://gist.github.com/arraytools/6743826/raw/23c8b0bc4b8f0d1bfe1c2fad985ca2e091aeb916/ip.txt", ssl.verifypeer = FALSE)
 ip <- read.table(textConnection(temp), as.is=TRUE)
 names(ip) <- "IP"
 nr = nrow(ip)
@@ -163,8 +187,7 @@ for (i in 1:nr){
 }
  
 # append to log-file:
-logfile <- data.frame(ip, Lat = Coords$Lat, Long = Coords$Lon,
-                                       LatLong = paste(round(Coords$Lat, 1), round(Coords$Lon, 1), sep = ":")) 
+logfile <- data.frame(ip, Lat = Coords$Lat, Long = Coords$Lon, LatLong = paste(round(Coords$Lat, 1), round(Coords$Lon, 1), sep = ":")) 
 log_gmap <- logfile[!is.na(logfile$Lat), ]
 
 require(googleVis) # gvisMap
@@ -179,7 +202,7 @@ The plot.gvis() method in `googleVis` packages also teaches the `startDynamicHel
 
 http://jeffreyhorner.tumblr.com/page/3
 
-## Maps
+##Maps
 
 ### leaflet 
 rstudio.github.io/leaflet/#installation-and-use
@@ -190,7 +213,7 @@ http://blog.revolutionanalytics.com/2014/01/easy-data-maps-with-r-the-choropleth
 http://www.arilamstein.com/blog/2015/06/25/learn-to-map-census-data-in-r/
 
 
-## Use `Rcpp` in RStudio
+## Use Rcpp in RStudio
 
 RStudio makes it easy to use `Rcpp` package.
 
@@ -320,25 +343,3 @@ RcppParallel - http://cran.r-project.org/web/packages/RcppParallel/index.html
 caret - http://cran.r-project.org/web/packages/caret/index.html
 
 
-## ggplot2
-Some examples: http://blog.diegovalle.net/2015/01/the-74-most-violent-cities-in-mexico.html
-
-Introduction - https://www.youtube.com/watch?v=SaJCKpYX5Lo&t=2742
-
-### ggthemr: 
-Themes for ggplot2
-
-
-
-## `stringr` and `plyr` packages
-
-http://martinsbioblogg.wordpress.com/2013/03/24/using-r-reading-tables-that-need-a-little-cleaning/
-
-A data.frame is pretty much a list of vectors, so we use plyr to apply over the list and stringr to search and replace in the vectors.
-
-## magrittr
-
-Instead of nested statements, it is using pipe operator %>%. So the code is easier to read. Impressive!
-
-http://rud.is/b/2015/02/04/a-step-to-the-right-in-r-assignments/
-http://rpubs.com/tjmahr/pipelines_2015
