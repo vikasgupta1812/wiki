@@ -5,8 +5,7 @@ Provides intuition about testing and training datasets.  Nice example, can be go
 - [Clever Algorithms For Machine Learning](https://github.com/jbrownlee/CleverAlgorithmsMachineLearning)
 - [Kaggle's R Tutorial on Machine Learing](https://www.datacamp.com/courses/kaggle-tutorial-on-machine-learing)
 - [Model-Based Machine Learning, Free Early Book Draft](http://www.kdnuggets.com/2015/06/model-based-machine-learning-book-draft.html#.VYgY75uuctE.facebook)
-- [Comprehensive Intro to Predictive modeling](http://sebastianraschka.com/Articles/2014_intro_supervised_learning.html?utm_content=bufferc511a)
-    ![](http://sebastianraschka.com/Images/2014_intro_supervised_learning/classify_example.png)
+- [Comprehensive Intro to Predictive modeling](http://sebastianraschka.com/Articles/2014_intro_supervised_learning.html?utm_content=bufferc511a) [_Drive_](https://drive.google.com/file/d/0B0J1O2jMMERWdE81R1hnd2lYTFU/view?usp=drivesdk) ![](http://sebastianraschka.com/Images/2014_intro_supervised_learning/classify_example.png) ![](https://drive.google.com/file/d/0B0J1O2jMMERWUHBxRTFyYWRFQkE/view?usp=drivesdk) ![](blob:https%3A//drive.google.com/6ab173a8-f08d-43e2-ab8b-72b9a65211be)
 - [http://sebastianraschka.com/articles.html](http://sebastianraschka.com/articles.html)
 - [How to choose algorithms for Microsoft Azure Machine Learning](https://azure.microsoft.com/en-us/documentation/articles/machine-learning-algorithm-choice/)
 
@@ -94,7 +93,6 @@ Part 2 - http://theanalyticalminds.blogspot.com/2015/02/part-2-data-preparation.
 - Accessing Open Data Portal (India) using APIs http://justanotherdatablog.blogspot.com/2014/04/accessing-open-data-portal-india-using.html 
 - Similar – detect similar R source code patterns - http://www.rexamine.com/2015/03/similar/ 
 - Decoding R Error messages - http://blog.revolutionanalytics.com/2015/03/the-most-common-r-error-messages.html
-x
 - Tools in Tandem – SQL and ggplot. But is it Really R? - http://blog.ouseful.info/2015/02/28/tools-in-tandem-sql-and-ggplot-but-is-it-really-r/ 
 td;lr runs r script on database. sql does the data analysis and r did the visalization. Blog title is also interesting – emerging technologies in emerging eduation.
 - Playing around with #rstats twitter data http://www.onthelambda.com/2015/02/28/playing-around-with-rstats-twitter-data/ tl;dr - Uses dplyr, perl script  
