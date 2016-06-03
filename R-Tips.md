@@ -411,7 +411,7 @@ as.data.frame(installed.packages()[,c(1,3)],row.names=F)
 
 - Run help file examples for a particular function using the 'example' function: `example(plot)` or `example(lm)` http://bit.ly/1hGXhlB
 
-```
+```r
 example(plot)
 
 plot> require(stats) # for lowess, rpois, rnorm
@@ -419,7 +419,7 @@ plot> plot(cars)
 plot> lines(lowess(cars))
 ```
 
-```
+```r
 example(lm)
 
 lm> require(graphics)
@@ -432,32 +432,32 @@ lm> ctl <- c(4.17,5.58,5.18,6.11,4.50,4.61,5.17,4.53,5.33,5.14)
 
 - Concatenate elements of a vector to a single comma-separated string: `paste(letters, collapse=", ")` http://bit.ly/LEU8S0 
 
-```
+```r
 paste(letters, collapse=", ")
 Out[49]: 
 [1] "a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z"
 ```
-```
+```r
 paste(1:12) # same as as.character(1:12)
 Out[50]: 
  [1] "1"  "2"  "3"  "4"  "5"  "6"  "7"  "8"  "9"  "10" "11" "12"
 ```
-```
+```r
 paste("A", 1:6, sep = "")
 Out[51]: 
 [1] "A1" "A2" "A3" "A4" "A5" "A6"	
 ```
-```
+```r
 paste0("A", 1:6)
 Out[52]: 
 [1] "A1" "A2" "A3" "A4" "A5" "A6"
 ```
-```
+```r
 identical(paste ("A", 1:6, sep = ""), paste0("A", 1:6))
 Out[54]: 
 [1] TRUE
 ```
-```
+```r
 paste("Today is", date())
 Out[55]: 
 [1] "Today is Thu Jun  2 21:04:37 2016"
@@ -467,7 +467,7 @@ Out[55]:
 - Leave out the `mth` column of a data frame: `dF[,-m]`  http://bit.ly/1pkampQ
 - `readHTMLTable(url,which=2)` will read the 2nd table on the webpage specified by the url http://bit.ly/1jEUopG
 
-```
+```r
 airline = 'http://www.theacsi.org/index.php?option=com_content&view=article&id=147&catid=&Itemid=212&i=Airlines'
 
 tables = XML::readHTMLTable(airline)
@@ -489,7 +489,7 @@ _similar `htmltable`_ - http://www.r-datacollection.com/blog/Hassle-free-data-fr
 - Indexing into a list: `myList[[m]][n]` will yield the nth element of the mth item in list myList #rstats http://bit.ly/1pkampQ
 - Not sure why your R function threw an error? Use `traceback()` to find out where it occurred. http://bit.ly/qokamy
 
-```
+```r
 foo <- function(x) { print(1); bar(2) }
 bar <- function(x) { x + a.variable.which.does.not.exist }
  
@@ -501,7 +501,7 @@ refer article - http://petewerner.blogspot.ca/2013/01/tracking-down-errors-in-r.
 - Tutorial introduction to time series in #rstats: http://www.stat.pitt.edu/stoffer/tsa3/R_toot.htm [_drive_](https://drive.google.com/file/d/0B0J1O2jMMERWUWthaHRKMXdVN1k/view?usp=drivesdk)
 - To speed an R function, use `cmpfun` to byte-compile it: http://bit.ly/t2OR0K
 
-```
+```r
 f <- function(x) x+1
 fc = compiler::cmpfun(f)
 fc(2)
@@ -510,7 +510,7 @@ Out[87]:
 ```
 - If x is a matrix, vector or list then `x[]<-0` replaces all its values by 0. More uses of the empty bracket in #rstats: http://bit.ly/14E9ulW
 
-```
+```r
 mat <- matrix(NA, nrow = 5, ncol = 5); mat
 Out[91]: 
      [,1] [,2] [,3] [,4] [,5]
@@ -560,7 +560,7 @@ $c
 - The `RSQLite` package embeds the SQLite DB engine in R - great way to get started with DBMS https://cran.r-project.org/web/packages/RSQLite/RSQLite.pdf 
 - The `sqldf` package lets you do sql queries on an R dataframe https://github.com/ggrothendieck/sqldf  #rstats
 
-```
+```r
 library(sqldf)
 sqldf("select * from BOD where Time > 4")
 
@@ -578,7 +578,7 @@ Out[97]:
 - The `RODBC` package provides access to SQL databases - Get started with the vignette https://cran.r-project.org/web/packages/RODBC/vignettes/RODBC.pdf
 - `search()` displays the "search list" of packages where R searches for functions and other objects #rstats http://www.inside-r.org/r-doc/base/search 
 
-```
+```r
 search()
 Out[11]: 
 [1] ".GlobalEnv"        "package:stats"     "package:graphics" 
@@ -589,7 +589,7 @@ Out[11]:
 
 - Use `NROW`/`NCOL` instead of `nrow`/`ncol` to treat vectors as 1-column matrices http://bit.ly/HDgsfu
 
-```
+```r
 NCOL(1:12)
 Out[12]: 
 [1] 1
@@ -601,7 +601,7 @@ Out[14]:
 
 - `signif(x,digits=n)` rounds x to n significant digits http://www.inside-r.org/r-doc/base/Round
 
-```
+```r
 x2 <- pi * 100^(-1:3)
 round(x2, 3)
 Out[16]: 
@@ -613,7 +613,7 @@ Out[20]:
 ```
 - Some examples of `get()` to call an R object using a character string:   http://rfunction.com/archives/2105
 
-```
+```r
 x5 <- "x5 variable"
 get("x5")
 
@@ -647,7 +647,7 @@ Out[26]:
 
 - Avoid namespace clashes! Use `::` to specify an object within a specific package, e.g. MASS::mvnorm http://www.inside-r.org/node/35769
 
-```
+```r
 base::log
 Out[32]: 
 function (x, base = exp(1))  .Primitive("log")
@@ -676,7 +676,7 @@ object$coefficients
 - For base graphics, `par(mfrow=c(m,n))` will divide a graphics window into a grid of `m x n` plots http://bit.ly/1hHnLSE 
 - `cor.test(x,y)` will tell you if the correlation between vectors x and y is statistically significant http://www.inside-r.org/r-doc/stats/cor.test
 
-```
+```r
 x <- c(44.4, 45.9, 41.9, 53.3, 44.7, 44.1, 50.7, 45.2, 60.1)
 y <- c( 2.6,  3.1,  2.5,  5.0,  3.6,  4.0,  5.2,  2.8,  3.8)
 cor.test(x,y)
@@ -695,7 +695,7 @@ sample estimates:
 ```
 - Use `mapply` to call a multi-argument function repeatedly, e.g. `mapply(sample, list(1:56, 1:46), c(5,1))` http://bit.ly/H9AbSs
 
-```
+```r
 mapply(rep, 1:4, 4:1)
 Out[40]: 
 [[1]]
@@ -730,7 +730,7 @@ Out[41]:
 
 R recognizes any text between percent signs (`%...%`) as a binary operator. Create and define a new binary operator by assigning a two-argument function to it. R predefines several such operators, such as `%/% `for integer division and `%*%` for matrix multiplication
 
-```
+```r
 '%+-%' <- function(x,margin) x + c(-1,+1)*margin
 100 %+-% 3
 Out[48]: 
@@ -740,7 +740,7 @@ The expression x %+-% m calculates x ± m.
 
 - `X %in% Y` is the same as `!is.na(match(X,Y))` #rstats http://bit.ly/1q1Pkej
 
-```
+```r
 1:10 %in% c(1,3,5,9)
 Out[52]: 
  [1]  TRUE FALSE  TRUE FALSE  TRUE FALSE FALSE FALSE  TRUE FALSE
@@ -757,7 +757,7 @@ Out[54]:
 
 Create empty xlsx file
 
-```
+```r
 fileXls <- paste(outDir,"newFile.xlsx",sep='/')
 unlink(fileXls, recursive = FALSE, force = FALSE)
 exc <- loadWorkbook(fileXls, create = TRUE)
@@ -767,7 +767,7 @@ saveWorkbook(exc)
 
 Populate an empty xlsx sheet with R
 
-```
+```r
 input <- data.frame('inputType'=c('Day','Month'),'inputValue'=c(2,5))
 writeWorksheet(exc, input, sheet = "input", startRow = 1, startCol = 2)
 saveWorkbook(exc)
@@ -775,7 +775,7 @@ saveWorkbook(exc)
 
 Add other sheets to the workbook
 
-```
+```r
 require(reshape)
 createSheet(exc,'Airquality')
 airquality$isCurrent<-NA
@@ -787,7 +787,7 @@ saveWorkbook(exc)
 - Deleting a function from a package will surprise your users. Deprecate it instead: http://www.bioconductor.org/developers/deprecation/  (via @TrestleJeff) 
 - Locate the largest number in a vector with `which.max(mydata)` http://www.inside-r.org/r-doc/base/which.min (via @M_T_Patterson) #rstats
 
-```
+```r
 x <- c(1:4, 0:5, 11);x
 Out[57]: 
  [1]  1  2  3  4  0  1  2  3  4  5 11
@@ -807,7 +807,7 @@ Out[55]:
 
 - Install an R package directly from GitHub with devtools package: http://bit.ly/yUSrZr
 
-```
+```r
 install_github("klutometis/roxygen")
 install_github(c("rstudio/httpuv", "rstudio/shiny"))
 install_github(c("hadley/httr@v0.4", "klutometis/roxygen#142",
@@ -818,7 +818,7 @@ install_github("hadley/private", auth_token = "abc")
 
 - Sort a vector into decreasing order: `sort(x,decreasing=TRUE)` #rstats http://www.inside-r.org/r-doc/base/sort
 
-```
+```r
 require(stats)
 x <- swiss$Education[1:25]
 x; sort(x); sort(x, partial = c(10, 15))
