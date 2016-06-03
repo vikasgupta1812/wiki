@@ -1,14 +1,14 @@
 
 - Use `dput` to archive an R object to a file; load into another R session with `dget`
 
-```
+```r
 dput(theData, "temporary_file")
 theDataReconstitutedAgain <- dget("temporary_file")
 ```
 - Get started with foreach and parallel programming: http://cran.r-project.org/web/packages/doParallel/vignettes/gettingstartedParallel.pdf
 - Time short code snippets through replication
 
-```
+```r
 system.time(glm(HomeWin ~ Home + Away, data = results.df))
 
    user  system elapsed 
@@ -17,7 +17,7 @@ system.time(glm(HomeWin ~ Home + Away, data = results.df))
 
 - Use \n to embed a newline within a string, e.g. cat("Line 1\nLine 2")
 
-```
+```r
 cat("Line 1\nLine 2")
 
 Line 1
@@ -26,7 +26,7 @@ Line 2
 
 * `which(x > 0)` returns the locations of positive elements in numeric vector x http://bit.ly/qCdKKj 
 
-```
+```r
 which(LETTERS == "R")
 [1] 18
 which(ll <- c(TRUE, FALSE, TRUE, NA, FALSE, FALSE, TRUE))
@@ -38,7 +38,7 @@ which((1:12)%%2 == 0) # which are even?
 
 * `ifelse(b,u,v)` where b is a boolean expression, is a `vectorized` `if-then-else` construct: http://bit.ly/t0Bi1Y
 
-```
+```r
 x <- c(2:-2)
 sqrt(ifelse(x >= 0, x, NA))  # no warning
 [1] 1.414214 1.000000 0.000000       NA       NA
@@ -54,7 +54,7 @@ The ifelse() function evaluates a condition, and then assigns a value if it's tr
 
 * Use the `subset()` function to select rows and columns from a data frame, based on the data it contains: http://bit.ly/qPEhsk 
 
-```
+```r
 In [7]: subset(airquality, Temp > 80, select = c(Ozone, Temp))
 Out[7]: 
     Ozone Temp
@@ -87,7 +87,7 @@ Montana              0.6    70.56    5.0
 
 - Use `formals(foo)` to get the formal arguments of a function http://bit.ly/1rHzfie 
 
-```
+```r
 In [13]: require(stats); require(graphics)
 
 In [15]: length(formals(lm))  
@@ -97,7 +97,7 @@ In [16]: names(formals(boxplot))
 Out[16]: [1] "x"   "..."
 ```
 
-```
+```r
 In [20]: f <- function(x) x^2
 In [21]: f
 Out[21]: function(x) x^2
@@ -118,7 +118,7 @@ Out[23]: <environment: R_GlobalEnv>
 
 - Strip non-ASCII characters from a string with `iconv(bad.text, to="ASCII", sub="")` http://bit.ly/RPbC3U
 
-```
+```r
 ## Both x below are in latin1 and will only display correctly in a
 ## locale that can represent and display latin1.
 
@@ -148,7 +148,7 @@ Out[33]: [1] "fa<e7>ile"
  
 - `na.omit(df)` will omit all rows of a data frame containing NAs http://bit.ly/1mH7iES  
 
-```
+```r
 In [34]: DF <- data.frame(x = c(1, 2, 3), y = c(0, 10, NA))
 
 In [35]: na.omit(DF)
@@ -159,7 +159,7 @@ Out[35]:
 ```
 - Type `data()` to see a list of all available data sets http://bit.ly/n5mCJZ 
 
-```
+```r
 In [38]: data()
 
 R data sets
@@ -169,7 +169,7 @@ Data sets in package 'datasets':
 AirPassengers           Monthly Airline Passenger Numbers 1949-1960
 BJsales                 Sales Data with Leading Indicator
 ```
-```
+```r
 In [40]: data(package = "caret")
 R data sets
 
@@ -179,14 +179,14 @@ GermanCredit            German Credit Data
 absorp (tecator)        Fat, Water and Protein Content of Meat Samples
 bbbDescr (BloodBrain)   Blood Brain Barrier Data
 ```
-```
+```r
 data(USArrests, "VADeaths")    # load the data sets 'USArrests' and 'VADeaths'
 ```
 
 
 - `.Library` will give you the path to your default R library http://bit.ly/1oiwAr3
 
-```
+```r
 In [42]: .libPaths() 
 Out[42]: [1] "/Library/Frameworks/R.framework/Versions/3.2/Resources/library"
 ```
@@ -194,7 +194,7 @@ Out[42]: [1] "/Library/Frameworks/R.framework/Versions/3.2/Resources/library"
 
 - Use `unlist()` to flatten out a list of lists into a single vector: [_R Function of the Day_](http://rfunction.com/archives/2238)
 
-```
+```r
 In [43]: test1 <- list(5, "b", 12)
 
 In [44]: test1
@@ -213,7 +213,7 @@ In [45]: unlist(test1)
 Out[45]: [1] "5"  "b"  "12"
 
 ```
-```
+```r
 In [48]: test2 <- list(v1=5, v2=list(2983, 1890), v3=c(3, 119)); test2
 Out[48]: 
 $v1
@@ -233,7 +233,7 @@ $v3
  
 - To speed up your R code, use `Rprof()` to turn on profiling, and `summaryRprof()` to find the slow parts: http://bit.ly/OrT9bX
 
-```
+```r
 In [49]: Rprof(tmp <- tempfile())
 In [50]: example(glm)
 In [51]: Rprof()
@@ -267,7 +267,7 @@ A detailed example of profiling R code can be found at http://www.stat.berkeley.
 - **R Environments** A very nice discussion of R Environments from Hadley Wickham http://adv-r.had.co.nz/Environments.html 
 - Use `object.size()` to estimate the amount of memory an R object is consuming http://bit.ly/1dYFk2m
 
-```
+```r
 object.size(letters)
 Out[1]: 1496 bytes
 
@@ -277,7 +277,7 @@ Out[2]: 70112 bytes
 print(object.size(library), units = "auto")
 1.1 Mb
 ```
-```
+```r
 z <- sapply(ls("package:base"), function(x)
             object.size(get(x, envir = baseenv())))
 as.matrix(rev(sort(z))[1:10])
@@ -297,7 +297,7 @@ data.frame          445968
  
 - Type `objects()` at the console to see what variables, funcions and data sets you have defined http://bit.ly/1rd8cJF 
 
-```
+```r
 objects()
 Out[12]: 
 [1] "z"
@@ -312,7 +312,7 @@ Out[13]:
 
 - `x <- R.version$version.string` assign a character string containing the version of R you are running http://bit.ly/1lDnbNz 
 
-```
+```r
 R.version$version.string
 Out[16]: 
 [1] "R version 3.2.4 (2016-03-16)"
@@ -320,7 +320,7 @@ Out[16]:
 
 - Use the `xtable` package to convert a table or matrix to HTML: `print(xtable(X), type="html")` http://bit.ly/zrvgHJ 
 
-```
+```rr
 data(tli)
 tli.table <- xtable(tli[1:3,1:2 ])
 
@@ -339,20 +339,20 @@ print(tli.table, type="html")
 
 - Generate a sequence of dates: `seq(as.Date("2000/1/1"), as.Date("2014/1/1"), "years")` http://bit.ly/1p2yZa6 
 
-```
+```r
 seq(as.Date("2000/1/1"), as.Date("2004/1/1"), "years")
 Out[32]: [1] "2000-01-01" "2001-01-01" "2002-01-01" "2003-01-01" "2004-01-01"
 ```
-```
+```r
 seq(as.Date("2000/1/1"), by = "month", length.out = 4)
 Out[34]: [1] "2000-01-01" "2000-02-01" "2000-03-01" "2000-04-01"
 ```
-```
+```r
 seq(as.Date("2000/1/1"), as.Date("2001/1/1"), by = "3 months")
 Out[35]: [1] "2000-01-01" "2000-04-01" "2000-07-01" "2000-10-01" "2001-01-01"
 ```
 
-```
+```r
 seq(as.Date("2001/1/1"), as.Date("2000/7/1"), by = "-2 months")
 Out[37]: [1] "2001-01-01" "2000-11-01" "2000-09-01" "2000-07-01"
 ```
@@ -360,7 +360,7 @@ Out[37]: [1] "2001-01-01" "2000-11-01" "2000-09-01" "2000-07-01"
 
 - Get the current date with `Sys.Date()` and the time with `Sys.time()` http://bit.ly/1psl2FW
 
-```
+```r
 Sys.time()
 Out[38]: [1] "2016-06-02 20:48:03 EDT"
 
@@ -370,20 +370,20 @@ Out[39]: [1] "2016-06-02"
  
 - `sample(x)` randomly shuffles the elements of a vector or list x #rstats http://www.inside-r.org/r-doc/base/sample 
 
-```
+```r
 x <- 1:12
 # a random permutation
 sample(x)
 Out[40]: 
  [1] 12 10 11  8  6  1  7  5  9  3  4  2
 ```
-```
+```r
 # bootstrap resampling -- only if length(x) > 1 !
 sample(x, replace = TRUE)
 Out[41]: 
  [1]  8  3  3 10  4  7 11  5  5  5 10  2
 ```
-```
+```r
 # 10 Bernoulli trials
 sample(c(0,1), 10, replace = TRUE)
 Out[42]: 
@@ -397,7 +397,7 @@ Out[42]:
 - Yes, you can return more than one value from a function: use a list! `return(list(val1, val2, val3))` http://bit.ly/p6epvV 
 - `as.data.frame(installed.packages()[,c(1,3)],row.names=F)` : list of installed packages with version bit.ly/RMvSYr
 
-```
+```r
 as.data.frame(installed.packages()[,c(1,3)],row.names=F)
 
       Package Version
