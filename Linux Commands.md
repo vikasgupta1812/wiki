@@ -209,3 +209,16 @@ In `screen`, type
 - <kbd>screen -r</kbd> to resume the screen (type in shell)
 
 Note: <kbd>C-t ?</kbd> means <kbd>CTRL</kbd> and <kbd>t</kbd> followed by <kbd>?</kbd>.
+
+
+#### How to install specific git commit with pip 
+
+```
+You can specify commit hash, branch name, tag.
+
+$ pip install git+git://github.com/aladagemre/django-notification.git@2927346f4c513a217ac8ad076e494dd1adbf70e1
+
+$ pip install git+git://github.com/aladagemre/django-notification.git@cool-feature-branch
+
+$ pip install git+git://github.com/aladagemre/django-notification.git@v2.1.0
+```
