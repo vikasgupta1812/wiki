@@ -187,6 +187,17 @@ Should also work in fish shell.
 - <kbd>TAB</kbd>: auto-complete
 
 
+
+#### Install Python numpy, scipy, pandas, and sklearn
+```
+$ sudo apt-get install python-numpy
+$ sudo apt-get install python-scipy
+$ sudo apt-get install python-pandas
+$ sudo apt-get install python-sklearn
+```
+
+
+
 #### `screen` tab manager for remote sessions
 
 Allows you to reconnect and resume your session where you left off. Useful if a remote connection drops or for any long-running computation (running as a background process--see above--is a viable alternative).
@@ -194,18 +205,16 @@ Allows you to reconnect and resume your session where you left off. Useful if a 
 `tmux` is considered [a better alternative](http://honnef.co/posts/2010/10/why_you_should_try_tmux_instead_of_screen/) to `screen`. Use it with [teamocil](https://github.com/remiprev/teamocil) to automatically create sessions, windows and panes with YAML files.
 
 In `screen`, type
-- <kbd>C-t ?</kbd> to bring up the help
-- <kbd>C-t c</kbd> to create new tabs
-- <kbd>C-t u</kbd> or <kbd>j</kbd> to switch tabs
-- <kbd>C-t 0..9</kbd> to go to a specific tab (starts at 0)
-- <kbd>C-t C-t</kbd> to go back and forth between the current and previous tab
-- <kbd>C-d</kbd> to exit the current tab
-- <kbd>C-t [</kbd> to go into copy mode  
-  now you can use the arrow keys to move around or <kbd>C-p/n</kbd> to move up and down  
-  copy stuff with <kbd>(space)</kbd> or <kbd>(enter)</kbd>, you have to set beginning and end  
-  paste with <kbd>C-t ]</kbd>  
-  abort with <kbd>C-(space)</kbd>
-- <kbd>screen -d</kbd> to detach the screen (type inside screen)
-- <kbd>screen -r</kbd> to resume the screen (type in shell)
+- `C-t` `?` to bring up the help
+- `C-t` `c` to create new tabs
+- `C-t` `u` or j to switch tabs
+- `C-t` `0..9` to go to a specific tab (starts at 0)
+- `C-t` `C-t` to go back and forth between the current and previous tab
+- `C-d` to exit the current tab
+- `C-t` `[` to go into copy mode  
+  You can use the arrow keys to move around or `C-p`/`n` to move up and down  
+  copy stuff with `(space)` or `(enter)`, you have to set beginning and end  
+  paste with 'C-t ]'  
+  abort with 'C-(space)'
 
 Note: <kbd>C-t ?</kbd> means <kbd>CTRL</kbd> and <kbd>t</kbd> followed by <kbd>?</kbd>.
