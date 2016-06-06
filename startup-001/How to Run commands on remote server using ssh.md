@@ -1,3 +1,5 @@
+#### How to run commands on remote server using `ssh`
+
 ```
 Vikas:~ Vikas$ ssh -i aws-startup.pem ubuntu@54.186.64.97 
 uptime
