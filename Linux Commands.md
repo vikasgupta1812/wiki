@@ -231,3 +231,60 @@ $ pip install git+git://github.com/aladagemre/django-notification.git@cool-featu
 
 $ pip install git+git://github.com/aladagemre/django-notification.git@v2.1.0
 ```
+
+
+- type `echo $SHELL` to see your shell
+- who displays a list of users that are currently logged in
+- who am i (whoami) tells you the current user name
+
+```
+$cal dec 2016
+   December 2016
+Su Mo Tu We Th Fr Sa
+             1  2  3
+ 4  5  6  7  8  9 10
+11 12 13 14 15 16 17
+18 19 20 21 22 23 24
+25 26 27 28 29 30 31
+```
+```
+$cal july 2015
+     July 2015
+Su Mo Tu We Th Fr Sa
+          1  2  3  4
+ 5  6  7  8  9 10 11
+12 13 14 15 16 17 18
+19 20 21 22 23 24 25
+26 27 28 29 30 31
+```
+Week number
+
+```
+$ncal -w july 2015
+    July 2015
+Mo     6 13 20 27
+Tu     7 14 21 28
+We  1  8 15 22 29
+Th  2  9 16 23 30
+Fr  3 10 17 24 31
+Sa  4 11 18 25
+Su  5 12 19 26
+   27 28 29 30 31
+```
+
+
+
+Control Sequences
+
+```
+Ctrl + l clear screen
+Ctrl + c stop current command
+Ctrl + z suspend current command
+Ctrl + k kill to end of line
+Ctrl + r search history
+Ctrl + n next history item
+Ctrl + p previous history item
+```
+
+- `ls -1` (one entry per line)
+- The most commonly used file viewer is `less`
