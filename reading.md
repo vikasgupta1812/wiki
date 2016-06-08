@@ -233,8 +233,8 @@ tl;dr – virtualbox, guest additions, desktops, permissions,
 - HTML Editor for Google Drive - http://htmleditor.kwebpia.net/
 	http://online-html-editor.org/
 
-## Courses MOOCS Notes
-- Digital Data Collection course http://quantifyingmemory.blogspot.com/2015/03/digital-data-collection-course.html  tl;dr – html5 slides, apis, scaling up and basics 
+## Courses MOOCS & Notes
+- Digital Data Collection course http://blog.rolffredheim.com/2015/03/digital-data-collection-course.html  [Course Landing Page](http://fredheir.github.io/WebScraping/), slides [1](http://fredheir.github.io/WebScraping/Lecture1_2015/p1.html), [2](http://fredheir.github.io/WebScraping/Lecture2_2015/p2.html), [3](http://fredheir.github.io/WebScraping/Lecture3_2015/p3.html#/) Drive link [1](https://drive.google.com/file/d/0B0J1O2jMMERWYTA3aUFjaVdqYkU/view?usp=drivesdk), [2](), [3](), [4]() tl;dr – html5 slides, apis, scaling up and basics 
 - How to Become a Data Scientist for Free - http://www.datasciencecentral.com/profiles/blogs/how-to-become-a-data-scientist-for-free tl;dr nice set of resources. 
 - Comprehensive notes for all 9 courses in the Specialization - https://sux13.github.io/DataScienceSpCourseNotes/  Click on the html notes
 - In-depth introduction to machine learning in 15 hours of expert videos - http://www.r-bloggers.com/in-depth-introduction-to-machine-learning-in-15-hours-of-expert-videos/
@@ -311,5 +311,3 @@ tl;dr – not read yet.
 
 - [Hacking Google Finance in Real-Time for Algorithmic Traders](http://www.quantatrisk.com/2014/01/14/hacking-google-finance-in-real-time-for-algorithmic-traders/)
 - [Hacking Google Finance in Real-Time for Algorithmic Traders. (2) Pre-Market Trading.](http://www.quantatrisk.com/2015/05/07/hacking-google-finance-in-pre-market-trading-python/)
-
-
