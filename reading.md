@@ -238,13 +238,9 @@ tl;dr – virtualbox, guest additions, desktops, permissions,
 - How to Become a Data Scientist for Free - http://www.datasciencecentral.com/profiles/blogs/how-to-become-a-data-scientist-for-free tl;dr nice set of resources. 
 - Comprehensive notes for all 9 courses in the Specialization - https://sux13.github.io/DataScienceSpCourseNotes/  Click on the html notes
 - In-depth introduction to machine learning in 15 hours of expert videos - http://www.r-bloggers.com/in-depth-introduction-to-machine-learning-in-15-hours-of-expert-videos/
-
-- edx - Data analysis to the MAX() Starting April 7th 
-td;lr excel; power view and power maps; basic python
 - LFS101x Introduction to Linux edx https://courses.edx.org/courses/LinuxFoundationX/LFS101x/2T2014/info
 - 10x Data, Analytics, and Learning edx  https://courses.edx.org/courses/UTArlingtonX/LINK5.10x/3T2014/info
 	td;lr tableau (expired license); social network analysis; prediction modelling; text mining; Lightscribe – weka addon by Carnegie Mellon
-	
 - Introduction to Computational Thinking and Data Science - https://www.edx.org/course/v2/introduction-computational-thinking-data-mitx-6-00-2x-0 Python; monte carlo stimulation; pylab
 - [Machine Learning](https://www.coursera.org/learn/machine-learning) course at Coursera by the co-founder Andrew Ng
 - Second-to-none courses on [Mining Massive Datasets](https://www.coursera.org/course/mmds)  and [Process Mining](https://www.coursera.org/course/procmin)
