@@ -1,5 +1,21 @@
 ### Machine Learning 
 - [Machine Learning FAQ](http://sebastianraschka.com/faq/index.html)
+- [Exceptionally clear articles on ML](http://colah.github.io)
+- [Lovely walkthrough of building a simple neural network, with an IPython Notebook ](http://cs231n.github.io/neural-networks-case-study/) read first and then replicate
+- Tensorflow [meetup](http://www.meetup.com/gdgnyc/events/230848397/?from=ref)
+	- [Tensor Flow & Deep Learning](https://docs.google.com/presentation/d/1TVixw6ItiZ8igjp6U17tcgoFrLSaHWQmMOwjlgQY9co/pub?slide=id.p) very nice presentation with code. github [repo](https://github.com/martin-gorner/tensorflow-mnist-tutorial)
+	- [Tensor Flow Playground](http://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=circle&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=4,2&seed=[masked]&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false),
+	- [Visualizations from BigPicture team](https://research.google.com/bigpicture/) Nice viz not certainly related to tensorflow
+	- [Tensor Flow For Poets](https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/index.html?index=..%2F..%2Fio2016#0) codelab.
+- [Great intro to #TensorFlow and scikit-learn notebooks](https://github.com/PythonWorkshop/intro-to-tensorflow/blob/master/Wine-Quality/Wine%20Quality.ipynb)
+- [Machine Learning 2](http://rstudio-pubs-static.s3.amazonaws.com/19460_cd418196d20548ae9d0f4a8e497f4a31.html) [drive](https://drive.google.com/file/d/0B0J1O2jMMERWZkVUWllrS2JyUVE/view?usp=drivesdk)
+- [MITx: 15.071x The Analytics Edge - SEPARATING SPAM FROM HAM](http://rstudio-pubs-static.s3.amazonaws.com/15854_fb25ca65439d4af4a48512d9abf943c7.html) [drive](https://drive.google.com/file/d/0B0J1O2jMMERWOUFFdkdVVlNQTkU/view?usp=drivesdk)
+- [Udacity - Data Analysis with R - Problem Set 5](https://rpubs.com/mistophiles/ud651_problemset5) [dirve](https://drive.google.com/file/d/0B0J1O2jMMERWY21hVWJFTEVDaFk/view?usp=drivesdk)
+- [Udacity - Data Analysis with R - Lesson 3](https://rpubs.com/mistophiles/ud651_lesson3) [https://drive.google.com/file/d/0B0J1O2jMMERWYjI1QjdINmVabjA/view?usp=drivesdk](drive) [s3](https://s3.amazonaws.com/storagecheckpersonal/Udacity+-+Data+Analysis+with+R+-+Lesson+3.html?X-Amz-Date=20160607T031442Z&X-Amz-Expires=300&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Signature=c79ae5d35f6d7bbfd1ecec7fd7b8c322f46f5902dc03f40d2c194f1051ea2e79&X-Amz-Credential=ASIAJCTEUXOIKVY7R2IQ/20160607/us-east-1/s3/aws4_request&X-Amz-SignedHeaders=Host&x-amz-security-token=FQoDYXdzELT//////////wEaDJsM6B7oCQpcaRN47iLHAYKsCzxLaBt/e3kbTrrHdvESWgld5dL9Vf9cjyJzJkys0arxpQ4saxNMFvZEUk3JwNDDVWpLgqscasuIO5sai3xudsZUewNTenXvL5yCKwUnVdzUVC4fYrFNOcMbGUH9eqZ5q8/XwpZYyHytdZBZ9j4KyMQLSoEXqNBaY4/3ycOGBEGGlQdi9ePnUJYOO2baRoU3XcoffyR0XhQyrZ2NVfcJH/u/ElTuLGZowSHUOtv2GCmXhHdzXHlHNiDmixCfowWBs8hTX0co1PfYugU%3D)
+
+- Very good article **Everything You Wanted to Know About Machine Learning, But Were Too Afraid To Ask** [Part-1](https://blog.bigml.com/2013/02/15/everything-you-wanted-to-know-about-machine-learning-but-were-too-afraid-to-ask-part-one/) [Part-2](https://blog.bigml.com/2013/02/21/everything-you-wanted-to-know-about-machine-learning-but-were-too-afraid-to-ask-part-two/) [cache](https://drive.google.com/file/d/0B0J1O2jMMERWVy1aSG1YTWFpTlk/view?usp=drivesdk) [cache](https://drive.google.com/file/d/0B0J1O2jMMERWRi16TDgtZDYyY1E/view?usp=drivesdk)
+- Presentation [Introduction to machine learning onedrive](https://onedrive.live.com/redir?resid=46DDE5F519C073A0!1441&authkey=!APKGpFzhy18oTos&ithint=file%2cpdf)
+- [L4: Data Cleaning and Integration](https://onedrive.live.com/redir?resid=46DDE5F519C073A0!15800&authkey=!AEKlJ-xBYABAYFE&ithint=file%2cpptx) [_source_](https://bcourses.berkeley.edu/courses/1267848/wiki)
 - Some Intuition About the Theory of Statistical Learning - http://freakonometrics.hypotheses.org/19321 
 Provides intuition about testing and training datasets.  Nice example, can be good if it can be used repeatedly with other datasample. 
 - Machine learning lectures from Andrew Ng Course - https://class.coursera.org/ml-003/lecture
@@ -73,7 +89,7 @@ tl;dr happiness meter from twitter data, sensors to save heating\cooling costs, 
 - Stimulation through Gamification - http://www.datavizualization.com/blog/stimulation-through-gamification
 - Using Gamification within digital training significantly improves the learning rate and screen engagement over a longer length of time.
 [Foldit: Solve Puzzles for Science](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0CB8QFjAA&url=https%3A%2F%2Ffold.it%2F&ei=N8UiVezEN9H2oATV0IDACQ&usg=AFQjCNGr1eFOCi2J6ZzsR-PPYI77-I0JBA&sig2=O0qv_9nJEBxSfPC530Pczw&bvm=bv.89947451,d.cGU)
-
+- [Everything We Wish We'd Known About Building Data Products](./Everything We Wish We'd Known About Building Data Products.md)
 
 
 
@@ -99,8 +115,11 @@ Different ways of doing tests in pyhton.
 - Utility Mill - Python Recipies - http://utilitymill.com/popular/
 
 ### R
+- [upload data to CartoDB with R](rstudio-pubs-static.s3.amazonaws.com/22656_6fe3c225892740bb90c88f079edc494d.html) [cache](https://drive.google.com/file/d/0B0J1O2jMMERWT09WTUsxTHNPalU/view?usp=drivesdk)
+- [Good Habbits in R Programming](http://gastonsanchez.com/stat133/slides/20-good-habits/20-good-habits.pdf)
 - **Awesome R**- A curated list of awesome R frameworks, packages and software. https://github.com/qinwf/awesome-R
 - Accelerate R Applications with CUDA - http://devblogs.nvidia.com/parallelforall/accelerate-r-applications-cuda/ nvidia devblog
+- R-Tips revisited https://drive.google.com/file/d/0B0J1O2jMMERWQWIxRDB1bTRpYWc/view?usp=drivesdk
 - `broom`: a package for tidying statistical models into data frames. http://varianceexplained.org/r/broom-intro/  tl;dr – hadley; cleans model outputs
 - Part 3b: EDA with `ggplot2` - http://theanalyticalminds.blogspot.com/2015/03/part-3b-eda-with-ggplot2.html 
 Part 3a - http://theanalyticalminds.blogspot.com/2015/03/part-3a-plotting-with-ggplot2.html 
@@ -157,6 +176,9 @@ tl;dr – r code to see the difference; not tried it yet.
 - [RevolutionR - April Roundup](http://blog.revolutionanalytics.com/2015/05/in-case-you-missed-it-april-2015-roundup.html)
   - [R for more powerful clustering](http://blog.revolutionanalytics.com/2015/04/r-for-more-powerful-clustering.html)
 - [Comparing data frames, data.table and dplyr with random walks](http://freakonometrics.hypotheses.org/19645) tl;dr - nice code practice
+- [objectsize.R](https://rstudio-pubs-static.s3.amazonaws.com/98168_a534b68360924489928969b99d6d5064.html) [drive](https://drive.google.com/file/d/0B0J1O2jMMERWNm5PSGk0TzdPN00/view?usp=drivesdk)
+- http://rpubs.com/makesenseofdata/164385
+- 
 
 
 
