@@ -19,7 +19,6 @@
 Provides intuition about testing and training datasets.  Nice example, can be good if it can be used repeatedly with other datasample. 
 - Machine learning lectures from Andrew Ng Course - https://class.coursera.org/ml-003/lecture
 - [Clever Algorithms For Machine Learning](https://github.com/jbrownlee/CleverAlgorithmsMachineLearning)
-- [Kaggle's R Tutorial on Machine Learing](https://www.datacamp.com/courses/kaggle-tutorial-on-machine-learing)
 - [Model-Based Machine Learning, Free Early Book Draft](http://www.kdnuggets.com/2015/06/model-based-machine-learning-book-draft.html#.VYgY75uuctE.facebook)
 - [Comprehensive Intro to Predictive modeling](http://sebastianraschka.com/Articles/2014_intro_supervised_learning.html?utm_content=bufferc511a) [_Drive_](https://drive.google.com/file/d/0B0J1O2jMMERWdE81R1hnd2lYTFU/view?usp=drivesdk) ![](http://sebastianraschka.com/Images/2014_intro_supervised_learning/classify_example.png) ![](https://drive.google.com/file/d/0B0J1O2jMMERWUHBxRTFyYWRFQkE/view?usp=drivesdk) ![](blob:https%3A//drive.google.com/6ab173a8-f08d-43e2-ab8b-72b9a65211be)
 - [http://sebastianraschka.com/articles.html](http://sebastianraschka.com/articles.html)
