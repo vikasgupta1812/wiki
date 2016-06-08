@@ -61,7 +61,7 @@ Dennis' slides: https://www.dropbox.com/s/r4m9aym2xvyadzk/SFDataScience_DennisOb
 -  The Best Data Visualizations from TED Talks: http://blog.ted.com/8-great-data-visualizations-from-ted-talks/?imm_mid=0cef35&cmp=em-data-na-na-newsltr_20150325
 
 ## Blog Articles & Forum Discussions 
-- [Practical data science - Nice blog to follow](http://practical-data-science.tumblr.com/)
+- [Practical data science - Nice meta blog to follow](http://practical-data-science.tumblr.com/)
 - [Principles of good data analysis](http://www.gregreda.com/2014/03/23/principles-of-good-data-analysis/)
 - [A Hacker's Guide to Git](http://wildlyinaccurate.com/a-hackers-guide-to-git/#git-stash)
 - [Deep learning from the bottom up](https://metacademy.org/roadmaps/rgrosse/deep_learning)
