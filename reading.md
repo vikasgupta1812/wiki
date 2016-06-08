@@ -1,4 +1,6 @@
 ## Machine Learning 
+### Machine Learning 
+- [Machine Learning FAQ](http://sebastianraschka.com/faq/index.html)
 - [Exceptionally clear articles on ML](http://colah.github.io)
 - [Lovely walkthrough of building a simple neural network, with an IPython Notebook ](http://cs231n.github.io/neural-networks-case-study/) read first and then replicate
 - Tensorflow [meetup](http://www.meetup.com/gdgnyc/events/230848397/?from=ref)
@@ -9,20 +11,18 @@
 - [Great intro to #TensorFlow and scikit-learn notebooks](https://github.com/PythonWorkshop/intro-to-tensorflow/blob/master/Wine-Quality/Wine%20Quality.ipynb)
 - [Machine Learning 2](http://rstudio-pubs-static.s3.amazonaws.com/19460_cd418196d20548ae9d0f4a8e497f4a31.html) [drive](https://drive.google.com/file/d/0B0J1O2jMMERWZkVUWllrS2JyUVE/view?usp=drivesdk)
 - [MITx: 15.071x The Analytics Edge - SEPARATING SPAM FROM HAM](http://rstudio-pubs-static.s3.amazonaws.com/15854_fb25ca65439d4af4a48512d9abf943c7.html) [drive](https://drive.google.com/file/d/0B0J1O2jMMERWOUFFdkdVVlNQTkU/view?usp=drivesdk)
-- [Udacity - Data Analysis with R - Problem Set 5](https://rpubs.com/mistophiles/ud651_problemset5) [dirve](https://drive.google.com/file/d/0B0J1O2jMMERWY21hVWJFTEVDaFk/view?usp=drivesdk)
+- [Udacity - Data Analysis with R - Problem Set 5](https://rpubs.com/mistophiles/ud651_problemset5) [dirve](https://drive.google.com/file/d/0B0J1O2jMMERWY21hVWJFTEVDaFk/view?usp=drivesdk) For datasets refer to [this](https://github.com/rajatsaxena/DataAnalysisCourse) repo
 - [Udacity - Data Analysis with R - Lesson 3](https://rpubs.com/mistophiles/ud651_lesson3) [https://drive.google.com/file/d/0B0J1O2jMMERWYjI1QjdINmVabjA/view?usp=drivesdk](drive) [s3](https://s3.amazonaws.com/storagecheckpersonal/Udacity+-+Data+Analysis+with+R+-+Lesson+3.html?X-Amz-Date=20160607T031442Z&X-Amz-Expires=300&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Signature=c79ae5d35f6d7bbfd1ecec7fd7b8c322f46f5902dc03f40d2c194f1051ea2e79&X-Amz-Credential=ASIAJCTEUXOIKVY7R2IQ/20160607/us-east-1/s3/aws4_request&X-Amz-SignedHeaders=Host&x-amz-security-token=FQoDYXdzELT//////////wEaDJsM6B7oCQpcaRN47iLHAYKsCzxLaBt/e3kbTrrHdvESWgld5dL9Vf9cjyJzJkys0arxpQ4saxNMFvZEUk3JwNDDVWpLgqscasuIO5sai3xudsZUewNTenXvL5yCKwUnVdzUVC4fYrFNOcMbGUH9eqZ5q8/XwpZYyHytdZBZ9j4KyMQLSoEXqNBaY4/3ycOGBEGGlQdi9ePnUJYOO2baRoU3XcoffyR0XhQyrZ2NVfcJH/u/ElTuLGZowSHUOtv2GCmXhHdzXHlHNiDmixCfowWBs8hTX0co1PfYugU%3D)
-
-- Very good article **Everything You Wanted to Know About Machine Learning, But Were Too Afraid To Ask** [Part-1](https://blog.bigml.com/2013/02/15/everything-you-wanted-to-know-about-machine-learning-but-were-too-afraid-to-ask-part-one/) [Part-2](https://blog.bigml.com/2013/02/21/everything-you-wanted-to-know-about-machine-learning-but-were-too-afraid-to-ask-part-two/) [cache](https://drive.google.com/file/d/0B0J1O2jMMERWVy1aSG1YTWFpTlk/view?usp=drivesdk) [cache](https://drive.google.com/file/d/0B0J1O2jMMERWRi16TDgtZDYyY1E/view?usp=drivesdk)
+- Very good article **Everything You Wanted to Know About Machine Learning, But Were Too Afraid To Ask** [Part-1](https://blog.bigml.com/2013/02/15/everything-you-wanted-to-know-about-machine-learning-but-were-too-afraid-to-ask-part-one/) [Part-2](https://blog.bigml.com/2013/02/21/everything-you-wanted-to-know-about-machine-learning-but-were-too-afraid-to-ask-part-two/) [cache](https://drive.google.com/file/d/0B0J1O2jMMERWVy1aSG1YTWFpTlk/view?usp=drivesdk) [cache](https://drive.google.com/file/d/0B0J1O2jMMERWRi16TDgtZDYyY1E/view?usp=drivesdk) tl;dr practical insights and pitfalls into datascience
 - Presentation [Introduction to machine learning onedrive](https://onedrive.live.com/redir?resid=46DDE5F519C073A0!1441&authkey=!APKGpFzhy18oTos&ithint=file%2cpdf)
-- [L4: Data Cleaning and Integration](https://onedrive.live.com/redir?resid=46DDE5F519C073A0!15800&authkey=!AEKlJ-xBYABAYFE&ithint=file%2cpptx) [_source_](https://bcourses.berkeley.edu/courses/1267848/wiki)
+- [Slides: L4: Data Cleaning and Integration](https://onedrive.live.com/redir?resid=46DDE5F519C073A0!15800&authkey=!AEKlJ-xBYABAYFE&ithint=file%2cpptx) [_source_](https://bcourses.berkeley.edu/courses/1267848/wiki)
 - Some Intuition About the Theory of Statistical Learning - http://freakonometrics.hypotheses.org/19321 
 Provides intuition about testing and training datasets.  Nice example, can be good if it can be used repeatedly with other datasample. 
 - Machine learning lectures from Andrew Ng Course - https://class.coursera.org/ml-003/lecture
 - [Clever Algorithms For Machine Learning](https://github.com/jbrownlee/CleverAlgorithmsMachineLearning)
-- [Kaggle's R Tutorial on Machine Learing](https://www.datacamp.com/courses/kaggle-tutorial-on-machine-learing)
-- [Model-Based Machine Learning, Free Early Book Draft](http://www.kdnuggets.com/2015/06/model-based-machine-learning-book-draft.html#.VYgY75uuctE.facebook)
-- [Comprehensive Intro to Predictive modeling](http://sebastianraschka.com/Articles/2014_intro_supervised_learning.html?utm_content=bufferc511a) [_Drive_](https://drive.google.com/file/d/0B0J1O2jMMERWdE81R1hnd2lYTFU/view?usp=drivesdk) ![](http://sebastianraschka.com/Images/2014_intro_supervised_learning/classify_example.png) ![](https://drive.google.com/file/d/0B0J1O2jMMERWUHBxRTFyYWRFQkE/view?usp=drivesdk) ![](blob:https%3A//drive.google.com/6ab173a8-f08d-43e2-ab8b-72b9a65211be)
-- [http://sebastianraschka.com/articles.html](http://sebastianraschka.com/articles.html)
+- [Model-Based Machine Learning, Free Early Book Draft](http://www.mbmlbook.com/Introduction.html) This book will introduce all key ideas through a series of case studies involving real-world applications. Seems to follow Bayesian approach.
+- [Comprehensive Intro to Predictive modeling, sebastianraschka](http://sebastianraschka.com/Articles/2014_intro_supervised_learning.html?utm_content=bufferc511a) [_Drive_](https://drive.google.com/file/d/0B0J1O2jMMERWdE81R1hnd2lYTFU/view?usp=drivesdk) ![](http://sebastianraschka.com/Images/2014_intro_supervised_learning/classify_example.png) ![](https://drive.google.com/file/d/0B0J1O2jMMERWUHBxRTFyYWRFQkE/view?usp=drivesdk) ![](blob:https%3A//drive.google.com/6ab173a8-f08d-43e2-ab8b-72b9a65211be)
+- [http://sebastianraschka.com/articles.html, sebastianraschka](http://sebastianraschka.com/articles.html)
 - [How to choose algorithms for Microsoft Azure Machine Learning](https://azure.microsoft.com/en-us/documentation/articles/machine-learning-algorithm-choice/)
 
 ### Deep Learning
@@ -64,6 +64,15 @@ Dennis' slides: https://www.dropbox.com/s/r4m9aym2xvyadzk/SFDataScience_DennisOb
 ## Blog Articles & Forum Discussions 
 - [vahanalytics](https://drive.google.com/file/d/0B0J1O2jMMERWR3FLYW1PNFB3OWM/view?usp=drivesdk) 
 - `Quora` How do I become better at Kaggle? I am just getting started in Kaggle. I have a background in Machine Learning and `Probabilistic Graphical Models`. [http://www.quora.com/How-do-I-become-better-at-Kaggle-I-am-just-getting-started-in-Kaggle-I-have-a-background-in-Machine-Learning-and-Probabilistic-Graphical-Models]()
+- [Practical data science - Nice meta blog to follow](http://practical-data-science.tumblr.com/)
+- [Principles of good data analysis](http://www.gregreda.com/2014/03/23/principles-of-good-data-analysis/)
+- [A Hacker's Guide to Git](http://wildlyinaccurate.com/a-hackers-guide-to-git/#git-stash)
+- [Deep learning from the bottom up](https://metacademy.org/roadmaps/rgrosse/deep_learning)
+- [http://robertmuth.blogspot.com/2012/08/better-bash-scripting-in-15-minutes.html](http://robertmuth.blogspot.com/2012/08/better-bash-scripting-in-15-minutes.html)
+- [SECRETS YOU SHOULD HAVE LEARNED BEFORE YOUR FIRST PROGRAMMING JOB](https://blog.newrelic.com/2014/06/03/10-secrets-learned-software-engineering-degree-probably-didnt/)
+From debugging to version control, programming in the real world requires a set of skills they just don’t teach in school
+- `Quora` How do I become better at Kaggle? I am just getting started in Kaggle. I have a background in Machine Learning and `Probabilistic Graphical Models`. [http://www.quora.com/How-do-I-become-better-at-Kaggle-I-am-just-getting-started-in-Kaggle-I-have-a-background-in-Machine-Learning-and-Probabilistic-Graphical-Models]() tl;dr practice, engage (forums), Read solutions, put effort and time, work in a team if possible, Design a pipeline, invest in Cloud based GPU, read code snippets. 
+- [Path to Data world](https://www.quora.com/How-do-I-know-if-I-am-really-passionate-about-data-science-data-analytics/answer/Yassine-Alouini?srid=nN6d) tl;dr 1- grab data fiddle around (build recommender systems, predict outcomes, plot and spot some patterns etc. 
 - Taco Bell Programming-  Ted Dziuba http://web.archive.org/web/20101101173837/http://teddziuba.com/2010/10/taco-bell-programming.html Blog - http://web.archive.org/web/20101101153942/http://teddziuba.com/archives.html
 - [Using data science to get a good deal on a Macbook](http://blog.dominodatalab.com/using-data-science-to-get-a-good-deal-on-a-macbook/?utm_content=bufferbc21f&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer) #python
 - [6 Characteristics Of Data-Driven Rock Stars](http://www.informationweek.com/big-data/big-data-analytics/6-characteristics-of-data-driven-rock-stars/d/d-id/1320502?image_number=1)
@@ -87,7 +96,15 @@ tl;dr happiness meter from twitter data, sensors to save heating\cooling costs, 
 
 
 ## Programming
+### Notebooks 
+- [Udemy - Learning Python for Data Analysis and Visualization](https://github.com/vikasgupta1812/Udemy-notes) 
+- [Python for Algorithms Data Structures and Interviews](https://github.com/vikasgupta1812/Python-for-Algorithms--Data-Structures--and-Interviews)
+- [DataScience Course and lecture slides for the Intro to Data Science Master's course at NYU](https://github.com/vikasgupta1812/DataScienceCourse)
+- [LearnDataScience - Open Content for self-directed learning in data science](https://github.com/vikasgupta1812/LearnDataScience#ipython-notebooks--)
+
 ### Python
+- [Udemy complete python bootcamp](https://github.com/vikasgupta1812/Complete-Python-Bootcamp/tree/master/#complete-python-bootcamp) Can be used to review concepts #notebook
+- [30 Python Language Features and Tricks You May Not Know About](http://sahandsaba.com/thirty-python-language-features-and-tricks-you-may-not-know.html)
 - Keeping Secrets Secret in Python http://datamelon.io/blog/2015/secure-symmetric-encryption-in-python.html
 - Python Beowulf cluster - find a use for those computers that are 10+ years old https://docs.google.com/file/d/0B0J1O2jMMERWMlJkOEx1Z0lYR3c/edit?usp=drivesdk
 - Experienced Python Users: what's the most recent new thing you learned about the language? A great discussion on reddit. http://pythonweekly.us2.list-manage.com/track/click?u=e2e180baf855ac797ef407fc7&id=cd39d50cee&e=fe14df65e7
@@ -218,18 +235,14 @@ tl;dr – virtualbox, guest additions, desktops, permissions,
 - HTML Editor for Google Drive - http://htmleditor.kwebpia.net/
 	http://online-html-editor.org/
 
-## Courses MOOCS Notes
-- Digital Data Collection course http://quantifyingmemory.blogspot.com/2015/03/digital-data-collection-course.html  tl;dr – html5 slides, apis, scaling up and basics 
+## Courses MOOCS & Notes
+- Digital Data Collection course http://blog.rolffredheim.com/2015/03/digital-data-collection-course.html  [Course Landing Page](http://fredheir.github.io/WebScraping/), slides [1](http://fredheir.github.io/WebScraping/Lecture1_2015/p1.html), [2](http://fredheir.github.io/WebScraping/Lecture2_2015/p2.html), [3](http://fredheir.github.io/WebScraping/Lecture3_2015/p3.html#/) Drive link [1](https://drive.google.com/file/d/0B0J1O2jMMERWYTA3aUFjaVdqYkU/view?usp=drivesdk) tl;dr – html5 slides, apis, Scaling up and basics 
 - How to Become a Data Scientist for Free - http://www.datasciencecentral.com/profiles/blogs/how-to-become-a-data-scientist-for-free tl;dr nice set of resources. 
 - Comprehensive notes for all 9 courses in the Specialization - https://sux13.github.io/DataScienceSpCourseNotes/  Click on the html notes
 - In-depth introduction to machine learning in 15 hours of expert videos - http://www.r-bloggers.com/in-depth-introduction-to-machine-learning-in-15-hours-of-expert-videos/
-
-- edx - Data analysis to the MAX() Starting April 7th 
-td;lr excel; power view and power maps; basic python
 - LFS101x Introduction to Linux edx https://courses.edx.org/courses/LinuxFoundationX/LFS101x/2T2014/info
 - 10x Data, Analytics, and Learning edx  https://courses.edx.org/courses/UTArlingtonX/LINK5.10x/3T2014/info
 	td;lr tableau (expired license); social network analysis; prediction modelling; text mining; Lightscribe – weka addon by Carnegie Mellon
-	
 - Introduction to Computational Thinking and Data Science - https://www.edx.org/course/v2/introduction-computational-thinking-data-mitx-6-00-2x-0 Python; monte carlo stimulation; pylab
 - [Machine Learning](https://www.coursera.org/learn/machine-learning) course at Coursera by the co-founder Andrew Ng
 - Second-to-none courses on [Mining Massive Datasets](https://www.coursera.org/course/mmds)  and [Process Mining](https://www.coursera.org/course/procmin)
@@ -296,5 +309,3 @@ tl;dr – not read yet.
 
 - [Hacking Google Finance in Real-Time for Algorithmic Traders](http://www.quantatrisk.com/2014/01/14/hacking-google-finance-in-real-time-for-algorithmic-traders/)
 - [Hacking Google Finance in Real-Time for Algorithmic Traders. (2) Pre-Market Trading.](http://www.quantatrisk.com/2015/05/07/hacking-google-finance-in-pre-market-trading-python/)
-
-
