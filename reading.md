@@ -21,7 +21,7 @@ Provides intuition about testing and training datasets.  Nice example, can be go
 - [Clever Algorithms For Machine Learning](https://github.com/jbrownlee/CleverAlgorithmsMachineLearning)
 - [Model-Based Machine Learning, Free Early Book Draft](http://www.mbmlbook.com/Introduction.html) This book will introduce all key ideas through a series of case studies involving real-world applications. Seems to follow Bayesian approach.
 - [Comprehensive Intro to Predictive modeling, sebastianraschka](http://sebastianraschka.com/Articles/2014_intro_supervised_learning.html?utm_content=bufferc511a) [_Drive_](https://drive.google.com/file/d/0B0J1O2jMMERWdE81R1hnd2lYTFU/view?usp=drivesdk) ![](http://sebastianraschka.com/Images/2014_intro_supervised_learning/classify_example.png) ![](https://drive.google.com/file/d/0B0J1O2jMMERWUHBxRTFyYWRFQkE/view?usp=drivesdk) ![](blob:https%3A//drive.google.com/6ab173a8-f08d-43e2-ab8b-72b9a65211be)
-- [http://sebastianraschka.com/articles.html](http://sebastianraschka.com/articles.html)
+- [http://sebastianraschka.com/articles.html, sebastianraschka](http://sebastianraschka.com/articles.html)
 - [How to choose algorithms for Microsoft Azure Machine Learning](https://azure.microsoft.com/en-us/documentation/articles/machine-learning-algorithm-choice/)
 
 ### Deep Learning
