@@ -1,6 +1,6 @@
 ### Machine Learning 
 - [Machine Learning FAQ](http://sebastianraschka.com/faq/index.html)
-- [Exceptionally clear articles on ML](http://colah.github.io)
+- [Exceptionally clear articles on Neural Networks](http://colah.github.io)
 - [Lovely walkthrough of building a simple neural network, with an IPython Notebook ](http://cs231n.github.io/neural-networks-case-study/) read first and then replicate
 - Tensorflow [meetup](http://www.meetup.com/gdgnyc/events/230848397/?from=ref)
 	- [Tensor Flow & Deep Learning](https://docs.google.com/presentation/d/1TVixw6ItiZ8igjp6U17tcgoFrLSaHWQmMOwjlgQY9co/pub?slide=id.p) very nice presentation with code. github [repo](https://github.com/martin-gorner/tensorflow-mnist-tutorial)
