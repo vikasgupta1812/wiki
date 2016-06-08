@@ -33,7 +33,7 @@ Provides intuition about testing and training datasets.  Nice example, can be go
 Code examples for some popular machine learning algorithms, using TensorFlow library. This tutorial is designed to easily dive into TensorFlow, through examples. It includes both notebook and code with explanations. 
 
 ### Neural Networks
-- Using Built-in `nnet` Function - http://www.cs.colostate.edu/~anderson/cs545/assignments/solutionsGoodExamples/assignment8Yoensky.pdf   tl;dr - Student assignment comparing custom nnet function with the implementations in some standard R Libraries. 
+- Detailed analysis of `nnet` Function in R - http://www.cs.colostate.edu/~anderson/cs545/assignments/solutionsGoodExamples/assignment8Yoensky.pdf   tl;dr - Student assignment comparing custom nnet function with the implementations in some standard R Libraries. 
 - NeuralNetTools 1.0.0 now on CRAN - https://beckmw.wordpress.com/tag/neural-network/
 - Neural Networks with R – A Simple Example - http://gekkoquant.com/2012/05/26/neural-networks-with-r-simple-example/
 - NNetwork implementation in Pyhton - https://github.com/bmoscon/NeuralNets
