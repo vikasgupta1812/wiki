@@ -233,6 +233,7 @@ tl;dr – virtualbox, guest additions, desktops, permissions,
 ## Tools
 - HTML Editor for Google Drive - http://htmleditor.kwebpia.net/
 	http://online-html-editor.org/
+- [Python libraries and tools for running applications on diverse Grids and clusters](https://github.com/uzh/gc3pie)
 
 ## Courses MOOCS & Notes
 - Digital Data Collection course http://blog.rolffredheim.com/2015/03/digital-data-collection-course.html  [Course Landing Page](http://fredheir.github.io/WebScraping/), slides [1](http://fredheir.github.io/WebScraping/Lecture1_2015/p1.html), [2](http://fredheir.github.io/WebScraping/Lecture2_2015/p2.html), [3](http://fredheir.github.io/WebScraping/Lecture3_2015/p3.html#/) Drive link [1](https://drive.google.com/file/d/0B0J1O2jMMERWYTA3aUFjaVdqYkU/view?usp=drivesdk) tl;dr – html5 slides, apis, Scaling up and basics 
