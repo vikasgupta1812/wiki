@@ -1,4 +1,3 @@
-## Machine Learning 
 ### Machine Learning 
 - [Machine Learning FAQ](http://sebastianraschka.com/faq/index.html)
 - [Exceptionally clear articles on ML](http://colah.github.io)
