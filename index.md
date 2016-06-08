@@ -1,5 +1,8 @@
 - [R-Tips](R-Tips.md) [_github_](https://github.com/vikasgupta1812/wiki/blob/gh-pages/R-Tips.md)
 - [Readings](reading.md)
+- [Reading links](Reading links.md)
+- [Clustering](Clustering.md)
+- [DataScienceWorkbench notebooks](DataScienceWorkbench notebooks.md)
 - [Webinars-Trainings](Webinars-Trainings.md)
 - [Trainings](https://onedrive.live.com/redir?resid=46DDE5F519C073A0!13043&authkey=!AGdpwSqfa1uRev8&ithint=file%2cdocx)
 - [Books](https://onedrive.live.com/redir?page=view&resid=46DDE5F519C073A0!13045&authkey=!AJe5_3kYKEeUkvQ)

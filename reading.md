@@ -62,6 +62,7 @@ Dennis' slides: https://www.dropbox.com/s/r4m9aym2xvyadzk/SFDataScience_DennisOb
 -  The Best Data Visualizations from TED Talks: http://blog.ted.com/8-great-data-visualizations-from-ted-talks/?imm_mid=0cef35&cmp=em-data-na-na-newsltr_20150325
 
 ## Blog Articles & Forum Discussions 
+- [vahanalytics](https://drive.google.com/file/d/0B0J1O2jMMERWR3FLYW1PNFB3OWM/view?usp=drivesdk) 
 - `Quora` How do I become better at Kaggle? I am just getting started in Kaggle. I have a background in Machine Learning and `Probabilistic Graphical Models`. [http://www.quora.com/How-do-I-become-better-at-Kaggle-I-am-just-getting-started-in-Kaggle-I-have-a-background-in-Machine-Learning-and-Probabilistic-Graphical-Models]()
 - Taco Bell Programming-  Ted Dziuba http://web.archive.org/web/20101101173837/http://teddziuba.com/2010/10/taco-bell-programming.html Blog - http://web.archive.org/web/20101101153942/http://teddziuba.com/archives.html
 - [Using data science to get a good deal on a Macbook](http://blog.dominodatalab.com/using-data-science-to-get-a-good-deal-on-a-macbook/?utm_content=bufferbc21f&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer) #python
