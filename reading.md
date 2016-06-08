@@ -1,4 +1,5 @@
-## Machine Learning 
+### Machine Learning 
+- [Machine Learning FAQ](http://sebastianraschka.com/faq/index.html)
 - Some Intuition About the Theory of Statistical Learning - http://freakonometrics.hypotheses.org/19321 
 Provides intuition about testing and training datasets.  Nice example, can be good if it can be used repeatedly with other datasample. 
 - Machine learning lectures from Andrew Ng Course - https://class.coursera.org/ml-003/lecture
@@ -46,6 +47,13 @@ Dennis' slides: https://www.dropbox.com/s/r4m9aym2xvyadzk/SFDataScience_DennisOb
 -  The Best Data Visualizations from TED Talks: http://blog.ted.com/8-great-data-visualizations-from-ted-talks/?imm_mid=0cef35&cmp=em-data-na-na-newsltr_20150325
 
 ## Blog Articles & Forum Discussions 
+- [Practical data science - Nice blog to follow](http://practical-data-science.tumblr.com/)
+- [Principles of good data analysis](http://www.gregreda.com/2014/03/23/principles-of-good-data-analysis/)
+- [A Hacker's Guide to Git](http://wildlyinaccurate.com/a-hackers-guide-to-git/#git-stash)
+- [Deep learning from the bottom up](https://metacademy.org/roadmaps/rgrosse/deep_learning)
+- [http://robertmuth.blogspot.com/2012/08/better-bash-scripting-in-15-minutes.html](http://robertmuth.blogspot.com/2012/08/better-bash-scripting-in-15-minutes.html)
+- [SECRETS YOU SHOULD HAVE LEARNED BEFORE YOUR FIRST PROGRAMMING JOB](https://blog.newrelic.com/2014/06/03/10-secrets-learned-software-engineering-degree-probably-didnt/)
+From debugging to version control, programming in the real world requires a set of skills they just don’t teach in school
 - `Quora` How do I become better at Kaggle? I am just getting started in Kaggle. I have a background in Machine Learning and `Probabilistic Graphical Models`. [http://www.quora.com/How-do-I-become-better-at-Kaggle-I-am-just-getting-started-in-Kaggle-I-have-a-background-in-Machine-Learning-and-Probabilistic-Graphical-Models]()
 - Taco Bell Programming-  Ted Dziuba http://web.archive.org/web/20101101173837/http://teddziuba.com/2010/10/taco-bell-programming.html Blog - http://web.archive.org/web/20101101153942/http://teddziuba.com/archives.html
 - [Using data science to get a good deal on a Macbook](http://blog.dominodatalab.com/using-data-science-to-get-a-good-deal-on-a-macbook/?utm_content=bufferbc21f&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer) #python
@@ -70,7 +78,15 @@ tl;dr happiness meter from twitter data, sensors to save heating\cooling costs, 
 
 
 ## Programming
+### Notebooks 
+- [Udemy - Learning Python for Data Analysis and Visualization](https://github.com/vikasgupta1812/Udemy-notes) 
+- [Python for Algorithms Data Structures and Interviews](https://github.com/vikasgupta1812/Python-for-Algorithms--Data-Structures--and-Interviews)
+- [DataScience Course and lecture slides for the Intro to Data Science Master's course at NYU](https://github.com/vikasgupta1812/DataScienceCourse)
+- [LearnDataScience - Open Content for self-directed learning in data science](https://github.com/vikasgupta1812/LearnDataScience#ipython-notebooks--)
+
 ### Python
+- [Udemy complete python bootcamp](https://github.com/vikasgupta1812/Complete-Python-Bootcamp/tree/master/#complete-python-bootcamp) Can be used to review concepts #notebook
+- [30 Python Language Features and Tricks You May Not Know About](http://sahandsaba.com/thirty-python-language-features-and-tricks-you-may-not-know.html)
 - Keeping Secrets Secret in Python http://datamelon.io/blog/2015/secure-symmetric-encryption-in-python.html
 - Python Beowulf cluster - find a use for those computers that are 10+ years old https://docs.google.com/file/d/0B0J1O2jMMERWMlJkOEx1Z0lYR3c/edit?usp=drivesdk
 - Experienced Python Users: what's the most recent new thing you learned about the language? A great discussion on reddit. http://pythonweekly.us2.list-manage.com/track/click?u=e2e180baf855ac797ef407fc7&id=cd39d50cee&e=fe14df65e7
