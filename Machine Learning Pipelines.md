@@ -9,7 +9,7 @@ Start with simple and later (2nd round) add more complexity to the process. Most
 http://www.meetup.com/data-science-dojo/events/221981185/
 
 People always say eighty percent of data scientist's time is spent on data exploration and cleaning data. Usually you cannot get too much help from other folks in these steps, since the specific problems are very different from each other. 
-However, situation dramatically changes after you obtaining a tidy data set. A lot of tools like R caret library, Azure ML Studio are just there helping you to make the model-building process easier. They streamline the workflow of data analytics by embedding several main processes like sampling, feature selection, parameter tuning, etc. 
+However, situation dramatically changes after you obtaining a tidy data set. A lot of tools like R `caret` library, Azure ML Studio are just there helping you to make the model-building process easier. They streamline the workflow of data analytics by embedding several main processes like _sampling_, _feature selection_, _parameter tuning_, etc. 
 
 In this meetup, we would talk about how such tools serve the data scientists by introducing:
 
@@ -18,7 +18,7 @@ The necessities of different processes of data analytics, including sampling, fe
 Reference:
 
 DSC Webinar Series: Toolsets to Streamline the Workflow for Today’s Data Analytics: http://www.datasciencecentral.com/video/dsc-webinar-series-toolsets-to-streamline-the-workflow-for-today
-caret package tutorial: http://topepo.github.io/caret/index.html
+`caret` package tutorial: http://topepo.github.io/caret/index.html
 Azure ML studio tutorial: https://www.youtube.com/watch?v=3w256YNwO1U
 
 About the speaker:
@@ -29,7 +29,7 @@ Yuhui Zhang holds a PhD in Physics from Florida State University and a Bachelor 
 
 ## Brute Force Machine Learning with R and Caret 
 
-https://training.xebia.com/summer-specials/brute-force-machine-learning-with-r-and-caret/
+~~https://training.xebia.com/summer-specials/brute-force-machine-learning-with-r-and-caret/~~
 
 Writeup - Properly training a model requires tedious tasks such as cross validation and experimenting with multiple parameters of a learning algorithm. Fortunately, these are automated in the Caret package of the R programming language. In one day, you will learn how to unlock the full potential of this package in order to create reliable models that match your business problems.
 
@@ -58,7 +58,9 @@ You will have the skills to:
 - create R functions for computing model performance,
 - parallelize R code to increase computation speed.
 
+## An Example of Machine learning pipeline
 
+https://github.com/milosjava/R-machine-learning-pipeline
 
 ## Building pipeline using spotify luigi
 
@@ -69,10 +71,36 @@ Spotify Luigi - a Python package for building complex pipelines of batch jobs. I
 ![](https://raw.githubusercontent.com/spotify/luigi/master/doc/user_recs.png)
 
 
+## Using Make to run pipelines
+
+- [Automating Data-analysis Pipelines](http://stat545.com/automation04_make-activity.html)
+- [Automating Data-analysis Pipelines](http://stat545.com/hw09_automation.html)
+- [make-for-data-scientists](http://blog.kaggle.com/2012/10/15/make-for-data-scientists/) disadvantage is to use files. no retries option and maynot work best with databases
+- [Drake](https://www.factual.com/blog/introducing-drake-a-kind-of-make-for-data) 
+
+
 ## Building and deploying large-scale machine learning pipelines
 http://radar.oreilly.com/2015/01/building-and-deploying-large-scale-machine-learning-pipelines.html
 
 ![](http://s.radar.oreilly.com/wp-files/2/2015/01/ml-pipelines1.jpg)
+
+
+## Another pipeline image
+
+![](https://s3.amazonaws.com/mystaticdata/images/Machine+Learning+Pipeline.png)
+[source](http://www.slideshare.net/jeykottalam/pipelines-ampcamp)
+
+
+## Youtube - A Machine Learning Data Pipeline
+Using Luigi and Scikit-Learn to create a Machine Learning Pipeline which trains a model and predict through a Rest API
+
+- Atomoicity
+
+https://www.youtube.com/watch?v=knU-p68JPE0
+
+![](https://s3.amazonaws.com/mystaticdata/images/DAG.png)
+
+Luigi https://youtu.be/knU-p68JPE0?t=555
 
 
 
@@ -100,11 +128,12 @@ Reproducing Data Projects - Popular approaches for reproducing, managing, and de
 http://radar.oreilly.com/2013/12/reproducing-data-projects.html
 
 
-## KeystoneML - 
+
+## KeystoneML
 
 http://keystone-ml.org/
 
-Software framework designed to simplify the construction of large scale, end-to-end, machine learning pipelines with Apache Spark.
+Software framework designed to simplify the construction of large scale, end-to-end, machine learning pipelines with **Apache Spark**.
 
 The alpha version of Keystone-ML will be of interest to Deep Learning fans as it achieves near state-of-the-art performance for image classification, state-of-the-art performance for phoneme classification (speech), and ships with a simple pipeline performing n-gram based document classification. It can scale to massive amounts of data and these pipelines result in significantly faster model training times.
 
@@ -151,41 +180,40 @@ https://spark.apache.org/docs/latest/ml-guide.html
 
 
 ## Caret - DSC slides.
-https://github.com/DataScienceSpecialization/courses/blob/122145b0f984417e05fec3faf1c7759cefd183e3/08_PracticalMachineLearning/010caretPackage/index.Rmd
-https://github.com/DataScienceSpecialization/courses/blob/122145b0f984417e05fec3faf1c7759cefd183e3/08_PracticalMachineLearning/011dataSlicing/index.Rmd
-https://github.com/DataScienceSpecialization/courses/blob/122145b0f984417e05fec3faf1c7759cefd183e3/08_PracticalMachineLearning/012trainOptions/index.Rmd
-https://github.com/DataScienceSpecialization/courses/blob/122145b0f984417e05fec3faf1c7759cefd183e3/08_PracticalMachineLearning/015covariateCreation/index.Rmd
-https://github.com/DataScienceSpecialization/courses/blob/122145b0f984417e05fec3faf1c7759cefd183e3/08_PracticalMachineLearning/001predictionMotivation/index.Rmd
-https://github.com/DataScienceSpecialization/courses/blob/122145b0f984417e05fec3faf1c7759cefd183e3/08_PracticalMachineLearning/013plottingPredictors/index.Rmd
-https://github.com/DataScienceSpecialization/courses/blob/122145b0f984417e05fec3faf1c7759cefd183e3/08_PracticalMachineLearning/020bagging/index.Rmd
-https://github.com/DataScienceSpecialization/courses/blob/122145b0f984417e05fec3faf1c7759cefd183e3/01_DataScientistToolbox/01_10_practicalMachineLearning/index.Rmd
-https://github.com/DataScienceSpecialization/courses/blob/122145b0f984417e05fec3faf1c7759cefd183e3/08_PracticalMachineLearning/016preProcessingPCA/index.Rmd
-https://github.com/DataScienceSpecialization/courses/blob/122145b0f984417e05fec3faf1c7759cefd183e3/08_PracticalMachineLearning/014basicPreprocessing/index.Rmd
-https://github.com/DataScienceSpecialization/courses/blob/122145b0f984417e05fec3faf1c7759cefd183e3/08_PracticalMachineLearning/025combiningPredictors/index.Rmd
-https://github.com/DataScienceSpecialization/courses/blob/122145b0f984417e05fec3faf1c7759cefd183e3/08_PracticalMachineLearning/017predictingWithRegression/index.Rmd
-https://github.com/DataScienceSpecialization/courses/blob/122145b0f984417e05fec3faf1c7759cefd183e3/08_PracticalMachineLearning/019predictingWithTrees/index.Rmd
-https://github.com/DataScienceSpecialization/courses/blob/122145b0f984417e05fec3faf1c7759cefd183e3/08_PracticalMachineLearning/022boosting/index.Rmd
-https://github.com/DataScienceSpecialization/courses/blob/122145b0f984417e05fec3faf1c7759cefd183e3/08_PracticalMachineLearning/018predictingWithRegressionMC/index.Rmd
-https://github.com/DataScienceSpecialization/courses/blob/122145b0f984417e05fec3faf1c7759cefd183e3/08_PracticalMachineLearning/021randomForests/index.Rmd
-https://github.com/DataScienceSpecialization/courses/blob/122145b0f984417e05fec3faf1c7759cefd183e3/08_PracticalMachineLearning/024regularizedRegression/index.Rmd
+[010caretPackage](https://github.com/DataScienceSpecialization/courses/blob/122145b0f984417e05fec3faf1c7759cefd183e3/08_PracticalMachineLearning/010caretPackage/index.Rmd)
+[011dataSlicing](https://github.com/DataScienceSpecialization/courses/blob/122145b0f984417e05fec3faf1c7759cefd183e3/08_PracticalMachineLearning/011dataSlicing/index.Rmd)
+[012trainOptions](https://github.com/DataScienceSpecialization/courses/blob/122145b0f984417e05fec3faf1c7759cefd183e3/08_PracticalMachineLearning/012trainOptions/index.Rmd)
+[015covariateCreation](https://github.com/DataScienceSpecialization/courses/blob/122145b0f984417e05fec3faf1c7759cefd183e3/08_PracticalMachineLearning/015covariateCreation/index.Rmd)
+[001predictionMotivation](https://github.com/DataScienceSpecialization/courses/blob/122145b0f984417e05fec3faf1c7759cefd183e3/08_PracticalMachineLearning/001predictionMotivation/index.Rmd)
+[013plottingPredictors](https://github.com/DataScienceSpecialization/courses/blob/122145b0f984417e05fec3faf1c7759cefd183e3/08_PracticalMachineLearning/013plottingPredictors/index.Rmd)
+[020bagging](https://github.com/DataScienceSpecialization/courses/blob/122145b0f984417e05fec3faf1c7759cefd183e3/08_PracticalMachineLearning/020bagging/index.Rmd)
+[01_10_practicalMachineLearning](https://github.com/DataScienceSpecialization/courses/blob/122145b0f984417e05fec3faf1c7759cefd183e3/01_DataScientistToolbox/01_10_practicalMachineLearning/index.Rmd)
+[016preProcessingPCA](https://github.com/DataScienceSpecialization/courses/blob/122145b0f984417e05fec3faf1c7759cefd183e3/08_PracticalMachineLearning/016preProcessingPCA/index.Rmd)
+[014basicPreprocessing](https://github.com/DataScienceSpecialization/courses/blob/122145b0f984417e05fec3faf1c7759cefd183e3/08_PracticalMachineLearning/014basicPreprocessing/index.Rmd)
+[025combiningPredictors](https://github.com/DataScienceSpecialization/courses/blob/122145b0f984417e05fec3faf1c7759cefd183e3/08_PracticalMachineLearning/025combiningPredictors/index.Rmd)
+[017predictingWithRegression](https://github.com/DataScienceSpecialization/courses/blob/122145b0f984417e05fec3faf1c7759cefd183e3/08_PracticalMachineLearning/017predictingWithRegression/index.Rmd)
+[019predictingWithTrees](https://github.com/DataScienceSpecialization/courses/blob/122145b0f984417e05fec3faf1c7759cefd183e3/08_PracticalMachineLearning/019predictingWithTrees/index.Rmd)
+[022boosting](https://github.com/DataScienceSpecialization/courses/blob/122145b0f984417e05fec3faf1c7759cefd183e3/08_PracticalMachineLearning/022boosting/index.Rmd)
+[018predictingWithRegressionMC](https://github.com/DataScienceSpecialization/courses/blob/122145b0f984417e05fec3faf1c7759cefd183e3/08_PracticalMachineLearning/018predictingWithRegressionMC/index.Rmd)
+[021randomForests](https://github.com/DataScienceSpecialization/courses/blob/122145b0f984417e05fec3faf1c7759cefd183e3/08_PracticalMachineLearning/021randomForests/index.Rmd)
+[024regularizedRegression](https://github.com/DataScienceSpecialization/courses/blob/122145b0f984417e05fec3faf1c7759cefd183e3/08_PracticalMachineLearning/024regularizedRegression/index.Rmd)
 
-http://datasciencespecialization.github.io/courses/01_DataScientistToolbox/01_10_practicalMachineLearning
-http://datasciencespecialization.github.io/courses/08_PracticalMachineLearning/001predictionMotivation
-http://datasciencespecialization.github.io/courses/08_PracticalMachineLearning/010caretPackage
-http://datasciencespecialization.github.io/courses/08_PracticalMachineLearning/011dataSlicing
-http://datasciencespecialization.github.io/courses/08_PracticalMachineLearning/012trainOptions
-http://datasciencespecialization.github.io/courses/08_PracticalMachineLearning/013plottingPredictors
-http://datasciencespecialization.github.io/courses/08_PracticalMachineLearning/014basicPreprocessing
-http://datasciencespecialization.github.io/courses/08_PracticalMachineLearning/015covariateCreation
-http://datasciencespecialization.github.io/courses/08_PracticalMachineLearning/016preProcessingPCA
-http://datasciencespecialization.github.io/courses/08_PracticalMachineLearning/017predictingWithRegression
-http://datasciencespecialization.github.io/courses/08_PracticalMachineLearning/018predictingWithRegressionMC
-http://datasciencespecialization.github.io/courses/08_PracticalMachineLearning/019predictingWithTrees
-http://datasciencespecialization.github.io/courses/08_PracticalMachineLearning/020bagging
-http://datasciencespecialization.github.io/courses/08_PracticalMachineLearning/022boosting
-http://datasciencespecialization.github.io/courses/08_PracticalMachineLearning/024regularizedRegression
-http://datasciencespecialization.github.io/courses/08_PracticalMachineLearning/025combiningPredictors
-
+[01_10_practicalMachineLearning](http://datasciencespecialization.github.io/courses/01_DataScientistToolbox/01_10_practicalMachineLearning)
+[001predictionMotivation](http://datasciencespecialization.github.io/courses/08_PracticalMachineLearning/001predictionMotivation)
+[010caretPackage](http://datasciencespecialization.github.io/courses/08_PracticalMachineLearning/010caretPackage)
+[011dataSlicing](http://datasciencespecialization.github.io/courses/08_PracticalMachineLearning/011dataSlicing)
+[012trainOptions](http://datasciencespecialization.github.io/courses/08_PracticalMachineLearning/012trainOptions)
+[013plottingPredictors](http://datasciencespecialization.github.io/courses/08_PracticalMachineLearning/013plottingPredictors)
+[014basicPreprocessing](http://datasciencespecialization.github.io/courses/08_PracticalMachineLearning/014basicPreprocessing)
+[015covariateCreation](http://datasciencespecialization.github.io/courses/08_PracticalMachineLearning/015covariateCreation)
+[016preProcessingPCA](http://datasciencespecialization.github.io/courses/08_PracticalMachineLearning/016preProcessingPCA)
+[017predictingWithRegression](http://datasciencespecialization.github.io/courses/08_PracticalMachineLearning/017predictingWithRegression)
+[018predictingWithRegressionMC](http://datasciencespecialization.github.io/courses/08_PracticalMachineLearning/018predictingWithRegressionMC)
+[019predictingWithTrees](http://datasciencespecialization.github.io/courses/08_PracticalMachineLearning/019predictingWithTrees)
+[020bagging](http://datasciencespecialization.github.io/courses/08_PracticalMachineLearning/020bagging)
+[022boosting](http://datasciencespecialization.github.io/courses/08_PracticalMachineLearning/022boosting)
+[024regularizedRegression](http://datasciencespecialization.github.io/courses/08_PracticalMachineLearning/024regularizedRegression)
+[025combiningPredictors](http://datasciencespecialization.github.io/courses/08_PracticalMachineLearning/025combiningPredictors)
 
 ## Caret - Github projects
 Set of functions for classification tasks with caret package in R - https://github.com/dalpozz/caret
@@ -199,10 +227,3 @@ https://github.com/joseph-rickert/DataScienceRWebinar/blob/master/CARET.Rmd
 
 https://github.com/jameselvy/machineLearningProject/blob/master/machineLearningProjectforSubmission.Rmd
 https://github.com/theofpa/datascience/blob/master/ml-project/class-prediction.Rmd
-
-
-
-## Visualize dataset 
-- Visualization of large datasets with tabplot - http://cran.r-project.org/web/packages/tabplot/vignettes/tabplot-vignette.html
-- R User Group Recap: Heatmaps and Using the caret Package http://www.gettinggeneticsdone.com/2015/04/r-user-group-recap-heatmaps-and-using.html
- ![](http://2.bp.blogspot.com/-eNA35UQAaOQ/VSflGRDoeqI/AAAAAAACL3k/VYTOWpKqP9U/s1600/heatmap.png)

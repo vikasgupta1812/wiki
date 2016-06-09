@@ -62,6 +62,7 @@ Dennis' slides: https://www.dropbox.com/s/r4m9aym2xvyadzk/SFDataScience_DennisOb
 -  The Best Data Visualizations from TED Talks: http://blog.ted.com/8-great-data-visualizations-from-ted-talks/?imm_mid=0cef35&cmp=em-data-na-na-newsltr_20150325
 
 ## Blog Articles & Forum Discussions 
+- [How to use data analysis for machine learning (example, part 1)](http://www.sharpsightlabs.com/data-analysis-machine-learning-example-part1/) [drive](https://drive.google.com/file/d/0B0J1O2jMMERWRnZYa2VIYXl6ZUU/view?usp=drivesdk)
 - [vahanalytics](https://drive.google.com/file/d/0B0J1O2jMMERWR3FLYW1PNFB3OWM/view?usp=drivesdk) 
 - `Quora` How do I become better at Kaggle? I am just getting started in Kaggle. I have a background in Machine Learning and `Probabilistic Graphical Models`. [http://www.quora.com/How-do-I-become-better-at-Kaggle-I-am-just-getting-started-in-Kaggle-I-have-a-background-in-Machine-Learning-and-Probabilistic-Graphical-Models]()
 - [Practical data science - Nice meta blog to follow](http://practical-data-science.tumblr.com/)

@@ -17,6 +17,7 @@
 - [elasticR.md](elasticR.md)
 - [ElasticSearch Notes](Elasticsearch.md)
 - [Github Repositories](Github Repositories.md)
+- [Data Visualization](Data Visualization.md)
 
 [Notebooks](http://nbviewer.jupyter.org/github/vikasgupta1812/wiki/tree/gh-pages/notebooks/) 
 
