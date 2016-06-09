@@ -1,5 +1,36 @@
 [Notebooks](http://nbviewer.jupyter.org/github/vikasgupta1812/wiki/tree/gh-pages/notebooks/) 
-
 - Scripts Repository [**nbviewer**](http://nbviewer.jupyter.org/github/vikasgupta1812/scripts/tree/master/) 
-- Tensroflow Google datalab notebooks  [**nbviewer**](http://nbviewer.jupyter.org/github/GoogleCloudPlatform/datalab/blob/a82d95f40a4c5faf9cfd527afb86f801ced6f969/content/datalab/samples/TensorFlow%20Machine%20Learning%20with%20Financial%20Data%20on%20Google%20Cloud%20Platform.ipynb) _Old Commit_
+
+## Python
+- [Udemy complete python bootcamp](https://github.com/vikasgupta1812/Complete-Python-Bootcamp/tree/master/#complete-python-bootcamp) Can be used to review concepts #notebook
+- The "Python Machine Learning" book code [repository](https://github.com/rasbt/python-machine-learning-book) and info resource. [nbviewer](http://nbviewer.jupyter.org/github/rasbt/python-machine-learning-book)
+
+## Tensorflow 
 - Tensorflow tutorials [**nbviewer**](http://nbviewer.jupyter.org/github/pkmital/tensorflow_tutorials/tree/master/notebooks/)
+- Tensroflow Google datalab notebooks  [**nbviewer**](http://nbviewer.jupyter.org/github/GoogleCloudPlatform/datalab/blob/a82d95f40a4c5faf9cfd527afb86f801ced6f969/content/datalab/samples/TensorFlow%20Machine%20Learning%20with%20Financial%20Data%20on%20Google%20Cloud%20Platform.ipynb) _Old Commit_
+- [Lovely walkthrough of building a simple neural network, with an IPython Notebook ](http://cs231n.github.io/neural-networks-case-study/) read first and then replicate
+- Tensorflow [meetup](http://www.meetup.com/gdgnyc/events/230848397/?from=ref)
+    - [Tensor Flow & Deep Learning](https://docs.google.com/presentation/d/1TVixw6ItiZ8igjp6U17tcgoFrLSaHWQmMOwjlgQY9co/pub?slide=id.p) very nice presentation with code. github [repo](https://github.com/martin-gorner/tensorflow-mnist-tutorial)
+    - [Tensor Flow Playground](http://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=circle&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=4,2&seed=[masked]&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false),
+    - [Visualizations from BigPicture team](https://research.google.com/bigpicture/) Nice viz not certainly related to tensorflow
+    - [Tensor Flow For Poets](https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/index.html?index=..%2F..%2Fio2016#0) codelab.
+- [Great intro to #TensorFlow and scikit-learn notebooks](https://github.com/PythonWorkshop/intro-to-tensorflow/blob/master/Wine-Quality/Wine%20Quality.ipynb)
+- Python Tensorflow Tutorial - https://github.com/aymericdamien/TensorFlow-Examples
+Code examples for some popular machine learning algorithms, using TensorFlow library. This tutorial is designed to easily dive into TensorFlow, through examples. It includes both notebook and code with explanations. 
+
+
+
+- [MITx: 15.071x The Analytics Edge - Separating Spam from Ham](http://rstudio-pubs-static.s3.amazonaws.com/15854_fb25ca65439d4af4a48512d9abf943c7.html) [drive](https://drive.google.com/file/d/0B0J1O2jMMERWOUFFdkdVVlNQTkU/view?usp=drivesdk)
+- [Udacity - Data Analysis with R - Problem Set 5](https://rpubs.com/mistophiles/ud651_problemset5) [dirve](https://drive.google.com/file/d/0B0J1O2jMMERWY21hVWJFTEVDaFk/view?usp=drivesdk) For datasets refer to [this](https://github.com/rajatsaxena/DataAnalysisCourse) repo
+- [Udacity - Data Analysis with R - Lesson 3](https://rpubs.com/mistophiles/ud651_lesson3) [https://drive.google.com/file/d/0B0J1O2jMMERWYjI1QjdINmVabjA/view?usp=drivesdk](drive) [s3](https://s3.amazonaws.com/storagecheckpersonal/Udacity+-+Data+Analysis+with+R+-+Lesson+3.html?X-Amz-Date=20160607T031442Z&X-Amz-Expires=300&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Signature=c79ae5d35f6d7bbfd1ecec7fd7b8c322f46f5902dc03f40d2c194f1051ea2e79&X-Amz-Credential=ASIAJCTEUXOIKVY7R2IQ/20160607/us-east-1/s3/aws4_request&X-Amz-SignedHeaders=Host&x-amz-security-token=FQoDYXdzELT//////////wEaDJsM6B7oCQpcaRN47iLHAYKsCzxLaBt/e3kbTrrHdvESWgld5dL9Vf9cjyJzJkys0arxpQ4saxNMFvZEUk3JwNDDVWpLgqscasuIO5sai3xudsZUewNTenXvL5yCKwUnVdzUVC4fYrFNOcMbGUH9eqZ5q8/XwpZYyHytdZBZ9j4KyMQLSoEXqNBaY4/3ycOGBEGGlQdi9ePnUJYOO2baRoU3XcoffyR0XhQyrZ2NVfcJH/u/ElTuLGZowSHUOtv2GCmXhHdzXHlHNiDmixCfowWBs8hTX0co1PfYugU%3D)
+- [datascienceplus.com](datascienceplus.com) tl;dr - Project based tutorials with step-by-step instructions and examples. Practice your skills from the basic to advanced R programming, across different topics including statistics, data manipulation and visualization. 
+
+- [Udemy - Learning Python for Data Analysis and Visualization](https://github.com/vikasgupta1812/Udemy-notes) 
+- [Python for Algorithms Data Structures and Interviews](https://github.com/vikasgupta1812/Python-for-Algorithms--Data-Structures--and-Interviews)
+- [DataScience Course and lecture slides for the Intro to Data Science Master's course at NYU](https://github.com/vikasgupta1812/DataScienceCourse)
+- [LearnDataScience - Open Content for self-directed learning in data science](https://github.com/vikasgupta1812/LearnDataScience#ipython-notebooks--)
+
+
+## Non Notebook codes 
+- Cornell - Computing Using Python -http://www.cs.cornell.edu/courses/cs1110/2013fa/lectures/index.php
+- 

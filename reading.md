@@ -1,17 +1,7 @@
 ### Machine Learning 
 - [Machine Learning FAQ](http://sebastianraschka.com/faq/index.html)
 - [Exceptionally clear articles on Neural Networks](http://colah.github.io)
-- [Lovely walkthrough of building a simple neural network, with an IPython Notebook ](http://cs231n.github.io/neural-networks-case-study/) read first and then replicate
-- Tensorflow [meetup](http://www.meetup.com/gdgnyc/events/230848397/?from=ref)
-	- [Tensor Flow & Deep Learning](https://docs.google.com/presentation/d/1TVixw6ItiZ8igjp6U17tcgoFrLSaHWQmMOwjlgQY9co/pub?slide=id.p) very nice presentation with code. github [repo](https://github.com/martin-gorner/tensorflow-mnist-tutorial)
-	- [Tensor Flow Playground](http://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=circle&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=4,2&seed=[masked]&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false),
-	- [Visualizations from BigPicture team](https://research.google.com/bigpicture/) Nice viz not certainly related to tensorflow
-	- [Tensor Flow For Poets](https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/index.html?index=..%2F..%2Fio2016#0) codelab.
-- [Great intro to #TensorFlow and scikit-learn notebooks](https://github.com/PythonWorkshop/intro-to-tensorflow/blob/master/Wine-Quality/Wine%20Quality.ipynb)
 - [Machine Learning 2](http://rstudio-pubs-static.s3.amazonaws.com/19460_cd418196d20548ae9d0f4a8e497f4a31.html) [drive](https://drive.google.com/file/d/0B0J1O2jMMERWZkVUWllrS2JyUVE/view?usp=drivesdk)
-- [MITx: 15.071x The Analytics Edge - SEPARATING SPAM FROM HAM](http://rstudio-pubs-static.s3.amazonaws.com/15854_fb25ca65439d4af4a48512d9abf943c7.html) [drive](https://drive.google.com/file/d/0B0J1O2jMMERWOUFFdkdVVlNQTkU/view?usp=drivesdk)
-- [Udacity - Data Analysis with R - Problem Set 5](https://rpubs.com/mistophiles/ud651_problemset5) [dirve](https://drive.google.com/file/d/0B0J1O2jMMERWY21hVWJFTEVDaFk/view?usp=drivesdk) For datasets refer to [this](https://github.com/rajatsaxena/DataAnalysisCourse) repo
-- [Udacity - Data Analysis with R - Lesson 3](https://rpubs.com/mistophiles/ud651_lesson3) [https://drive.google.com/file/d/0B0J1O2jMMERWYjI1QjdINmVabjA/view?usp=drivesdk](drive) [s3](https://s3.amazonaws.com/storagecheckpersonal/Udacity+-+Data+Analysis+with+R+-+Lesson+3.html?X-Amz-Date=20160607T031442Z&X-Amz-Expires=300&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Signature=c79ae5d35f6d7bbfd1ecec7fd7b8c322f46f5902dc03f40d2c194f1051ea2e79&X-Amz-Credential=ASIAJCTEUXOIKVY7R2IQ/20160607/us-east-1/s3/aws4_request&X-Amz-SignedHeaders=Host&x-amz-security-token=FQoDYXdzELT//////////wEaDJsM6B7oCQpcaRN47iLHAYKsCzxLaBt/e3kbTrrHdvESWgld5dL9Vf9cjyJzJkys0arxpQ4saxNMFvZEUk3JwNDDVWpLgqscasuIO5sai3xudsZUewNTenXvL5yCKwUnVdzUVC4fYrFNOcMbGUH9eqZ5q8/XwpZYyHytdZBZ9j4KyMQLSoEXqNBaY4/3ycOGBEGGlQdi9ePnUJYOO2baRoU3XcoffyR0XhQyrZ2NVfcJH/u/ElTuLGZowSHUOtv2GCmXhHdzXHlHNiDmixCfowWBs8hTX0co1PfYugU%3D)
 - Very good article **Everything You Wanted to Know About Machine Learning, But Were Too Afraid To Ask** [Part-1](https://blog.bigml.com/2013/02/15/everything-you-wanted-to-know-about-machine-learning-but-were-too-afraid-to-ask-part-one/) [Part-2](https://blog.bigml.com/2013/02/21/everything-you-wanted-to-know-about-machine-learning-but-were-too-afraid-to-ask-part-two/) [cache](https://drive.google.com/file/d/0B0J1O2jMMERWVy1aSG1YTWFpTlk/view?usp=drivesdk) [cache](https://drive.google.com/file/d/0B0J1O2jMMERWRi16TDgtZDYyY1E/view?usp=drivesdk) tl;dr practical insights and pitfalls into datascience
 - Presentation [Introduction to machine learning onedrive](https://onedrive.live.com/redir?resid=46DDE5F519C073A0!1441&authkey=!APKGpFzhy18oTos&ithint=file%2cpdf)
 - [Slides: L4: Data Cleaning and Integration](https://onedrive.live.com/redir?resid=46DDE5F519C073A0!15800&authkey=!AEKlJ-xBYABAYFE&ithint=file%2cpptx) [_source_](https://bcourses.berkeley.edu/courses/1267848/wiki)
@@ -29,8 +19,7 @@ Provides intuition about testing and training datasets.  Nice example, can be go
 
 ### Tensorflow
 - Steps to use tensorflow library on AWS clusters - http://cs224d.stanford.edu/supplementary/aws-tutorial-2.pdf
-- Python Tensorflow Tutorial - https://github.com/aymericdamien/TensorFlow-Examples
-Code examples for some popular machine learning algorithms, using TensorFlow library. This tutorial is designed to easily dive into TensorFlow, through examples. It includes both notebook and code with explanations. 
+
 
 ### Neural Networks
 - Detailed analysis of `nnet` Function in R - http://www.cs.colostate.edu/~anderson/cs545/assignments/solutionsGoodExamples/assignment8Yoensky.pdf   tl;dr - Student assignment comparing custom nnet function with the implementations in some standard R Libraries. 
@@ -41,7 +30,6 @@ Code examples for some popular machine learning algorithms, using TensorFlow lib
 - `rnn` package for neural networks - http://www.cs.colostate.edu/~idfah/main/projects/rnn
 
 ## Data Science
-- [datascienceplus.com]() tl;dr - Project based tutorials with step-by-step instructions and examples. Practice your skills from the basic to advanced R programming, across different topics including statistics, data manipulation and visualization. 
 - [Data Analysis Learning path](Data Analysis Learning Path | SlideRule.html) on Sliderule
 - [Data science demands elastic infrastructure.#DataScience,#BigData,#DataScience, #DataInfrastructure,#DataIntegration](http://www.techrepublic.com/article/data-science-demands-elastic-infrastructure/)
     tl;dr - success of big data depends on iteraton, on experimentation as you figure our the right questions to ask and the best way to answer them. 
@@ -49,27 +37,18 @@ Code examples for some popular machine learning algorithms, using TensorFlow lib
 - Source - http://www.meetup.com/SF-Data-Science/messages/boards/thread/45359822/0#122334312
 Slides and Video from - How to Become a Data Scientist
 video https://www.youtube.com/watch?v=c52IOlnPw08
-Ryan's slides: http://www.slideshare.net/ryanorban/how-to-become-a-data-scientist
+Ryan's slides: [how-to-become-a-data-scientist](http://www.slideshare.net/ryanorban/how-to-become-a-data-scientist)
 Dennis' slides: https://www.dropbox.com/s/r4m9aym2xvyadzk/SFDataScience_DennisObrien.pdf
-
-## Data Visualization
-- Google Vis plots [plot-1](plot1.html) [plot-1](plot2.html) [plot-3](plot3.html)
-- [Shiny app word cloud](http://shiny.rstudio.com/gallery/word-cloud.html)
-- [Prezi-Using R for Data Mining Competitions](https://prezi.com/embed/8fbsaa7mushs/)
-- [Selected Tools for data visualization](http://selection.datavisualization.ch) Fantastic collection of 55 useful tools for data visualization. This collection is curated by the folks at Datavisualization.ch and is well-organized and easy to search. Highly Recommended.
-- 50 Excellent Data Visualization Examples for Presentations - https://www.kifi.com/brandon-loudermilkphd/machine-learning-resources
--  The Best Data Visualizations from TED Talks: http://blog.ted.com/8-great-data-visualizations-from-ted-talks/?imm_mid=0cef35&cmp=em-data-na-na-newsltr_20150325
 
 ## Blog Articles & Forum Discussions 
 - [How to use data analysis for machine learning (example, part 1)](http://www.sharpsightlabs.com/data-analysis-machine-learning-example-part1/) [drive](https://drive.google.com/file/d/0B0J1O2jMMERWRnZYa2VIYXl6ZUU/view?usp=drivesdk)
 - [vahanalytics](https://drive.google.com/file/d/0B0J1O2jMMERWR3FLYW1PNFB3OWM/view?usp=drivesdk) 
 - `Quora` How do I become better at Kaggle? I am just getting started in Kaggle. I have a background in Machine Learning and `Probabilistic Graphical Models`. [http://www.quora.com/How-do-I-become-better-at-Kaggle-I-am-just-getting-started-in-Kaggle-I-have-a-background-in-Machine-Learning-and-Probabilistic-Graphical-Models]()
-- [Practical data science - Nice meta blog to follow](http://practical-data-science.tumblr.com/)
 - [Principles of good data analysis](http://www.gregreda.com/2014/03/23/principles-of-good-data-analysis/)
 - [A Hacker's Guide to Git](http://wildlyinaccurate.com/a-hackers-guide-to-git/#git-stash)
 - [Deep learning from the bottom up](https://metacademy.org/roadmaps/rgrosse/deep_learning)
 - [http://robertmuth.blogspot.com/2012/08/better-bash-scripting-in-15-minutes.html](http://robertmuth.blogspot.com/2012/08/better-bash-scripting-in-15-minutes.html)
-- [SECRETS YOU SHOULD HAVE LEARNED BEFORE YOUR FIRST PROGRAMMING JOB](https://blog.newrelic.com/2014/06/03/10-secrets-learned-software-engineering-degree-probably-didnt/)
+- [Secrets you should have learned before your first programming job](https://blog.newrelic.com/2014/06/03/10-secrets-learned-software-engineering-degree-probably-didnt/)
 From debugging to version control, programming in the real world requires a set of skills they just don’t teach in school
 - `Quora` How do I become better at Kaggle? I am just getting started in Kaggle. I have a background in Machine Learning and `Probabilistic Graphical Models`. [http://www.quora.com/How-do-I-become-better-at-Kaggle-I-am-just-getting-started-in-Kaggle-I-have-a-background-in-Machine-Learning-and-Probabilistic-Graphical-Models]() tl;dr practice, engage (forums), Read solutions, put effort and time, work in a team if possible, Design a pipeline, invest in Cloud based GPU, read code snippets. 
 - [Path to Data world](https://www.quora.com/How-do-I-know-if-I-am-really-passionate-about-data-science-data-analytics/answer/Yassine-Alouini?srid=nN6d) tl;dr 1- grab data fiddle around (build recommender systems, predict outcomes, plot and spot some patterns etc. 
@@ -96,24 +75,18 @@ tl;dr happiness meter from twitter data, sensors to save heating\cooling costs, 
 
 
 ## Programming
-### Notebooks 
-- [Udemy - Learning Python for Data Analysis and Visualization](https://github.com/vikasgupta1812/Udemy-notes) 
-- [Python for Algorithms Data Structures and Interviews](https://github.com/vikasgupta1812/Python-for-Algorithms--Data-Structures--and-Interviews)
-- [DataScience Course and lecture slides for the Intro to Data Science Master's course at NYU](https://github.com/vikasgupta1812/DataScienceCourse)
-- [LearnDataScience - Open Content for self-directed learning in data science](https://github.com/vikasgupta1812/LearnDataScience#ipython-notebooks--)
 
 ### Python
-- [Udemy complete python bootcamp](https://github.com/vikasgupta1812/Complete-Python-Bootcamp/tree/master/#complete-python-bootcamp) Can be used to review concepts #notebook
+
 - [30 Python Language Features and Tricks You May Not Know About](http://sahandsaba.com/thirty-python-language-features-and-tricks-you-may-not-know.html)
 - Keeping Secrets Secret in Python http://datamelon.io/blog/2015/secure-symmetric-encryption-in-python.html
 - Python Beowulf cluster - find a use for those computers that are 10+ years old https://docs.google.com/file/d/0B0J1O2jMMERWMlJkOEx1Z0lYR3c/edit?usp=drivesdk
 - Experienced Python Users: what's the most recent new thing you learned about the language? A great discussion on reddit. http://pythonweekly.us2.list-manage.com/track/click?u=e2e180baf855ac797ef407fc7&id=cd39d50cee&e=fe14df65e7
 - Nifty Python tricks A post sharing some really informative tips and tricks which you might not have known about. http://pythonweekly.us2.list-manage.com/track/click?u=e2e180baf855ac797ef407fc7&id=2704418191&e=fe14df65e7
-- The "Python Machine Learning" book code repository and info resource - https://github.com/rasbt/python-machine-learning-book
 - Beginning Test-Driven Development in Python - http://code.tutsplus.com/tutorials/beginning-test-driven-development-in-python--net-30137 
 tl;dr – test driven development tdd – write failing test case, make test pass, refactor. 
 Different ways of doing tests in pyhton. 
-- Cornell - Computing Using Python -http://www.cs.cornell.edu/courses/cs1110/2013fa/lectures/index.php
+
 - Utility Mill - Python Recipies - http://utilitymill.com/popular/
 
 ### R
