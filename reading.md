@@ -1,7 +1,6 @@
-## Machine Learning 
 ### Machine Learning 
 - [Machine Learning FAQ](http://sebastianraschka.com/faq/index.html)
-- [Exceptionally clear articles on ML](http://colah.github.io)
+- [Exceptionally clear articles on Neural Networks](http://colah.github.io)
 - [Lovely walkthrough of building a simple neural network, with an IPython Notebook ](http://cs231n.github.io/neural-networks-case-study/) read first and then replicate
 - Tensorflow [meetup](http://www.meetup.com/gdgnyc/events/230848397/?from=ref)
 	- [Tensor Flow & Deep Learning](https://docs.google.com/presentation/d/1TVixw6ItiZ8igjp6U17tcgoFrLSaHWQmMOwjlgQY9co/pub?slide=id.p) very nice presentation with code. github [repo](https://github.com/martin-gorner/tensorflow-mnist-tutorial)
@@ -34,7 +33,7 @@ Provides intuition about testing and training datasets.  Nice example, can be go
 Code examples for some popular machine learning algorithms, using TensorFlow library. This tutorial is designed to easily dive into TensorFlow, through examples. It includes both notebook and code with explanations. 
 
 ### Neural Networks
-- Using Built-in `nnet` Function - http://www.cs.colostate.edu/~anderson/cs545/assignments/solutionsGoodExamples/assignment8Yoensky.pdf   tl;dr - Student assignment comparing custom nnet function with the implementations in some standard R Libraries. 
+- Detailed analysis of `nnet` Function in R - http://www.cs.colostate.edu/~anderson/cs545/assignments/solutionsGoodExamples/assignment8Yoensky.pdf   tl;dr - Student assignment comparing custom nnet function with the implementations in some standard R Libraries. 
 - NeuralNetTools 1.0.0 now on CRAN - https://beckmw.wordpress.com/tag/neural-network/
 - Neural Networks with R – A Simple Example - http://gekkoquant.com/2012/05/26/neural-networks-with-r-simple-example/
 - NNetwork implementation in Pyhton - https://github.com/bmoscon/NeuralNets
@@ -235,6 +234,7 @@ tl;dr – virtualbox, guest additions, desktops, permissions,
 ## Tools
 - HTML Editor for Google Drive - http://htmleditor.kwebpia.net/
 	http://online-html-editor.org/
+- [Python libraries and tools for running applications on diverse Grids and clusters](https://github.com/uzh/gc3pie)
 
 ## Courses MOOCS & Notes
 - Digital Data Collection course http://blog.rolffredheim.com/2015/03/digital-data-collection-course.html  [Course Landing Page](http://fredheir.github.io/WebScraping/), slides [1](http://fredheir.github.io/WebScraping/Lecture1_2015/p1.html), [2](http://fredheir.github.io/WebScraping/Lecture2_2015/p2.html), [3](http://fredheir.github.io/WebScraping/Lecture3_2015/p3.html#/) Drive link [1](https://drive.google.com/file/d/0B0J1O2jMMERWYTA3aUFjaVdqYkU/view?usp=drivesdk) tl;dr – html5 slides, apis, Scaling up and basics 
