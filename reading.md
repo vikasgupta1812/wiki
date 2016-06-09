@@ -87,10 +87,8 @@ tl;dr happiness meter from twitter data, sensors to save heating\cooling costs, 
 tl;dr – test driven development tdd – write failing test case, make test pass, refactor. 
 Different ways of doing tests in pyhton. 
 
-- Utility Mill - Python Recipies - http://utilitymill.com/popular/
-
 ### R
-- [upload data to CartoDB with R](rstudio-pubs-static.s3.amazonaws.com/22656_6fe3c225892740bb90c88f079edc494d.html) [cache](https://drive.google.com/file/d/0B0J1O2jMMERWT09WTUsxTHNPalU/view?usp=drivesdk)
+
 - [Good Habbits in R Programming](http://gastonsanchez.com/stat133/slides/20-good-habits/20-good-habits.pdf)
 - **Awesome R**- A curated list of awesome R frameworks, packages and software. https://github.com/qinwf/awesome-R
 - Accelerate R Applications with CUDA - http://devblogs.nvidia.com/parallelforall/accelerate-r-applications-cuda/ nvidia devblog
