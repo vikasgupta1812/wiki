@@ -96,11 +96,12 @@ Using Luigi and Scikit-Learn to create a Machine Learning Pipeline which trains 
 
 - Atomoicity
 
-https://www.youtube.com/watch?v=knU-p68JPE0
+[](https://www.youtube.com/watch?v=knU-p68JPE0)
 
 ![](https://s3.amazonaws.com/mystaticdata/images/DAG.png)
 
-Luigi https://youtu.be/knU-p68JPE0?t=555
+Luigi 
+[](https://youtu.be/knU-p68JPE0?t=555)
 
 
 
