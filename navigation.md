@@ -1,7 +1,13 @@
-# wiki
-
-[Home](home.md)
+[Home](index.md)
 [About](about.md)
-[Download](download.md)
-
+[Reading Lists](reading.md)
+[Visualization](visualization.md)
+[Exploratory Analysis](EDA.md)
+[Notebooks](ipynb notebooks.md)
+[Courses](courses.md)
+[Job Search](Job Search.md)
+[Motivation](motivation.md)
+[Misc.](Miscellaneous.md)
+[Links](links.md)
+[ToDo](ToDo.md)
 [gimmick:ThemeChooser](Choose theme)
