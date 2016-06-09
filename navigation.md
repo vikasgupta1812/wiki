@@ -4,4 +4,4 @@
 [About](about.md)
 [Download](download.md)
 
-[gimmick:ThemeChooser](Change theme)
+[gimmick:ThemeChooser](Choose theme)
