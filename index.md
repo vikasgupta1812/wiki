@@ -1,4 +1,3 @@
-[googleca0ab6e90aaf4933.html](./googleca0ab6e90aaf4933.html)
 - [R-Tips](R-Tips.md) [_github_](https://github.com/vikasgupta1812/wiki/blob/gh-pages/R-Tips.md)
 - [Readings](reading.md)
 - [Reading links](Reading links.md)
