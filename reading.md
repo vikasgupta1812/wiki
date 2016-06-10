@@ -1,4 +1,6 @@
 ### Machine Learning 
+
+- [A Linear Method for Non-Linear Work: Our Data Science Process](https://blogs.technet.microsoft.com/machinelearning/2016/05/20/a-linear-method-for-non-linear-work-our-data-science-process/)
 - [Machine Learning FAQ](http://sebastianraschka.com/faq/index.html)
 - [Exceptionally clear articles on Neural Networks](http://colah.github.io)
 - [Machine Learning 2](http://rstudio-pubs-static.s3.amazonaws.com/19460_cd418196d20548ae9d0f4a8e497f4a31.html) [drive](https://drive.google.com/file/d/0B0J1O2jMMERWZkVUWllrS2JyUVE/view?usp=drivesdk)
@@ -150,8 +152,7 @@ tl;dr – r code to see the difference; not tried it yet.
   - [R for more powerful clustering](http://blog.revolutionanalytics.com/2015/04/r-for-more-powerful-clustering.html)
 - [Comparing data frames, data.table and dplyr with random walks](http://freakonometrics.hypotheses.org/19645) tl;dr - nice code practice
 - [objectsize.R](https://rstudio-pubs-static.s3.amazonaws.com/98168_a534b68360924489928969b99d6d5064.html) [drive](https://drive.google.com/file/d/0B0J1O2jMMERWNm5PSGk0TzdPN00/view?usp=drivesdk)
-- http://rpubs.com/makesenseofdata/164385
-- 
+- [Kaggle Data Science Job Search](http://rpubs.com/makesenseofdata/164385)
 
 
 
@@ -170,8 +171,8 @@ tl;dr – r code to see the difference; not tried it yet.
 
 
 ## Books 
-- Automate the Boring Stuff with Python: Practical Programming for Total Beginners
-In Automate the Boring Stuff with Python, you'll learn how to use Python to write programs that do in minutes what would take you hours to do by hand--no prior programming experience required. Step-by-step instructions walk you through each program, and practice projects at the end of each chapter challenge you to improve those programs and use your newfound skills to automate similar tasks. Don't spend your time doing work a well-trained monkey could do. Even if you've never written a line of code, you can make your computer do the grunt work. Learn how in Automate the Boring Stuff with Python.
+- [Automate the Boring Stuff with Python](http://proquestcombo.safaribooksonline.com.ezproxy.torontopubliclibrary.ca/book/programming/python/9781457189906): Practical Programming for Total Beginners
+In Automate the Boring Stuff with Python, you'll learn how to use Python to write programs that do in minutes what would take you hours to do by hand. Step-by-step instructions walk you through each program, and practice projects at the end of each chapter challenge you to improve those programs and use your newfound skills to automate similar tasks.
     1.	Search for text in a file or across multiple files **
     2.	Create, update, move, and rename files and folders **
     3.	Search the Web and download online content **
@@ -244,19 +245,12 @@ tl;dr – virtualbox, guest additions, desktops, permissions,
 ### Azure 
 - Azure template based deployments - [http://azure.microsoft.com/blog/2015/04/29/iaas-just-got-easier-again/]() [https://github.com/Azure/azure-quickstart-templates/tree/master/docker-wordpress-mysql]() tl;dr Automatically deploy a VM to Azure cloud
 - [Nodejs app running on Azure app service developed in Visual Studio Code published by Git](http://azure.microsoft.com/blog/2015/05/11/visual-studio-code-and-azure-app-service-a-perfect-fit/)
-
-
-
-
-
 -	Getting Data From An Online Source - http://r-norberg.blogspot.com/2015/03/getting-data-from-one-online-source.html
 - The data science ecosystem part 2: Data wrangling - http://www.computerworld.com/article/2902920/the-data-science-ecosystem-part-2-data-wrangling.html 
 tl;dr – not read yet. 
 - Some Lecture slides for Text Processing - http://www.rci.rutgers.edu/~ag978/litdata/slides/ 
 - Tunedit - Platform for sharing and evaluation of intelligent algorithms. - http://tunedit.org/
 - Project open data - https://project-open-data.cio.gov/
-
 - [Tips and Tools you may need for working on BIG data](http://onetipperday.blogspot.com/2015/05/tips-and-tools-you-may-need-for-working.html)
-
 - [Hacking Google Finance in Real-Time for Algorithmic Traders](http://www.quantatrisk.com/2014/01/14/hacking-google-finance-in-real-time-for-algorithmic-traders/)
 - [Hacking Google Finance in Real-Time for Algorithmic Traders. (2) Pre-Market Trading.](http://www.quantatrisk.com/2015/05/07/hacking-google-finance-in-pre-market-trading-python/)

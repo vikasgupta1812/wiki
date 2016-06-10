@@ -41,7 +41,7 @@ Processing: When does it worth? - http://danielmarcelino.com/parallel-processing
 ### Windows Security Warning
 It seems it is safe to choose 'Cancel' when Windows Firewall tried to block R program when we use makeCluster() to create a socket cluster.
 
-```
+```r
 library(parallel)
 cl <- makeCluster(2)
 clusterApply(cl, 1:2, get("+"), 3)
@@ -147,7 +147,7 @@ http://www.bioconductor.org/help/bioconductor-cloud-ami/
 http://dirk.eddelbuettel.com/code/rinside.html
 http://dirk.eddelbuettel.com/papers/rfinance2010_rcpp_rinside_tutorial_handout.pdf
 
-## Plot IP on google map
+## Plot ip addresses on google map
 
 - [Mapping blog visits on google maps with googleVis](http://thebiobucket.blogspot.com/2011/12/some-fun-with-googlevis-plotting-blog.html#more) [cache](https://drive.google.com/file/d/0B0J1O2jMMERWR0xDdkM3WHlfc2M/view?usp=drivesdk) (RCurl, RJONIO, plyr, googleVis) 
 - http://devblog.icans-gmbh.com/using-the-maxmind-geoip-api-with-r/ (RCurl, RJONIO, maps)

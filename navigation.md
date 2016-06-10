@@ -6,7 +6,7 @@
 [Notebooks](ipynb notebooks.md)
 [Courses](courses.md)
 [Job Search](Job Search.md)
-[Motivation](motivation.md)
+[Motivation](Motivational Quotes.md)
 [Misc.](Miscellaneous.md)
 [Links](links.md)
 [ToDo](ToDo.md)
