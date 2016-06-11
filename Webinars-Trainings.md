@@ -2,12 +2,10 @@ Webinars-Trainings
 ====
 
 ## Data Science at the Command Line 
-2 Hours: Free @OReillyMedia Webcast: Learn about #DataScience at the Command Line w/ @jeroenhjanssens
+2 Hours Webcast: Learn about #DataScience at the Command Line w/ @jeroenhjanssens
 https://www.oreilly.com/learning/data-science-at-the-command-line?cmp=tw-data-webcast-lp-stny15_3115
 
 ![](https://cfvod.kaltura.com/p/1681692/sp/168169200/thumbnail/entry_id/0_fath51xi/version/100000/acv/92/width/960/height/565)
-
-
 
 
 ## DSC Webinar Series
@@ -75,75 +73,74 @@ The real challenge of programming isn't learning a language's syntax—it's lear
     - How can someone develop his or her problem-solving ability?
     - What are some of the basic techniques of problem-solving for programmers?
 
-- [Pumping Up Retail Profits with Predictive Analytics - Adam Jorgensen](http://techbus.safaribooksonline.com/9781491924143#)== 20 mins
+- [Pumping Up Retail Profits with Predictive Analytics - Adam Jorgensen](http://proquestcombo.safaribooksonline.com.ezproxy.torontopubliclibrary.ca/9781491924143#)== 20 mins
 Description: Retail buyers are the backbone of the industries’ profitability. These individuals drive organizational goals with their performance. Many decisions are made by intuition and “gut” feeling, where predictive analytics would have made significant improvements in outcomes. This session takes real world experiences and shows how to transform retail performance through data driven buying decisions.
 
 
-- [Economic Insights from LinkedIn's Professional Network - June Andrews](http://techbus.safaribooksonline.com/9781491924143#) 20 mins
+- [Economic Insights from LinkedIn's Professional Network - June Andrews](http://proquestcombo.safaribooksonline.com.ezproxy.torontopubliclibrary.ca/9781491924143#) 20 mins
 Description: With LinkedIn's wealth of data we can answer questions previously limited by human resources. We can ask which industries have the most ties with health care? How do you meet Richard Branson? More seriously, what types of connections are used to find jobs? To answer these questions, we weave the algorithmic complexities and data harvesting into stories that enrich our understanding of the answers.
 
 
-- [Data Applications: Speed vs Accuracy - Danielle Ben-Gera](http://techbus.safaribooksonline.com/9781491924143#) 35 mins
+- [Data Applications: Speed vs Accuracy - Danielle Ben-Gera](http://proquestcombo.safaribooksonline.com.ezproxy.torontopubliclibrary.ca/9781491924143#) 35 mins
 Description: When building a real-time data application, we must decide what tradeoffs are permissible without eroding core functionality. As the purpose of data applications become more complex, and the size of the data stores analyzed expand, maintaining integrity and speed becomes increasingly difficult to solve.
 
-- [The Sushi Principle: Raw Data Is Better - Joseph Adler and Robert Johnson](http://techbus.safaribooksonline.com/9781491924143#) 40 mins
+- [The Sushi Principle: Raw Data Is Better - Joseph Adler and Robert Johnson](http://proquestcombo.safaribooksonline.com.ezproxy.torontopubliclibrary.ca/9781491924143#) 40 mins
 Description: Thirty years ago, data warehouses revolutionized data storage at big companies, storing summarized data in a strict structure and making it possible to efficiently analyze data. We believe that modern technology lets you adopt a simpler and more powerful scheme to organize historical data: time ordered raw event logs. In this session, we'll explain why raw data is better.
 
-- [Graph Mining for Log Data - David Andrzejewski](http://techbus.safaribooksonline.com/9781491924143#) 30 mins
+- [Graph Mining for Log Data - David Andrzejewski](http://proquestcombo.safaribooksonline.com.ezproxy.torontopubliclibrary.ca/9781491924143#) 30 mins
 Description: Many of the millions of events logged inside a given software system are not isolated occurrences, but rather links in richly interconnected causal chains. However, classic SQL-style aggregation cannot easily capture this underlying structure. This talk discusses how graph mining techniques can surface high-value insights from the relationships between logged events.
 
 
-- [Don't Let Data Get in the Way of a Good Story - Mark Madsen](http://techbus.safaribooksonline.com/9781491924143#) 25 mins
+- [Don't Let Data Get in the Way of a Good Story - Mark Madsen](http://proquestcombo.safaribooksonline.com.ezproxy.torontopubliclibrary.ca/9781491924143#) 25 mins
 Description: Storytelling is not about raising someone’s IQ, it’s about raising their blood pressure. Stories engage emotions rather than intellect, making “storytelling with data” a poor metaphor for data visualization when our goal is to communicate clearly.
 
-- [Using Data from Many Streams to Drive Social Impact - India Swearingen](http://techbus.safaribooksonline.com/9781491924143#) 20 mins
+- [Using Data from Many Streams to Drive Social Impact - India Swearingen](http://proquestcombo.safaribooksonline.com.ezproxy.torontopubliclibrary.ca/9781491924143#) 20 mins
 Description: Social service organizations have a tough job when it comes to using data to drive social impact. With “world saving” goals and large scale impact, it's crucial these organizations leverage a variety of data streams and do more with less. But, pulling multiple data streams and leveraging partners can be a tricky one, this session walks through some ins-and-outs using United Way as one example.
 
-- [Smartphone Data: Tell the Story of People's Lives - Joerg Blumtritt](http://techbus.safaribooksonline.com/9781491924143#) 20 mins
+- [Smartphone Data: Tell the Story of People's Lives - Joerg Blumtritt](http://proquestcombo.safaribooksonline.com.ezproxy.torontopubliclibrary.ca/9781491924143#) 20 mins
 Description: Each smartphone generates huge heaps of data - up to hundreds of megabytes per day. Apart from location, all sorts of information on behavior and environmental conditions are seamlessly collected in the background of our devices. We will show how to harvest the data and how to tell the story of our everyday lives from the billions of data points that pile up continuously.
 
-- [Shazam - Cait O'Riordan](http://techbus.safaribooksonline.com/9781491924143#) 15mins
+- [Shazam - Cait O'Riordan](http://proquestcombo.safaribooksonline.com.ezproxy.torontopubliclibrary.ca/9781491924143#) 15mins
 Description: 
 As the number of ways to discover and listen to music increases, Shazam's data becomes even more powerful in predicting music tastes/fashions. Labels/artists/radio stations increasingly look to Shazam to predict what the next big hit or summer smash will be. Shazam also uses its usage data to create new product opportunities.
 
-- [Data Products and the Wearables Revolution - Emi Nomura](http://techbus.safaribooksonline.com/9781491924143#) 15 mins
+- [Data Products and the Wearables Revolution - Emi Nomura](http://proquestcombo.safaribooksonline.com.ezproxy.torontopubliclibrary.ca/9781491924143#) 15 mins
 Description: 
 Using case studies from the Jawbone UP activity tracker, we’ll discuss why data products are key to shaping the future of wearables as well as their implications to business and public health.
 
-- [Unlocking the Data in Paper: A Case Study of New York Life - Kuang Chen](http://techbus.safaribooksonline.com/9781491924143#) 20mins
+- [Unlocking the Data in Paper: A Case Study of New York Life - Kuang Chen](http://proquestcombo.safaribooksonline.com.ezproxy.torontopubliclibrary.ca/9781491924143#) 20mins
 Description : Enterprise data grows over 65% a year. Last year, non-productive information work—reformatting, data entry, and so on—consumed more than US$1.5 Trillion. Yet companies continue to pour billions into human-driven paper-to-digital processes.
 
-## Rdata
-- [An Easy System for Data Wrangling With tidyr and dplyr - Garrett Grolemund - Part 1](http://techbus.safaribooksonline.com/9781491924143#) 46 mins
+### Rdata
+- [An Easy System for Data Wrangling With tidyr and dplyr - Garrett Grolemund - Part 1](http://proquestcombo.safaribooksonline.com.ezproxy.torontopubliclibrary.ca/9781491924143#) 46 mins
 Description: 
 Learn how to manipulate your data, large or small, with tidyr and dplyr. Several features of R make tidy data the most efficient data structure to use with the R language. The tidyr package provides a framework for reshaping the layout of any data set into a tidy structure for analysis. The dplyr package provides a concise syntax that makes it easy to express common data manipulation operations.
 
-- [An Easy System for Data Wrangling With tidyr and dplyr - Garrett Grolemund - Part 2](http://techbus.safaribooksonline.com/9781491924143#)  25 mins
+- [An Easy System for Data Wrangling With tidyr and dplyr - Garrett Grolemund - Part 2](http://proquestcombo.safaribooksonline.com.ezproxy.torontopubliclibrary.ca/9781491924143#)  25 mins
 Description: 
 Learn how to manipulate your data, large or small, with tidyr and dplyr. Several features of R make tidy data the most efficient data structure to use with the R language. The tidyr package provides a framework for reshaping the layout of any data set into a tidy structure for analysis. The dplyr package provides a concise syntax that makes it easy to express common data manipulation operations.
 
-- [A Reactive Grammar of Graphics with ggvis - Winston Chang](http://techbus.safaribooksonline.com/9781491924143#) 50 mins
+- [A Reactive Grammar of Graphics with ggvis - Winston Chang](http://proquestcombo.safaribooksonline.com.ezproxy.torontopubliclibrary.ca/9781491924143#) 50 mins
 Description: 
 With ggvis, you can easily create reactive graphics to help you understand your data. Ggvis is the big brother of ggplot2, starting from a declarative grammar of graphics, taking it to the web, and making it easy to build interactive and dynamic graphics.
 
-- [Reproducible R Reports with R Markdown - Garrett Grolemund - Part 1](http://techbus.safaribooksonline.com/9781491924143#) 35 mins
+- [Reproducible R Reports with R Markdown - Garrett Grolemund - Part 1](http://proquestcombo.safaribooksonline.com.ezproxy.torontopubliclibrary.ca/9781491924143#) 35 mins
 Description: 
 A data scientist is not finished when his or her result is calculated. A good scientist must report the results to a skeptical (or worse, uninformed) audience. The R Markdown package makes it easy to generate reproducible reports, intermingling text and code. Write your reports in R alongside your original code. Then export the report as an HTML, PDF, or Microsoft Word document with one click of a button (or one line of code).
 
-- [Reproducible R Reports with R Markdown - Garrett Grolemund - Part 2](http://techbus.safaribooksonline.com/9781491924143#) 30 mins
+- [Reproducible R Reports with R Markdown - Garrett Grolemund - Part 2](http://proquestcombo.safaribooksonline.com.ezproxy.torontopubliclibrary.ca/9781491924143#) 30 mins
 Description: 
 A data scientist is not finished when his or her result is calculated. A good scientist must report the results to a skeptical (or worse, uninformed) audience. The R Markdown package makes it easy to generate reproducible reports, intermingling text and code. Write your reports in R alongside your original code. Then export the report as an HTML, PDF, or Microsoft Word document with one click of a button (or one line of code).
 
-- [Analytic Web Applications with Shiny - Winston Chang - Part 1](http://techbus.safaribooksonline.com/9781491924143#) 30 mins
+- [Analytic Web Applications with Shiny - Winston Chang - Part 1](http://proquestcombo.safaribooksonline.com.ezproxy.torontopubliclibrary.ca/9781491924143#) 30 mins
 Description: 
 Shiny lets you move beyond static reports to easily build interactive web applications powered by R. Run your Shiny apps locally, or share them over a server with clients, customers, and colleagues. Your visitors will be in the driver seat. They can explore data, monitor dashboards, run R analyses, or do anything else you prepare for them all without knowing any R code. If a picture is worth 1000 words, a Shiny app is worth a million.
 
-- [Analytic Web Applications with Shiny - Winston Chang - Part 2](http://techbus.safaribooksonline.com/9781491924143#) 30 mins
+- [Analytic Web Applications with Shiny - Winston Chang - Part 2](http://proquestcombo.safaribooksonline.com.ezproxy.torontopubliclibrary.ca/9781491924143#) 30 mins
 Description: 
 Shiny lets you move beyond static reports to easily build interactive web applications powered by R. Run your Shiny apps locally, or share them over a server with clients, customers, and colleagues. Your visitors will be in the driver seat. They can explore data, monitor dashboards, run R analyses, or do anything else you prepare for them all without knowing any R code. If a picture is worth 1000 words, a Shiny app is worth a million.
 
-## PyData
-=======
+### PyData
 - [Pumping Up Retail Profits with Predictive Analytics - Adam Jorgensen](http://proquestcombo.safaribooksonline.com.ezproxy.torontopubliclibrary.ca/9781491924143#)== 20 mins
 Description: Retail buyers are the backbone of the industries’ profitability. These individuals drive organizational goals with their performance. Many decisions are made by intuition and “gut” feeling, where predictive analytics would have made significant improvements in outcomes. This session takes real world experiences and shows how to transform retail performance through data driven buying decisions.
 
@@ -314,7 +311,7 @@ Description: Data Science, where are we going? What impact can we expect?
 - **Year Zero: How We’ll Run Our Lives in Ten Years’ Time** - Alistair Croll - 5-mins
 Description: Roughly every decade, some kind of military or enterprise technology makes its way into the mainstream: the personal computer; the consumer Internet; the mobile phone; the Internet of Things. What happens when Big Data turns into a consumer product? Strata chair Alistair Croll offers some speculation about what data will do to the way we live, love, work, and play.
 
-## Solutions Showcase Theater
+### Solutions Showcase Theater
 - **The Briefcase Cluster** - Enabling Big Data Everywhere - Jim Scott 0:08:37
 - ==Why Event Analytics Matter== - Rohit Shrivastava 0:10:41
 - ==Cracking the Data Conundrum== - Steffin Harris 0:11:42
