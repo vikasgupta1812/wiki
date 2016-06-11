@@ -2,6 +2,6 @@
     "useSideMenu": true,
     "lineBreaks": "gfm",
     "additionalFooterText": "All content and images &copy; by John Doe",
-    "anchorCharacter": "#",
+    "anchorCharacter": "&#x2693;",
     "title": "Vikas Gupta's Wiki"
 }
