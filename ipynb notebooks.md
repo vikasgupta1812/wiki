@@ -1,3 +1,11 @@
+
+
+## Featured Notebooks 
+- [Gesture Typing](http://nbviewer.jupyter.org/url/norvig.com/ipython/Gesture%20Typing.ipynb)
+
+
+
+
 [Notebooks](http://nbviewer.jupyter.org/github/vikasgupta1812/wiki/tree/gh-pages/notebooks/) 
 
 - Scripts Repository [**nbviewer**](http://nbviewer.jupyter.org/github/vikasgupta1812/scripts/tree/master/) 

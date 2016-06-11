@@ -8,6 +8,7 @@
 [Job Search](Job Search.md)
 [Motivation](motivation.md)
 [Misc.](Miscellaneous.md)
+[How To](How to.md)
 [Links](links.md)
 [ToDo](ToDo.md)
 [gimmick:ThemeChooser](Choose theme)
