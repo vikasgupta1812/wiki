@@ -88,6 +88,14 @@ tl;dr happiness meter from twitter data, sensors to save heating\cooling costs, 
 - Beginning Test-Driven Development in Python - http://code.tutsplus.com/tutorials/beginning-test-driven-development-in-python--net-30137 
 tl;dr – test driven development tdd – write failing test case, make test pass, refactor. 
 Different ways of doing tests in pyhton. 
+- [Python ActiveState Recepies](https://docs.google.com/spreadsheets/d/1JywwaBRujpHeDTVo8-GLFpOtBg4P0v4ORyX9GiokNgM/pubhtml)
+[How Google's using big data and machine-learning to aid drug discovery](http://venturebeat.com/2015/03/03/how-googles-using-big-data-and-machine-learning-to-discover-new-drugs/)
+- [sklearn demos by ogrisel](https://github.com/ogrisel/notebooks/tree/master/sklearn_demos)
+- [Infomation extraction in Python](https://github.com/machinalis/iepy/blob/308edcfea3bd556391aa0dfe1876ba02008c29ac/README.rst#iepy)
+- Load Balancing - IPython Parallel Computing #1 
+	[](https://www.youtube.com/watch?v=QLAVHlelkJQ)
+Explaining the basics of IPython parallel computing capabilities and how to perform basic load balancing using load_balanced_view() and view.map(). Finally we compare the performance of a single process to parallel computing.
+
 
 ### R
 
@@ -146,13 +154,19 @@ tl;dr – r code to see the difference; not tried it yet.
 - The Data Science Ecosystem in One Tidy Infographic - http://www.datasciencecentral.com/profiles/blogs/the-data-science-ecosystem-in-one-tidy-infographic Tl;dr – decent approach to get the data url and then loading the data to R 
 - [Upcoming Tutorial: Analyzing US Census Data in R](https://justanrblog.wordpress.com/2015/05/11/upcoming-tutorial-analyzing-us-census-data-in-r/) [Github](https://github.com/arilamstein/r-census-tutorial-2015-05) tl;dr chloropeth, nice geo graphs.
 - [TidyR Challenge: Update](http://jeffreyhorner.tumblr.com/post/118447392333/tidyr-challenge-update) 
-- [TidyR Challenge: Help Me Do My Job](http://jeffreyhorner.tumblr.com/post/118297392563/tidyr-challenge-help-me-do-my-job) 
-  tl;dr - Code Practice
+- [TidyR Challenge: Help Me Do My Job](http://jeffreyhorner.tumblr.com/post/118297392563/tidyr-challenge-help-me-do-my-job) tl;dr - Code Practice
 - [RevolutionR - April Roundup](http://blog.revolutionanalytics.com/2015/05/in-case-you-missed-it-april-2015-roundup.html)
   - [R for more powerful clustering](http://blog.revolutionanalytics.com/2015/04/r-for-more-powerful-clustering.html)
 - [Comparing data frames, data.table and dplyr with random walks](http://freakonometrics.hypotheses.org/19645) tl;dr - nice code practice
 - [objectsize.R](https://rstudio-pubs-static.s3.amazonaws.com/98168_a534b68360924489928969b99d6d5064.html) [drive](https://drive.google.com/file/d/0B0J1O2jMMERWNm5PSGk0TzdPN00/view?usp=drivesdk)
 - [Kaggle Data Science Job Search](http://rpubs.com/makesenseofdata/164385)
+- [ggthemes - Some extra geoms, scales, and themes for ggplot](https://github.com/jrnold/ggthemes)
+- [rblocks Package](http://ramnathv.github.io/posts/rblocks-pkg/)
+
+#### Visualization
+- [ggthemes - Some extra geoms, scales, and themes for ggplot](https://github.com/jrnold/ggthemes)
+- [rblocks Package](http://ramnathv.github.io/posts/rblocks-pkg/)
+
 
 
 

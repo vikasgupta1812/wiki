@@ -1,4 +1,9 @@
 
+Courses and books.
+
+Can write down important learnings from it which are worth reading again. 
+
+
 #### [Startup Engineering](startup-001)
 - [Env Path and Home.md](startup-001\Env Path and Home.md)
 - [First application.md](startup-001\First application.md)
@@ -18,3 +23,21 @@
 - [square-slides.pdf](startup-001\square-slides.pdf)
 - [ssh.md](startup-001\ssh.md)
 - [twilio-slides.pdf](startup-001\twilio-slides.pdf)
+
+
+
+#### rcourse [github](https://github.com/pdparker/rcourse)
+
+[notebooks]()
+
+[Plotting data in R](http://nbviewer.jupyter.org/github/pdparker/rcourse/blob/master/Plots.ipynb#explore)
+
+Top tips from this [notebook](http://nbviewer.jupyter.org/github/pdparker/rcourse/blob/master/Plots.ipynb#explore) 
+- Know the comands for plot, abline, line, hist, density, and curve to quickly generate graphs for exploration and production
+- pairs and corrplot will let you look at lots of pairwise relationships quickly
+- Start simply with default plot settings and slowly build up
+- For likert data use jitter to move points around a bit to better see relationships
+- For large data use alpha blending to make points semi transperent to better see where the density of points is (see alpha or rgb functions)
+- For big data use heat maps, ggobi, bigvis, or hexbin plots
+- Learn ggplots as this seems to be where everyone is heading
+- Many many functions have default plots so try throwing output from a function at plot(). For models this will often be plots of assumptions
