@@ -4,7 +4,12 @@ Courses and books.
 Can write down important learnings from it which are worth reading again. 
 
 
-#### [Startup Engineering](startup-001)
+## Books 
+- [ggplot2 - Hadley](https://onedrive.live.com/redir?resid=46DDE5F519C073A0!15834&authkey=!AG9X4A8YaCPSntY&ithint=file%2cpdf)   [s3](https://s3.amazonaws.com/storagecheckpersonal/ggplot2-book.pdf)
+
+
+
+## [Startup Engineering](startup-001)
 - [Env Path and Home.md](startup-001\Env Path and Home.md)
 - [First application.md](startup-001\First application.md)
 - [Windows Powershell commands.md](startup-001\Windows Powershell commands.md)
@@ -22,7 +27,6 @@ Can write down important learnings from it which are worth reading again.
 - [lecture8-mobile-v2.pdf](startup-001\lecture8-mobile-v2.pdf)
 - [square-slides.pdf](startup-001\square-slides.pdf)
 - [ssh.md](startup-001\ssh.md)
-- [twilio-slides.pdf](startup-001\twilio-slides.pdf)
 
 
 

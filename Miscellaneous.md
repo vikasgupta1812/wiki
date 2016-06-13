@@ -20,6 +20,9 @@
 - [How to Find and Remove Duplicate/Unwanted Files in Linux Using ‘FSlint’ Tool](http://www.tecmint.com/fslint-find-and-remove-duplicate-unwanted-files-in-linux/) tl;dr use 'fslint'
 - [Bandwidth Monitoring Tools for Ubuntu](http://www.ubuntugeek.com/bandwidth-monitoring-tools-for-ubuntu-users.html) [archive](http://archive.is/L5nkb)
 - [memory_utils - Utilities to help fight and prevent memory leaks](https://github.com/jtushman/memory_utils/tree/5ed66173fdddb6de8df92e2eb252e97b83b23350#memory_utils) not sure if it will work with windows as well. 
+- [All the Wget Commands You Should Know](http://www.labnol.org/software/wget-command-examples/28750/)
+
+
 
 ### Rasp Pi 
 - [How to install R & Ipython on RPI2.md](How to install R & Ipython on RPI2.md)
@@ -50,7 +53,7 @@
 ## Command line utilities 
 - [Notes from Data Science at Command Line.md](Notes from Data Science at Command Line.md)
 
-## Others
+## Other
 
 - Amazon Mechanical Turk – https://www.mturk.com/mturk/welcome
 Alternatives - http://moneypantry.com/amazon-mechanical-turk-crowdsourcing-alternatives/

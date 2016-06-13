@@ -156,17 +156,36 @@ tl;dr – r code to see the difference; not tried it yet.
 - [TidyR Challenge: Update](http://jeffreyhorner.tumblr.com/post/118447392333/tidyr-challenge-update) 
 - [TidyR Challenge: Help Me Do My Job](http://jeffreyhorner.tumblr.com/post/118297392563/tidyr-challenge-help-me-do-my-job) tl;dr - Code Practice
 - [RevolutionR - April Roundup](http://blog.revolutionanalytics.com/2015/05/in-case-you-missed-it-april-2015-roundup.html)
-  - [R for more powerful clustering](http://blog.revolutionanalytics.com/2015/04/r-for-more-powerful-clustering.html)
+  - [R for more powerful clustering](http://blog.revolutionanalytics.com/2015/04/r-for-more-powerful-clustering.html) [archive](http://archive.is/3o0gq) tl;dr hierarchial clustering with heatmap display.  
+  <img src="http://archive.li/3o0gq/ea9ab5d8d53d1d7f2201b338c214dbcaa0d434e9.png" style="width: 200px;"/>
 - [Comparing data frames, data.table and dplyr with random walks](http://freakonometrics.hypotheses.org/19645) tl;dr - nice code practice
 - [objectsize.R](https://rstudio-pubs-static.s3.amazonaws.com/98168_a534b68360924489928969b99d6d5064.html) [drive](https://drive.google.com/file/d/0B0J1O2jMMERWNm5PSGk0TzdPN00/view?usp=drivesdk)
 - [Kaggle Data Science Job Search](http://rpubs.com/makesenseofdata/164385)
 - [ggthemes - Some extra geoms, scales, and themes for ggplot](https://github.com/jrnold/ggthemes)
 - [rblocks Package](http://ramnathv.github.io/posts/rblocks-pkg/)
+- [Large collection of "clean" statistical graphs in R](http://shinyapps.org/apps/RGraphCompendium/index.php)
 
 #### Visualization
+- [Getting started with gpplot2](http://gastonsanchez.com/stat133/slides/13-ggplot2-part1/13-ggplot2-part1.pdf) 
+	<img src="https://s3.amazonaws.com/mystaticdata/images/Main+Steps+in+creating+ggplot+graphics.png" style="width: 200px"/>
 - [ggthemes - Some extra geoms, scales, and themes for ggplot](https://github.com/jrnold/ggthemes)
 - [rblocks Package](http://ramnathv.github.io/posts/rblocks-pkg/)
+- [R Graph Catalog](R Graph Catalog - Selcted Graphs.md)
+	- [families-exhibition-histogram](http://shiny.stat.ubc.ca/r-graph-catalog/#fig04-06_families-exhibition-histogram)
 
+		![](http://shiny.stat.ubc.ca/r-graph-catalog/_w_aa4de3ee95703e6b629130eb966e2188dab04ff1df6d84e1/thumbnails/fig04-06_families-exhibition-histogram_thumb.png)
+
+	- [jitter](http://shiny.stat.ubc.ca/r-graph-catalog/#fig04-10_museum-exhibitions-jittering)
+
+		![](http://shiny.stat.ubc.ca/r-graph-catalog/_w_aa4de3ee95703e6b629130eb966e2188dab04ff1df6d84e1/thumbnails/fig04-10_museum-exhibitions-jittering_thumb.png)
+
+	- [exhibitions-box-plot](http://shiny.stat.ubc.ca/r-graph-catalog/#fig04-11_museum-exhibitions-box-plot)
+
+		![](http://shiny.stat.ubc.ca/r-graph-catalog/_w_aa4de3ee95703e6b629130eb966e2188dab04ff1df6d84e1/thumbnails/fig04-11_museum-exhibitions-box-plot_thumb.png)
+
+	- [stock-market-data](http://shiny.stat.ubc.ca/r-graph-catalog/#fig06-09_stock-market-data)
+
+		![](http://shiny.stat.ubc.ca/r-graph-catalog/_w_aa4de3ee95703e6b629130eb966e2188dab04ff1df6d84e1/thumbnails/fig06-09_stock-market-data_thumb.png)
 
 
 
