@@ -1,4 +1,4 @@
-Reading links (to be merged into reading.md)
+Reading links (to be merged into reading.html)
 
 ### Networkx - Social and Information Network Analysis Autumn 2011
 http://snap.stanford.edu/class/cs224w-2011/

@@ -10,9 +10,9 @@ Can write down important learnings from it which are worth reading again.
 
 
 ## [Startup Engineering](startup-001)
-- [Env Path and Home.md](startup-001\Env Path and Home.md)
-- [First application.md](startup-001\First application.md)
-- [Windows Powershell commands.md](startup-001\Windows Powershell commands.md)
+- [Env Path and Home.md](startup-001\Env Path and Home.html)
+- [First application.md](startup-001\First application.html)
+- [Windows Powershell commands.md](startup-001\Windows Powershell commands.html)
 - [airbnb-slides.pdf](startup-001\airbnb-slides.pdf)
 - [judicata-slides.pdf](startup-001\judicata-slides.pdf)
 - [lecture0-v3-logistics.pdf](startup-001\lecture0-v3-logistics.pdf)
@@ -26,7 +26,7 @@ Can write down important learnings from it which are worth reading again.
 - [lecture7-deployment-dns-custom-domains.pdf](startup-001\lecture7-deployment-dns-custom-domains.pdf)
 - [lecture8-mobile-v2.pdf](startup-001\lecture8-mobile-v2.pdf)
 - [square-slides.pdf](startup-001\square-slides.pdf)
-- [ssh.md](startup-001\ssh.md)
+- [ssh.md](startup-001\ssh.html)
 
 
 

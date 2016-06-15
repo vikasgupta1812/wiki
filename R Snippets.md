@@ -2,7 +2,8 @@ R Snippets
 ====
 
 Send emails from R
-```
+
+```r
 library(mailR)
 send.mail(from = "xxx@gmail.com",
           to = c("xxx@gmail.com", "xxx@gmail.com"),
@@ -15,3 +16,13 @@ send.mail(from = "xxx@gmail.com",
           authenticate = TRUE,
           send = TRUE)
 ```
+
+
+```r
+# Change mimetype to PNG
+options(jupyter.plot_mimetypes = "image/png") 
+#options(jupyter.plot_mimetypes = "image/svg+xml") 
+
+options(repr.plot.width = 8, repr.plot.height = 3)
+```
+

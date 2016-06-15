@@ -64,7 +64,7 @@ From debugging to version control, programming in the real world requires a set 
     - They update their skills. - meeups, online programs, boot camps, 
     - They are concerned about business impact. 
 
-- [What is data Scientist](what%20is%20data%20scientist.md)
+- [What is data Scientist](what%20is%20data%20scientist.html)
 - What Are The Best Technology Sites? - http://savedelete.com/news/best-technology-sites/1650/
 - Microsoft Closes Acquisition of Revolution Analytics http://blogs.technet.com/b/machinelearning/archive/2015/04/06/microsoft-closes-acquisition-of-revolution-analytics.aspx
 - How big data is changing the world - http://www.bbc.com/news/technology-23253949
@@ -72,7 +72,7 @@ tl;dr happiness meter from twitter data, sensors to save heating\cooling costs, 
 - Stimulation through Gamification - http://www.datavizualization.com/blog/stimulation-through-gamification
 - Using Gamification within digital training significantly improves the learning rate and screen engagement over a longer length of time.
 [Foldit: Solve Puzzles for Science](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0CB8QFjAA&url=https%3A%2F%2Ffold.it%2F&ei=N8UiVezEN9H2oATV0IDACQ&usg=AFQjCNGr1eFOCi2J6ZzsR-PPYI77-I0JBA&sig2=O0qv_9nJEBxSfPC530Pczw&bvm=bv.89947451,d.cGU)
-- [Everything We Wish We'd Known About Building Data Products](./Everything We Wish We'd Known About Building Data Products.md)
+- [Everything We Wish We'd Known About Building Data Products](./Everything We Wish We'd Known About Building Data Products.html)
 
 
 
@@ -170,7 +170,7 @@ tl;dr – r code to see the difference; not tried it yet.
 	<img src="https://s3.amazonaws.com/mystaticdata/images/Main+Steps+in+creating+ggplot+graphics.png" style="width: 200px"/>
 - [ggthemes - Some extra geoms, scales, and themes for ggplot](https://github.com/jrnold/ggthemes)
 - [rblocks Package](http://ramnathv.github.io/posts/rblocks-pkg/)
-- [R Graph Catalog](R Graph Catalog - Selcted Graphs.md)
+- [R Graph Catalog](R Graph Catalog - Selcted Graphs.html)
 	- [families-exhibition-histogram](http://shiny.stat.ubc.ca/r-graph-catalog/#fig04-06_families-exhibition-histogram)
 
 		![](http://shiny.stat.ubc.ca/r-graph-catalog/_w_aa4de3ee95703e6b629130eb966e2188dab04ff1df6d84e1/thumbnails/fig04-06_families-exhibition-histogram_thumb.png)
@@ -216,7 +216,7 @@ In Automate the Boring Stuff with Python, you'll learn how to use Python to writ
 - Wiley - "Automated Data Collection with R" https://github.com/crubba/Wiley-ADCR
 
 ## Misc. Tips / How to's 
-- [How to Embedd Youtube Video](Example YT Video.md)
+- [How to Embedd Youtube Video](Example YT Video.html)
 - [How to run Sublime Text from Command Line (Win7)](http://stackoverflow.com/questions/9440639/sublime-text-from-command-line-win7)
 - 12+ Tips and Tricks to Work Faster in Microsoft Outlook - http://lifehacker.com/12-tips-and-tricks-to-work-faster-in-microsoft-outlook-1540483009
 - How to Transform your Google Spreadsheet Into an Opinion Mining Tool http://www.analyticbridge.com/profiles/blogs/how-to-transform-your-google-spreadsheet-into-an-opinion-mining
