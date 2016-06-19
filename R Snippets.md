@@ -26,3 +26,22 @@ options(jupyter.plot_mimetypes = "image/png")
 options(repr.plot.width = 8, repr.plot.height = 3)
 ```
 
+
+
+```python
+import zipfile
+
+def read():
+    # use r, not rb
+    z = zipfile.ZipFile('test.zip', 'r')
+    for filename in z.namelist():
+        # slurp the uncompressed bytes into a string
+        contents = z.read(filename)
+        print 'File:', filename
+        print contents
+
+
+if __name__ == '__main__':
+    read()
+
+```

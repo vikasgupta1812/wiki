@@ -14,7 +14,8 @@ Links to follow like blogs or learning sites.
 
 
 ## Blogs
-- [Blog - Data Illumination](http://dataillumination.blogspot.ca/?showComment=1428794518971)
+- [Deep Learning in simple words](https://medium.com/@ageitgey/)
+- [Blog - Data Illumination](http://dataillumination.blogspot.ca)
 Shedding Light on Data through Data Science, Visualizations, and Storytelling.
 Datasets used in the blog [github](http://dataillumination.blogspot.ca/2015/04/open-data-sets-for-my-blog.html?showComment=1428794518971)
 - [Addicted to R Ramnath Vaidyanathan](http://ramnathv.github.io)  [archive](http://archive.is/9Pcxt)

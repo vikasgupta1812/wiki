@@ -80,6 +80,9 @@ tl;dr happiness meter from twitter data, sensors to save heating\cooling costs, 
 
 ### Python
 
+- [Automation For The People](https://gist.github.com/classam/9e07a36aa63624ca2dda75a1367a53c6)
+Great post on in github gist form on automation. Includes tons of automation tools (or tools that can be used for automation) from Bash and Make to Python specific things like Fabric, Ansible and Invoke. 
+
 - [30 Python Language Features and Tricks You May Not Know About](http://sahandsaba.com/thirty-python-language-features-and-tricks-you-may-not-know.html)
 - Keeping Secrets Secret in Python http://datamelon.io/blog/2015/secure-symmetric-encryption-in-python.html
 - Python Beowulf cluster - find a use for those computers that are 10+ years old https://docs.google.com/file/d/0B0J1O2jMMERWMlJkOEx1Z0lYR3c/edit?usp=drivesdk
