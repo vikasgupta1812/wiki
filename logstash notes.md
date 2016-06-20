@@ -20,7 +20,7 @@
 ## Multiline Codec
 - http://stackoverflow.com/questions/24457004/logstash-1-4-1-multiline-codec-not-working
 - [Logstash Multiline Filter for Java Stacktrace (tested on field)](http://webcache.googleusercontent.com/search?q=cache:4TVOi2erYS4J:https://gist.github.com/3182192+&cd=7&hl=en&ct=clnk&gl=us) - Code with example
-- [Use rsyslog as a local agent to ship logs to logstash.](https://github.com/logstash/cookbook/blob/gh-pages/recipes/rsyslog-agent/index.md)
+- [Use rsyslog as a local agent to ship logs to logstash.](https://github.com/logstash/cookbook/blob/gh-pages/recipes/rsyslog-agent/index.html)
 
 ## Installers 
 - Logstash 1.5.0 - http://download.elastic.co/logstash/logstash/logstash-1.5.0.zip
@@ -673,7 +673,7 @@ Edit the /usr/share/tomcat7/wepapps/myapp1/WEB-INF/classes/log4j.xml
 
 [5-minute Logstash: Parsing and Sending a Log File](http://blog.sematext.com/2013/12/19/getting-started-with-logstash/)
 
-[Logstash - Windows install notes](https://github.com/verbosemode/public-notes/blob/master/logstash-windows.md)
+[Logstash - Windows install notes](https://github.com/verbosemode/public-notes/blob/master/logstash-windows.html)
 
 [How to force Logstash to reparse a file?](http://stackoverflow.com/questions/19546900/how-to-force-logstash-to-reparse-a-file)
 

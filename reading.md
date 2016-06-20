@@ -64,7 +64,7 @@ From debugging to version control, programming in the real world requires a set 
     - They update their skills. - meeups, online programs, boot camps, 
     - They are concerned about business impact. 
 
-- [What is data Scientist](what%20is%20data%20scientist.md)
+- [What is data Scientist](what%20is%20data%20scientist.html)
 - What Are The Best Technology Sites? - http://savedelete.com/news/best-technology-sites/1650/
 - Microsoft Closes Acquisition of Revolution Analytics http://blogs.technet.com/b/machinelearning/archive/2015/04/06/microsoft-closes-acquisition-of-revolution-analytics.aspx
 - How big data is changing the world - http://www.bbc.com/news/technology-23253949
@@ -72,7 +72,7 @@ tl;dr happiness meter from twitter data, sensors to save heating\cooling costs, 
 - Stimulation through Gamification - http://www.datavizualization.com/blog/stimulation-through-gamification
 - Using Gamification within digital training significantly improves the learning rate and screen engagement over a longer length of time.
 [Foldit: Solve Puzzles for Science](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0CB8QFjAA&url=https%3A%2F%2Ffold.it%2F&ei=N8UiVezEN9H2oATV0IDACQ&usg=AFQjCNGr1eFOCi2J6ZzsR-PPYI77-I0JBA&sig2=O0qv_9nJEBxSfPC530Pczw&bvm=bv.89947451,d.cGU)
-- [Everything We Wish We'd Known About Building Data Products](./Everything We Wish We'd Known About Building Data Products.md)
+- [Everything We Wish We'd Known About Building Data Products](./Everything We Wish We'd Known About Building Data Products.html)
 
 
 
@@ -88,6 +88,14 @@ tl;dr happiness meter from twitter data, sensors to save heating\cooling costs, 
 - Beginning Test-Driven Development in Python - http://code.tutsplus.com/tutorials/beginning-test-driven-development-in-python--net-30137 
 tl;dr – test driven development tdd – write failing test case, make test pass, refactor. 
 Different ways of doing tests in pyhton. 
+- [Python ActiveState Recepies](https://docs.google.com/spreadsheets/d/1JywwaBRujpHeDTVo8-GLFpOtBg4P0v4ORyX9GiokNgM/pubhtml)
+[How Google's using big data and machine-learning to aid drug discovery](http://venturebeat.com/2015/03/03/how-googles-using-big-data-and-machine-learning-to-discover-new-drugs/)
+- [sklearn demos by ogrisel](https://github.com/ogrisel/notebooks/tree/master/sklearn_demos)
+- [Infomation extraction in Python](https://github.com/machinalis/iepy/blob/308edcfea3bd556391aa0dfe1876ba02008c29ac/README.rst#iepy)
+- Load Balancing - IPython Parallel Computing #1 
+	[](https://www.youtube.com/watch?v=QLAVHlelkJQ)
+Explaining the basics of IPython parallel computing capabilities and how to perform basic load balancing using load_balanced_view() and view.map(). Finally we compare the performance of a single process to parallel computing.
+
 
 ### R
 
@@ -146,13 +154,38 @@ tl;dr – r code to see the difference; not tried it yet.
 - The Data Science Ecosystem in One Tidy Infographic - http://www.datasciencecentral.com/profiles/blogs/the-data-science-ecosystem-in-one-tidy-infographic Tl;dr – decent approach to get the data url and then loading the data to R 
 - [Upcoming Tutorial: Analyzing US Census Data in R](https://justanrblog.wordpress.com/2015/05/11/upcoming-tutorial-analyzing-us-census-data-in-r/) [Github](https://github.com/arilamstein/r-census-tutorial-2015-05) tl;dr chloropeth, nice geo graphs.
 - [TidyR Challenge: Update](http://jeffreyhorner.tumblr.com/post/118447392333/tidyr-challenge-update) 
-- [TidyR Challenge: Help Me Do My Job](http://jeffreyhorner.tumblr.com/post/118297392563/tidyr-challenge-help-me-do-my-job) 
-  tl;dr - Code Practice
+- [TidyR Challenge: Help Me Do My Job](http://jeffreyhorner.tumblr.com/post/118297392563/tidyr-challenge-help-me-do-my-job) tl;dr - Code Practice
 - [RevolutionR - April Roundup](http://blog.revolutionanalytics.com/2015/05/in-case-you-missed-it-april-2015-roundup.html)
-  - [R for more powerful clustering](http://blog.revolutionanalytics.com/2015/04/r-for-more-powerful-clustering.html)
+  - [R for more powerful clustering](http://blog.revolutionanalytics.com/2015/04/r-for-more-powerful-clustering.html) [archive](http://archive.is/3o0gq) tl;dr hierarchial clustering with heatmap display.  
+  <img src="http://archive.li/3o0gq/ea9ab5d8d53d1d7f2201b338c214dbcaa0d434e9.png" style="width: 200px;"/>
 - [Comparing data frames, data.table and dplyr with random walks](http://freakonometrics.hypotheses.org/19645) tl;dr - nice code practice
 - [objectsize.R](https://rstudio-pubs-static.s3.amazonaws.com/98168_a534b68360924489928969b99d6d5064.html) [drive](https://drive.google.com/file/d/0B0J1O2jMMERWNm5PSGk0TzdPN00/view?usp=drivesdk)
 - [Kaggle Data Science Job Search](http://rpubs.com/makesenseofdata/164385)
+- [ggthemes - Some extra geoms, scales, and themes for ggplot](https://github.com/jrnold/ggthemes)
+- [rblocks Package](http://ramnathv.github.io/posts/rblocks-pkg/)
+- [Large collection of "clean" statistical graphs in R](http://shinyapps.org/apps/RGraphCompendium/index.php)
+
+#### Visualization
+- [Getting started with gpplot2](http://gastonsanchez.com/stat133/slides/13-ggplot2-part1/13-ggplot2-part1.pdf) 
+	<img src="https://s3.amazonaws.com/mystaticdata/images/Main+Steps+in+creating+ggplot+graphics.png" style="width: 200px"/>
+- [ggthemes - Some extra geoms, scales, and themes for ggplot](https://github.com/jrnold/ggthemes)
+- [rblocks Package](http://ramnathv.github.io/posts/rblocks-pkg/)
+- [R Graph Catalog](R Graph Catalog - Selcted Graphs.html)
+	- [families-exhibition-histogram](http://shiny.stat.ubc.ca/r-graph-catalog/#fig04-06_families-exhibition-histogram)
+
+		![](http://shiny.stat.ubc.ca/r-graph-catalog/_w_aa4de3ee95703e6b629130eb966e2188dab04ff1df6d84e1/thumbnails/fig04-06_families-exhibition-histogram_thumb.png)
+
+	- [jitter](http://shiny.stat.ubc.ca/r-graph-catalog/#fig04-10_museum-exhibitions-jittering)
+
+		![](http://shiny.stat.ubc.ca/r-graph-catalog/_w_aa4de3ee95703e6b629130eb966e2188dab04ff1df6d84e1/thumbnails/fig04-10_museum-exhibitions-jittering_thumb.png)
+
+	- [exhibitions-box-plot](http://shiny.stat.ubc.ca/r-graph-catalog/#fig04-11_museum-exhibitions-box-plot)
+
+		![](http://shiny.stat.ubc.ca/r-graph-catalog/_w_aa4de3ee95703e6b629130eb966e2188dab04ff1df6d84e1/thumbnails/fig04-11_museum-exhibitions-box-plot_thumb.png)
+
+	- [stock-market-data](http://shiny.stat.ubc.ca/r-graph-catalog/#fig06-09_stock-market-data)
+
+		![](http://shiny.stat.ubc.ca/r-graph-catalog/_w_aa4de3ee95703e6b629130eb966e2188dab04ff1df6d84e1/thumbnails/fig06-09_stock-market-data_thumb.png)
 
 
 
@@ -183,7 +216,7 @@ In Automate the Boring Stuff with Python, you'll learn how to use Python to writ
 - Wiley - "Automated Data Collection with R" https://github.com/crubba/Wiley-ADCR
 
 ## Misc. Tips / How to's 
-- [How to Embedd Youtube Video](Example YT Video.md)
+- [How to Embedd Youtube Video](Example YT Video.html)
 - [How to run Sublime Text from Command Line (Win7)](http://stackoverflow.com/questions/9440639/sublime-text-from-command-line-win7)
 - 12+ Tips and Tricks to Work Faster in Microsoft Outlook - http://lifehacker.com/12-tips-and-tricks-to-work-faster-in-microsoft-outlook-1540483009
 - How to Transform your Google Spreadsheet Into an Opinion Mining Tool http://www.analyticbridge.com/profiles/blogs/how-to-transform-your-google-spreadsheet-into-an-opinion-mining
