@@ -63,3 +63,6 @@ Unsupervised Feature Learning and Deep Learning
  
  
 [Blog Wiki Creation related](Blog Wiki Creation related.md)
+
+
+[Postgres Notes.md](Postgres Notes.md)
