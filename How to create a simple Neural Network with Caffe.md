@@ -110,10 +110,7 @@ While you are at it, also checkout the imagenet classification tutorial at caffe
 Both could be easily viewed online using the nbviewer tool:
 
 http://nbviewer.ipython.org/github/BVLC/caffe/blob/master/examples/filter_visualization.ipynb
-
 http://nbviewer.ipython.org/github/BVLC/caffe/blob/master/examples/imagenet_classification.ipynb
-
-
 https://github.com/BVLC/caffe/blob/master/examples/00-classification.ipynb
 https://github.com/BVLC/caffe/blob/master/examples/01-learning-lenet.ipynb
 https://github.com/BVLC/caffe/blob/master/examples/02-brewing-logreg.ipynb
@@ -172,15 +169,11 @@ Visit the [project page](http://val.serc.iisc.ernet.in/expresso) for installatio
 
 References: 
 
-
 - http://courses.cs.tau.ac.il/Caffe_workshop/Bootcamp/pdf_lectures/
 - http://courses.cs.tau.ac.il/Caffe_workshop/Bootcamp/
 - [Google Search](https://www.google.com/search?q=site%3Acourses.cs.tau.ac.il+inurl%3A%22Caffe_workshop%22&oq=site%3Acourses.cs.tau.ac.il+inurl%3A%22Caffe_workshop%22&aqs=chrome..69i57j69i58.429j0j4&sourceid=chrome&es_sm=119&ie=UTF-8)
-
 - http://deeplearning.net/tutorial/lenet.html
 - http://ufldl.stanford.edu/wiki/index.php/UFLDL_Tutorial
-
-
 - http://www.joyofdata.de/blog/neural-networks-with-caffe-on-the-gpu/
 - [A Brief Introduction to the DNN/CNN Toolbox - Noppa](https://noppa.oulu.fi/noppa/kurssi/521010j/luennot/521010J_toolbox_intro.pdf)
 - http://stackoverflow.com/a/11477815
