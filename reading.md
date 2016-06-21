@@ -102,6 +102,7 @@ Explaining the basics of IPython parallel computing capabilities and how to perf
 
 ### R
 
+- [R Customizing Startup](http://www.statmethods.net/interface/customizing.html)
 - [Good Habbits in R Programming](http://gastonsanchez.com/stat133/slides/20-good-habits/20-good-habits.pdf)
 - **Awesome R**- A curated list of awesome R frameworks, packages and software. https://github.com/qinwf/awesome-R
 - Accelerate R Applications with CUDA - http://devblogs.nvidia.com/parallelforall/accelerate-r-applications-cuda/ nvidia devblog

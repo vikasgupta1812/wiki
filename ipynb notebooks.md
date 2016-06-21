@@ -67,6 +67,18 @@ Code examples for some popular machine learning algorithms, using TensorFlow lib
 Course webstite http://jattenberg.github.io/PDS-Fall-2013/
 
 
+## Cortana Notebook Gallery
+- [Topic Discovery in Twitter Tweets](https://gallery.cortanaintelligence.com/Notebook/Topic-Discovery-in-Twitter-Tweets-1) non-negative matrix factorization (NMF), #sklearn #pyhton #nlp
+- [R - Predictive Maintenance Modelling Guide](https://gallery.cortanaintelligence.com/Notebook/Predictive-Maintenance-Modelling-Guide-R-Notebook-1) #rstats, #multi-class classification, #timeseries, #time-series
+- [Predicting breast cancer using data from AzureML](https://gallery.cortanaintelligence.com/Notebook/Predicting-breast-cancer-using-data-from-AzureML-4)
+- [Basic Forecasting Methods using R](https://gallery.cortanaintelligence.com/Notebook/Basic-Forecasting-Methods-using-R-1) 
+- [Computing Influence Score for Twitter Users](https://gallery.cortanaintelligence.com/Notebook/Computing-Influence-Score-for-Twitter-Users-1)
+- [GBM in Azure ML Jupyter Notebook](https://gallery.cortanaintelligence.com/Notebook/GBM-in-Azure-ML-Jupyter-Notebook-4)
+- [Fitting a LASSO regression model](https://gallery.cortanaintelligence.com/Notebook/Fitting-a-LASSO-regression-model-and-publishing-to-Azure-ML-using-R-5)
+- [Fitting a Gradient Boosting Machine (GBM) ](https://gallery.cortanaintelligence.com/Notebook/Fitting-a-Gradient-Boosting-Machine-GBM-and-publishing-to-AzureML-using-R-6)
+- 
+
+
 ## Cambridgecoding academy
 [quick-courses](http://online.cambridgecoding.com/quick-courses)
 
@@ -90,9 +102,10 @@ Course webstite http://jattenberg.github.io/PDS-Fall-2013/
 - [Implementing logistic regression classifier trained by gradient descent](http://online.cambridgecoding.com/notebooks/eWReNYcAfB/implementing-logistic-regression-classifier-trained-by-gradient-descent-4) [s3](https://s3-eu-west-1.amazonaws.com/com.cambridgecoding.students/eWReNYcAfB/notebooks/1270b9997b364b502607eaa007044088/notebook.ipynb)
 
 #### Github repositories - 
-- [machinelearningregression](https://github.com/cambridgecoding/machinelearningregression)
-- [euroscipy-tutorial](https://github.com/cambridgecoding/euroscipy-tutorial)  [nbviewer](http://nbviewer.jupyter.org/github/cambridgecoding/euroscipy-tutorial)
-- [pydata-tutorial](https://github.com/cambridgecoding/pydata-tutorial) [nbviewer](http://nbviewer.jupyter.org/github.com/cambridgecoding/pydata-tutorial)
+- Python [machinelearningregression](https://github.com/cambridgecoding/machinelearningregression)
+- Pyhton [euroscipy-tutorial](https://github.com/cambridgecoding/euroscipy-tutorial)  [nbviewer](http://nbviewer.jupyter.org/github/cambridgecoding/euroscipy-tutorial)
+- Python [pydata-tutorial](https://github.com/cambridgecoding/pydata-tutorial) [nbviewer](http://nbviewer.jupyter.org/github.com/cambridgecoding/pydata-tutorial)
+- 
 
 
 
@@ -105,4 +118,4 @@ Course webstite http://jattenberg.github.io/PDS-Fall-2013/
 
 
 ### R
-- [upload data to CartoDB with R](rstudio-pubs-static.s3.amazonaws.com/22656_6fe3c225892740bb90c88f079edc494d.html) [cache](https://drive.google.com/file/d/0B0J1O2jMMERWT09WTUsxTHNPalU/view?usp=drivesdk)
+- [Upload data to CartoDB with R](rstudio-pubs-static.s3.amazonaws.com/22656_6fe3c225892740bb90c88f079edc494d.html) [cache](https://drive.google.com/file/d/0B0J1O2jMMERWT09WTUsxTHNPalU/view?usp=drivesdk)
