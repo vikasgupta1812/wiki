@@ -48,7 +48,9 @@
 
 ## Gmail 
 - [gmvault - gmail backup software](https://github.com/gaubert/gmvault)
-
+- Gmail to elasticsearch [elasticsearch-gmail](https://github.com/oliver006/elasticsearch-gmail)
+- Gmail to elasticsearch [gmail-madness](https://github.com/comperiosearch/gmail-madness)
+- Gmail to elasticsearch [having-fun-python-and-elasticsearch](https://bitquabit.com/post/having-fun-python-and-elasticsearch-part-1/)
 
 ## Command line utilities 
 - [Notes from Data Science at Command Line.md](Notes from Data Science at Command Line.md)
