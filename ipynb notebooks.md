@@ -30,11 +30,13 @@ Code examples for some popular machine learning algorithms, using TensorFlow lib
 
 - [MITx: 15.071x The Analytics Edge - Separating Spam from Ham](http://rstudio-pubs-static.s3.amazonaws.com/15854_fb25ca65439d4af4a48512d9abf943c7.html) [drive](https://drive.google.com/file/d/0B0J1O2jMMERWOUFFdkdVVlNQTkU/view?usp=drivesdk)
 - [Udacity - Data Analysis with R - Problem Set 5](https://rpubs.com/mistophiles/ud651_problemset5) [dirve](https://drive.google.com/file/d/0B0J1O2jMMERWY21hVWJFTEVDaFk/view?usp=drivesdk) For datasets refer to [this](https://github.com/rajatsaxena/DataAnalysisCourse) repo
-- [Udacity - Data Analysis with R - Lesson 3](https://rpubs.com/mistophiles/ud651_lesson3) [https://drive.google.com/file/d/0B0J1O2jMMERWYjI1QjdINmVabjA/view?usp=drivesdk](drive) [s3](https://s3.amazonaws.com/storagecheckpersonal/Udacity+-+Data+Analysis+with+R+-+Lesson+3.html?X-Amz-Date=20160607T031442Z&X-Amz-Expires=300&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Signature=c79ae5d35f6d7bbfd1ecec7fd7b8c322f46f5902dc03f40d2c194f1051ea2e79&X-Amz-Credential=ASIAJCTEUXOIKVY7R2IQ/20160607/us-east-1/s3/aws4_request&X-Amz-SignedHeaders=Host&x-amz-security-token=FQoDYXdzELT//////////wEaDJsM6B7oCQpcaRN47iLHAYKsCzxLaBt/e3kbTrrHdvESWgld5dL9Vf9cjyJzJkys0arxpQ4saxNMFvZEUk3JwNDDVWpLgqscasuIO5sai3xudsZUewNTenXvL5yCKwUnVdzUVC4fYrFNOcMbGUH9eqZ5q8/XwpZYyHytdZBZ9j4KyMQLSoEXqNBaY4/3ycOGBEGGlQdi9ePnUJYOO2baRoU3XcoffyR0XhQyrZ2NVfcJH/u/ElTuLGZowSHUOtv2GCmXhHdzXHlHNiDmixCfowWBs8hTX0co1PfYugU%3D)
-- [datascienceplus.com](datascienceplus.com) tl;dr - Project based tutorials with step-by-step instructions and examples. Practice your skills from the basic to advanced R programming, across different topics including statistics, data manipulation and visualization. 
+- [Udacity - Data Analysis with R - Lesson 3](https://rpubs.com/mistophiles/ud651_lesson3) [drive](https://drive.google.com/file/d/0B0J1O2jMMERWYjI1QjdINmVabjA/view?usp=drivesdk) [s3](https://s3.amazonaws.com/storagecheckpersonal/Udacity+-+Data+Analysis+with+R+-+Lesson+3.html?X-Amz-Date=20160607T031442Z&X-Amz-Expires=300&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Signature=c79ae5d35f6d7bbfd1ecec7fd7b8c322f46f5902dc03f40d2c194f1051ea2e79&X-Amz-Credential=ASIAJCTEUXOIKVY7R2IQ/20160607/us-east-1/s3/aws4_request&X-Amz-SignedHeaders=Host&x-amz-security-token=FQoDYXdzELT//////////wEaDJsM6B7oCQpcaRN47iLHAYKsCzxLaBt/e3kbTrrHdvESWgld5dL9Vf9cjyJzJkys0arxpQ4saxNMFvZEUk3JwNDDVWpLgqscasuIO5sai3xudsZUewNTenXvL5yCKwUnVdzUVC4fYrFNOcMbGUH9eqZ5q8/XwpZYyHytdZBZ9j4KyMQLSoEXqNBaY4/3ycOGBEGGlQdi9ePnUJYOO2baRoU3XcoffyR0XhQyrZ2NVfcJH/u/ElTuLGZowSHUOtv2GCmXhHdzXHlHNiDmixCfowWBs8hTX0co1PfYugU%3D) [archive.is](http://archive.is/swHoJ) #ggplot2 
+- [datascienceplus.com](http://www.datascienceplus.com) tl;dr - Project based tutorials with step-by-step instructions and examples. Practice your skills from the basic to advanced R programming, across different topics including statistics, data manipulation and visualization. 
 - [Udemy - Learning Python for Data Analysis and Visualization](https://github.com/vikasgupta1812/Udemy-notes) 
 - [Python for Algorithms Data Structures and Interviews](https://github.com/vikasgupta1812/Python-for-Algorithms--Data-Structures--and-Interviews)
-- [DataScience Course and lecture slides for the Intro to Data Science Master's course at NYU](https://github.com/vikasgupta1812/DataScienceCourse)
+- [DataScience Course and lecture slides for the Intro to Data Science Master's course at NYU](https://github.com/vikasgupta1812/DataScienceCourse) Datasets and complete code available. 
+	- [CaseStudy Churn Analysis.ipynb](http://nbviewer.jupyter.org/github/vikasgupta1812/DataScienceCourse/blob/master/ipython/CaseStudy_Churn_Analysis.ipynb)
+	- ... 
 - [LearnDataScience - Open Content for self-directed learning in data science](https://github.com/vikasgupta1812/LearnDataScience#ipython-notebooks--)
 
 ## Practical Data Science
@@ -107,7 +109,11 @@ Course webstite http://jattenberg.github.io/PDS-Fall-2013/
 - Python [pydata-tutorial](https://github.com/cambridgecoding/pydata-tutorial) [nbviewer](http://nbviewer.jupyter.org/github.com/cambridgecoding/pydata-tutorial)
 - 
 
-
+## Rpubs 
+- [Movie Recommendations - A machine learning approach](http://rpubs.com/conlaw/movierecommend)
+- [Algorithmic Trading of Walmart Stock (WMT) via Linear Discriminant Analysis](http://rpubs.com/zpollak/trading_lda_wmt)
+- [June Workshop - Most Useful R Functions + Minimal Examples](http://rpubs.com/crt34/june_workshop)
+- 
 
 
 ## Non Notebook codes 
@@ -119,3 +125,6 @@ Course webstite http://jattenberg.github.io/PDS-Fall-2013/
 
 ### R
 - [Upload data to CartoDB with R](rstudio-pubs-static.s3.amazonaws.com/22656_6fe3c225892740bb90c88f079edc494d.html) [cache](https://drive.google.com/file/d/0B0J1O2jMMERWT09WTUsxTHNPalU/view?usp=drivesdk)
+
+
+
