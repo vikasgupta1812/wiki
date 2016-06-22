@@ -115,6 +115,15 @@ Course webstite http://jattenberg.github.io/PDS-Fall-2013/
 - [June Workshop - Most Useful R Functions + Minimal Examples](http://rpubs.com/crt34/june_workshop)
 
 ## Github Repositories
+
+### R
+- [R-for-Data-Science-and-Machine-Learning](http://nbviewer.jupyter.org/github/Pierian-Data/NYC-Data-Training-20160606/tree/37156f4658d3acc19fddf65cefe7a04930cae5b1/R-Course/)
+- [Predict box office gross using movie reviews](http://nbviewer.jupyter.org/github/janie128/Project-movies/blob/master/Box_Office_Predictions.ipynb)
+- [San Francisco Government Employees Salaries](http://nbviewer.jupyter.org/github/janie128/Random_Projects/blob/master/SFsalaries.ipynb)
+- [Lord of the Rings Character Network Analysis](http://nbviewer.jupyter.org/github/janie128/Random_Projects/blob/master/LOTRCharacters/LOTRCharacters.ipynb)
+- [Predict service faults on Australia's largest telecommunications network](http://nbviewer.jupyter.org/github/janie128/Random_Projects/blob/master/KaggleTelstra/KaggleTelstra.ipynb)
+
+### Python
 - [Data-science-ipython-notebooks](https://github.com/donnemartin/data-science-ipython-notebooks) Continually updated data science Python notebooks: Deep learning (TensorFlow, Theano, Caffe), scikit-learn, Kaggle, big data (Spark, Hadoop MapReduce, HDFS), matplotlib, pandas, NumPy, SciPy, Python essentials, AWS, and various command lines.
 - [Dive-into-machine-learning](https://github.com/hangtwenty/dive-into-machine-learning) Dive into Machine Learning with Python Jupyter notebook and scikit-learn http://hangtwenty.github.io/dive-into-machine-learning
 
@@ -123,4 +132,7 @@ Course webstite http://jattenberg.github.io/PDS-Fall-2013/
 - Cornell - Computing Using Python -http://www.cs.cornell.edu/courses/cs1110/2013fa/lectures/index.php
 
 ### R
+- Github Search - [dplyr](https://github.com/search?utf8=%E2%9C%93&q=%22text%2Fx-r-source%22+dplyr&type=Code&ref=searchresults) [feature extraction](https://github.com/search?utf8=%E2%9C%93&q=%22text%2Fx-r-source%22+feature+extraction&type=Code&ref=searchresults) [Machine Learning](https://github.com/search?utf8=%E2%9C%93&q=%22text%2Fx-r-source%22+machine+learning&type=Code&ref=searchresults)
 - [Upload data to CartoDB with R](rstudio-pubs-static.s3.amazonaws.com/22656_6fe3c225892740bb90c88f079edc494d.html) [cache](https://drive.google.com/file/d/0B0J1O2jMMERWT09WTUsxTHNPalU/view?usp=drivesdk)
+- [Machine Learning from theory to practice](http://www.cmap.polytechnique.fr/~lepennec/enseignement/M2DataScience/) has slides and ipynb
+- [Hadoop and big data](http://nbviewer.jupyter.org/url/napitupulu-jon.appspot.com/posts/hadoop-bigdata-ud617.ipynb) [Blog](http://napitupulu-jon.appspot.com/index.html)

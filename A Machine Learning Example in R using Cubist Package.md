@@ -11,7 +11,7 @@ The code for calling a Cubist model is fairly standard for most predictive model
 
 There are some other elements that help improve the basic Cubist model’s performance, but let’s start with the simple model and go from there. For this example, we are going to use the `BostonHousing` data set the is contained in the `mlbench` package. It is a very well-know data set with 506 rows and 19 variables. Let’s look at that data set before we move on to creating and evaluating a predictive model in R.
 
-```
+```r
 require(mlbench)
 require(caret)
 require(Cubist)
