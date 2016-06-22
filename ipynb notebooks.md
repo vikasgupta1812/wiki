@@ -26,6 +26,7 @@
 - Python Tensorflow Tutorial - https://github.com/aymericdamien/TensorFlow-Examples
 Code examples for some popular machine learning algorithms, using TensorFlow library. This tutorial is designed to easily dive into TensorFlow, through examples. It includes both notebook and code with explanations. 
 
+----
 
 
 - [MITx: 15.071x The Analytics Edge - Separating Spam from Ham](http://rstudio-pubs-static.s3.amazonaws.com/15854_fb25ca65439d4af4a48512d9abf943c7.html) [drive](https://drive.google.com/file/d/0B0J1O2jMMERWOUFFdkdVVlNQTkU/view?usp=drivesdk)
@@ -40,15 +41,7 @@ Code examples for some popular machine learning algorithms, using TensorFlow lib
 - [LearnDataScience - Open Content for self-directed learning in data science](https://github.com/vikasgupta1812/LearnDataScience#ipython-notebooks--)
 
 ## Practical Data Science
-### Spring-2014
-
-#### examples
-- [git example](https://github.com/vikasgupta1812/PDS-Spring-2014/blob/master/examples/git_example.md#git-example)
-- [Example: Income Prediction with Scikit Learn](https://github.com/vikasgupta1812/PDS-Spring-2014/blob/master/examples/income_prediction_with_scikit.md#example-income-prediction-with-scikit-learn)
-- [Example: More on Income Prediction with Scikit Learn](https://github.com/vikasgupta1812/PDS-Spring-2014/blob/master/examples/income_prediction_with_scikit_2.md#example-more-on-income-prediction-with-scikit-learn)
-- [Simple Data Processing in Python](https://github.com/vikasgupta1812/PDS-Spring-2014/blob/master/examples/simple_data_processing_py.md#example-simple-data-processing-in-python)
-- [Plotting and Processing in Python](https://github.com/vikasgupta1812/PDS-Spring-2014/blob/master/examples/simple_plotting_with_python.md#example-plotting-and-processing-in-python)
-
+Spring-2014
 
 #### Ipython notebooks  
 
@@ -63,7 +56,17 @@ Code examples for some popular machine learning algorithms, using TensorFlow lib
 - [Machine Learning with Python-2](http://nbviewer.jupyter.org/github/vikasgupta1812/PDS-Spring-2014/blob/master/ipython_notebooks/Machine%20Learning%20with%20Python.ipynb)
 - [Citi Bike Analysis.](http://nbviewer.jupyter.org/github/vikasgupta1812/PDS-Spring-2014/blob/master/ipython_notebooks/Citi%20Bike%20Analysis.ipynb)
 
+#### Examples (Questions)
+- [Example: Income Prediction with Scikit Learn](https://github.com/vikasgupta1812/PDS-Spring-2014/blob/master/examples/income_prediction_with_scikit.md#example-income-prediction-with-scikit-learn)
+- [Example: More on Income Prediction with Scikit Learn](https://github.com/vikasgupta1812/PDS-Spring-2014/blob/master/examples/income_prediction_with_scikit_2.md#example-more-on-income-prediction-with-scikit-learn)
+- [Simple Data Processing in Python](https://github.com/vikasgupta1812/PDS-Spring-2014/blob/master/examples/simple_data_processing_py.md#example-simple-data-processing-in-python)
+- [Plotting and Processing in Python](https://github.com/vikasgupta1812/PDS-Spring-2014/blob/master/examples/simple_plotting_with_python.md#example-plotting-and-processing-in-python)
+
 #### Slides
+- [git](https://github.com/vikasgupta1812/PDS-Spring-2014/blob/master/slides_pdf/git.pdf)
+- [Practical Data Science](https://github.com/vikasgupta1812/PDS-Spring-2014/blob/master/slides_pdf/pds1.pdf)
+- [Python](https://github.com/vikasgupta1812/PDS-Spring-2014/blob/master/slides_pdf/python.pdf)
+- [Unix](https://github.com/vikasgupta1812/PDS-Spring-2014/blob/master/slides_pdf/unix.pdf)
 
 ### PDS Fall 2013
 Course webstite http://jattenberg.github.io/PDS-Fall-2013/
@@ -78,53 +81,46 @@ Course webstite http://jattenberg.github.io/PDS-Fall-2013/
 - [GBM in Azure ML Jupyter Notebook](https://gallery.cortanaintelligence.com/Notebook/GBM-in-Azure-ML-Jupyter-Notebook-4)
 - [Fitting a LASSO regression model](https://gallery.cortanaintelligence.com/Notebook/Fitting-a-LASSO-regression-model-and-publishing-to-Azure-ML-using-R-5)
 - [Fitting a Gradient Boosting Machine (GBM) ](https://gallery.cortanaintelligence.com/Notebook/Fitting-a-Gradient-Boosting-Machine-GBM-and-publishing-to-AzureML-using-R-6)
-- 
 
 
 ## Cambridgecoding academy
 [quick-courses](http://online.cambridgecoding.com/quick-courses)
 
-#### Data Science bootcamp 
-[Outline web page](https://cambridgecoding.com/datascience-bootcamp#outline)
 
-[Github machinelearningbootcamp](https://github/cambridgecoding/machinelearningbootcamp) [nbviewer](http://nbviewer.jupyter.org/github/cambridgecoding/machinelearningbootcamp)
-
-[Solutions](https://github.com/vikasgupta1812/machinelearningbootcamp) [nbviewer](http://nbviewer.jupyter.org/github/sandragreiss/machinelearningbootcamp)
-
-
-#### Other notebooks 
-- [Nuggets](http://nbviewer.jupyter.org/github/cambridgecoding/tutorials/blob/master/FebruaryNuggets/Nuggets.ipynb)
+#### Notebooks 
+- [Nuggets](http://nbviewer.jupyter.org/github/cambridgecoding/tutorials/blob/master/FebruaryNuggets/Nuggets.ipynb) #python #basics
 - [Scanning hyperspace: how to tune machine learning models](http://nbviewer.jupyter.org/urls/s3-eu-west-1.amazonaws.com/com.cambridgecoding.students/cca_admin/notebooks/2f890508a400ae12c39fa070c5daf954/notebook.ipynb)
 - [Feature Selection: methods and applications](http://online.cambridgecoding.com/notebooks/cca_admin/feature-selection-methods-and-applications-2)
-- [A Brief Overview of Big Data, Machine Learning and Feature Selection](http://online.cambridgecoding.com/notebooks/cca_admin/a-brief-overview-of-big-data-machine-learning-and-feature-selection) [s3](https://s3-eu-west-1.amazonaws.com/com.cambridgecoding.students/cca_admin/notebooks/5e6c0f765b8828c620273701e532cc12/notebook.ipynb)
-- [Misleading modelling: overfitting. cross-validation, and the bias-variance trade-off](http://online-dev.cambridgecoding.com/notebooks/cca_admin/misleading-modelling-overfitting-crossvalidation-and-the-biasvariance-tradeoff [s3](https://s3-eu-west-1.amazonaws.com/com.cambridgecoding.students/cca_admin/notebooks/ef329873a2ee75012ec579d7e214fbb7/notebook.ipynb)
-- [Detecting the language of a tweet](http://online.cambridgecoding.com/notebooks/nsorros/detecting-the-language-of-a-tweet-4) [s3](https://s3-eu-west-1.amazonaws.com/com.cambridgecoding.students/nsorros/notebooks/99423bb09a1cbb1647f333cad9e66205/notebook.ipynb)
-- [EDA and interactive figures with Plotly](http://online.cambridgecoding.com/notebooks/cca_admin/eda-and-interactive-figures-with-plotly)  [s3](https://s3-eu-west-1.amazonaws.com/com.cambridgecoding.students/cca_admin/notebooks/2d7c70bdfacee4fd101a05028db3fd28/notebook.ipynb)
-- [Using your own spam filter in real life](http://online.cambridgecoding.com/notebooks/cca_admin/using-your-own-spam-filter-in-real-life)  [s3](https://s3-eu-west-1.amazonaws.com/com.cambridgecoding.students/cca_admin/notebooks/3438a1f39b93ef8e8fe22e78ac40d0b7/notebook.ipynb)
-- [Implementing logistic regression classifier trained by gradient descent](http://online.cambridgecoding.com/notebooks/eWReNYcAfB/implementing-logistic-regression-classifier-trained-by-gradient-descent-4) [s3](https://s3-eu-west-1.amazonaws.com/com.cambridgecoding.students/eWReNYcAfB/notebooks/1270b9997b364b502607eaa007044088/notebook.ipynb)
+- [A Brief Overview of Big Data, Machine Learning and Feature Selection](http://online.cambridgecoding.com/notebooks/cca_admin/a-brief-overview-of-big-data-machine-learning-and-feature-selection) [nbviewer](http://nbviewer.jupyter.org/urls/s3-eu-west-1.amazonaws.com/com.cambridgecoding.students/cca_admin/notebooks/5e6c0f765b8828c620273701e532cc12/notebook.ipynb)
+- [Misleading modelling: overfitting. cross-validation, and the bias-variance trade-off](http://online-dev.cambridgecoding.com/notebooks/cca_admin/misleading-modelling-overfitting-crossvalidation-and-the-biasvariance-tradeoff) [nbviewer](http://nbviewer.jupyter.org/urls/s3-eu-west-1.amazonaws.com/com.cambridgecoding.students/cca_admin/notebooks/ef329873a2ee75012ec579d7e214fbb7/notebook.ipynb)
+- [Detecting the language of a tweet](http://online.cambridgecoding.com/notebooks/nsorros/detecting-the-language-of-a-tweet-4) [nbviewer](http://nbviewer.jupyter.org/urls/s3-eu-west-1.amazonaws.com/com.cambridgecoding.students/nsorros/notebooks/99423bb09a1cbb1647f333cad9e66205/notebook.ipynb) [nbviewer](http://nbviewer.jupyter.org/urls/s3-eu-west-1.amazonaws.com/com.cambridgecoding.students/nsorros/notebooks/99423bb09a1cbb1647f333cad9e66205/notebook.ipynb) 
+- [EDA and interactive figures with Plotly](http://online.cambridgecoding.com/notebooks/cca_admin/eda-and-interactive-figures-with-plotly)  [nbviewer](http://nbviewer.jupyter.org/urls/s3-eu-west-1.amazonaws.com/com.cambridgecoding.students/cca_admin/notebooks/2d7c70bdfacee4fd101a05028db3fd28/notebook.ipynb)
+- [Implementing your own spam filter](https://blog.cambridgecoding.com/2016/01/25/implementing-your-own-spam-filter/)
+- [Using your own spam filter in real life](http://online.cambridgecoding.com/notebooks/cca_admin/using-your-own-spam-filter-in-real-life)  [nbviewer](http://nbviewer.jupyter.org/urls/s3-eu-west-1.amazonaws.com/com.cambridgecoding.students/cca_admin/notebooks/3438a1f39b93ef8e8fe22e78ac40d0b7/notebook.ipynb)
+- [Implementing logistic regression classifier trained by gradient descent](http://online.cambridgecoding.com/notebooks/eWReNYcAfB/implementing-logistic-regression-classifier-trained-by-gradient-descent-4) [nbviewer](http://nbviewer.jupyter.org/urls/s3-eu-west-1.amazonaws.com/com.cambridgecoding.students/eWReNYcAfB/notebooks/1270b9997b364b502607eaa007044088/notebook.ipynb)
+
+#### Data Science bootcamp 
+- [Outline web page](https://cambridgecoding.com/datascience-bootcamp#outline)
+- [Github machinelearningbootcamp](https://github/cambridgecoding/machinelearningbootcamp) [nbviewer](http://nbviewer.jupyter.org/github/cambridgecoding/machinelearningbootcamp)
+- [Solutions](https://github.com/vikasgupta1812/machinelearningbootcamp) [nbviewer](http://nbviewer.jupyter.org/github/sandragreiss/machinelearningbootcamp)
 
 #### Github repositories - 
 - Python [machinelearningregression](https://github.com/cambridgecoding/machinelearningregression)
 - Pyhton [euroscipy-tutorial](https://github.com/cambridgecoding/euroscipy-tutorial)  [nbviewer](http://nbviewer.jupyter.org/github/cambridgecoding/euroscipy-tutorial)
 - Python [pydata-tutorial](https://github.com/cambridgecoding/pydata-tutorial) [nbviewer](http://nbviewer.jupyter.org/github.com/cambridgecoding/pydata-tutorial)
-- 
 
 ## Rpubs 
 - [Movie Recommendations - A machine learning approach](http://rpubs.com/conlaw/movierecommend)
 - [Algorithmic Trading of Walmart Stock (WMT) via Linear Discriminant Analysis](http://rpubs.com/zpollak/trading_lda_wmt)
 - [June Workshop - Most Useful R Functions + Minimal Examples](http://rpubs.com/crt34/june_workshop)
-- 
 
+## Github Repositories
+- [Data-science-ipython-notebooks](https://github.com/donnemartin/data-science-ipython-notebooks) Continually updated data science Python notebooks: Deep learning (TensorFlow, Theano, Caffe), scikit-learn, Kaggle, big data (Spark, Hadoop MapReduce, HDFS), matplotlib, pandas, NumPy, SciPy, Python essentials, AWS, and various command lines.
+- [Dive-into-machine-learning](https://github.com/hangtwenty/dive-into-machine-learning) Dive into Machine Learning with Python Jupyter notebook and scikit-learn http://hangtwenty.github.io/dive-into-machine-learning
 
 ## Non Notebook codes 
 ### Python
 - Cornell - Computing Using Python -http://www.cs.cornell.edu/courses/cs1110/2013fa/lectures/index.php
-- 
-
-
 
 ### R
 - [Upload data to CartoDB with R](rstudio-pubs-static.s3.amazonaws.com/22656_6fe3c225892740bb90c88f079edc494d.html) [cache](https://drive.google.com/file/d/0B0J1O2jMMERWT09WTUsxTHNPalU/view?usp=drivesdk)
-
-
-
