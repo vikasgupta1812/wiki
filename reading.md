@@ -73,7 +73,13 @@ tl;dr happiness meter from twitter data, sensors to save heating\cooling costs, 
 - Using Gamification within digital training significantly improves the learning rate and screen engagement over a longer length of time.
 [Foldit: Solve Puzzles for Science](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0CB8QFjAA&url=https%3A%2F%2Ffold.it%2F&ei=N8UiVezEN9H2oATV0IDACQ&usg=AFQjCNGr1eFOCi2J6ZzsR-PPYI77-I0JBA&sig2=O0qv_9nJEBxSfPC530Pczw&bvm=bv.89947451,d.cGU)
 - [Everything We Wish We'd Known About Building Data Products](./Everything We Wish We'd Known About Building Data Products.html)
-
+- [Learn Gradient Boosting Algorithm for better predictions (with codes in R)](http://www.analyticsvidhya.com/blog/2015/09/complete-guide-boosting-methods/)
+- [How to deal with more than 1000 levels in a factor variable in R?](http://discuss.analyticsvidhya.com/t/how-to-deal-with-more-than-1000-levels-in-a-factor-variable-in-r/10021)
+- [How to work with strsplit (R)](http://discuss.analyticsvidhya.com/t/how-to-work-with-strsplit-r/10016)
+- [Bayesian Statistics explained to Beginners in Simple English](http://www.analyticsvidhya.com/blog/2016/06/bayesian-statistics-beginners-simple-english/)
+- [Winners of Mini DataHack (Time Series) – Approach, Codes and Solutions](http://www.analyticsvidhya.com/blog/2016/06/winners-mini-datahack-time-series-approach-codes-solutions/)
+[Building a Logistic Regression model from scratch](http://www.analyticsvidhya.com/blog/2015/10/basics-logistic-regression/)
+- [A Complete Tutorial on Tree Based Modeling from Scratch (in R & Python)](http://www.analyticsvidhya.com/blog/2016/04/complete-tutorial-tree-based-modeling-scratch-in-python/)
 
 
 ## Programming
