@@ -7,6 +7,8 @@ Links to follow like blogs or learning sites.
 - [Data science at Microsoft Research](http://research.microsoft.com/en-us/projects/data-science-initiative/default.aspx)
 - [SQL Server Blog](https://blogs.technet.microsoft.com/dataplatforminsider/)
 - [Python Engineering at Microsoft](https://blogs.msdn.microsoft.com/pythonengineering/)
+	- [Idiomatic Python: boolean expressions](https://blogs.msdn.microsoft.com/pythonengineering/)
+	- [Idiomatic Python: comprehensions](https://blogs.msdn.microsoft.com/pythonengineering/2016/03/14/idiomatic-python-comprehensions/)
 - [Cortana Intelligence and Machine Learning Blog](https://blogs.technet.microsoft.com/machinelearning/)
 
 

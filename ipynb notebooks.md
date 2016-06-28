@@ -10,8 +10,14 @@
 - Scripts Repository [**nbviewer**](http://nbviewer.jupyter.org/github/vikasgupta1812/scripts/tree/master/) 
 
 ## Python
+- [Brandon Rhodes Pandas](http://nbviewer.jupyter.org/github/brandon-rhodes/pycon-pandas-tutorial/tree/master/) [Youtube](https://www.youtube.com/watch?v=5JnMutdy6Fw)
 - [Udemy complete python bootcamp](https://github.com/vikasgupta1812/Complete-Python-Bootcamp/tree/master/#complete-python-bootcamp) Can be used to review concepts #notebook
 - The "Python Machine Learning" book code [repository](https://github.com/rasbt/python-machine-learning-book) and info resource. [nbviewer](http://nbviewer.jupyter.org/github/rasbt/python-machine-learning-book)
+- [Feature Selection with Sklearn](http://nbviewer.ipython.org/github/jaganadhg/data_science_notebooks/blob/master/sklearn/scikit_learn_feature_selection.ipynb)
+- [Hyper Parameter Tuning sklearn](http://nbviewer.ipython.org/github/jaganadhg/data_science_notebooks/blob/master/sklearn/sklearn_grid_search.ipynb)
+- [Predicting Bike Share Demand - Kaggle](https://github.com/ganesh-krishnan/bikeshareDemand/tree/2576ae9fdded6e70e250ac1fa19e363d833792ba#predicting-bike-share-demand-learning-by-eking-out-maximum-performance) [nbviewer](http://nbviewer.jupyter.org/github/ganesh-krishnan/bikeshareDemand/tree/2576ae9fdded6e70e250ac1fa19e363d833792ba/) [Onedrive](https://onedrive.live.com/?id=46DDE5F519C073A0%2115849&cid=46DDE5F519C073A0)
+
+
 
 ## Tensorflow 
 - Tensorflow tutorials [**nbviewer**](http://nbviewer.jupyter.org/github/pkmital/tensorflow_tutorials/tree/master/notebooks/)
@@ -113,6 +119,7 @@ Course webstite http://jattenberg.github.io/PDS-Fall-2013/
 - [Movie Recommendations - A machine learning approach](http://rpubs.com/conlaw/movierecommend)
 - [Algorithmic Trading of Walmart Stock (WMT) via Linear Discriminant Analysis](http://rpubs.com/zpollak/trading_lda_wmt)
 - [June Workshop - Most Useful R Functions + Minimal Examples](http://rpubs.com/crt34/june_workshop)
+- [Machine Learning form Coursera](http://rstudio-pubs-static.s3.amazonaws.com/19460_cd418196d20548ae9d0f4a8e497f4a31.html)
 
 ## Github Repositories
 
@@ -122,10 +129,13 @@ Course webstite http://jattenberg.github.io/PDS-Fall-2013/
 - [San Francisco Government Employees Salaries](http://nbviewer.jupyter.org/github/janie128/Random_Projects/blob/master/SFsalaries.ipynb)
 - [Lord of the Rings Character Network Analysis](http://nbviewer.jupyter.org/github/janie128/Random_Projects/blob/master/LOTRCharacters/LOTRCharacters.ipynb)
 - [Predict service faults on Australia's largest telecommunications network](http://nbviewer.jupyter.org/github/janie128/Random_Projects/blob/master/KaggleTelstra/KaggleTelstra.ipynb)
+- [Feature Selection with R](http://nbviewer.ipython.org/github/jaganadhg/data_science_notebooks/blob/master/R/feature_selection_with_r.ipynb)
+
 
 ### Python
 - [Data-science-ipython-notebooks](https://github.com/donnemartin/data-science-ipython-notebooks) Continually updated data science Python notebooks: Deep learning (TensorFlow, Theano, Caffe), scikit-learn, Kaggle, big data (Spark, Hadoop MapReduce, HDFS), matplotlib, pandas, NumPy, SciPy, Python essentials, AWS, and various command lines.
 - [Dive-into-machine-learning](https://github.com/hangtwenty/dive-into-machine-learning) Dive into Machine Learning with Python Jupyter notebook and scikit-learn http://hangtwenty.github.io/dive-into-machine-learning
+
 
 ## Non Notebook codes 
 ### Python

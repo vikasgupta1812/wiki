@@ -14,13 +14,12 @@ Can write down important learnings from it which are worth reading again.
 - [ssh.md](startup-001\ssh.md)
 
 
-## rcourse [github](https://github.com/pdparker/rcourse)
+## Rcourse [github](https://github.com/pdparker/rcourse)
 
-[notebooks]()
+### notebooks
 - [Plotting data in R](http://nbviewer.jupyter.org/github/pdparker/rcourse/blob/master/Plots.ipynb#explore)
 - [How to Run Basis Analysis in R](http://nbviewer.jupyter.org/github/pdparker/rcourse/blob/master/Regression%20in%20R.ipynb)
-- [Missing data](http://nbviewer.jupyter.org/github/pdparker/rcourse/blob/master/Missing%20Data.ipynb)
-
+- [Missing data](http://nbviewer.jupyter.org/github/pdparker/rcourse/blob/master/Missing%20Data.ipynb) using amelia
 - [Makefile](https://github.com/pdparker/rcourse/blob/master/lectures/Makefile) to create slides and cleanup repository
 - [Basics of debugging](https://github.com/pdparker/rcourse/blob/master/lectures/Day1Part2-session3.md#basics-of-debugging)
 - [Writing your own functions](https://github.com/pdparker/rcourse/blob/master/lectures/Day1Part2-session2.md#writing-your-own-functions)
@@ -37,3 +36,9 @@ Top tips from this [notebook](http://nbviewer.jupyter.org/github/pdparker/rcours
 - For big data use heat maps, ggobi, bigvis, or hexbin plots
 - Learn ggplots as this seems to be where everyone is heading
 - Many many functions have default plots so try throwing output from a function at plot(). For models this will often be plots of assumptions
+
+
+
+## Slides 
+
+- [Talks by PyCon 2015](https://speakerdeck.com/pycon2015)

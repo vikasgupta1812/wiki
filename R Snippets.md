@@ -26,7 +26,9 @@ options(jupyter.plot_mimetypes = "image/png")
 options(repr.plot.width = 8, repr.plot.height = 3)
 ```
 
-
+```r
+options(stringAsFactors = FALSE)
+```
 
 ```python
 import zipfile
