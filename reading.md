@@ -35,7 +35,6 @@ Provides intuition about testing and training datasets.  Nice example, can be go
 - [Data Analysis Learning path](Data Analysis Learning Path | SlideRule.html) on Sliderule
 - [Data science demands elastic infrastructure.#DataScience,#BigData,#DataScience, #DataInfrastructure,#DataIntegration](http://www.techrepublic.com/article/data-science-demands-elastic-infrastructure/)
     tl;dr - success of big data depends on iteraton, on experimentation as you figure our the right questions to ask and the best way to answer them. 
-
 - Source - http://www.meetup.com/SF-Data-Science/messages/boards/thread/45359822/0#122334312
 Slides and Video from - How to Become a Data Scientist
 video https://www.youtube.com/watch?v=c52IOlnPw08
@@ -43,6 +42,8 @@ Ryan's slides: [how-to-become-a-data-scientist](http://www.slideshare.net/ryanor
 Dennis' slides: https://www.dropbox.com/s/r4m9aym2xvyadzk/SFDataScience_DennisObrien.pdf
 
 ## Blog Articles & Forum Discussions 
+- [Three Easy Ways to Stream Twitter Data into ElasticSearch](http://www.rittmanmead.com/2015/08/three-easy-ways-to-stream-twitter-data-into-elasticsearch/)
+- [Twitter Sentiment - Python, Docker, Elasticsearch, Kibana](https://realpython.com/blog/python/twitter-sentiment-python-docker-elasticsearch-kibana/)
 - [How to use data analysis for machine learning (example, part 1)](http://www.sharpsightlabs.com/data-analysis-machine-learning-example-part1/) [drive](https://drive.google.com/file/d/0B0J1O2jMMERWRnZYa2VIYXl6ZUU/view?usp=drivesdk)
 - [vahanalytics](https://drive.google.com/file/d/0B0J1O2jMMERWR3FLYW1PNFB3OWM/view?usp=drivesdk) 
 - `Quora` How do I become better at Kaggle? I am just getting started in Kaggle. I have a background in Machine Learning and `Probabilistic Graphical Models`. [http://www.quora.com/How-do-I-become-better-at-Kaggle-I-am-just-getting-started-in-Kaggle-I-have-a-background-in-Machine-Learning-and-Probabilistic-Graphical-Models]()
@@ -176,7 +177,7 @@ tl;dr – r code to see the difference; not tried it yet.
 - [Large collection of "clean" statistical graphs in R](http://shinyapps.org/apps/RGraphCompendium/index.php)
 
 #### Visualization
-- [Getting started with gpplot2](http://gastonsanchez.com/stat133/slides/13-ggplot2-part1/13-ggplot2-part1.pdf) 
+- [Getting started with gpplot2](http://gastonsanchez.com/stat133/slides/13-ggplot2-part1/13-ggplot2-part1.pdf) #pdf #slides
 	<img src="https://s3.amazonaws.com/mystaticdata/images/Main+Steps+in+creating+ggplot+graphics.png" style="width: 200px"/>
 - [ggthemes - Some extra geoms, scales, and themes for ggplot](https://github.com/jrnold/ggthemes)
 - [rblocks Package](http://ramnathv.github.io/posts/rblocks-pkg/)
