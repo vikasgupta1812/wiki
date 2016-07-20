@@ -42,8 +42,10 @@ Ryan's slides: [how-to-become-a-data-scientist](http://www.slideshare.net/ryanor
 Dennis' slides: https://www.dropbox.com/s/r4m9aym2xvyadzk/SFDataScience_DennisObrien.pdf
 
 ## Blog Articles & Forum Discussions 
+
 - [Three Easy Ways to Stream Twitter Data into ElasticSearch](http://www.rittmanmead.com/2015/08/three-easy-ways-to-stream-twitter-data-into-elasticsearch/)
 - [Twitter Sentiment - Python, Docker, Elasticsearch, Kibana](https://realpython.com/blog/python/twitter-sentiment-python-docker-elasticsearch-kibana/)
+- [The 10 commandments of analytics](http://www.marketing-interactive.com/10-commandments-analytics/) tips for real analytics work in feild. Youtube - https://www.youtube.com/watch?v=e0Q7SIj2y4I
 - [How to use data analysis for machine learning (example, part 1)](http://www.sharpsightlabs.com/data-analysis-machine-learning-example-part1/) [drive](https://drive.google.com/file/d/0B0J1O2jMMERWRnZYa2VIYXl6ZUU/view?usp=drivesdk)
 - [vahanalytics](https://drive.google.com/file/d/0B0J1O2jMMERWR3FLYW1PNFB3OWM/view?usp=drivesdk) 
 - `Quora` How do I become better at Kaggle? I am just getting started in Kaggle. I have a background in Machine Learning and `Probabilistic Graphical Models`. [http://www.quora.com/How-do-I-become-better-at-Kaggle-I-am-just-getting-started-in-Kaggle-I-have-a-background-in-Machine-Learning-and-Probabilistic-Graphical-Models]()
