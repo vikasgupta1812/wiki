@@ -1,28 +1,29 @@
 
 ## TODO
 
-
-- [x] Install on AWS 2012 IIS 
-- [x] Install on Win7 Tomcat 8 
-- [ ] Configure Existing logs 
-- [ ] Build Dashboards in Kibana
-- [ ] Configure Tomcat log4j for access logs
-- [ ] Configure Server for Windows logs
-- [ ] Create Presentations
+- Install on AWS 2012 IIS 
+- Install on Win7 Tomcat 8 
+- Configure Existing logs 
+- Build Dashboards in Kibana
+- Configure Tomcat log4j for access logs
+- Configure Server for Windows logs
+- Create Presentations
 
 ## Logstash configuration
+
 - For getting IIS logs - https://github.com/sbagmeijer/ulyaoth/blob/master/guides/logstash/windows/logstash.conf
 - https://github.com/elastic/logstash/issues/1382
-
 - http://www.logstashbook.com/code/6/shipper.conf
 
 
 ## Multiline Codec
+
 - http://stackoverflow.com/questions/24457004/logstash-1-4-1-multiline-codec-not-working
 - [Logstash Multiline Filter for Java Stacktrace (tested on field)](http://webcache.googleusercontent.com/search?q=cache:4TVOi2erYS4J:https://gist.github.com/3182192+&cd=7&hl=en&ct=clnk&gl=us) - Code with example
 - [Use rsyslog as a local agent to ship logs to logstash.](https://github.com/logstash/cookbook/blob/gh-pages/recipes/rsyslog-agent/index.html)
 
 ## Installers 
+
 - Logstash 1.5.0 - http://download.elastic.co/logstash/logstash/logstash-1.5.0.zip
 
 ## Log Shipper
@@ -30,27 +31,19 @@
 - Documentation  http://logstash.net/docs/1.0.17/getting-started-centralized
 Provides more details about configuration file
 can reference to live file
-
 - Tutorial about configuring `nxlog` as log shipper http://www.ragingcomputer.com/2014/02/sending-windows-event-logs-to-logstash-elasticsearch-kibana-with-nxlog
 It can read windows event logs
 Other tuts from same blog - http://www.ragingcomputer.com/2014/02/securing-elasticsearch-kibana-with-nginx
-
 - How to Start logstash on boot up. - Logstash Cookbook Recipie - https://github.com/logstash/cookbook/tree/gh-pages/recipes/windows-service
-
 - List of log shippers https://github.com/logstash/cookbook/blob/gh-pages/recipes/log-shippers/index.md
-
 - stackoverflow - Discussion about log shipper - http://stackoverflow.com/questions/25685650/why-do-people-ship-logs-to-logstash-with-nxlog-and-not-logstash-itself
-
 
 ## Kibana setup 
 
 - Getting Kibana Up and Running - http://www.elastic.co/guide/en/kibana/current/setup.html
 The first time you access Kibana, you are prompted to define an `index pattern` that matches the name of one or more of your indices. You can add index patterns at any time from the Settings tab
-
 By default, Kibana connects to the Elasticsearch instance running on localhost. To connect to a different Elasticsearch instance, modify the Elasticsearch URL in the kibana.yml configuration file and restart Kibana.
-
 - Using Kibana in a Production Environment - http://www.elastic.co/guide/en/kibana/current/production.html
-
 - ![Anna Roes](https://2.gravatar.com/avatar/eaac33b12e49df64af0fc522aeb6e460?s=96&amp;d=mm&amp;r=g)Kibana 4 Tutorial – Part 1: Introduction - https://www.timroes.de/2015/02/07/kibana-4-tutorial-part-1-introduction/ 
 
 ## Elasticsearch urls 
@@ -66,7 +59,6 @@ yellow open   logstash-2015.05.14   5   1         22            0    154.6kb    
 yellow open   .kibana               1   1          2            0      6.7kb          6.7kb
 ```
 
-
 ## Logstash-Grok
 
 - [Little Logstash Lessons - Part I: Using grok and mutate to type your data](https://www.elastic.co/blog/little-logstash-lessons-part-using-grok-mutate-type-data)
@@ -76,13 +68,13 @@ yellow open   .kibana               1   1          2            0      6.7kb    
 ##Find patterns for Reliance log
 
 Matching Patterns found so far. 
+
 ```
 %{YEAR}[/-]%{MONTHNUM}[/-]%{MONTHDAY}[T ]%{HOUR}:?%{MINUTE}:?%{SECOND}
 %{TIMESTAMP_ISO8601} (ERROR|FATAL|INFO)
 %{TIMESTAMP_ISO8601} %{SYSLOG5424SD}
 %{TIMESTAMP_ISO8601} %{SYSLOG5424SD} %{LOGLEVEL} %{JAVACLASS}
 ```
-----
 
 ## File inputs 
 http://logstash.net/docs/1.3.2/inputs/file
@@ -91,7 +83,6 @@ By default, each event is assumed to be one line. If you want to join lines, you
 
 Files are followed in a manner similar to "tail -0F". File rotation is detected and handled by this input.
 
-----
 ## Logstash Multiline Tomcat and Apache Log Parsing
 
 - http://blog.lanyonm.org/articles/2014/01/12/logstash-multiline-tomcat-log-parsing.html
@@ -120,6 +111,7 @@ Caused by: java.net.SocketException: Connection reset
     ... 17 more
 ```
 Parse the message and convert time to timestring.
+
 ```
 filter {
   if [type] == "apache" {
@@ -190,7 +182,8 @@ The `date` filter can accept a comma separated list of timestamp patterns to mat
 The output is simply an embedded Elasticsearch config as well as debugging to stdout. If you’d like to see the full config, have a look at the [gist](https://gist.github.com/LanyonM/8390458#file-logstash-java-conf).
 
 Full Config 
-```
+
+```json
 input {
 	tcp {
 		type => "apache"
@@ -287,7 +280,7 @@ CATALINALOG %{CATALINA_DATESTAMP:timestamp} %{JAVACLASS:class} %{JAVALOGMESSAGE:
 # 2014-01-09 20:03:28,269 -0800 | ERROR | com.example.service.ExampleService - something compeletely unexpected happened...
 TOMCATLOG %{TOMCAT_DATESTAMP:timestamp} \| %{LOGLEVEL:level} \| %{JAVACLASS:cl
 ```
--------
+
 [Viewing tomcat logs with Logstash in a Windows 7 machine](http://dotnetanalysis.blogspot.com/2014/11/viewing-tomcat-logs-with-logstash-in.html)
 
 #### Input: 
@@ -314,7 +307,7 @@ This tells logstash where to output this filtered data to. We are going to outpu
 
 This is how my logstash.conf looks like 
 
-```
+```json
 input {
     file {        
     path => ["C:/Program Files/apache-tomcat-7.0.55/logs/*.log"]
@@ -336,11 +329,11 @@ output{
 
 The cluster name should match what you set in C:\Program Files\elasticsearch-1.3.4\config\elasticsearch.yml
 
-----
+
 ## Logstash config for IIS logs
 - http://dotnetanalysis.blogspot.com/2014/11/logstash-config-for-iis-logs.html
 
-```
+```json
 input {
     file {     
     path => ["C:/inetpub/logs/LogFiles/W3SVC1/*.log"]
@@ -401,8 +394,6 @@ output{
     }
  }
 ```
-
----- 
 ## Accessing Tomcat manager 
 
 - To be able to access your tomcat manager app at https://localhost:8443/ add this to apache-tomcat-7.0.55\conf\tomcat-users.xml
@@ -420,6 +411,7 @@ output{
 ```
 
 Now you can access everything in the manager gui using
+
 ```
 username: tomcat
 password: tomcat
@@ -479,7 +471,7 @@ Logstash filtering
 
 You can use filters to enhance the received events. The following configuration shows how to extract client, timestamp, session id, method, uri path, uri param, protocol, status code and bytes.
 
-```
+```json
 input {
   stdin { }
   file {

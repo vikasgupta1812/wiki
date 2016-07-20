@@ -1,4 +1,4 @@
-# Kaggge Competitions
+# Kaggle Competitions & Solutions
 
 ## Ultrasound Nerve Segmentation
 https://www.kaggle.com/c/ultrasound-nerve-segmentation

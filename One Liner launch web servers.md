@@ -7,19 +7,19 @@ Each of these commands will run an ad hoc http static server in your current (or
 
 ### Python 2.x
 
-```
+```python
 $ python -m SimpleHTTPServer 8000
 ```
 
 ### Python 3.x
 
-```
+```python
 $ python -m http.server 8000
 ```
 
-### Twisted <sub><sup>(Python)</sup></sub>
+### Twisted (Python)
 
-```
+```python
 $ twistd -n web -p 8000 --path .
 ```
 

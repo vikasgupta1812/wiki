@@ -14,6 +14,12 @@ tl;dr – Oshkosh center; 500$+
 - What Technology & Tool Skills Do Data Scientists Jobs Require? http://www.datasciencecentral.com/profiles/blogs/what-technology-tool-skills-do-data-scientists-jobs-require
 - Nice profile for data science- https://www.linkedin.com/in/ujjwalkarn
 
+## Rererence Profiles
+
+- [Prabu Palanisamy - Machine learning engineer at Freshdesk](https://www.linkedin.com/in/prabu-palanisamy-456a893b)  I solved all the machine learning problem in hackerrank https://github.com/prabuscihero/ml_hackerrank
+
+
+
 
 ## Skills required for different positions 
 
