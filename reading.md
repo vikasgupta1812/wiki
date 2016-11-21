@@ -229,7 +229,7 @@ In Automate the Boring Stuff with Python, you'll learn how to use Python to writ
 - Wiley - "Automated Data Collection with R" https://github.com/crubba/Wiley-ADCR
 
 ## Misc. Tips / How to's 
-- [How to Embedd Youtube Video](Example YT Video.html)
+- [How to Embed Youtube Video](Example YT Video.html)
 - [How to run Sublime Text from Command Line (Win7)](http://stackoverflow.com/questions/9440639/sublime-text-from-command-line-win7)
 - 12+ Tips and Tricks to Work Faster in Microsoft Outlook - http://lifehacker.com/12-tips-and-tricks-to-work-faster-in-microsoft-outlook-1540483009
 - How to Transform your Google Spreadsheet Into an Opinion Mining Tool http://www.analyticbridge.com/profiles/blogs/how-to-transform-your-google-spreadsheet-into-an-opinion-mining
@@ -255,6 +255,7 @@ tl;dr – virtualbox, guest additions, desktops, permissions,
 - [Python libraries and tools for running applications on diverse Grids and clusters](https://github.com/uzh/gc3pie)
 
 ## Courses MOOCS & Notes
+- Stat 133 - [Concepts in Computing with Data](http://gastonsanchez.com/stat133/lectures/) tl;dr nice lecture slides. 
 - Digital Data Collection course http://blog.rolffredheim.com/2015/03/digital-data-collection-course.html  [Course Landing Page](http://fredheir.github.io/WebScraping/), slides [1](http://fredheir.github.io/WebScraping/Lecture1_2015/p1.html), [2](http://fredheir.github.io/WebScraping/Lecture2_2015/p2.html), [3](http://fredheir.github.io/WebScraping/Lecture3_2015/p3.html#/) Drive link [1](https://drive.google.com/file/d/0B0J1O2jMMERWYTA3aUFjaVdqYkU/view?usp=drivesdk) tl;dr – html5 slides, apis, Scaling up and basics 
 - How to Become a Data Scientist for Free - http://www.datasciencecentral.com/profiles/blogs/how-to-become-a-data-scientist-for-free tl;dr nice set of resources. 
 - Comprehensive notes for all 9 courses in the Specialization - https://sux13.github.io/DataScienceSpCourseNotes/  Click on the html notes
