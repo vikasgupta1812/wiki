@@ -2,7 +2,7 @@
 
 ## Featured Notebooks 
 - [Gesture Typing](http://nbviewer.jupyter.org/url/norvig.com/ipython/Gesture%20Typing.ipynb)
-
+- [exploratory-study-on-ml-algorithms](https://www.kaggle.com/sharmasanthosh/allstate-claims-severity/exploratory-study-on-ml-algorithms)
 
 
 
@@ -16,7 +16,7 @@
 - [Feature Selection with Sklearn](http://nbviewer.ipython.org/github/jaganadhg/data_science_notebooks/blob/master/sklearn/scikit_learn_feature_selection.ipynb)
 - [Hyper Parameter Tuning sklearn](http://nbviewer.ipython.org/github/jaganadhg/data_science_notebooks/blob/master/sklearn/sklearn_grid_search.ipynb)
 - [Predicting Bike Share Demand - Kaggle](https://github.com/ganesh-krishnan/bikeshareDemand/tree/2576ae9fdded6e70e250ac1fa19e363d833792ba#predicting-bike-share-demand-learning-by-eking-out-maximum-performance) [nbviewer](http://nbviewer.jupyter.org/github/ganesh-krishnan/bikeshareDemand/tree/2576ae9fdded6e70e250ac1fa19e363d833792ba/) [Onedrive](https://onedrive.live.com/?id=46DDE5F519C073A0%2115849&cid=46DDE5F519C073A0)
-
+- [Sample Tensorflow notebooks](Sample Tensorflow Notebooks) reference blog [post](https://blogs.technet.microsoft.com/machinelearning/2016/11/28/deep-learning-made-easy-in-azure/) 
 
 
 ## Tensorflow 

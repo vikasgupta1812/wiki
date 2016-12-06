@@ -32,6 +32,7 @@ Provides intuition about testing and training datasets.  Nice example, can be go
 - `rnn` package for neural networks - http://www.cs.colostate.edu/~idfah/main/projects/rnn
 
 ## Data Science
+- [Top-down learning path: Machine Learning for Software Engineers](https://github.com/ZuzooVn/machine-learning-for-software-engineers#resources)
 - [Data Analysis Learning path](Data Analysis Learning Path | SlideRule.html) on Sliderule
 - [Data science demands elastic infrastructure.#DataScience,#BigData,#DataScience, #DataInfrastructure,#DataIntegration](http://www.techrepublic.com/article/data-science-demands-elastic-infrastructure/)
     tl;dr - success of big data depends on iteraton, on experimentation as you figure our the right questions to ask and the best way to answer them. 
