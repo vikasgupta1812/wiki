@@ -18,6 +18,9 @@ Provides intuition about testing and training datasets.  Nice example, can be go
 
 ### Deep Learning
 - [Image Scaling using Deep Convolutional Neural Networks](http://engineering.flipboard.com/2015/05/scaling-convnets/) tl;dr- Convolutional Neural Networks. 
+- Udacity ND 
+	- https://github.com/udacity/deep-learning/blob/master/face_generation/dlnd_face_generation.ipynb
+	- https://github.com/yuxuan2015/my_deep_learning
 
 ### Tensorflow
 - Steps to use tensorflow library on AWS clusters - http://cs224d.stanford.edu/supplementary/aws-tutorial-2.pdf
@@ -84,6 +87,7 @@ tl;dr happiness meter from twitter data, sensors to save heating\cooling costs, 
 - [Winners of Mini DataHack (Time Series) – Approach, Codes and Solutions](http://www.analyticsvidhya.com/blog/2016/06/winners-mini-datahack-time-series-approach-codes-solutions/)
 [Building a Logistic Regression model from scratch](http://www.analyticsvidhya.com/blog/2015/10/basics-logistic-regression/)
 - [A Complete Tutorial on Tree Based Modeling from Scratch (in R & Python)](http://www.analyticsvidhya.com/blog/2016/04/complete-tutorial-tree-based-modeling-scratch-in-python/)
+- [BLOGR](https://drsimonj.svbtle.com/)  [https://www.google.com/search?newwindow=1&site=&tbm=isch&source=hp&biw=1440&bih=775&q=site%3Adrsimonj.svbtle.com&oq=site%3Adrsimonj.svbtle.com&gs_l=img.3..0l10.644.1241.0.1261.7.6.0.0.0.0.164.468.1j3.4.0....0...1.1j2.64.img..3.4.464.0..35i39k1.qxvA2CG91rQ#imgrc=vVqSKYyv4gZA2M:](Google images)
 
 
 ## Programming
@@ -92,7 +96,6 @@ tl;dr happiness meter from twitter data, sensors to save heating\cooling costs, 
 
 - [Automation For The People](https://gist.github.com/classam/9e07a36aa63624ca2dda75a1367a53c6)
 Great post on in github gist form on automation. Includes tons of automation tools (or tools that can be used for automation) from Bash and Make to Python specific things like Fabric, Ansible and Invoke. 
-
 - [30 Python Language Features and Tricks You May Not Know About](http://sahandsaba.com/thirty-python-language-features-and-tricks-you-may-not-know.html)
 - Keeping Secrets Secret in Python http://datamelon.io/blog/2015/secure-symmetric-encryption-in-python.html
 - Python Beowulf cluster - find a use for those computers that are 10+ years old https://docs.google.com/file/d/0B0J1O2jMMERWMlJkOEx1Z0lYR3c/edit?usp=drivesdk
@@ -108,7 +111,12 @@ Different ways of doing tests in pyhton.
 - Load Balancing - IPython Parallel Computing #1 
 	[](https://www.youtube.com/watch?v=QLAVHlelkJQ)
 Explaining the basics of IPython parallel computing capabilities and how to perform basic load balancing using load_balanced_view() and view.map(). Finally we compare the performance of a single process to parallel computing.
-
+- **D3 visualization using mongodb python**  
+	- https://github.com/adilmoujahid/DonorsChoose_Visualization 
+	- http://adilmoujahid.com/posts/2015/01/interactive-data-visualization-d3-dc-python-mongodb/
+	- http://data.muppal.com/interactive-dashboard-visualizing-donors-with-d3-python-and-mongodb/
+	- https://github.com/modqhx/DonationsViz
+	- http://mudit-flask-eb2-dev.elasticbeanstalk.com/
 
 ### R
 
